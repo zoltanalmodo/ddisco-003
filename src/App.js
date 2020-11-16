@@ -1,24 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Disco } from './components/Disco';
+import { Black } from './components/Black';
+import Navigation from './components/Navigation';
+import { White } from './components/White';
+import { GlobalProvider } from './context/GlobalState';
+import { Color } from './components/Color';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GlobalProvider>
+      
+        <Router>
+          <Route path='/' exact component={Navigation} />
+          <Route path='/disco' component={Disco} />
+          <Route path='/black' component={Black} />
+          <Route path='/white' component={White} />
+          <Route path='/color' component={Color} />
+        </Router>
+      
+    </GlobalProvider>
+
   );
 }
 

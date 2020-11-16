@@ -1,38 +1,223 @@
-.App {
+
+.body_black {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: black;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.body_white {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.carousel_white {
+  background-color: white;
+}
+
+.carousel_black {
+  background-color: black;
+}
+
+button {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+  height: 38px;
+  color: blue;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Helvetica Now', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button:hover {
+  color: red;
+}
+button:active {
+  border: none;
+}
+
+.navigation_position {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  background-color: yellow;
+}
+
+.nav_links {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 600;
+}
+
+.nav_links_li {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  padding-left: 2px;
+  padding-right: 2px;
+  height: 38px;
+  color: blue;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  text-decoration: none;
+}
+
+/*==================================================================*/
+/*--------------------- MEDIA QUERIES start ------------------------*/
+/*==================================================================*/
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 280px) 
+  and (max-device-width: 319px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .CarouselSize {
+      height: 122px;
+      width: 280px;
+    }
+}
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .CarouselSize {
+      height: 130px;
+      width: 300px;
+    }
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .CarouselSize {
+      height: 130px;
+      width: 300px;
+    }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .CarouselSize {
+      height: 134px;
+      width: 300px;
+    }
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2) { 
+    .CarouselSize {
+      height: 164px;
+      width: 375px;
+    }
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .CarouselSize {
+      height: 176px;
+      width: 414px;
+    }
+}
+
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1023px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .CarouselSize {
+      height: 300px;
+      width: 700px;
+    }
+}
+
+/* ----------- iPad 3, 4 and Pro 9.7" -----------*/
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1199px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .CarouselSize {
+      height: 414px;
+      width: 960px;
+    }
+}
+
+/* ------------------ LAPTOPS ------------------ */
+
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .CarouselSize {
+      height: 240px;
+      width: 560px;
+    }
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+    .CarouselSize {
+      height: 256px;
+      width: 600px;
+    }
 }
