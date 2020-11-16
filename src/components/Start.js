@@ -10,8 +10,7 @@ export const Start = () => {
     <div className='body_white'>
        
       <Navigation />
-      <h1>Click a button!</h1>
-      <h2>Click and drag or swipe the drawings to play!</h2>
+      <h1>Click a button than swipe the drawings!</h1>
       
     </div>
   )
