@@ -41,42 +41,46 @@ function Navigation() {
   return (
     
     <div className='navigation_position'>
-    <nav>
-        <div className='nav_links'>
-            <Link to='/black'>
-              <div className='nav_links_li'>
-                <button
-                  onClick={setActiveButtonBlack}
-                  style={{ backgroundColor: (`${activeBackgroundBlack()}`) }}>Black
-                </button>
-              </div>
-            </Link>
-            <Link to='/white'>
-              <div className='nav_links_li'>
-                <button
-                  onClick={setActiveButtonWhite}
-                  style={{ backgroundColor: (`${activeBackgroundWhite()}`) }}>White
-                </button>
-              </div>
-            </Link>
-            <Link to='/color'>
-              <div className='nav_links_li'>
-                <button
-                  onClick={setActiveButtonColor}
-                  style={{ backgroundColor: (`${activeBackgroundColor()}`) }}>Color
-                </button>
-              </div>
-            </Link>
-            <Link to='/disco'>
-              <div className='nav_links_li'>
-                <button
-                  onClick={setActiveButtonDisco}
-                  style={{ backgroundColor: (`${activeBackgroundDisco()}`) }}>Disco
-                </button>
-              </div>
-            </Link>
-        </div>
-    </nav>
+
+      <nav>
+          <div className='nav_links'>
+              <Link to='/black'>
+                <div className='nav_links_li'>
+                  <button
+                    onClick={setActiveButtonBlack}
+                    style={{ backgroundColor: (`${activeBackgroundBlack()}`) }}>Black
+                  </button>
+                </div>
+              </Link>
+              <Link to='/white'>
+                <div className='nav_links_li'>
+                  <button
+                    onClick={setActiveButtonWhite}
+                    style={{ backgroundColor: (`${activeBackgroundWhite()}`) }}>White
+                  </button>
+                </div>
+              </Link>
+              <Link to='/color'>
+                <div className='nav_links_li'>
+                  <button
+                    onClick={setActiveButtonColor}
+                    style={{ backgroundColor: (`${activeBackgroundColor()}`) }}>Color
+                  </button>
+                </div>
+              </Link>
+              <Link to='/disco'>
+                <div className='nav_links_li'>
+                  <button
+                    onClick={setActiveButtonDisco}
+                    style={{ backgroundColor: (`${activeBackgroundDisco()}`) }}>Disco
+                  </button>
+                </div>
+              </Link>
+          </div>
+      </nav>
+
+      
+
     </div>
 
   );
