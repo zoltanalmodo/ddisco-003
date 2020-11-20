@@ -54,8 +54,20 @@ let galleryItems_001_0 = [
   <img alt='c_001_1' src={ddisco_c_001_1} className="CarouselSize" />,
   <img alt='c_001_1' src={ddisco_c_001_1} className="CarouselSize" />,
   <img alt='c_001_1' src={ddisco_c_001_1} className="CarouselSize" />,
+  <img alt='c_001_1' src={ddisco_c_001_1} className="CarouselSize" />,
+  <img alt='c_001_1' src={ddisco_c_001_1} className="CarouselSize" />,
+  <img alt='c_001_1' src={ddisco_c_001_1} className="CarouselSize" />,
+  <img alt='c_001_1' src={ddisco_c_001_1} className="CarouselSize" />,
+  <img alt='c_001_1' src={ddisco_c_001_1} className="CarouselSize" />,
+  <img alt='c_001_1' src={ddisco_c_001_1} className="CarouselSize" />,
 ]
 let galleryItems_001_1 = [
+  <img alt='c_002_1' src={ddisco_c_002_1} className="CarouselSize" />,
+  <img alt='c_002_1' src={ddisco_c_002_1} className="CarouselSize" />,
+  <img alt='c_002_1' src={ddisco_c_002_1} className="CarouselSize" />,
+  <img alt='c_002_1' src={ddisco_c_002_1} className="CarouselSize" />,
+  <img alt='c_002_1' src={ddisco_c_002_1} className="CarouselSize" />,
+  <img alt='c_002_1' src={ddisco_c_002_1} className="CarouselSize" />,
   <img alt='c_002_1' src={ddisco_c_002_1} className="CarouselSize" />,
   <img alt='c_002_1' src={ddisco_c_002_1} className="CarouselSize" />,
   <img alt='c_002_1' src={ddisco_c_002_1} className="CarouselSize" />,
@@ -70,8 +82,20 @@ let galleryItems_001_2 = [
   <img alt='c_003_1' src={ddisco_c_003_1} className="CarouselSize" />,
   <img alt='c_003_1' src={ddisco_c_003_1} className="CarouselSize" />,
   <img alt='c_003_1' src={ddisco_c_003_1} className="CarouselSize" />,
+  <img alt='c_003_1' src={ddisco_c_003_1} className="CarouselSize" />,
+  <img alt='c_003_1' src={ddisco_c_003_1} className="CarouselSize" />,
+  <img alt='c_003_1' src={ddisco_c_003_1} className="CarouselSize" />,
+  <img alt='c_003_1' src={ddisco_c_003_1} className="CarouselSize" />,
+  <img alt='c_003_1' src={ddisco_c_003_1} className="CarouselSize" />,
+  <img alt='c_003_1' src={ddisco_c_003_1} className="CarouselSize" />,
 ]
 let galleryItems_001_3 = [
+  <img alt='c_004_1' src={ddisco_c_004_1} className="CarouselSize" />,
+  <img alt='c_004_1' src={ddisco_c_004_1} className="CarouselSize" />,
+  <img alt='c_004_1' src={ddisco_c_004_1} className="CarouselSize" />,
+  <img alt='c_004_1' src={ddisco_c_004_1} className="CarouselSize" />,
+  <img alt='c_004_1' src={ddisco_c_004_1} className="CarouselSize" />,
+  <img alt='c_004_1' src={ddisco_c_004_1} className="CarouselSize" />,
   <img alt='c_004_1' src={ddisco_c_004_1} className="CarouselSize" />,
   <img alt='c_004_1' src={ddisco_c_004_1} className="CarouselSize" />,
   <img alt='c_004_1' src={ddisco_c_004_1} className="CarouselSize" />,
@@ -86,8 +110,20 @@ let galleryItems_001_4 = [
   <img alt='c_005_1' src={ddisco_c_005_1} className="CarouselSize" />,
   <img alt='c_005_1' src={ddisco_c_005_1} className="CarouselSize" />,
   <img alt='c_005_1' src={ddisco_c_005_1} className="CarouselSize" />,
+  <img alt='c_005_1' src={ddisco_c_005_1} className="CarouselSize" />,
+  <img alt='c_005_1' src={ddisco_c_005_1} className="CarouselSize" />,
+  <img alt='c_005_1' src={ddisco_c_005_1} className="CarouselSize" />,
+  <img alt='c_005_1' src={ddisco_c_005_1} className="CarouselSize" />,
+  <img alt='c_005_1' src={ddisco_c_005_1} className="CarouselSize" />,
+  <img alt='c_005_1' src={ddisco_c_005_1} className="CarouselSize" />,
 ]
 let galleryItems_001_5 = [
+  <img alt='c_006_1' src={ddisco_c_006_1} className="CarouselSize" />,
+  <img alt='c_006_1' src={ddisco_c_006_1} className="CarouselSize" />,
+  <img alt='c_006_1' src={ddisco_c_006_1} className="CarouselSize" />,
+  <img alt='c_006_1' src={ddisco_c_006_1} className="CarouselSize" />,
+  <img alt='c_006_1' src={ddisco_c_006_1} className="CarouselSize" />,
+  <img alt='c_006_1' src={ddisco_c_006_1} className="CarouselSize" />,
   <img alt='c_006_1' src={ddisco_c_006_1} className="CarouselSize" />,
   <img alt='c_006_1' src={ddisco_c_006_1} className="CarouselSize" />,
   <img alt='c_006_1' src={ddisco_c_006_1} className="CarouselSize" />,
@@ -102,8 +138,20 @@ let galleryItems_001_6 = [
   <img alt='c_007_1' src={ddisco_c_007_1} className="CarouselSize" />,
   <img alt='c_007_1' src={ddisco_c_007_1} className="CarouselSize" />,
   <img alt='c_007_1' src={ddisco_c_007_1} className="CarouselSize" />,
+  <img alt='c_007_1' src={ddisco_c_007_1} className="CarouselSize" />,
+  <img alt='c_007_1' src={ddisco_c_007_1} className="CarouselSize" />,
+  <img alt='c_007_1' src={ddisco_c_007_1} className="CarouselSize" />,
+  <img alt='c_007_1' src={ddisco_c_007_1} className="CarouselSize" />,
+  <img alt='c_007_1' src={ddisco_c_007_1} className="CarouselSize" />,
+  <img alt='c_007_1' src={ddisco_c_007_1} className="CarouselSize" />,
 ]
 let galleryItems_001_7 = [
+  <img alt='c_008_1' src={ddisco_c_008_1} className="CarouselSize" />,
+  <img alt='c_008_1' src={ddisco_c_008_1} className="CarouselSize" />,
+  <img alt='c_008_1' src={ddisco_c_008_1} className="CarouselSize" />,
+  <img alt='c_008_1' src={ddisco_c_008_1} className="CarouselSize" />,
+  <img alt='c_008_1' src={ddisco_c_008_1} className="CarouselSize" />,
+  <img alt='c_008_1' src={ddisco_c_008_1} className="CarouselSize" />,
   <img alt='c_008_1' src={ddisco_c_008_1} className="CarouselSize" />,
   <img alt='c_008_1' src={ddisco_c_008_1} className="CarouselSize" />,
   <img alt='c_008_1' src={ddisco_c_008_1} className="CarouselSize" />,
@@ -118,8 +166,20 @@ let galleryItems_001_8 = [
   <img alt='c_009_1' src={ddisco_c_009_1} className="CarouselSize" />,
   <img alt='c_009_1' src={ddisco_c_009_1} className="CarouselSize" />,
   <img alt='c_009_1' src={ddisco_c_009_1} className="CarouselSize" />,
+  <img alt='c_009_1' src={ddisco_c_009_1} className="CarouselSize" />,
+  <img alt='c_009_1' src={ddisco_c_009_1} className="CarouselSize" />,
+  <img alt='c_009_1' src={ddisco_c_009_1} className="CarouselSize" />,
+  <img alt='c_009_1' src={ddisco_c_009_1} className="CarouselSize" />,
+  <img alt='c_009_1' src={ddisco_c_009_1} className="CarouselSize" />,
+  <img alt='c_009_1' src={ddisco_c_009_1} className="CarouselSize" />,
 ]
 let galleryItems_001_9 = [
+  <img alt='c_010_1' src={ddisco_c_010_1} className="CarouselSize" />,
+  <img alt='c_010_1' src={ddisco_c_010_1} className="CarouselSize" />,
+  <img alt='c_010_1' src={ddisco_c_010_1} className="CarouselSize" />,
+  <img alt='c_010_1' src={ddisco_c_010_1} className="CarouselSize" />,
+  <img alt='c_010_1' src={ddisco_c_010_1} className="CarouselSize" />,
+  <img alt='c_010_1' src={ddisco_c_010_1} className="CarouselSize" />,
   <img alt='c_010_1' src={ddisco_c_010_1} className="CarouselSize" />,
   <img alt='c_010_1' src={ddisco_c_010_1} className="CarouselSize" />,
   <img alt='c_010_1' src={ddisco_c_010_1} className="CarouselSize" />,
@@ -134,8 +194,20 @@ let galleryItems_001_10 = [
   <img alt='c_011_1' src={ddisco_c_011_1} className="CarouselSize" />,
   <img alt='c_011_1' src={ddisco_c_011_1} className="CarouselSize" />,
   <img alt='c_011_1' src={ddisco_c_011_1} className="CarouselSize" />,
+  <img alt='c_011_1' src={ddisco_c_011_1} className="CarouselSize" />,
+  <img alt='c_011_1' src={ddisco_c_011_1} className="CarouselSize" />,
+  <img alt='c_011_1' src={ddisco_c_011_1} className="CarouselSize" />,
+  <img alt='c_011_1' src={ddisco_c_011_1} className="CarouselSize" />,
+  <img alt='c_011_1' src={ddisco_c_011_1} className="CarouselSize" />,
+  <img alt='c_011_1' src={ddisco_c_011_1} className="CarouselSize" />,
 ]
 let galleryItems_001_11 = [
+  <img alt='c_012_1' src={ddisco_c_012_1} className="CarouselSize" />,
+  <img alt='c_012_1' src={ddisco_c_012_1} className="CarouselSize" />,
+  <img alt='c_012_1' src={ddisco_c_012_1} className="CarouselSize" />,
+  <img alt='c_012_1' src={ddisco_c_012_1} className="CarouselSize" />,
+  <img alt='c_012_1' src={ddisco_c_012_1} className="CarouselSize" />,
+  <img alt='c_012_1' src={ddisco_c_012_1} className="CarouselSize" />,
   <img alt='c_012_1' src={ddisco_c_012_1} className="CarouselSize" />,
   <img alt='c_012_1' src={ddisco_c_012_1} className="CarouselSize" />,
   <img alt='c_012_1' src={ddisco_c_012_1} className="CarouselSize" />,
@@ -153,8 +225,20 @@ let galleryItems_002_0 = [
   <img alt='c_001_2' src={ddisco_c_001_2} className="CarouselSize" />,
   <img alt='c_001_2' src={ddisco_c_001_2} className="CarouselSize" />,
   <img alt='c_001_2' src={ddisco_c_001_2} className="CarouselSize" />,
+  <img alt='c_001_2' src={ddisco_c_001_2} className="CarouselSize" />,
+  <img alt='c_001_2' src={ddisco_c_001_2} className="CarouselSize" />,
+  <img alt='c_001_2' src={ddisco_c_001_2} className="CarouselSize" />,
+  <img alt='c_001_2' src={ddisco_c_001_2} className="CarouselSize" />,
+  <img alt='c_001_2' src={ddisco_c_001_2} className="CarouselSize" />,
+  <img alt='c_001_2' src={ddisco_c_001_2} className="CarouselSize" />,
 ]
 let galleryItems_002_1 = [
+  <img alt='c_002_2' src={ddisco_c_002_2} className="CarouselSize" />,
+  <img alt='c_002_2' src={ddisco_c_002_2} className="CarouselSize" />,
+  <img alt='c_002_2' src={ddisco_c_002_2} className="CarouselSize" />,
+  <img alt='c_002_2' src={ddisco_c_002_2} className="CarouselSize" />,
+  <img alt='c_002_2' src={ddisco_c_002_2} className="CarouselSize" />,
+  <img alt='c_002_2' src={ddisco_c_002_2} className="CarouselSize" />,
   <img alt='c_002_2' src={ddisco_c_002_2} className="CarouselSize" />,
   <img alt='c_002_2' src={ddisco_c_002_2} className="CarouselSize" />,
   <img alt='c_002_2' src={ddisco_c_002_2} className="CarouselSize" />,
@@ -169,6 +253,12 @@ let galleryItems_002_2 = [
   <img alt='c_003_2' src={ddisco_c_003_2} className="CarouselSize" />,
   <img alt='c_003_2' src={ddisco_c_003_2} className="CarouselSize" />,
   <img alt='c_003_2' src={ddisco_c_003_2} className="CarouselSize" />,
+  <img alt='c_003_2' src={ddisco_c_003_2} className="CarouselSize" />,
+  <img alt='c_003_2' src={ddisco_c_003_2} className="CarouselSize" />,
+  <img alt='c_003_2' src={ddisco_c_003_2} className="CarouselSize" />,
+  <img alt='c_003_2' src={ddisco_c_003_2} className="CarouselSize" />,
+  <img alt='c_003_2' src={ddisco_c_003_2} className="CarouselSize" />,
+  <img alt='c_003_2' src={ddisco_c_003_2} className="CarouselSize" />,
 ]
 let galleryItems_002_3 = [
   <img alt='c_004_2' src={ddisco_c_004_2} className="CarouselSize" />,
@@ -177,8 +267,20 @@ let galleryItems_002_3 = [
   <img alt='c_004_2' src={ddisco_c_004_2} className="CarouselSize" />,
   <img alt='c_004_2' src={ddisco_c_004_2} className="CarouselSize" />,
   <img alt='c_004_2' src={ddisco_c_004_2} className="CarouselSize" />,
+  <img alt='c_004_2' src={ddisco_c_004_2} className="CarouselSize" />,
+  <img alt='c_004_2' src={ddisco_c_004_2} className="CarouselSize" />,
+  <img alt='c_004_2' src={ddisco_c_004_2} className="CarouselSize" />,
+  <img alt='c_004_2' src={ddisco_c_004_2} className="CarouselSize" />,
+  <img alt='c_004_2' src={ddisco_c_004_2} className="CarouselSize" />,
+  <img alt='c_004_2' src={ddisco_c_004_2} className="CarouselSize" />,  
 ]
 let galleryItems_002_4 = [
+  <img alt='c_005_2' src={ddisco_c_005_2} className="CarouselSize" />,
+  <img alt='c_005_2' src={ddisco_c_005_2} className="CarouselSize" />,
+  <img alt='c_005_2' src={ddisco_c_005_2} className="CarouselSize" />,
+  <img alt='c_005_2' src={ddisco_c_005_2} className="CarouselSize" />,
+  <img alt='c_005_2' src={ddisco_c_005_2} className="CarouselSize" />,
+  <img alt='c_005_2' src={ddisco_c_005_2} className="CarouselSize" />,
   <img alt='c_005_2' src={ddisco_c_005_2} className="CarouselSize" />,
   <img alt='c_005_2' src={ddisco_c_005_2} className="CarouselSize" />,
   <img alt='c_005_2' src={ddisco_c_005_2} className="CarouselSize" />,
@@ -193,8 +295,20 @@ let galleryItems_002_5 = [
   <img alt='c_006_2' src={ddisco_c_006_2} className="CarouselSize" />,
   <img alt='c_006_2' src={ddisco_c_006_2} className="CarouselSize" />,
   <img alt='c_006_2' src={ddisco_c_006_2} className="CarouselSize" />,
+  <img alt='c_006_2' src={ddisco_c_006_2} className="CarouselSize" />,
+  <img alt='c_006_2' src={ddisco_c_006_2} className="CarouselSize" />,
+  <img alt='c_006_2' src={ddisco_c_006_2} className="CarouselSize" />,
+  <img alt='c_006_2' src={ddisco_c_006_2} className="CarouselSize" />,
+  <img alt='c_006_2' src={ddisco_c_006_2} className="CarouselSize" />,
+  <img alt='c_006_2' src={ddisco_c_006_2} className="CarouselSize" />,
 ]
 let galleryItems_002_6 = [
+  <img alt='c_007_2' src={ddisco_c_007_2} className="CarouselSize" />,
+  <img alt='c_007_2' src={ddisco_c_007_2} className="CarouselSize" />,
+  <img alt='c_007_2' src={ddisco_c_007_2} className="CarouselSize" />,
+  <img alt='c_007_2' src={ddisco_c_007_2} className="CarouselSize" />,
+  <img alt='c_007_2' src={ddisco_c_007_2} className="CarouselSize" />,
+  <img alt='c_007_2' src={ddisco_c_007_2} className="CarouselSize" />,
   <img alt='c_007_2' src={ddisco_c_007_2} className="CarouselSize" />,
   <img alt='c_007_2' src={ddisco_c_007_2} className="CarouselSize" />,
   <img alt='c_007_2' src={ddisco_c_007_2} className="CarouselSize" />,
@@ -209,8 +323,20 @@ let galleryItems_002_7 = [
   <img alt='c_008_2' src={ddisco_c_008_2} className="CarouselSize" />,
   <img alt='c_008_2' src={ddisco_c_008_2} className="CarouselSize" />,
   <img alt='c_008_2' src={ddisco_c_008_2} className="CarouselSize" />,
+  <img alt='c_008_2' src={ddisco_c_008_2} className="CarouselSize" />,
+  <img alt='c_008_2' src={ddisco_c_008_2} className="CarouselSize" />,
+  <img alt='c_008_2' src={ddisco_c_008_2} className="CarouselSize" />,
+  <img alt='c_008_2' src={ddisco_c_008_2} className="CarouselSize" />,
+  <img alt='c_008_2' src={ddisco_c_008_2} className="CarouselSize" />,
+  <img alt='c_008_2' src={ddisco_c_008_2} className="CarouselSize" />,
 ]
 let galleryItems_002_8 = [
+  <img alt='c_009_2' src={ddisco_c_009_2} className="CarouselSize" />,
+  <img alt='c_009_2' src={ddisco_c_009_2} className="CarouselSize" />,
+  <img alt='c_009_2' src={ddisco_c_009_2} className="CarouselSize" />,
+  <img alt='c_009_2' src={ddisco_c_009_2} className="CarouselSize" />,
+  <img alt='c_009_2' src={ddisco_c_009_2} className="CarouselSize" />,
+  <img alt='c_009_2' src={ddisco_c_009_2} className="CarouselSize" />,
   <img alt='c_009_2' src={ddisco_c_009_2} className="CarouselSize" />,
   <img alt='c_009_2' src={ddisco_c_009_2} className="CarouselSize" />,
   <img alt='c_009_2' src={ddisco_c_009_2} className="CarouselSize" />,
@@ -225,6 +351,12 @@ let galleryItems_002_9 = [
   <img alt='c_010_2' src={ddisco_c_010_2} className="CarouselSize" />,
   <img alt='c_010_2' src={ddisco_c_010_2} className="CarouselSize" />,
   <img alt='c_010_2' src={ddisco_c_010_2} className="CarouselSize" />,
+  <img alt='c_010_2' src={ddisco_c_010_2} className="CarouselSize" />,
+  <img alt='c_010_2' src={ddisco_c_010_2} className="CarouselSize" />,
+  <img alt='c_010_2' src={ddisco_c_010_2} className="CarouselSize" />,
+  <img alt='c_010_2' src={ddisco_c_010_2} className="CarouselSize" />,
+  <img alt='c_010_2' src={ddisco_c_010_2} className="CarouselSize" />,
+  <img alt='c_010_2' src={ddisco_c_010_2} className="CarouselSize" />,
 ]
 let galleryItems_002_10 = [
   <img alt='c_011_2' src={ddisco_c_011_2} className="CarouselSize" />,
@@ -233,8 +365,20 @@ let galleryItems_002_10 = [
   <img alt='c_011_2' src={ddisco_c_011_2} className="CarouselSize" />,
   <img alt='c_011_2' src={ddisco_c_011_2} className="CarouselSize" />,
   <img alt='c_011_2' src={ddisco_c_011_2} className="CarouselSize" />,
+  <img alt='c_011_2' src={ddisco_c_011_2} className="CarouselSize" />,
+  <img alt='c_011_2' src={ddisco_c_011_2} className="CarouselSize" />,
+  <img alt='c_011_2' src={ddisco_c_011_2} className="CarouselSize" />,
+  <img alt='c_011_2' src={ddisco_c_011_2} className="CarouselSize" />,
+  <img alt='c_011_2' src={ddisco_c_011_2} className="CarouselSize" />,
+  <img alt='c_011_2' src={ddisco_c_011_2} className="CarouselSize" />,
 ]
 let galleryItems_002_11 = [
+  <img alt='c_012_2' src={ddisco_c_012_2} className="CarouselSize" />,
+  <img alt='c_012_2' src={ddisco_c_012_2} className="CarouselSize" />,
+  <img alt='c_012_2' src={ddisco_c_012_2} className="CarouselSize" />,
+  <img alt='c_012_2' src={ddisco_c_012_2} className="CarouselSize" />,
+  <img alt='c_012_2' src={ddisco_c_012_2} className="CarouselSize" />,
+  <img alt='c_012_2' src={ddisco_c_012_2} className="CarouselSize" />,
   <img alt='c_012_2' src={ddisco_c_012_2} className="CarouselSize" />,
   <img alt='c_012_2' src={ddisco_c_012_2} className="CarouselSize" />,
   <img alt='c_012_2' src={ddisco_c_012_2} className="CarouselSize" />,
@@ -253,8 +397,20 @@ let galleryItems_003_0 = [
   <img alt='c_001_3' src={ddisco_c_001_3} className="CarouselSize" />,
   <img alt='c_001_3' src={ddisco_c_001_3} className="CarouselSize" />,
   <img alt='c_001_3' src={ddisco_c_001_3} className="CarouselSize" />,
+  <img alt='c_001_3' src={ddisco_c_001_3} className="CarouselSize" />,
+  <img alt='c_001_3' src={ddisco_c_001_3} className="CarouselSize" />,
+  <img alt='c_001_3' src={ddisco_c_001_3} className="CarouselSize" />,
+  <img alt='c_001_3' src={ddisco_c_001_3} className="CarouselSize" />,
+  <img alt='c_001_3' src={ddisco_c_001_3} className="CarouselSize" />,
+  <img alt='c_001_3' src={ddisco_c_001_3} className="CarouselSize" />,
 ]
 let galleryItems_003_1 = [
+  <img alt='c_002_3' src={ddisco_c_002_3} className="CarouselSize" />,
+  <img alt='c_002_3' src={ddisco_c_002_3} className="CarouselSize" />,
+  <img alt='c_002_3' src={ddisco_c_002_3} className="CarouselSize" />,
+  <img alt='c_002_3' src={ddisco_c_002_3} className="CarouselSize" />,
+  <img alt='c_002_3' src={ddisco_c_002_3} className="CarouselSize" />,
+  <img alt='c_002_3' src={ddisco_c_002_3} className="CarouselSize" />,
   <img alt='c_002_3' src={ddisco_c_002_3} className="CarouselSize" />,
   <img alt='c_002_3' src={ddisco_c_002_3} className="CarouselSize" />,
   <img alt='c_002_3' src={ddisco_c_002_3} className="CarouselSize" />,
@@ -269,8 +425,20 @@ let galleryItems_003_2 = [
   <img alt='c_003_3' src={ddisco_c_003_3} className="CarouselSize" />,
   <img alt='c_003_3' src={ddisco_c_003_3} className="CarouselSize" />,
   <img alt='c_003_3' src={ddisco_c_003_3} className="CarouselSize" />,
+  <img alt='c_003_3' src={ddisco_c_003_3} className="CarouselSize" />,
+  <img alt='c_003_3' src={ddisco_c_003_3} className="CarouselSize" />,
+  <img alt='c_003_3' src={ddisco_c_003_3} className="CarouselSize" />,
+  <img alt='c_003_3' src={ddisco_c_003_3} className="CarouselSize" />,
+  <img alt='c_003_3' src={ddisco_c_003_3} className="CarouselSize" />,
+  <img alt='c_003_3' src={ddisco_c_003_3} className="CarouselSize" />,
 ]
 let galleryItems_003_3 = [
+  <img alt='c_004_3' src={ddisco_c_004_3} className="CarouselSize" />,
+  <img alt='c_004_3' src={ddisco_c_004_3} className="CarouselSize" />,
+  <img alt='c_004_3' src={ddisco_c_004_3} className="CarouselSize" />,
+  <img alt='c_004_3' src={ddisco_c_004_3} className="CarouselSize" />,
+  <img alt='c_004_3' src={ddisco_c_004_3} className="CarouselSize" />,
+  <img alt='c_004_3' src={ddisco_c_004_3} className="CarouselSize" />,
   <img alt='c_004_3' src={ddisco_c_004_3} className="CarouselSize" />,
   <img alt='c_004_3' src={ddisco_c_004_3} className="CarouselSize" />,
   <img alt='c_004_3' src={ddisco_c_004_3} className="CarouselSize" />,
@@ -285,8 +453,20 @@ let galleryItems_003_4 = [
   <img alt='c_005_3' src={ddisco_c_005_3} className="CarouselSize" />,
   <img alt='c_005_3' src={ddisco_c_005_3} className="CarouselSize" />,
   <img alt='c_005_3' src={ddisco_c_005_3} className="CarouselSize" />,
+  <img alt='c_005_3' src={ddisco_c_005_3} className="CarouselSize" />,
+  <img alt='c_005_3' src={ddisco_c_005_3} className="CarouselSize" />,
+  <img alt='c_005_3' src={ddisco_c_005_3} className="CarouselSize" />,
+  <img alt='c_005_3' src={ddisco_c_005_3} className="CarouselSize" />,
+  <img alt='c_005_3' src={ddisco_c_005_3} className="CarouselSize" />,
+  <img alt='c_005_3' src={ddisco_c_005_3} className="CarouselSize" />,
 ]
 let galleryItems_003_5 = [
+  <img alt='c_006_3' src={ddisco_c_006_3} className="CarouselSize" />,
+  <img alt='c_006_3' src={ddisco_c_006_3} className="CarouselSize" />,
+  <img alt='c_006_3' src={ddisco_c_006_3} className="CarouselSize" />,
+  <img alt='c_006_3' src={ddisco_c_006_3} className="CarouselSize" />,
+  <img alt='c_006_3' src={ddisco_c_006_3} className="CarouselSize" />,
+  <img alt='c_006_3' src={ddisco_c_006_3} className="CarouselSize" />,
   <img alt='c_006_3' src={ddisco_c_006_3} className="CarouselSize" />,
   <img alt='c_006_3' src={ddisco_c_006_3} className="CarouselSize" />,
   <img alt='c_006_3' src={ddisco_c_006_3} className="CarouselSize" />,
@@ -301,8 +481,20 @@ let galleryItems_003_6 = [
   <img alt='c_007_3' src={ddisco_c_007_3} className="CarouselSize" />,
   <img alt='c_007_3' src={ddisco_c_007_3} className="CarouselSize" />,
   <img alt='c_007_3' src={ddisco_c_007_3} className="CarouselSize" />,
+  <img alt='c_007_3' src={ddisco_c_007_3} className="CarouselSize" />,
+  <img alt='c_007_3' src={ddisco_c_007_3} className="CarouselSize" />,
+  <img alt='c_007_3' src={ddisco_c_007_3} className="CarouselSize" />,
+  <img alt='c_007_3' src={ddisco_c_007_3} className="CarouselSize" />,
+  <img alt='c_007_3' src={ddisco_c_007_3} className="CarouselSize" />,
+  <img alt='c_007_3' src={ddisco_c_007_3} className="CarouselSize" />,
 ]
 let galleryItems_003_7 = [
+  <img alt='c_008_3' src={ddisco_c_008_3} className="CarouselSize" />,
+  <img alt='c_008_3' src={ddisco_c_008_3} className="CarouselSize" />,
+  <img alt='c_008_3' src={ddisco_c_008_3} className="CarouselSize" />,
+  <img alt='c_008_3' src={ddisco_c_008_3} className="CarouselSize" />,
+  <img alt='c_008_3' src={ddisco_c_008_3} className="CarouselSize" />,
+  <img alt='c_008_3' src={ddisco_c_008_3} className="CarouselSize" />,
   <img alt='c_008_3' src={ddisco_c_008_3} className="CarouselSize" />,
   <img alt='c_008_3' src={ddisco_c_008_3} className="CarouselSize" />,
   <img alt='c_008_3' src={ddisco_c_008_3} className="CarouselSize" />,
@@ -317,8 +509,20 @@ let galleryItems_003_8 = [
   <img alt='c_009_3' src={ddisco_c_009_3} className="CarouselSize" />,
   <img alt='c_009_3' src={ddisco_c_009_3} className="CarouselSize" />,
   <img alt='c_009_3' src={ddisco_c_009_3} className="CarouselSize" />,
+  <img alt='c_009_3' src={ddisco_c_009_3} className="CarouselSize" />,
+  <img alt='c_009_3' src={ddisco_c_009_3} className="CarouselSize" />,
+  <img alt='c_009_3' src={ddisco_c_009_3} className="CarouselSize" />,
+  <img alt='c_009_3' src={ddisco_c_009_3} className="CarouselSize" />,
+  <img alt='c_009_3' src={ddisco_c_009_3} className="CarouselSize" />,
+  <img alt='c_009_3' src={ddisco_c_009_3} className="CarouselSize" />,
 ]
 let galleryItems_003_9 = [
+  <img alt='c_010_3' src={ddisco_c_010_3} className="CarouselSize" />,
+  <img alt='c_010_3' src={ddisco_c_010_3} className="CarouselSize" />,
+  <img alt='c_010_3' src={ddisco_c_010_3} className="CarouselSize" />,
+  <img alt='c_010_3' src={ddisco_c_010_3} className="CarouselSize" />,
+  <img alt='c_010_3' src={ddisco_c_010_3} className="CarouselSize" />,
+  <img alt='c_010_3' src={ddisco_c_010_3} className="CarouselSize" />,
   <img alt='c_010_3' src={ddisco_c_010_3} className="CarouselSize" />,
   <img alt='c_010_3' src={ddisco_c_010_3} className="CarouselSize" />,
   <img alt='c_010_3' src={ddisco_c_010_3} className="CarouselSize" />,
@@ -333,8 +537,20 @@ let galleryItems_003_10 = [
   <img alt='c_011_3' src={ddisco_c_011_3} className="CarouselSize" />,
   <img alt='c_011_3' src={ddisco_c_011_3} className="CarouselSize" />,
   <img alt='c_011_3' src={ddisco_c_011_3} className="CarouselSize" />,
+  <img alt='c_011_3' src={ddisco_c_011_3} className="CarouselSize" />,
+  <img alt='c_011_3' src={ddisco_c_011_3} className="CarouselSize" />,
+  <img alt='c_011_3' src={ddisco_c_011_3} className="CarouselSize" />,
+  <img alt='c_011_3' src={ddisco_c_011_3} className="CarouselSize" />,
+  <img alt='c_011_3' src={ddisco_c_011_3} className="CarouselSize" />,
+  <img alt='c_011_3' src={ddisco_c_011_3} className="CarouselSize" />,
 ]
 let galleryItems_003_11 = [
+  <img alt='c_012_3' src={ddisco_c_012_3} className="CarouselSize" />,
+  <img alt='c_012_3' src={ddisco_c_012_3} className="CarouselSize" />,
+  <img alt='c_012_3' src={ddisco_c_012_3} className="CarouselSize" />,
+  <img alt='c_012_3' src={ddisco_c_012_3} className="CarouselSize" />,
+  <img alt='c_012_3' src={ddisco_c_012_3} className="CarouselSize" />,
+  <img alt='c_012_3' src={ddisco_c_012_3} className="CarouselSize" />,
   <img alt='c_012_3' src={ddisco_c_012_3} className="CarouselSize" />,
   <img alt='c_012_3' src={ddisco_c_012_3} className="CarouselSize" />,
   <img alt='c_012_3' src={ddisco_c_012_3} className="CarouselSize" />,
@@ -445,7 +661,7 @@ export const Color = () => {
 
             slideToIndex={globalState.currentIndex_001}
 
-            onSlideChanged={ (e) => setDegree_001( e.item * 60) }
+            onSlideChanged={ (e) => setDegree_001( e.item * 30) }
           />
         </div>
 
@@ -472,7 +688,7 @@ export const Color = () => {
 
             slideToIndex={globalState.currentIndex_002}
 
-            onSlideChanged={ (e) => setDegree_002( e.item * 60) }
+            onSlideChanged={ (e) => setDegree_002( e.item * 30) }
           />
         </div>
 
@@ -498,7 +714,7 @@ export const Color = () => {
 
             slideToIndex={globalState.currentIndex_003}
 
-            onSlideChanged={ (e) => setDegree_003( e.item * 60) }
+            onSlideChanged={ (e) => setDegree_003( e.item * 30) }
           />
         </div>
 
