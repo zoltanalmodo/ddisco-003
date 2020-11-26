@@ -1,5 +1,5 @@
 {
-  "short_name": "Doodle Disco React App",
+  "short_name": "Doodle Disco",
   "name": "Doodle Disco App 002",
   "icons": [
     {
@@ -20,6 +20,7 @@
   ],
   "start_url": ".",
   "display": "fullscreen",
+  "orientation": "portrait",
   "theme_color": "#000000",
   "background_color": "#ffffff"
 }
