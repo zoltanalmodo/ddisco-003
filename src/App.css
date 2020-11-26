@@ -17,19 +17,14 @@
   flex-direction: column;
   justify-content: center;
   background-color: white;
-  border: solid 3px red;
 }
 
 .carousel_white {
-  background-color: yellowgreen;
-  margin-top: 30px;
-
+  background-color: white;
+  margin-top: 40px;
+  
   max-height: 100vh;
   max-width: 100vw;
-
-
-  border: solid 3px blue;
-  
 }
 
 .carousel_black {
@@ -112,8 +107,8 @@ li {
   and (max-device-width: 319px)
   and (-webkit-min-device-pixel-ratio: 2) {
     .CarouselSize {
-      height: 122px;
-      width: 280px;
+      height: 112px;
+      width: 260px;
     }
 }
 
@@ -125,8 +120,8 @@ li {
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
     .CarouselSize {
-      height: 130px;
-      width: 300px;
+      height: 120px;
+      width: 278px;
     }
 }
 
@@ -136,8 +131,8 @@ li {
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 1) {
     .CarouselSize {
-      height: 130px;
-      width: 300px;
+      height: 120px;
+      width: 278px;
     }
 }
 
@@ -149,8 +144,8 @@ li {
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
     .CarouselSize {
-      height: 134px;
-      width: 300px;
+      height: 124px;
+      width: 288px;
     }
 }
 
@@ -163,7 +158,7 @@ li {
   and (-webkit-min-device-pixel-ratio: 2) { 
     .CarouselSize {
       height: 154px;
-      width: 359px;
+      width: 358px;
     }
 }
 
@@ -175,8 +170,8 @@ li {
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
     .CarouselSize {
-      height: 176px;
-      width: 414px;
+      height: 166px;
+      width: 386px;
     }
 }
 
@@ -188,8 +183,8 @@ li {
   and (max-device-width: 1023px) 
   and (-webkit-min-device-pixel-ratio: 1) {
     .CarouselSize {
-      height: 300px;
-      width: 700px;
+      height: 280px;
+      width: 652px;
     }
 }
 
@@ -201,8 +196,8 @@ li {
   and (max-device-width: 1199px) 
   and (-webkit-min-device-pixel-ratio: 2) {
     .CarouselSize {
-      height: 414px;
-      width: 960px;
+      height: 394px;
+      width: 918px;
     }
 }
 
