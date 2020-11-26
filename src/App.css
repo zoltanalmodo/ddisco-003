@@ -25,18 +25,22 @@
 
 .carousel_white {
   background-color: white;
-  margin-top: 40px;
+  margin-top: 48px;
   
   max-height: 100vh;
   max-width: 100vw;
+  
+  border: 2px solid red;
 }
 
 .carousel_black {
   background-color: black;
-  margin-top: 40px;
+  margin-top: 48px;
   
   max-height: 100vh;
   max-width: 100vw;
+
+  border: 2px solid red;
 }
 
 button {
