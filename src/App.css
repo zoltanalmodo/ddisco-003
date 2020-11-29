@@ -171,12 +171,26 @@ li {
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (orientation: landscape) {
+
+    html {
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
+    }
+
     .CarouselSize {
       height: 154px;
       width: 358px;
     }
 }
+
+
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
