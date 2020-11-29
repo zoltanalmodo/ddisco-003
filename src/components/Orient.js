@@ -3,7 +3,7 @@ import Navigation from './Navigation';
 
 
 
-export const Orientation = () => {
+export const Orient = () => {
 
   return (
     

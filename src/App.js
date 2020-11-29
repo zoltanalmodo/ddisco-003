@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Disco } from './components/Disco';
 import { Black } from './components/Black';
 import { Start } from './components/Start';
-import { Orientation } from './components/Orientation';
+import { Orient } from './components/Orient';
 import { White } from './components/White';
 import { GlobalProvider } from './context/GlobalState';
 import { Color } from './components/Color';
@@ -27,8 +27,8 @@ function App() {
           </Router>
 
         </Orientation>
-        <Orientation orientation='landscape' alwaysRender={false}>
-          <Orientation />
+        <Orientation orientation='landscape'>
+          <Orient />
         </Orientation>
       </DeviceOrientation>
 
