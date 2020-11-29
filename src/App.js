@@ -8,20 +8,26 @@ import { White } from './components/White';
 import { GlobalProvider } from './context/GlobalState';
 import { Color } from './components/Color';
 
-
+import DeviceOrientation, { Orientation } from 'react-screen-orientation'
 
 function App() {
   return (
     <GlobalProvider>
-      
-        <Router>
-          <Route path='/' exact component={Start} />
-          <Route path='/disco' component={Disco} />
-          <Route path='/black' component={Black} />
-          <Route path='/white' component={White} />
-          <Route path='/color' component={Color} />
-        </Router>
-      
+
+      <DeviceOrientation lockOrientation={'portrait'}>
+        <Orientation orientation='portrait' alwaysRender={false}>
+
+          <Router>
+            <Route path='/' exact component={Start} />
+            <Route path='/disco' component={Disco} />
+            <Route path='/black' component={Black} />
+            <Route path='/white' component={White} />
+            <Route path='/color' component={Color} />
+          </Router>
+
+        </Orientation>
+      </DeviceOrientation>
+
     </GlobalProvider>
 
   );
