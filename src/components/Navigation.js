@@ -1,9 +1,11 @@
 import React, { useContext } from 'react'
 import '../App.css';
+
 import { Link } from 'react-router-dom';
+
 import { GlobalContext } from '../context/GlobalState'
 
-//re deploy
+
 
 function Navigation() {
 

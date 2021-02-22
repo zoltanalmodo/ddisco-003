@@ -1,13 +1,15 @@
 import React from 'react';
 import './App.css';
+
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 import { Disco } from './components/Disco';
 import { Black } from './components/Black';
 import { Start } from './components/Start';
-
 import { White } from './components/White';
-import { GlobalProvider } from './context/GlobalState';
 import { Color } from './components/Color';
+
+import { GlobalProvider } from './context/GlobalState';
 
 
 
