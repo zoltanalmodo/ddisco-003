@@ -230,8 +230,6 @@ className="CarouselSize" />)
 
 export const Color = () => {
 
-  // const handleOnDragStart = (e) => e.preventDefault()
-
   const actualItems_001 = (value) => {
     return (      
       value === 0 ? galleryItems_001_0 :
@@ -304,7 +302,6 @@ export const Color = () => {
 
         <div style={{ filter: (`hue-rotate(${globalState.degree_001}deg)`) }}>
           <AliceCarousel
-            // onDragStart={handleOnDragStart}
             autoPlay={false}
             autoPlayStrategy={'all'}
             autoPlayInterval={5000}

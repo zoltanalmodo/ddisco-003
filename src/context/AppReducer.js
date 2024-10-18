@@ -51,6 +51,11 @@ export const AppReducer = (state, action) => {
         ...state,
         activeButton: 'disco'
       };
+    case 'SET_ACTIVE_BUTTON_PASTEL' :
+      return {
+        ...state,
+        activeButton: 'pastel'
+      };  
     default:
       return state;
   }

@@ -95,6 +95,13 @@ export const GlobalProvider = ({ children }) => {
     })
   }
 
+  function setActiveButtonPastel() {
+    dispatch({
+      type: 'SET_ACTIVE_BUTTON_PASTEL',
+      payload: 'pastel'
+    })
+  }
+
 
 
   return (
@@ -114,6 +121,7 @@ export const GlobalProvider = ({ children }) => {
         setActiveButtonWhite,
         setActiveButtonColor,
         setActiveButtonDisco,
+        setActiveButtonPastel,
       }}>
       { children }
     </GlobalContext.Provider>
