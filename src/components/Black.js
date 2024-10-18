@@ -113,17 +113,22 @@ export const Black = () => {
       <div className='carousel_black'>
 
         <AliceCarousel 
-          autoPlay={false}
+          autoPlay={true}
           autoPlayStrategy={'all'}
           autoPlayInterval={5000}
           autoPlayDirection={'rtl'}
           disableAutoPlayOnAction={true}
 
+          infinite={true}
+
           mouseTrackingEnabled={true}
+
           dotsDisabled={true}
           buttonsDisabled={true}
           swipeDisabled={false}
+
           touchTrackingEnabled={true}
+
           swipeDelta={0.1}
           preventEventOnTouchMove={true}
           items={galleryItems_001}
@@ -139,17 +144,22 @@ export const Black = () => {
         
 
         <AliceCarousel 
-          autoPlay={false}
+          autoPlay={true}
           autoPlayStrategy={'all'}
           autoPlayInterval={5000}
-          autoPlayDirection={'ltr'}
+          autoPlayDirection={'rtl'}
           disableAutoPlayOnAction={true}
 
+          infinite={true}
+
           mouseTrackingEnabled={true}
+
           dotsDisabled={true}
           buttonsDisabled={true}
           swipeDisabled={false}
+
           touchTrackingEnabled={true}
+
           swipeDelta={0.1}
           preventEventOnTouchMove={true}
           items={galleryItems_002}
@@ -165,17 +175,22 @@ export const Black = () => {
 
 
         <AliceCarousel 
-          autoPlay={false}
+          autoPlay={true}
           autoPlayStrategy={'all'}
           autoPlayInterval={5000}
           autoPlayDirection={'rtl'}
           disableAutoPlayOnAction={true}
 
+          infinite={true}
+
           mouseTrackingEnabled={true}
+
           dotsDisabled={true}
           buttonsDisabled={true}
           swipeDisabled={false}
+
           touchTrackingEnabled={true}
+
           swipeDelta={0.1}
           preventEventOnTouchMove={true}
           items={galleryItems_003}

@@ -309,12 +309,14 @@ export const Color = () => {
 
         <div style={{ filter: (`hue-rotate(${globalState.degree_001}deg)`) }}>
           <AliceCarousel
-            onDragStart={handleOnDragStart}
+            // onDragStart={handleOnDragStart}
             autoPlay={false}
             autoPlayStrategy={'all'}
             autoPlayInterval={5000}
             autoPlayDirection={'rtl'}
             disableAutoPlayOnAction={true}
+
+            infinite={true}
 
             mouseTrackingEnabled={true}
             dotsDisabled={true}
@@ -340,6 +342,8 @@ export const Color = () => {
             autoPlayDirection={'ltr'}
             disableAutoPlayOnAction={true}
 
+            infinite={true}
+
             mouseTrackingEnabled={true}
             dotsDisabled={true}
             buttonsDisabled={true}
@@ -362,6 +366,8 @@ export const Color = () => {
             autoPlayInterval={5000}
             autoPlayDirection={'rtl'}
             disableAutoPlayOnAction={true}
+
+            infinite={true}
 
             mouseTrackingEnabled={true}
             dotsDisabled={true}

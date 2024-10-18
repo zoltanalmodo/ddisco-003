@@ -120,6 +120,8 @@ export const Disco = () => {
             autoPlayDirection={'rtl'}
             disableAutoPlayOnAction={true}
 
+            infinite={true}
+
             mouseTrackingEnabled={true}
             dotsDisabled={true}
             buttonsDisabled={true}
@@ -147,6 +149,8 @@ export const Disco = () => {
             autoPlayDirection={'ltr'}
             disableAutoPlayOnAction={true}
 
+            infinite={true}
+
             mouseTrackingEnabled={true}
             dotsDisabled={true}
             buttonsDisabled={true}
@@ -173,6 +177,8 @@ export const Disco = () => {
             autoPlayInterval={5000}
             autoPlayDirection={'rtl'}
             disableAutoPlayOnAction={true}
+
+            infinite={true}
 
             mouseTrackingEnabled={true}
             dotsDisabled={true}
