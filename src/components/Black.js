@@ -5,8 +5,6 @@ import Navigation from './Navigation';
 
 import { GlobalContext } from '../context/GlobalState'
 
-
-
 import ddisco_b_001_1 from '../images/b/ddisco_b_001_1.jpg';
 import ddisco_b_001_2 from '../images/b/ddisco_b_001_2.jpg';
 import ddisco_b_001_3 from '../images/b/ddisco_b_001_3.jpg';
@@ -113,7 +111,7 @@ export const Black = () => {
       <div className='carousel_black'>
 
         <AliceCarousel 
-          autoPlay={true}
+          autoPlay={false}
           autoPlayStrategy={'all'}
           autoPlayInterval={5000}
           autoPlayDirection={'rtl'}
@@ -144,7 +142,7 @@ export const Black = () => {
         
 
         <AliceCarousel 
-          autoPlay={true}
+          autoPlay={false}
           autoPlayStrategy={'all'}
           autoPlayInterval={5000}
           autoPlayDirection={'rtl'}
@@ -175,7 +173,7 @@ export const Black = () => {
 
 
         <AliceCarousel 
-          autoPlay={true}
+          autoPlay={false}
           autoPlayStrategy={'all'}
           autoPlayInterval={5000}
           autoPlayDirection={'rtl'}

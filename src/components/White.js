@@ -5,8 +5,6 @@ import Navigation from './Navigation';
 
 import { GlobalContext } from '../context/GlobalState'
 
-
-
 import ddisco_w_001_1 from '../images/w/ddisco_w_001_1.jpg';
 import ddisco_w_001_2 from '../images/w/ddisco_w_001_2.jpg';
 import ddisco_w_001_3 from '../images/w/ddisco_w_001_3.jpg';

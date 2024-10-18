@@ -4,8 +4,6 @@ import 'react-alice-carousel/lib/alice-carousel.css'
 import Navigation from './Navigation'
 import { GlobalContext } from '../context/GlobalState'
 
-
-
 import ddisco_c_001_1 from '../images/c/ddisco_c_001_1.jpg';
 import ddisco_c_001_2 from '../images/c/ddisco_c_001_2.jpg';
 import ddisco_c_001_3 from '../images/c/ddisco_c_001_3.jpg';
@@ -43,9 +41,7 @@ import ddisco_c_012_1 from '../images/c/ddisco_c_012_1.jpg';
 import ddisco_c_012_2 from '../images/c/ddisco_c_012_2.jpg';
 import ddisco_c_012_3 from '../images/c/ddisco_c_012_3.jpg';
 
-
 // galleryItems_001
-
 
 let galleryItems_001_0 = [...Array(12)].map((element, index) => <img
 alt='c_001_1'
@@ -169,7 +165,6 @@ alt='c_012_2'
 src={ddisco_c_012_2}
 className="CarouselSize" />)
 
-
 // galleryItems_003
 
 let galleryItems_003_0 = [...Array(12)].map((element, index) => <img
@@ -235,7 +230,7 @@ className="CarouselSize" />)
 
 export const Color = () => {
 
-  const handleOnDragStart = (e) => e.preventDefault()
+  // const handleOnDragStart = (e) => e.preventDefault()
 
   const actualItems_001 = (value) => {
     return (      
