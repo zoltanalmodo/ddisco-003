@@ -12,6 +12,7 @@ const initialState = {
   degree_002: 0,
   degree_003: 0,
   activeButton: '',
+  isPastel: 'false',
 };
 
 // Create Context
@@ -95,11 +96,11 @@ export const GlobalProvider = ({ children }) => {
     })
   }
 
-  function setActiveButtonPastel() {
+  function setIsPastel() {
     dispatch({
-      type: 'SET_ACTIVE_BUTTON_PASTEL',
-      payload: 'pastel'
-    })
+      type: 'SET_IS_PASTEL',
+      payload: globalState.isPastel === 'true' ? 'false' : 'true'
+    });
   }
 
 
@@ -121,7 +122,7 @@ export const GlobalProvider = ({ children }) => {
         setActiveButtonWhite,
         setActiveButtonColor,
         setActiveButtonDisco,
-        setActiveButtonPastel,
+        setIsPastel,
       }}>
       { children }
     </GlobalContext.Provider>

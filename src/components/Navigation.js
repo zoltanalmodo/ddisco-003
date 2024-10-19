@@ -16,7 +16,7 @@ function Navigation() {
     setActiveButtonWhite,
     setActiveButtonColor,
     setActiveButtonDisco,
-    setActiveButtonPastel,
+    setIsPastel,
   
   } = useContext(GlobalContext);
 
@@ -42,10 +42,8 @@ function Navigation() {
   }
 
   const activeBackgroundPastel = () => {
-    return(
-      globalState.activeButton === 'pastel' ? 'pink' : ''
-    )
-  }
+    return globalState.isPastel === 'true' ? 'pink' : 'yellow';
+  };
 
   return (
     
@@ -88,8 +86,8 @@ function Navigation() {
               <Link to='/pastel'>
                 <div className='nav_links_li'>
                   <button
-                    onClick={setActiveButtonPastel}
-                    style={{ backgroundColor: (`${activeBackgroundPastel()}`) }}>Pastel
+                    onClick={setIsPastel}
+                    style={{ backgroundColor: activeBackgroundPastel() }}>Pastel
                   </button>
                 </div>
               </Link>
