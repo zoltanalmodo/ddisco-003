@@ -83,7 +83,7 @@ function Navigation() {
                   </button>
                 </div>
               </Link>
-              <Link to='/pastel'>
+              <Link to={`/${globalState.activeButton}`}>
                 <div className='nav_links_li'>
                   <button
                     onClick={setIsPastel}
