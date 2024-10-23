@@ -1,8 +1,9 @@
 {
   "name": "doodle-disco-app-002",
   "version": "0.1.0",
+  "homepage": "https://zoltanalmodo.github.io/doodle-disco-app-002",
   "engines": {
-    "node": "16.11.1"
+    "node": "20.17.0"
   },
   "private": true,
   "dependencies": {
@@ -13,7 +14,7 @@
     "react-alice-carousel": "^1.19.3",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.0.1",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
@@ -39,5 +40,22 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-class-properties": "^7.25.9",
+    "@babel/plugin-transform-nullish-coalescing-operator": "^7.25.9",
+    "@babel/plugin-transform-numeric-separator": "^7.25.9",
+    "@babel/plugin-transform-optional-chaining": "^7.25.9",
+    "@babel/plugin-transform-private-methods": "^7.25.9",
+    "@eslint/config-array": "^0.18.0",
+    "@eslint/object-schema": "^2.1.4",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@svgr/plugin-svgo": "^8.1.0",
+    "@svgr/webpack": "^8.1.0",
+    "css-select": "^5.1.0",
+    "gh-pages": "^6.2.0",
+    "postcss": "^8.4.47",
+    "resolve-url-loader": "^5.0.0",
+    "svgo": "^3.3.2"
   }
 }
