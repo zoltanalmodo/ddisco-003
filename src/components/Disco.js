@@ -86,8 +86,6 @@ let galleryItems_003 = [
   <img alt='c_012_3' index={11} src={ddisco_c_012_3} className="CarouselSize" />
 ]
 
-
-
 export const Disco = () => {
 
   const {
@@ -98,8 +96,6 @@ export const Disco = () => {
     updateIndex_003,
 
   } = useContext(GlobalContext);
-
-
 
   return (
     
@@ -141,7 +137,6 @@ export const Disco = () => {
             />
           </div>
 
-
           <div style={{ filter: (`hue-rotate(${globalState.degree_002}deg)`) }}>
             <AliceCarousel
               autoPlay={false}
@@ -169,7 +164,6 @@ export const Disco = () => {
               
             />
           </div>
-
 
           <div style={{ filter: (`hue-rotate(${globalState.degree_003}deg)`) }}>
             <AliceCarousel

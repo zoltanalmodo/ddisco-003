@@ -87,8 +87,6 @@ let galleryItems_003 = [
   <img alt='w_012_3' src={ddisco_w_012_3} className="CarouselSize" />
 ]
 
-
-
 export const White = () => {
 
   const {
@@ -97,8 +95,6 @@ export const White = () => {
     updateIndex_002,
     updateIndex_003,
   } = useContext(GlobalContext);
-
-  
 
   return (
     
@@ -135,8 +131,6 @@ export const White = () => {
           
         />
 
-        
-
         <AliceCarousel
           autoPlay={false}
           autoPlayStrategy={'all'}
@@ -162,9 +156,7 @@ export const White = () => {
           slideToIndex={globalState.currentIndex_002}
           
         />
-
-
-
+        
         <AliceCarousel
           autoPlay={false}
           autoPlayStrategy={'all'}

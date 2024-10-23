@@ -107,7 +107,6 @@ export const Black = () => {
        
       <Navigation />
      
-
       <div className='carousel_black'>
 
         <AliceCarousel 
@@ -139,8 +138,6 @@ export const Black = () => {
           
         />
 
-        
-
         <AliceCarousel 
           autoPlay={false}
           autoPlayStrategy={'all'}
@@ -169,8 +166,6 @@ export const Black = () => {
           slideToIndex={globalState.currentIndex_002}
           
         />
-
-
 
         <AliceCarousel 
           autoPlay={false}
@@ -202,7 +197,6 @@ export const Black = () => {
         />
 
       </div>
-      
       
     </div>
   )

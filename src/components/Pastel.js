@@ -227,7 +227,6 @@ alt='c_012_3'
 src={ddisco_c_012_3}
 className="CarouselSize" />)
 
-
 export const Pastel = () => {
 
   const actualItems_001 = (value) => {
@@ -290,7 +289,6 @@ export const Pastel = () => {
     setDegree_002,
     setDegree_003,
   } = useContext(GlobalContext);
-
 
   return (
     
