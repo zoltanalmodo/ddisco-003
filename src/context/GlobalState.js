@@ -11,7 +11,7 @@ const initialState = {
   degree_001: 0,
   degree_002: 0,
   degree_003: 0,
-  activeButton: '',
+  activeButton: 'disco',
   isPastel: 'false',
 };
 
