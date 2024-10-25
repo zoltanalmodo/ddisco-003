@@ -72,7 +72,6 @@ button {
 button:hover {
   color: hsl(0, 100%, 100%);
   border-bottom: solid, 4px, red;
-  background-color: hsl(0, 100%, 50%);
   box-shadow: 0 4px 0 0 red;
 }
 

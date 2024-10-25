@@ -14,6 +14,7 @@ function Navigation() {
     setActiveButtonWhite,
     setActiveButtonColor,
     setActiveButtonDisco,
+    // setActiveButtonBuy,
     setIsPastel,
   
   } = useContext(GlobalContext);
@@ -128,6 +129,16 @@ function Navigation() {
                   </button>
                 </div>
               </Link>
+              {/* <Link to={`/buy`}>
+                <div className='nav_links_li'>
+                <button
+                    style={{
+                      backgroundColor: 'black',
+                      color: 'white'
+                    }}>buy
+                  </button>
+                </div>
+              </Link> */}
           </div>
       </nav>
 

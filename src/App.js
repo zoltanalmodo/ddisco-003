@@ -7,6 +7,7 @@ import { Disco } from './components/Disco';
 import { Black } from './components/Black';
 import { White } from './components/White';
 import { Color } from './components/Color';
+import { Buy } from './components/Buy';
 
 import { GlobalProvider } from './context/GlobalState';
 
@@ -21,6 +22,7 @@ function App() {
           <Route path='/white' element={<White />} />
           <Route path='/color' element={<Color />} />
           <Route path='/disco' element={<Disco />} />
+          <Route path='/buy' element={<Buy />} />
         </Routes>
       </Router>
     </GlobalProvider>
