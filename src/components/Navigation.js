@@ -20,28 +20,52 @@ function Navigation() {
 
   const activeBackgroundBlack = () => {
     return(
-      globalState.activeButton === 'black' ? 'pink' : ''
+      globalState.activeButton === 'black' ? 'white' : ''
+    )
+  }
+  const activeColorBlack = () => {
+    return(
+      globalState.activeButton === 'black' ? 'black' : ''
     )
   }
   const activeBackgroundWhite = () => {
     return(
-      globalState.activeButton === 'white' ? 'pink' : ''
+      globalState.activeButton === 'white' ? 'white' : ''
+    )
+  }
+  const activeColorWhite = () => {
+    return(
+      globalState.activeButton === 'white' ? 'black' : ''
     )
   }
   const activeBackgroundColor = () => {
     return(
-      globalState.activeButton === 'color' ? 'pink' : ''
+      globalState.activeButton === 'color' ? 'white' : ''
+    )
+  }
+  const activeColorColor = () => {
+    return(
+      globalState.activeButton === 'color' ? 'black' : ''
     )
   }
   const activeBackgroundDisco = () => {
     return(
-      globalState.activeButton === 'disco' ? 'pink' : ''
+      globalState.activeButton === 'disco' ? 'white' : ''
     )
   }
-
+  const activeColorDisco = () => {
+    return(
+      globalState.activeButton === 'disco' ? 'black' : ''
+    )
+  }
   const activeBackgroundPastel = () => {
-    return globalState.isPastel === 'true' ? 'pink' : 'yellow';
-  };
+    return globalState.isPastel === 'true' ? 'grey' : 'black';
+  }
+  const activeColorPastel = () => {
+    return(
+      globalState.isPastel === 'true' ? 'white' : 'white'
+    )
+  }
 
   return (
     
@@ -53,7 +77,10 @@ function Navigation() {
                 <div className='nav_links_li'>
                   <button
                     onClick={setActiveButtonBlack}
-                    style={{ backgroundColor: (`${activeBackgroundBlack()}`) }}>Black
+                    style={{
+                      backgroundColor: activeBackgroundBlack(),
+                      color: activeColorBlack()
+                    }}>black
                   </button>
                 </div>
               </Link>
@@ -61,7 +88,10 @@ function Navigation() {
                 <div className='nav_links_li'>
                   <button
                     onClick={setActiveButtonWhite}
-                    style={{ backgroundColor: (`${activeBackgroundWhite()}`) }}>White
+                    style={{
+                      backgroundColor: activeBackgroundWhite(),
+                      color: activeColorWhite()
+                    }}>white
                   </button>
                 </div>
               </Link>
@@ -69,7 +99,10 @@ function Navigation() {
                 <div className='nav_links_li'>
                   <button
                     onClick={setActiveButtonColor}
-                    style={{ backgroundColor: (`${activeBackgroundColor()}`) }}>Color
+                    style={{
+                      backgroundColor: activeBackgroundColor(),
+                      color: activeColorColor()
+                    }}>color
                   </button>
                 </div>
               </Link>
@@ -77,7 +110,10 @@ function Navigation() {
                 <div className='nav_links_li'>
                   <button
                     onClick={setActiveButtonDisco}
-                    style={{ backgroundColor: (`${activeBackgroundDisco()}`) }}>Disco
+                    style={{
+                      backgroundColor: activeBackgroundDisco(),
+                      color: activeColorDisco()
+                    }}>disco
                   </button>
                 </div>
               </Link>
@@ -85,7 +121,10 @@ function Navigation() {
                 <div className='nav_links_li'>
                   <button
                     onClick={setIsPastel}
-                    style={{ backgroundColor: activeBackgroundPastel() }}>Pastel
+                    style={{
+                      backgroundColor: activeBackgroundPastel(),
+                      color: activeColorPastel()
+                    }}>pastel
                   </button>
                 </div>
               </Link>

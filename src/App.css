@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -48,7 +47,6 @@
 .carousel_black {
   background-color: black;
   margin-top: 48px;
-  
   max-height: 100vh;
   max-width: 100vw;
 
@@ -60,22 +58,27 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: hsl(60,100%,50%);
+  background-color: hsl(0,0%,0%);
   padding-left: 15px;
   padding-right: 15px;
   border: none;
   height: 38px;
-  color: hsl(240,100%,50%);
+  color: hsl(0,0%,100%);
   font-size: 18px;
   font-weight: 600;
   font-family: 'Helvetica Now', 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 button:hover {
-  color: hsl(0,100%,50%);
+  color: hsl(0, 100%, 100%);
+  border-bottom: solid, 4px, red;
+  background-color: hsl(0, 100%, 50%);
+  box-shadow: 0 4px 0 0 red;
 }
+
 button:active {
-  border: none;
+  background-color: hsl(0, 100%, 50%);
+  color: hsl(0, 0%, 100%);
 }
 
 .navigation_position {
@@ -90,7 +93,7 @@ nav {
   justify-content: center;
   align-items: center;
   height: 38px;
-  background-color: hsl(60,100%,50%);
+  background-color: hsl(0,0%,0%);
 }
 
 .nav_links {
@@ -105,7 +108,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: hsl(60,100%,50%);
+  background-color: hsl(0,0%,0%);
   padding-left: 2px;
   padding-right: 2px;
   height: 38px;
