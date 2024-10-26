@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
-import Navigation from './Navigation';
+// import Navigation from './Navigation';
 import { GlobalContext } from '../context/GlobalState'
 
 import ddisco_c_001_1 from '../images/c/ddisco_c_001_1.jpg';
