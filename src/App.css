@@ -102,7 +102,7 @@ nav {
   padding-left: 2px;
   padding-right: 2px;
   height: 38px;
-  color: green;
+  color: hsl(240,100%,50%);
 }
 
 /* NAVIGATION END */
@@ -180,13 +180,14 @@ li {
       padding-right: 5px;
       font-size: 15px;
       font-weight: 500;
+      border: 2px solid green;
     }
     button:hover {
       display: none;
     }
     .navigation-wrapper {
       padding-bottom: 0px;
-      background-color: blueviolet;
+      background-color: violet;
       border: solid red 2px;
     }
     .nav_links {
@@ -222,13 +223,14 @@ li {
       padding-right: 5px;
       font-size: 15px;
       font-weight: 500;
+      border: 2px solid green;
     }
     button:hover {
       display: none;
     }
     .navigation-wrapper {
       padding-bottom: 0px;
-      background-color: blueviolet;
+      background-color: violet;
       border: solid red 2px;
     }
     .nav_links {
@@ -262,13 +264,14 @@ li {
       padding-right: 5px;
       font-size: 15px;
       font-weight: 500;
+      border: 2px solid green;
     }
     button:hover {
       display: none;
     }
     .navigation-wrapper {
       padding-bottom: 0px;
-      background-color: blueviolet;
+      background-color: violet;
       border: solid red 2px;
     }
     .nav_links {
@@ -298,19 +301,19 @@ li {
     .CarouselSize {
       height: 124px;
       width: 288px;
-    }
-    button {
+    }button {
       padding-left: 5px;
       padding-right: 5px;
       font-size: 15px;
       font-weight: 500;
+      border: 2px solid green;
     }
     button:hover {
       display: none;
     }
     .navigation-wrapper {
       padding-bottom: 0px;
-      background-color: blueviolet;
+      background-color: violet;
       border: solid red 2px;
     }
     .nav_links {
@@ -347,13 +350,14 @@ li {
       padding-right: 5px;
       font-size: 15px;
       font-weight: 500;
+      border: 2px solid green;
     }
     button:hover {
       display: none;
     }
     .navigation-wrapper {
       padding-bottom: 0px;
-      background-color: blueviolet;
+      background-color: violet;
       border: solid red 2px;
     }
     .nav_links {
