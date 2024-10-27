@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom'; // Make sure to import Navigate
+import { HashRouter as Router, Route, Routes, Navigate } from 'react-router-dom'; // Use HashRouter instead of BrowserRouter
 
 import { Disco } from './components/Disco';
 import { Black } from './components/Black';
@@ -16,7 +16,7 @@ function App() {
     <GlobalProvider>
       <Router>
         <Routes>
-          {/* Redirect from "/" to "/Color" */}
+          {/* Redirect from "/" to "/disco" */}
           <Route path="/" element={<Navigate to="/disco" />} />
           <Route path='/black' element={<Black />} />
           <Route path='/white' element={<White />} />
