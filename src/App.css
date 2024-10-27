@@ -80,6 +80,12 @@ button:active {
   color: hsl(0, 0%, 100%);
 }
 
+/* NAVIGATION START */
+
+.navigation-wrapper {
+  padding-bottom: 22px; /* Adjust the value as needed */
+}
+
 .navigation_position {
   position: absolute;
   top: 0px;
@@ -113,6 +119,9 @@ nav {
   height: 38px;
   color: hsl(240,100%,50%);
 }
+
+/* NAVIGATION END */
+
 
 /* adding frame around the image = START */
 

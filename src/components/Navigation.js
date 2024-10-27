@@ -71,79 +71,82 @@ function Navigation() {
   return (
     
     <div className="navigation-wrapper">
-    <div className='navigation_position'>
+      <div className='navigation_position'>
 
-      <nav>
-          <div className='nav_links'>
-              <Link to='/black'>
-                <div className='nav_links_li'>
+        <nav>
+            <div className='nav_links'>
+                <Link to='/black'>
+                  <div className='nav_links_li'>
+                    <button
+                      onClick={setActiveButtonBlack}
+                      style={{
+                        backgroundColor: activeBackgroundBlack(),
+                        color: activeColorBlack()
+                      }}>black
+                    </button>
+                  </div>
+                </Link>
+                <Link to='/white'>
+                  <div className='nav_links_li'>
+                    <button
+                      onClick={setActiveButtonWhite}
+                      style={{
+                        backgroundColor: activeBackgroundWhite(),
+                        color: activeColorWhite()
+                      }}>white
+                    </button>
+                  </div>
+                </Link>
+                <Link to='/color'>
+                  <div className='nav_links_li'>
+                    <button
+                      onClick={setActiveButtonColor}
+                      style={{
+                        backgroundColor: activeBackgroundColor(),
+                        color: activeColorColor()
+                      }}>color
+                    </button>
+                  </div>
+                </Link>
+                <Link to='/disco'>
+                  <div className='nav_links_li'>
+                    <button
+                      onClick={setActiveButtonDisco}
+                      style={{
+                        backgroundColor: activeBackgroundDisco(),
+                        color: activeColorDisco()
+                      }}>disco
+                    </button>
+                  </div>
+                </Link>
+                <Link to={`/${globalState.activeButton}`}>
+                  <div className='nav_links_li'>
+                    <button
+                      onClick={setIsPastel}
+                      style={{
+                        backgroundColor: activeBackgroundPastel(),
+                        color: activeColorPastel()
+                      }}>pastel
+                    </button>
+                  </div>
+                </Link>
+                {/* <Link to={`/buy`}>
+                  <div className='nav_links_li'>
                   <button
-                    onClick={setActiveButtonBlack}
-                    style={{
-                      backgroundColor: activeBackgroundBlack(),
-                      color: activeColorBlack()
-                    }}>black
-                  </button>
-                </div>
-              </Link>
-              <Link to='/white'>
-                <div className='nav_links_li'>
-                  <button
-                    onClick={setActiveButtonWhite}
-                    style={{
-                      backgroundColor: activeBackgroundWhite(),
-                      color: activeColorWhite()
-                    }}>white
-                  </button>
-                </div>
-              </Link>
-              <Link to='/color'>
-                <div className='nav_links_li'>
-                  <button
-                    onClick={setActiveButtonColor}
-                    style={{
-                      backgroundColor: activeBackgroundColor(),
-                      color: activeColorColor()
-                    }}>color
-                  </button>
-                </div>
-              </Link>
-              <Link to='/disco'>
-                <div className='nav_links_li'>
-                  <button
-                    onClick={setActiveButtonDisco}
-                    style={{
-                      backgroundColor: activeBackgroundDisco(),
-                      color: activeColorDisco()
-                    }}>disco
-                  </button>
-                </div>
-              </Link>
-              <Link to={`/${globalState.activeButton}`}>
-                <div className='nav_links_li'>
-                  <button
-                    onClick={setIsPastel}
-                    style={{
-                      backgroundColor: activeBackgroundPastel(),
-                      color: activeColorPastel()
-                    }}>pastel
-                  </button>
-                </div>
-              </Link>
-              {/* <Link to={`/buy`}>
-                <div className='nav_links_li'>
-                <button
-                    style={{
-                      backgroundColor: 'black',
-                      color: 'white'
-                    }}>buy
-                  </button>
-                </div>
-              </Link> */}
-          </div>
-      </nav>
+                      style={{
+                        backgroundColor: 'black',
+                        color: 'white'
+                      }}>buy
+                    </button>
+                  </div>
+                </Link> */}
+            </div>
+        </nav>
 
-    </div>
+      </div>
+      {/* <div style={{ height: '20px' }}/> */}
+
+
     </div>
 
   );
