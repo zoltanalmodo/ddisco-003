@@ -14,16 +14,6 @@
   position: relative;
 }
 
-.body_black::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 100px;
-  background-color: black;
-}
-
 .body_white {
   text-align: center;
   height: auto;
@@ -102,7 +92,7 @@ nav {
 }
 
 .nav_links {
-  width: 100%;
+  width: 50%;
   display: flex;
   justify-content: space-evenly;
   font-weight: 600;
@@ -139,6 +129,15 @@ nav {
   pointer-events: none; /* Allows click-through to carousels */
   z-index: 1; /* Keeps it above the carousels */
   transform: translate(-50%, -50%); /* Center horizontally */
+}
+
+.overlay-left,
+.overlay-right {
+  background-color: yellow;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Makes these divs click-through */
+  z-index: 10;
 }
 
 /* adding frame around the image = END */

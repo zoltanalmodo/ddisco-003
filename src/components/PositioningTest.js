@@ -228,7 +228,7 @@ src={ddisco_c_012_3}
 className="CarouselSize" />)
 
 
-export const Color = () => {
+export const PositioningTest = () => {
 
   const actualItems_001 = (value) => {
     return (      
@@ -306,9 +306,9 @@ export const Color = () => {
 
             <div className="carousel-container">
             
-              
+              <div class="yellow-panel-left"></div>
               <div className="frame-overlay"></div> {/* Transparent overlay with a frame */}
-              
+              <div class="yellow-panel-right"></div>
               
                 <div style={{ filter: (`hue-rotate(${globalState.degree_001}deg)`) }}>
                   <AliceCarousel
