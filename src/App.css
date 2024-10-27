@@ -27,11 +27,8 @@
 .carousel_white {
   background-color: white;
   margin-top: 48px;
-  
   max-height: 100vh;
   max-width: 100vw;
-
-  /* border: 2px solid red; */
 }
 
 .carousel_black {
@@ -39,8 +36,6 @@
   margin-top: 48px;
   max-height: 100vh;
   max-width: 100vw;
-
-  /* border: 2px solid red; */
 }
 
 button {
@@ -256,10 +251,29 @@ li {
       width: 358px;
     }
     button {
-      padding-left: 10px;
-      padding-right: 10px;
+      padding-left: 5px;
+      padding-right: 5px;
       font-size: 15px;
-      font-weight: 550;
+      font-weight: 500;
+    }
+    button:hover {
+      color: hsl(0, 100%, 100%);
+      border-bottom: none;
+      box-shadow: none;
+    }
+    .navigation-wrapper {
+      padding-bottom: 11px; /* Adjust the value as needed */
+    }
+    .nav_links {
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .nav_links_li {
+      padding-left: 0px;
+      padding-right: 0px;
     }
     .frame-overlay-dark-grey {
       display: none;
