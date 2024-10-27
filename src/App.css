@@ -180,6 +180,12 @@ li {
       height: 112px;
       width: 260px;
     }
+    .frame-overlay-dark-grey {
+      display: none;
+    }
+    .frame-overlay-light-grey {
+      display: none;
+    }
 }
 
 /* ----------- iPhone 4 and 4S ----------- */
@@ -193,6 +199,12 @@ li {
       height: 120px;
       width: 278px;
     }
+    .frame-overlay-dark-grey {
+      display: none;
+    }
+    .frame-overlay-light-grey {
+      display: none;
+    }
 }
 
 /* Portrait and Landscape */
@@ -203,6 +215,12 @@ li {
     .CarouselSize {
       height: 120px;
       width: 278px;
+    }
+    .frame-overlay-dark-grey {
+      display: none;
+    }
+    .frame-overlay-light-grey {
+      display: none;
     }
 }
 
@@ -216,6 +234,12 @@ li {
     .CarouselSize {
       height: 124px;
       width: 288px;
+    }
+    .frame-overlay-dark-grey {
+      display: none;
+    }
+    .frame-overlay-light-grey {
+      display: none;
     }
 }
 
@@ -231,12 +255,19 @@ li {
       height: 154px;
       width: 358px;
     }
-    .nav_links {
-      width: 358px;
-      display: flex;
-      justify-content: space-evenly;
-      font-weight: 400;
+    button {
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 15px;
+      font-weight: 550;
     }
+    .frame-overlay-dark-grey {
+      display: none;
+    }
+    .frame-overlay-light-grey {
+      display: none;
+    }
+
 }
 
 
@@ -252,6 +283,12 @@ li {
       height: 166px;
       width: 386px;
     }
+    .frame-overlay-dark-grey {
+      display: none;
+    }
+    .frame-overlay-light-grey {
+      display: none;
+    }
 }
 
 /* ----------- iPad 1, 2, Mini and Air ----------- */
@@ -264,6 +301,12 @@ li {
     .CarouselSize {
       height: 280px;
       width: 652px;
+    }
+    .frame-overlay-dark-grey {
+      display: none;
+    }
+    .frame-overlay-light-grey {
+      display: none;
     }
 }
 
@@ -278,6 +321,12 @@ li {
       height: 394px;
       width: 918px;
     }
+    .frame-overlay-dark-grey {
+      display: none;
+    }
+    .frame-overlay-light-grey {
+      display: none;
+    }
 }
 
 /* ------------------ LAPTOPS ------------------ */
@@ -291,6 +340,12 @@ li {
       height: 220px;
       width: 513px;
     }
+    .frame-overlay-dark-grey {
+      display: none;
+    }
+    .frame-overlay-light-grey {
+      display: none;
+    }
 }
 
 /* ----------- Retina Screens ----------- */
@@ -302,5 +357,11 @@ li {
     .CarouselSize {
       height: 236px;
       width: 550px;
+    }
+    .frame-overlay-dark-grey {
+      display: none;
+    }
+    .frame-overlay-light-grey {
+      display: none;
     }
 }
