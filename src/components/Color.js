@@ -307,7 +307,7 @@ export const Color = () => {
             <div className="carousel-container">
             
               
-              <div className="frame-overlay"></div> {/* Transparent overlay with a frame */}
+              <div className="frame-overlay-dark-grey"></div> {/* Transparent overlay with a frame */}
               
               
                 <div style={{ filter: (`hue-rotate(${globalState.degree_001}deg)`) }}>

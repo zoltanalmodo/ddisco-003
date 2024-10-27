@@ -104,97 +104,103 @@ export const Black = () => {
   return (
     
     <div className='body_black'>
-       
+
       <Navigation />
      
       <div className='carousel_black'>
 
-        <AliceCarousel 
-          autoPlay={false}
-          autoPlayStrategy={'all'}
-          autoPlayInterval={5000}
-          autoPlayDirection={'rtl'}
-          disableAutoPlayOnAction={true}
+        <div className="carousel-container">
 
-          infinite={true}
+          <div className="frame-overlay-light-grey"></div> {/* Transparent overlay with a frame */}
 
-          mouseTrackingEnabled={true}
+            <AliceCarousel 
+              autoPlay={false}
+              autoPlayStrategy={'all'}
+              autoPlayInterval={5000}
+              autoPlayDirection={'rtl'}
+              disableAutoPlayOnAction={true}
 
-          dotsDisabled={true}
-          buttonsDisabled={true}
-          swipeDisabled={false}
+              infinite={true}
 
-          touchTrackingEnabled={true}
+              mouseTrackingEnabled={true}
 
-          swipeDelta={0.1}
-          preventEventOnTouchMove={true}
-          items={galleryItems_001}
+              dotsDisabled={true}
+              buttonsDisabled={true}
+              swipeDisabled={false}
 
-          startIndex={globalState.currentIndex_001}
+              touchTrackingEnabled={true}
 
-          onSlideChanged={ (e) => updateIndex_001( e.item ) }
+              swipeDelta={0.1}
+              preventEventOnTouchMove={true}
+              items={galleryItems_001}
 
-          slideToIndex={globalState.currentIndex_001}
-          
-        />
+              startIndex={globalState.currentIndex_001}
 
-        <AliceCarousel 
-          autoPlay={false}
-          autoPlayStrategy={'all'}
-          autoPlayInterval={5000}
-          autoPlayDirection={'rtl'}
-          disableAutoPlayOnAction={true}
+              onSlideChanged={ (e) => updateIndex_001( e.item ) }
 
-          infinite={true}
+              slideToIndex={globalState.currentIndex_001}
+              
+            />
 
-          mouseTrackingEnabled={true}
+            <AliceCarousel 
+              autoPlay={false}
+              autoPlayStrategy={'all'}
+              autoPlayInterval={5000}
+              autoPlayDirection={'rtl'}
+              disableAutoPlayOnAction={true}
 
-          dotsDisabled={true}
-          buttonsDisabled={true}
-          swipeDisabled={false}
+              infinite={true}
 
-          touchTrackingEnabled={true}
+              mouseTrackingEnabled={true}
 
-          swipeDelta={0.1}
-          preventEventOnTouchMove={true}
-          items={galleryItems_002}
+              dotsDisabled={true}
+              buttonsDisabled={true}
+              swipeDisabled={false}
 
-          startIndex={globalState.currentIndex_002}
+              touchTrackingEnabled={true}
 
-          onSlideChanged={ (e) => updateIndex_002( e.item ) }
+              swipeDelta={0.1}
+              preventEventOnTouchMove={true}
+              items={galleryItems_002}
 
-          slideToIndex={globalState.currentIndex_002}
-          
-        />
+              startIndex={globalState.currentIndex_002}
 
-        <AliceCarousel 
-          autoPlay={false}
-          autoPlayStrategy={'all'}
-          autoPlayInterval={5000}
-          autoPlayDirection={'rtl'}
-          disableAutoPlayOnAction={true}
+              onSlideChanged={ (e) => updateIndex_002( e.item ) }
 
-          infinite={true}
+              slideToIndex={globalState.currentIndex_002}
+              
+            />
 
-          mouseTrackingEnabled={true}
+            <AliceCarousel 
+              autoPlay={false}
+              autoPlayStrategy={'all'}
+              autoPlayInterval={5000}
+              autoPlayDirection={'rtl'}
+              disableAutoPlayOnAction={true}
 
-          dotsDisabled={true}
-          buttonsDisabled={true}
-          swipeDisabled={false}
+              infinite={true}
 
-          touchTrackingEnabled={true}
+              mouseTrackingEnabled={true}
 
-          swipeDelta={0.1}
-          preventEventOnTouchMove={true}
-          items={galleryItems_003}
+              dotsDisabled={true}
+              buttonsDisabled={true}
+              swipeDisabled={false}
 
-          startIndex={globalState.currentIndex_003}
+              touchTrackingEnabled={true}
 
-          onSlideChanged={ (e) => updateIndex_003( e.item ) }
+              swipeDelta={0.1}
+              preventEventOnTouchMove={true}
+              items={galleryItems_003}
 
-          slideToIndex={globalState.currentIndex_003}
-          
-        />
+              startIndex={globalState.currentIndex_003}
+
+              onSlideChanged={ (e) => updateIndex_003( e.item ) }
+
+              slideToIndex={globalState.currentIndex_003}
+              
+            />
+            
+        </div>
 
       </div>
       

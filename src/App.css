@@ -119,13 +119,25 @@ nav {
   position: relative;
 }
 
-.frame-overlay {
+.frame-overlay-dark-grey {
   position: absolute;
   top: 51%; /* Adjust this value to move the frame up or down */
   left: 50%;
   width: 40%; /* Adjust width as desired */
-  height: 102%; /* Adjust height as desired */
-  border: 5px solid hsl(0, 0%, 25%); /* Dark frame color */
+  height: 104%; /* Adjust height as desired */
+  border: 5px solid hsl(0, 0%, 30%); /* Dark frame color */
+  pointer-events: none; /* Allows click-through to carousels */
+  z-index: 1; /* Keeps it above the carousels */
+  transform: translate(-50%, -50%); /* Center horizontally */
+}
+
+.frame-overlay-light-grey {
+  position: absolute;
+  top: 51%; /* Adjust this value to move the frame up or down */
+  left: 50%;
+  width: 40%; /* Adjust width as desired */
+  height: 104%; /* Adjust height as desired */
+  border: 5px solid hsl(0, 0%, 70%); /* Dark frame color */
   pointer-events: none; /* Allows click-through to carousels */
   z-index: 1; /* Keeps it above the carousels */
   transform: translate(-50%, -50%); /* Center horizontally */
