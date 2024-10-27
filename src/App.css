@@ -255,6 +255,7 @@ li {
       padding-right: 5px;
       font-size: 15px;
       font-weight: 500;
+      border: 2px solid blue;
     }
     button:hover {
       color: hsl(0, 100%, 100%);
@@ -262,12 +263,12 @@ li {
       box-shadow: none;
     }
     .navigation-wrapper {
-      padding-bottom: 11px; /* Adjust the value as needed */
+      padding-bottom: 0px;
+      background-color: blueviolet;
+      border: solid red 2px;
     }
     .nav_links {
       width: 100%;
-      display: flex;
-      justify-content: space-evenly;
       font-size: 15px;
       font-weight: 500;
     }
