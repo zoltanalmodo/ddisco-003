@@ -298,11 +298,14 @@ export const Color = () => {
        
       <Navigation />
      
+
+
       <div className='carousel_white'>
 
         <div style={{
             filter: (globalState.isPastel === 'true' ? 'brightness(105%) saturate(70%)' : 'brightness(100%) saturate(100%)'),
         }}>
+
 
           <div style={{ filter: (`hue-rotate(${globalState.degree_001}deg)`) }}>
             <AliceCarousel
@@ -329,8 +332,8 @@ export const Color = () => {
             />
           </div>
 
-          <div style={{ filter: (`hue-rotate(${globalState.degree_002}deg)`) }}>
 
+          <div style={{ filter: (`hue-rotate(${globalState.degree_002}deg)`) }}>
             <AliceCarousel
               autoPlay={false}
               autoPlayStrategy={'all'}
@@ -354,6 +357,7 @@ export const Color = () => {
               onSlideChanged={ (e) => setDegree_002( e.item * 30) }
             />
           </div>
+
 
           <div style={{ filter: (`hue-rotate(${globalState.degree_003}deg)`) }}>
             <AliceCarousel

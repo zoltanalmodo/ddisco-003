@@ -85,7 +85,10 @@ button:active {
   top: 0px;
   left: 0px;
   right: 0px;
+  margin-bottom: 200px;
 }
+
+
 
 nav {
   display: flex;
@@ -112,6 +115,14 @@ nav {
   padding-right: 2px;
   height: 38px;
   color: hsl(240,100%,50%);
+}
+
+.carousel-frame {
+  border: 5px solid #333; /* Adjust color and width as desired */
+  padding: 20px; /* Space between the carousels and the frame */
+  border-radius: 0px; /* Optional rounded corners */
+  margin: 20px; /* Optional space outside the frame */
+  display: inline-block; /* Keeps the frame tight around the carousels */
 }
 
 h1 {

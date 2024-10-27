@@ -70,6 +70,7 @@ function Navigation() {
 
   return (
     
+    <div className="navigation-wrapper">
     <div className='navigation_position'>
 
       <nav>
@@ -142,6 +143,7 @@ function Navigation() {
           </div>
       </nav>
 
+    </div>
     </div>
 
   );
