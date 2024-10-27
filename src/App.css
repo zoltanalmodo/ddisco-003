@@ -102,7 +102,6 @@ nav {
   padding-left: 2px;
   padding-right: 2px;
   height: 38px;
-  color: green;
 }
 
 /* NAVIGATION END */
@@ -175,8 +174,26 @@ li {
       height: 112px;
       width: 260px;
     }
-    button:hover {
-      display: none;
+    button {
+      padding-left: 5px;
+      padding-right: 5px;
+      font-size: 15px;
+      font-weight: 500;
+      border: 2px solid blue;
+    }
+    .navigation-wrapper {
+      padding-bottom: 0px;
+      background-color: blueviolet;
+      border: solid red 2px;
+    }
+    .nav_links {
+      width: 100%;
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .nav_links_li {
+      padding-left: 0px;
+      padding-right: 0px;
     }
     .frame-overlay-dark-grey {
       display: none;
@@ -197,8 +214,26 @@ li {
       height: 120px;
       width: 278px;
     }
-    button:hover {
-      display: none;
+    button {
+      padding-left: 5px;
+      padding-right: 5px;
+      font-size: 15px;
+      font-weight: 500;
+      border: 2px solid blue;
+    }
+    .navigation-wrapper {
+      padding-bottom: 0px;
+      background-color: blueviolet;
+      border: solid red 2px;
+    }
+    .nav_links {
+      width: 100%;
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .nav_links_li {
+      padding-left: 0px;
+      padding-right: 0px;
     }
     .frame-overlay-dark-grey {
       display: none;
@@ -217,8 +252,26 @@ li {
       height: 120px;
       width: 278px;
     }
-    button:hover {
-      display: none;
+    button {
+      padding-left: 5px;
+      padding-right: 5px;
+      font-size: 15px;
+      font-weight: 500;
+      border: 2px solid blue;
+    }
+    .navigation-wrapper {
+      padding-bottom: 0px;
+      background-color: blueviolet;
+      border: solid red 2px;
+    }
+    .nav_links {
+      width: 100%;
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .nav_links_li {
+      padding-left: 0px;
+      padding-right: 0px;
     }
     .frame-overlay-dark-grey {
       display: none;
@@ -238,9 +291,26 @@ li {
     .CarouselSize {
       height: 124px;
       width: 288px;
+    }button {
+      padding-left: 5px;
+      padding-right: 5px;
+      font-size: 15px;
+      font-weight: 500;
+      border: 2px solid blue;
     }
-    button:hover {
-      display: none;
+    .navigation-wrapper {
+      padding-bottom: 0px;
+      background-color: blueviolet;
+      border: solid red 2px;
+    }
+    .nav_links {
+      width: 100%;
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .nav_links_li {
+      padding-left: 0px;
+      padding-right: 0px;
     }
     .frame-overlay-dark-grey {
       display: none;
@@ -262,8 +332,26 @@ li {
       height: 154px;
       width: 358px;
     }
-    button:hover {
-      display: none;
+    button {
+      padding-left: 5px;
+      padding-right: 5px;
+      font-size: 15px;
+      font-weight: 500;
+      border: 2px solid blue;
+    }
+    .navigation-wrapper {
+      padding-bottom: 0px;
+      background-color: blueviolet;
+      border: solid red 2px;
+    }
+    .nav_links {
+      width: 100%;
+      font-size: 15px;
+      font-weight: 500;
+    }
+    .nav_links_li {
+      padding-left: 0px;
+      padding-right: 0px;
     }
     .frame-overlay-dark-grey {
       display: none;
