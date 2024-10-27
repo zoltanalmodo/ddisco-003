@@ -88,8 +88,6 @@ button:active {
   margin-bottom: 200px;
 }
 
-
-
 nav {
   display: flex;
   justify-content: center;
@@ -117,13 +115,25 @@ nav {
   color: hsl(240,100%,50%);
 }
 
-.carousel-frame {
-  border: 5px solid #333; /* Adjust color and width as desired */
-  padding: 20px; /* Space between the carousels and the frame */
-  border-radius: 0px; /* Optional rounded corners */
-  margin: 20px; /* Optional space outside the frame */
-  display: inline-block; /* Keeps the frame tight around the carousels */
+/* adding frame around the image = START */
+
+.carousel-container {
+  position: relative;
 }
+
+.frame-overlay {
+  position: absolute;
+  top: 51%; /* Adjust this value to move the frame up or down */
+  left: 50%;
+  width: 40%; /* Adjust width as desired */
+  height: 102%; /* Adjust height as desired */
+  border: 5px solid hsl(0, 0%, 25%); /* Dark frame color */
+  pointer-events: none; /* Allows click-through to carousels */
+  z-index: 1; /* Keeps it above the carousels */
+  transform: translate(-50%, -50%); /* Center horizontally */
+}
+
+/* adding frame around the image = END */
 
 h1 {
   margin-top: 280px;
