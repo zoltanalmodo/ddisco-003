@@ -231,6 +231,12 @@ li {
       height: 154px;
       width: 358px;
     }
+    .nav_links {
+      width: 50%;
+      display: flex;
+      justify-content: space-evenly;
+      font-weight: 400;
+    }
 }
 
 
