@@ -180,10 +180,14 @@ li {
       font-size: 15px;
       font-weight: 500;
     }
+    button:hover {
+      color: hsl(0, 100%, 100%);
+      border-bottom: solid, 4px, hsla(0,0%,0%,0);
+      box-shadow: 0 4px 0 0 red;
+    }
     .navigation-wrapper {
       padding-bottom: 0px;
       background-color: violet;
-      border: solid red 2px;
     }
     .nav_links {
       width: 100%;
@@ -219,10 +223,14 @@ li {
       font-size: 15px;
       font-weight: 500;
     }
+    button:hover {
+      color: hsl(0, 100%, 100%);
+      border-bottom: solid, 4px, hsla(0,0%,0%,0);
+      box-shadow: 0 4px 0 0 red;
+    }
     .navigation-wrapper {
       padding-bottom: 0px;
       background-color: violet;
-      border: solid red 2px;
     }
     .nav_links {
       width: 100%;
@@ -256,10 +264,14 @@ li {
       font-size: 15px;
       font-weight: 500;
     }
+    button:hover {
+      color: hsl(0, 100%, 100%);
+      border-bottom: solid, 4px, hsla(0,0%,0%,0);
+      box-shadow: 0 4px 0 0 red;
+    }
     .navigation-wrapper {
       padding-bottom: 0px;
       background-color: violet;
-      border: solid red 2px;
     }
     .nav_links {
       width: 100%;
@@ -288,16 +300,21 @@ li {
     .CarouselSize {
       height: 124px;
       width: 288px;
-    }button {
+    }
+    button {
       padding-left: 5px;
       padding-right: 5px;
       font-size: 15px;
       font-weight: 500;
     }
+    button:hover {
+      color: hsl(0, 100%, 100%);
+      border-bottom: solid, 4px, hsla(0,0%,0%,0);
+      box-shadow: 0 4px 0 0 red;
+    }
     .navigation-wrapper {
       padding-bottom: 0px;
       background-color: violet;
-      border: solid red 2px;
     }
     .nav_links {
       width: 100%;
@@ -334,10 +351,14 @@ li {
       font-size: 15px;
       font-weight: 500;
     }
+    button:hover {
+      color: hsl(0, 100%, 100%);
+      border-bottom: solid, 4px, hsla(0,0%,0%,0);
+      box-shadow: 0 4px 0 0 red;
+    }
     .navigation-wrapper {
       padding-bottom: 0px;
       background-color: violet;
-      border: solid red 2px;
     }
     .nav_links {
       width: 100%;
@@ -369,9 +390,6 @@ li {
     .CarouselSize {
       height: 166px;
       width: 386px;
-    }
-    button:hover {
-      display: none;
     }
     .frame-overlay-dark-grey {
       display: none;
