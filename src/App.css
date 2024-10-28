@@ -161,9 +161,11 @@ li {
   text-decoration: none;
 }
 
+
 /*==================================================================*/
 /*--------------------- MEDIA QUERIES start ------------------------*/
 /*==================================================================*/
+
 
 /* Portrait and Landscape */
 @media only screen 
@@ -183,7 +185,7 @@ li {
     button:hover {
       color: hsl(0, 100%, 100%);
       border-bottom: solid, 4px, hsla(0,0%,0%,0);
-      box-shadow: 0 4px 0 0 red;
+      box-shadow: 0 4px 0 0 hsla(0,0%,0%,0);
     }
     .navigation-wrapper {
       padding-bottom: 0px;
@@ -226,7 +228,7 @@ li {
     button:hover {
       color: hsl(0, 100%, 100%);
       border-bottom: solid, 4px, hsla(0,0%,0%,0);
-      box-shadow: 0 4px 0 0 red;
+      box-shadow: 0 4px 0 0 hsla(0,0%,0%,0);
     }
     .navigation-wrapper {
       padding-bottom: 0px;
@@ -267,7 +269,7 @@ li {
     button:hover {
       color: hsl(0, 100%, 100%);
       border-bottom: solid, 4px, hsla(0,0%,0%,0);
-      box-shadow: 0 4px 0 0 red;
+      box-shadow: 0 4px 0 0 hsla(0,0%,0%,0);
     }
     .navigation-wrapper {
       padding-bottom: 0px;
@@ -310,7 +312,7 @@ li {
     button:hover {
       color: hsl(0, 100%, 100%);
       border-bottom: solid, 4px, hsla(0,0%,0%,0);
-      box-shadow: 0 4px 0 0 red;
+      box-shadow: 0 4px 0 0 hsla(0,0%,0%,0);
     }
     .navigation-wrapper {
       padding-bottom: 0px;
@@ -354,7 +356,7 @@ li {
     button:hover {
       color: hsl(0, 100%, 100%);
       border-bottom: solid, 4px, hsla(0,0%,0%,0);
-      box-shadow: 0 4px 0 0 red;
+      box-shadow: 0 4px 0 0 hsla(0,0%,0%,0);
     }
     .navigation-wrapper {
       padding-bottom: 0px;
@@ -377,8 +379,6 @@ li {
     }
 
 }
-
-
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
