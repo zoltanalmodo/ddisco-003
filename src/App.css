@@ -68,7 +68,7 @@ button:active {
 /* NAVIGATION START */
 
 .navigation-wrapper {
-  padding-bottom: 22px; /* Adjust the value as needed */
+  padding-bottom: 22px;
 }
 
 .navigation_position {
@@ -107,7 +107,7 @@ nav {
 /* NAVIGATION END */
 
 
-/* adding frame around the image = START */
+/* FRAME around the image = START */
 
 .carousel-container {
   position: relative;
@@ -132,6 +132,7 @@ nav {
   width: 40%; /* Adjust width as desired */
   height: 104%; /* Adjust height as desired */
   border: 5px solid hsl(0, 0%, 70%); /* Dark frame color */
+
   pointer-events: none; /* Allows click-through to carousels */
   z-index: 1; /* Keeps it above the carousels */
   transform: translate(-50%, -50%); /* Center horizontally */
@@ -146,7 +147,7 @@ nav {
   z-index: 10;
 }
 
-/* adding frame around the image = END */
+/* FRAME around the image = END */
 
 h1 {
   margin-top: 280px;
@@ -448,12 +449,6 @@ li {
       height: 220px;
       width: 513px;
     }
-    .frame-overlay-dark-grey {
-      display: none;
-    }
-    .frame-overlay-light-grey {
-      display: none;
-    }
 }
 
 /* ----------- Retina Screens ----------- */
@@ -465,11 +460,5 @@ li {
     .CarouselSize {
       height: 236px;
       width: 550px;
-    }
-    .frame-overlay-dark-grey {
-      display: none;
-    }
-    .frame-overlay-light-grey {
-      display: none;
     }
 }

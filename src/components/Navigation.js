@@ -14,6 +14,7 @@ function Navigation() {
     setActiveButtonWhite,
     setActiveButtonColor,
     setActiveButtonDisco,
+    setActiveButtonPosition,
     // setActiveButtonBuy,
     setIsPastel,
   
@@ -57,6 +58,16 @@ function Navigation() {
   const activeColorDisco = () => {
     return(
       globalState.activeButton === 'disco' ? 'black' : ''
+    )
+  }
+  const activeBackgroundPosition = () => {
+    return(
+      globalState.activeButton === 'position' ? 'white' : ''
+    )
+  }
+  const activeColorPosition = () => {
+    return(
+      globalState.activeButton === 'position' ? 'black' : ''
     )
   }
   const activeBackgroundPastel = () => {
@@ -127,6 +138,17 @@ function Navigation() {
                         backgroundColor: activeBackgroundPastel(),
                         color: activeColorPastel()
                       }}>pastel
+                    </button>
+                  </div>
+                </Link>
+                <Link to='/position'>
+                  <div className='nav_links_li'>
+                    <button
+                      onClick={setActiveButtonPosition}
+                      style={{
+                        backgroundColor: activeBackgroundPosition(),
+                        color: activeColorPosition()
+                      }}>position
                     </button>
                   </div>
                 </Link>
