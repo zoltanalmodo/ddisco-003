@@ -120,9 +120,7 @@ export const Position = () => {
                   autoPlayInterval={5000}
                   autoPlayDirection={'rtl'}
                   disableAutoPlayOnAction={true}
-
                   infinite={true}
-
                   mouseTrackingEnabled={true}
                   dotsDisabled={true}
                   buttonsDisabled={true}
@@ -131,13 +129,9 @@ export const Position = () => {
                   swipeDelta={0.1}
                   preventEventOnTouchMove={true}
                   items={galleryItems_001}
-
                   startIndex={globalState.currentIndex_001}
-
                   onSlideChanged={ (e) => updateIndex_001( e.item ) }
-
                   slideToIndex={globalState.currentIndex_001}
-                  
                 />
               </div>
 
@@ -148,9 +142,7 @@ export const Position = () => {
                   autoPlayInterval={5000}
                   autoPlayDirection={'ltr'}
                   disableAutoPlayOnAction={true}
-
                   infinite={true}
-
                   mouseTrackingEnabled={true}
                   dotsDisabled={true}
                   buttonsDisabled={true}
@@ -159,13 +151,9 @@ export const Position = () => {
                   swipeDelta={0.1}
                   preventEventOnTouchMove={true}
                   items={galleryItems_002}
-
                   startIndex={globalState.currentIndex_002}
-
                   onSlideChanged={ (e) => updateIndex_002( e.item ) }
-
                   slideToIndex={globalState.currentIndex_002}
-                  
                 />
               </div>
 
@@ -176,9 +164,7 @@ export const Position = () => {
                   autoPlayInterval={5000}
                   autoPlayDirection={'rtl'}
                   disableAutoPlayOnAction={true}
-
                   infinite={true}
-
                   mouseTrackingEnabled={true}
                   dotsDisabled={true}
                   buttonsDisabled={true}
@@ -187,17 +173,16 @@ export const Position = () => {
                   swipeDelta={0.1}
                   preventEventOnTouchMove={true}
                   items={galleryItems_003}
-
                   startIndex={globalState.currentIndex_003}
-
                   onSlideChanged={ (e) => updateIndex_003( e.item ) }
-
                   slideToIndex={globalState.currentIndex_003}
-                  
                 />
               </div>
 
           </div>
+
+
+          
 
         </div>
 
