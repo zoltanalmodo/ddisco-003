@@ -187,15 +187,16 @@ export const Position = () => {
           {/* +++++++++++++++++++++++++++++++++++++++++++ */}
 
 
-          <div className="overlap-container">
-
-            <div className="box box-001">box-001</div>
-            <div className="box box-002">box-002</div>
-            <div className="box box-003">box-003</div>
-          </div>
+          
 
 
           <div className="carousel-container">
+
+            <div className="overlap-container">
+              <div className="box box-001"/>
+              <div className="box box-002"/>
+              <div className="box box-003"/>
+            </div>
 
             <div className="frame-overlay-dark-grey"></div> {/* Transparent overlay with a frame */}
 

@@ -145,31 +145,42 @@ nav {
 
 .overlap-container {
   display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
+  z-index: 10;
+  pointer-events: none; 
 }
 
 .box {
   padding: 20px;
   text-align: center;
-  height: 100px;
+  height: 1000px;
   width: 100vw;
+  pointer-events: none;
 }
 
 .box-001 {
   flex: 1;
   background-color: lightblue;
   width: 200px;
+  pointer-events: none;
+
 }
 .box-002 {
-  background-color: lightcoral;
+  background-color: hsla(0,0%,0%,0);
   width: 600px;
   margin: 0 auto;
+  
 }
 .box-003 {
   flex: 1;
   background-color: lightgreen;
   width: 200px;
+  pointer-events: none;
 }
 
 /* overlap boxes END */
