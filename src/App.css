@@ -111,31 +111,32 @@ nav {
 
 .carousel-container {
   position: relative;
+  margin-bottom: 80px;
 }
 
 .frame-overlay-dark-grey {
   position: absolute;
-  top: 51%; /* Adjust this value to move the frame up or down */
+  top: 51%;
   left: 50%;
-  width: 40%; /* Adjust width as desired */
-  height: 104%; /* Adjust height as desired */
-  border: 5px solid hsl(0, 0%, 30%); /* Dark frame color */
-  pointer-events: none; /* Allows click-through to carousels */
-  z-index: 1; /* Keeps it above the carousels */
-  transform: translate(-50%, -50%); /* Center horizontally */
+  width: 40%;
+  height: 104%;
+  border: 5px solid hsl(0, 0%, 30%);
+  pointer-events: none;
+  z-index: 1;
+  transform: translate(-50%, -50%);
 }
 
 .frame-overlay-light-grey {
   position: absolute;
-  top: 51%; /* Adjust this value to move the frame up or down */
+  top: 51%; 
   left: 50%;
-  width: 40%; /* Adjust width as desired */
-  height: 104%; /* Adjust height as desired */
-  border: 5px solid hsl(0, 0%, 70%); /* Dark frame color */
+  width: 40%; 
+  height: 104%;
+  border: 5px solid hsl(0, 0%, 70%);
 
-  pointer-events: none; /* Allows click-through to carousels */
-  z-index: 1; /* Keeps it above the carousels */
-  transform: translate(-50%, -50%); /* Center horizontally */
+  pointer-events: none;
+  z-index: 1;
+  transform: translate(-50%, -50%);
 }
 
 .overlay-left,
@@ -437,6 +438,10 @@ li {
       display: none;
     }
 }
+
+/*==================================================================*/
+/*---------------------- MEDIA QUERIES end -------------------------*/
+/*==================================================================*/
 
 /* ------------------ LAPTOPS ------------------ */
 
