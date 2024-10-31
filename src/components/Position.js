@@ -182,11 +182,17 @@ export const Position = () => {
           </div>
 
 
-
           {/* +++++++++++++++++++++++++++++++++++++++++++ */}
           {/* ADDING ANOTHER CAROUSEL TO WORK ON POSITION */}
           {/* +++++++++++++++++++++++++++++++++++++++++++ */}
 
+
+          <div className="overlap-container">
+
+            <div className="box box-001">box-001</div>
+            <div className="box box-002">box-002</div>
+            <div className="box box-003">box-003</div>
+          </div>
 
 
           <div className="carousel-container">
@@ -260,6 +266,11 @@ export const Position = () => {
               </div>
 
           </div>
+
+          <div style={{
+            backgroundColor: 'black',
+            height: '80px',
+          }}></div>
 
 
           {/* +++++++++++++++++++++++++++++++++++++++++++ */}
