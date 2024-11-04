@@ -116,7 +116,7 @@ nav {
 
 .frame-overlay-dark-grey {
   position: absolute;
-  top: 51%;
+  top: 50%;
   left: 50%;
   width: 40%;
   height: 104%;
@@ -128,7 +128,7 @@ nav {
 
 .frame-overlay-light-grey {
   position: absolute;
-  top: 51%; 
+  top: 50%; 
   left: 50%;
   width: 40%; 
   height: 104%;
@@ -149,37 +149,41 @@ nav {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
   justify-content: space-between;
   align-items: center;
   z-index: 10;
   pointer-events: none; 
 }
 
-.box {
+/* .box {
   padding: 20px;
-  text-align: center;
-  height: 1000px;
+  height: 100%;
   width: 100vw;
   pointer-events: none;
-}
+} */
 
-.box-001 {
+.box-left {
   flex: 1;
   background-color: lightblue;
-  width: 200px;
+  width: 600px;
+  height: 740px;
   pointer-events: none;
 
 }
-.box-002 {
+.box-middle {
   background-color: hsla(0,0%,0%,0);
   width: 600px;
+  height: 740px;
   margin: 0 auto;
-  
+
 }
-.box-003 {
+.box-right {
   flex: 1;
   background-color: lightgreen;
-  width: 200px;
+  width: 600px;
+  height: 740px;
   pointer-events: none;
 }
 
