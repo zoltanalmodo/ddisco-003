@@ -111,91 +111,10 @@ export const Position = () => {
 
           <div className="carousel-container">
 
-            <div className="frame-overlay-dark-grey"></div> {/* Transparent overlay with a frame */}
-
-              <div style={{ filter: (`hue-rotate(${globalState.degree_001}deg)`) }}>
-                <AliceCarousel
-                  autoPlay={false}
-                  autoPlayStrategy={'all'}
-                  autoPlayInterval={5000}
-                  autoPlayDirection={'rtl'}
-                  disableAutoPlayOnAction={true}
-                  infinite={true}
-                  mouseTrackingEnabled={true}
-                  dotsDisabled={true}
-                  buttonsDisabled={true}
-                  swipeDisabled={false}
-                  touchTrackingEnabled={true}
-                  swipeDelta={0.1}
-                  preventEventOnTouchMove={true}
-                  items={galleryItems_001}
-                  startIndex={globalState.currentIndex_001}
-                  onSlideChanged={ (e) => updateIndex_001( e.item ) }
-                  slideToIndex={globalState.currentIndex_001}
-                />
-              </div>
-
-              <div style={{ filter: (`hue-rotate(${globalState.degree_002}deg)`) }}>
-                <AliceCarousel
-                  autoPlay={false}
-                  autoPlayStrategy={'all'}
-                  autoPlayInterval={5000}
-                  autoPlayDirection={'ltr'}
-                  disableAutoPlayOnAction={true}
-                  infinite={true}
-                  mouseTrackingEnabled={true}
-                  dotsDisabled={true}
-                  buttonsDisabled={true}
-                  swipeDisabled={false}
-                  touchTrackingEnabled={true}
-                  swipeDelta={0.1}
-                  preventEventOnTouchMove={true}
-                  items={galleryItems_002}
-                  startIndex={globalState.currentIndex_002}
-                  onSlideChanged={ (e) => updateIndex_002( e.item ) }
-                  slideToIndex={globalState.currentIndex_002}
-                />
-              </div>
-
-              <div style={{ filter: (`hue-rotate(${globalState.degree_003}deg)`) }}>
-                <AliceCarousel
-                  autoPlay={false}
-                  autoPlayStrategy={'all'}
-                  autoPlayInterval={5000}
-                  autoPlayDirection={'rtl'}
-                  disableAutoPlayOnAction={true}
-                  infinite={true}
-                  mouseTrackingEnabled={true}
-                  dotsDisabled={true}
-                  buttonsDisabled={true}
-                  swipeDisabled={false}
-                  touchTrackingEnabled={true}
-                  swipeDelta={0.1}
-                  preventEventOnTouchMove={true}
-                  items={galleryItems_003}
-                  startIndex={globalState.currentIndex_003}
-                  onSlideChanged={ (e) => updateIndex_003( e.item ) }
-                  slideToIndex={globalState.currentIndex_003}
-                />
-              </div>
-
-          </div>
-
-
-          {/* +++++++++++++++++++++++++++++++++++++++++++ */}
-          {/* ADDING ANOTHER CAROUSEL TO WORK ON POSITION */}
-          {/* +++++++++++++++++++++++++++++++++++++++++++ */}
-
-
-          
-
-
-          <div className="carousel-container">
-
             <div className="overlap-container">
-              <div className="box box-left"/>
-              <div className="box box-middle"/>
-              <div className="box box-right"/>
+              <div className="box-left"/>
+              <div className="box-middle"/>
+              <div className="box-right"/>
             </div>
 
             <div className="frame-overlay-dark-grey"></div> {/* Transparent overlay with a frame */}
