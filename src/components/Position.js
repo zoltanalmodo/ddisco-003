@@ -187,16 +187,10 @@ export const Position = () => {
 
           </div>
 
-          <div style={{
+          {/* <div style={{
             backgroundColor: 'black',
             height: '80px',
-          }}></div>
-
-
-          {/* +++++++++++++++++++++++++++++++++++++++++++ */}
-          {/* ADDING ANOTHER CAROUSEL TO WORK ON POSITION */}
-          {/* +++++++++++++++++++++++++++++++++++++++++++ */}
-          
+          }}></div> */}
 
         </div>
 
