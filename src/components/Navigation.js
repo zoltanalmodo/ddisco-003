@@ -14,8 +14,7 @@ function Navigation() {
     setActiveButtonWhite,
     setActiveButtonColor,
     setActiveButtonDisco,
-    setActiveButtonPosition,
-    // setActiveButtonBuy,
+    setActiveButtonBuy,
     setIsPastel,
   
   } = useContext(GlobalContext);
@@ -60,14 +59,14 @@ function Navigation() {
       globalState.activeButton === 'disco' ? 'black' : ''
     )
   }
-  const activeBackgroundPosition = () => {
+  const activeBackgroundBuy = () => {
     return(
-      globalState.activeButton === 'position' ? 'white' : ''
+      globalState.activeButton === 'buy' ? 'white' : ''
     )
   }
-  const activeColorPosition = () => {
+  const activeColorBuy = () => {
     return(
-      globalState.activeButton === 'position' ? 'black' : ''
+      globalState.activeButton === 'buy' ? 'black' : ''
     )
   }
   const activeBackgroundPastel = () => {
@@ -82,9 +81,11 @@ function Navigation() {
   return (
     
     <div className="navigation-wrapper">
+      
       <div className='navigation_position'>
 
         <nav>
+
             <div className='nav_links'>
                 <Link to='/black'>
                   <div className='nav_links_li'>
@@ -141,28 +142,19 @@ function Navigation() {
                     </button>
                   </div>
                 </Link>
-                <Link to='/position'>
+                <Link to='/buy'>
                   <div className='nav_links_li'>
                     <button
-                      onClick={setActiveButtonPosition}
+                      onClick={setActiveButtonBuy}
                       style={{
-                        backgroundColor: activeBackgroundPosition(),
-                        color: activeColorPosition()
-                      }}>position
-                    </button>
-                  </div>
-                </Link>
-                {/* <Link to={`/buy`}>
-                  <div className='nav_links_li'>
-                  <button
-                      style={{
-                        backgroundColor: 'black',
-                        color: 'white'
+                        backgroundColor: activeBackgroundBuy(),
+                        color: activeColorBuy()
                       }}>buy
                     </button>
                   </div>
-                </Link> */}
+                </Link>
             </div>
+
         </nav>
 
       </div>

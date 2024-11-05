@@ -51,10 +51,10 @@ export const AppReducer = (state, action) => {
         ...state,
         activeButton: 'disco'
       };
-    case 'SET_ACTIVE_BUTTON_POSITION' :
+    case 'SET_ACTIVE_BUTTON_BUY' :
       return {
         ...state,
-        activeButton: 'disco'
+        activeButton: 'buy'
       };
     case 'SET_IS_PASTEL' :
       return {

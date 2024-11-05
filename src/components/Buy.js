@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
-// import Navigation from './Navigation';
+import Navigation from './Navigation';
 import { GlobalContext } from '../context/GlobalState'
 
 import ddisco_c_001_1 from '../images/c/ddisco_c_001_1.jpg';
@@ -101,97 +101,99 @@ export const Buy = () => {
     
     <div className='body_white'>
        
+      <Navigation />
+     
       <div className='carousel_white'>
 
         <div style={{
             filter: (globalState.isPastel === 'true' ? 'brightness(105%) saturate(70%)' : 'brightness(100%) saturate(100%)'),
         }}>
 
-          <div style={{ filter: (`hue-rotate(${globalState.degree_001}deg)`) }}>
-            <AliceCarousel
-              autoPlay={false}
-              autoPlayStrategy={'all'}
-              autoPlayInterval={5000}
-              autoPlayDirection={'rtl'}
-              disableAutoPlayOnAction={true}
+          <div className="carousel-container">
 
-              infinite={true}
+            <div className="overlap-container">
+              <div className="box-white-left"/>
+              <div className="box-transparent-middle"/>
+              <div className="box-white-right"/>
+            </div>
 
-              mouseTrackingEnabled={true}
-              dotsDisabled={true}
-              buttonsDisabled={true}
-              swipeDisabled={false}
-              touchTrackingEnabled={true}
-              swipeDelta={0.1}
-              preventEventOnTouchMove={true}
-              items={galleryItems_001}
+            <div className="frame-overlay-dark-grey"></div> {/* Transparent overlay with a frame */}
 
-              startIndex={globalState.currentIndex_001}
+              <div style={{ filter: (`hue-rotate(${globalState.degree_001}deg)`) }}>
+                <AliceCarousel
+                  autoPlay={false}
+                  autoPlayStrategy={'all'}
+                  autoPlayInterval={5000}
+                  autoPlayDirection={'rtl'}
+                  disableAutoPlayOnAction={true}
+                  infinite={true}
+                  mouseTrackingEnabled={true}
+                  dotsDisabled={true}
+                  buttonsDisabled={true}
+                  swipeDisabled={false}
+                  touchTrackingEnabled={true}
+                  swipeDelta={0.1}
+                  preventEventOnTouchMove={true}
+                  items={galleryItems_001}
+                  startIndex={globalState.currentIndex_001}
+                  onSlideChanged={ (e) => updateIndex_001( e.item ) }
+                  slideToIndex={globalState.currentIndex_001}
+                />
+              </div>
 
-              onSlideChanged={ (e) => updateIndex_001( e.item ) }
+              <div style={{ filter: (`hue-rotate(${globalState.degree_002}deg)`) }}>
+                <AliceCarousel
+                  autoPlay={false}
+                  autoPlayStrategy={'all'}
+                  autoPlayInterval={5000}
+                  autoPlayDirection={'ltr'}
+                  disableAutoPlayOnAction={true}
+                  infinite={true}
+                  mouseTrackingEnabled={true}
+                  dotsDisabled={true}
+                  buttonsDisabled={true}
+                  swipeDisabled={false}
+                  touchTrackingEnabled={true}
+                  swipeDelta={0.1}
+                  preventEventOnTouchMove={true}
+                  items={galleryItems_002}
+                  startIndex={globalState.currentIndex_002}
+                  onSlideChanged={ (e) => updateIndex_002( e.item ) }
+                  slideToIndex={globalState.currentIndex_002}
+                />
+              </div>
 
-              slideToIndex={globalState.currentIndex_001}
-              
-            />
+              <div style={{ filter: (`hue-rotate(${globalState.degree_003}deg)`) }}>
+                <AliceCarousel
+                  autoPlay={false}
+                  autoPlayStrategy={'all'}
+                  autoPlayInterval={5000}
+                  autoPlayDirection={'rtl'}
+                  disableAutoPlayOnAction={true}
+                  infinite={true}
+                  mouseTrackingEnabled={true}
+                  dotsDisabled={true}
+                  buttonsDisabled={true}
+                  swipeDisabled={false}
+                  touchTrackingEnabled={true}
+                  swipeDelta={0.1}
+                  preventEventOnTouchMove={true}
+                  items={galleryItems_003}
+                  startIndex={globalState.currentIndex_003}
+                  onSlideChanged={ (e) => updateIndex_003( e.item ) }
+                  slideToIndex={globalState.currentIndex_003}
+                />
+              </div>
+
           </div>
 
-          <div style={{ filter: (`hue-rotate(${globalState.degree_002}deg)`) }}>
-            <AliceCarousel
-              autoPlay={false}
-              autoPlayStrategy={'all'}
-              autoPlayInterval={5000}
-              autoPlayDirection={'ltr'}
-              disableAutoPlayOnAction={true}
-
-              infinite={true}
-
-              mouseTrackingEnabled={true}
-              dotsDisabled={true}
-              buttonsDisabled={true}
-              swipeDisabled={false}
-              touchTrackingEnabled={true}
-              swipeDelta={0.1}
-              preventEventOnTouchMove={true}
-              items={galleryItems_002}
-
-              startIndex={globalState.currentIndex_002}
-
-              onSlideChanged={ (e) => updateIndex_002( e.item ) }
-
-              slideToIndex={globalState.currentIndex_002}
-              
-            />
-          </div>
-
-          <div style={{ filter: (`hue-rotate(${globalState.degree_003}deg)`) }}>
-            <AliceCarousel
-              autoPlay={false}
-              autoPlayStrategy={'all'}
-              autoPlayInterval={5000}
-              autoPlayDirection={'rtl'}
-              disableAutoPlayOnAction={true}
-
-              infinite={true}
-
-              mouseTrackingEnabled={true}
-              dotsDisabled={true}
-              buttonsDisabled={true}
-              swipeDisabled={false}
-              touchTrackingEnabled={true}
-              swipeDelta={0.1}
-              preventEventOnTouchMove={true}
-              items={galleryItems_003}
-
-              startIndex={globalState.currentIndex_003}
-
-              onSlideChanged={ (e) => updateIndex_003( e.item ) }
-
-              slideToIndex={globalState.currentIndex_003}
-              
-            />
-          </div>
+          {/* <div style={{
+            backgroundColor: 'black',
+            height: '80px',
+          }}></div> */}
 
         </div>
+
       </div>
       
     </div>

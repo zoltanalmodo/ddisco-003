@@ -305,6 +305,12 @@ export const Color = () => {
             }}>
 
             <div className="carousel-container">
+
+              <div className="overlap-container">
+                <div className="box-white-left"/>
+                <div className="box-transparent-middle"/>
+                <div className="box-white-right"/>
+              </div>
             
               
               <div className="frame-overlay-dark-grey"></div> {/* Transparent overlay with a frame */}
@@ -317,9 +323,7 @@ export const Color = () => {
                     autoPlayInterval={5000}
                     autoPlayDirection={'rtl'}
                     disableAutoPlayOnAction={true}
-
                     infinite={true}
-
                     mouseTrackingEnabled={true}
                     dotsDisabled={true}
                     buttonsDisabled={true}
@@ -327,7 +331,6 @@ export const Color = () => {
                     touchTrackingEnabled={true}
                     swipeDelta={0.1}
                     preventEventOnTouchMove={true}
-
                     items={actualItems_001(globalState.currentIndex_001)}
                     startIndex={globalState.currentIndex_001}
                     slideToIndex={globalState.currentIndex_001}
@@ -342,9 +345,7 @@ export const Color = () => {
                     autoPlayInterval={5000}
                     autoPlayDirection={'ltr'}
                     disableAutoPlayOnAction={true}
-
                     infinite={true}
-
                     mouseTrackingEnabled={true}
                     dotsDisabled={true}
                     buttonsDisabled={true}
@@ -352,7 +353,6 @@ export const Color = () => {
                     touchTrackingEnabled={true}
                     swipeDelta={0.1}
                     preventEventOnTouchMove={true}
-
                     items={actualItems_002(globalState.currentIndex_002)}
                     startIndex={globalState.currentIndex_002}
                     slideToIndex={globalState.currentIndex_002}
@@ -367,9 +367,7 @@ export const Color = () => {
                     autoPlayInterval={5000}
                     autoPlayDirection={'rtl'}
                     disableAutoPlayOnAction={true}
-
                     infinite={true}
-
                     mouseTrackingEnabled={true}
                     dotsDisabled={true}
                     buttonsDisabled={true}
@@ -377,7 +375,6 @@ export const Color = () => {
                     touchTrackingEnabled={true}
                     swipeDelta={0.1}
                     preventEventOnTouchMove={true}
-
                     items={actualItems_003(globalState.currentIndex_003)}
                     startIndex={globalState.currentIndex_003}
                     slideToIndex={globalState.currentIndex_003}

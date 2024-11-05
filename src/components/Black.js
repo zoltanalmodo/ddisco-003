@@ -111,6 +111,12 @@ export const Black = () => {
 
         <div className="carousel-container">
 
+          <div className="overlap-container">
+            <div className="box-black-left"/>
+            <div className="box-transparent-middle"/>
+            <div className="box-black-right"/>
+          </div>
+
           <div className="frame-overlay-light-grey"></div> {/* Transparent overlay with a frame */}
 
             <AliceCarousel 

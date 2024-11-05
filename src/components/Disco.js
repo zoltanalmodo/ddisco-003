@@ -111,6 +111,12 @@ export const Disco = () => {
 
           <div className="carousel-container">
 
+            <div className="overlap-container">
+              <div className="box-white-left"/>
+              <div className="box-transparent-middle"/>
+              <div className="box-white-right"/>
+            </div>
+
             <div className="frame-overlay-dark-grey"></div> {/* Transparent overlay with a frame */}
 
               <div style={{ filter: (`hue-rotate(${globalState.degree_001}deg)`) }}>
@@ -120,9 +126,7 @@ export const Disco = () => {
                   autoPlayInterval={5000}
                   autoPlayDirection={'rtl'}
                   disableAutoPlayOnAction={true}
-
                   infinite={true}
-
                   mouseTrackingEnabled={true}
                   dotsDisabled={true}
                   buttonsDisabled={true}
@@ -131,13 +135,9 @@ export const Disco = () => {
                   swipeDelta={0.1}
                   preventEventOnTouchMove={true}
                   items={galleryItems_001}
-
                   startIndex={globalState.currentIndex_001}
-
                   onSlideChanged={ (e) => updateIndex_001( e.item ) }
-
                   slideToIndex={globalState.currentIndex_001}
-                  
                 />
               </div>
 
@@ -148,9 +148,7 @@ export const Disco = () => {
                   autoPlayInterval={5000}
                   autoPlayDirection={'ltr'}
                   disableAutoPlayOnAction={true}
-
                   infinite={true}
-
                   mouseTrackingEnabled={true}
                   dotsDisabled={true}
                   buttonsDisabled={true}
@@ -159,13 +157,9 @@ export const Disco = () => {
                   swipeDelta={0.1}
                   preventEventOnTouchMove={true}
                   items={galleryItems_002}
-
                   startIndex={globalState.currentIndex_002}
-
                   onSlideChanged={ (e) => updateIndex_002( e.item ) }
-
                   slideToIndex={globalState.currentIndex_002}
-                  
                 />
               </div>
 
@@ -176,9 +170,7 @@ export const Disco = () => {
                   autoPlayInterval={5000}
                   autoPlayDirection={'rtl'}
                   disableAutoPlayOnAction={true}
-
                   infinite={true}
-
                   mouseTrackingEnabled={true}
                   dotsDisabled={true}
                   buttonsDisabled={true}
@@ -187,13 +179,9 @@ export const Disco = () => {
                   swipeDelta={0.1}
                   preventEventOnTouchMove={true}
                   items={galleryItems_003}
-
                   startIndex={globalState.currentIndex_003}
-
                   onSlideChanged={ (e) => updateIndex_003( e.item ) }
-
                   slideToIndex={globalState.currentIndex_003}
-                  
                 />
               </div>
 

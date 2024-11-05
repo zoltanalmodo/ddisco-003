@@ -96,9 +96,9 @@ export const GlobalProvider = ({ children }) => {
     })
   }
 
-  function setActiveButtonPosition() {
+  function setActiveButtonBuy() {
     dispatch({
-      type: 'SET_ACTIVE_BUTTON_POSITION',
+      type: 'SET_ACTIVE_BUTTON_BUY',
       payload: 'position'
     })
   }
@@ -129,7 +129,7 @@ export const GlobalProvider = ({ children }) => {
         setActiveButtonWhite,
         setActiveButtonColor,
         setActiveButtonDisco,
-        setActiveButtonPosition,
+        setActiveButtonBuy,
         setIsPastel,
       }}>
       { children }
