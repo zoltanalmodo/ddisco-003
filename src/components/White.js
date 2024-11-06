@@ -120,9 +120,7 @@ export const White = () => {
               autoPlayInterval={5000}
               autoPlayDirection={'rtl'}
               disableAutoPlayOnAction={true}
-
               infinite={true}
-
               mouseTrackingEnabled={true}
               dotsDisabled={true}
               buttonsDisabled={true}

@@ -4,19 +4,18 @@
 
 .body_black {
   text-align: center;
-  height: auto;
+  height: 100vh;
   width: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-bottom: 100px;
   background-color: black;
   position: relative;
 }
 
 .body_white {
   text-align: center;
-  height: auto;
+  height: 100vh;
   width: auto;
   display: flex;
   flex-direction: column;
@@ -68,7 +67,7 @@ button:active {
 /* NAVIGATION START */
 
 .navigation-wrapper {
-  padding-bottom: 34px;
+  padding-bottom: 60px;
 }
 
 .navigation_position {
