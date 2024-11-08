@@ -116,79 +116,7 @@ export const Buy = () => {
 
             <div className="frame-overlay-dark-grey"></div> {/* Transparent overlay with a frame */}
 
-                <AliceCarousel
-                  autoPlay={false}
-                  autoPlayStrategy={'all'}
-                  autoPlayInterval={5000}
-                  autoPlayDirection={'rtl'}
-                  disableAutoPlayOnAction={true}
-                  infinite={true}
-                  mouseTrackingEnabled={true}
-                  dotsDisabled={true}
-                  buttonsDisabled={true}
-                  swipeDisabled={true}
-                  touchTrackingEnabled={true}
-                  swipeDelta={0.1}
-                  preventEventOnTouchMove={true}
-                  items={galleryItems_001}
-                  startIndex={globalState.currentIndex_001}
-                />
- 
-                <AliceCarousel
-                  autoPlay={false}
-                  autoPlayStrategy={'all'}
-                  autoPlayInterval={5000}
-                  autoPlayDirection={'ltr'}
-                  disableAutoPlayOnAction={true}
-                  infinite={true}
-                  mouseTrackingEnabled={true}
-                  dotsDisabled={true}
-                  buttonsDisabled={true}
-                  swipeDisabled={true}
-                  touchTrackingEnabled={true}
-                  swipeDelta={0.1}
-                  preventEventOnTouchMove={true}
-                  items={galleryItems_002}
-                  startIndex={globalState.currentIndex_002}
-                  slideToIndex={globalState.currentIndex_002}
-                />
-
-
-                <AliceCarousel
-                  autoPlay={false}
-                  autoPlayStrategy={'all'}
-                  autoPlayInterval={5000}
-                  autoPlayDirection={'rtl'}
-                  disableAutoPlayOnAction={true}
-                  infinite={true}
-                  mouseTrackingEnabled={true}
-                  dotsDisabled={true}
-                  buttonsDisabled={true}
-                  swipeDisabled={true}
-                  touchTrackingEnabled={true}
-                  swipeDelta={0.1}
-                  preventEventOnTouchMove={true}
-                  items={galleryItems_003}
-                  startIndex={globalState.currentIndex_003}
-                  slideToIndex={globalState.currentIndex_003}
-                />
-              
-          </div>
-
-          {/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
-          {/* ++++++++++++++++++   buy small image 2 +++++++++++++++++++ */}
-          {/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
-
-          <div className="carousel-container-buy">
-
-            <div className="overlap-container">
-              <div className="box-white-left"/>
-              <div className="box-transparent-middle"/>
-              <div className="box-white-right"/>
-            </div>
-
-            <div className="frame-overlay-dark-grey"></div> {/* Transparent overlay with a frame */}
-
+              <div style={{ filter: (`hue-rotate(${globalState.degree_001}deg)`) }}>
                 <AliceCarousel
                   autoPlay={false}
                   autoPlayStrategy={'all'}
@@ -207,7 +135,9 @@ export const Buy = () => {
                   startIndex={globalState.currentIndex_001}
                   slideToIndex={globalState.currentIndex_001}
                 />
+              </div>
 
+              <div style={{ filter: (`hue-rotate(${globalState.degree_002}deg)`) }}>
                 <AliceCarousel
                   autoPlay={false}
                   autoPlayStrategy={'all'}
@@ -226,7 +156,9 @@ export const Buy = () => {
                   startIndex={globalState.currentIndex_002}
                   slideToIndex={globalState.currentIndex_002}
                 />
-              
+              </div>
+
+              <div style={{ filter: (`hue-rotate(${globalState.degree_003}deg)`) }}>
                 <AliceCarousel
                   autoPlay={false}
                   autoPlayStrategy={'all'}
@@ -245,7 +177,86 @@ export const Buy = () => {
                   startIndex={globalState.currentIndex_003}
                   slideToIndex={globalState.currentIndex_003}
                 />
-              
+              </div>
+
+          </div>
+
+          {/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+          {/* ++++++++++++++++++   buy small image 2 +++++++++++++++++++ */}
+          {/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
+
+          <div className="carousel-container-buy">
+
+            <div className="overlap-container">
+              <div className="box-white-left"/>
+              <div className="box-transparent-middle"/>
+              <div className="box-white-right"/>
+            </div>
+
+            <div className="frame-overlay-dark-grey"></div> {/* Transparent overlay with a frame */}
+
+              <div style={{ filter: (`hue-rotate(${globalState.degree_001}deg)`) }}>
+                <AliceCarousel
+                  autoPlay={false}
+                  autoPlayStrategy={'all'}
+                  autoPlayInterval={5000}
+                  autoPlayDirection={'rtl'}
+                  disableAutoPlayOnAction={true}
+                  infinite={true}
+                  mouseTrackingEnabled={true}
+                  dotsDisabled={true}
+                  buttonsDisabled={true}
+                  swipeDisabled={true}
+                  touchTrackingEnabled={true}
+                  swipeDelta={0.1}
+                  preventEventOnTouchMove={true}
+                  items={galleryItems_001}
+                  startIndex={globalState.currentIndex_001}
+                  slideToIndex={globalState.currentIndex_001}
+                />
+              </div>
+
+              <div style={{ filter: (`hue-rotate(${globalState.degree_002}deg)`) }}>
+                <AliceCarousel
+                  autoPlay={false}
+                  autoPlayStrategy={'all'}
+                  autoPlayInterval={5000}
+                  autoPlayDirection={'ltr'}
+                  disableAutoPlayOnAction={true}
+                  infinite={true}
+                  mouseTrackingEnabled={true}
+                  dotsDisabled={true}
+                  buttonsDisabled={true}
+                  swipeDisabled={true}
+                  touchTrackingEnabled={true}
+                  swipeDelta={0.1}
+                  preventEventOnTouchMove={true}
+                  items={galleryItems_002}
+                  startIndex={globalState.currentIndex_002}
+                  slideToIndex={globalState.currentIndex_002}
+                />
+              </div>
+
+              <div style={{ filter: (`hue-rotate(${globalState.degree_003}deg)`) }}>
+                <AliceCarousel
+                  autoPlay={false}
+                  autoPlayStrategy={'all'}
+                  autoPlayInterval={5000}
+                  autoPlayDirection={'rtl'}
+                  disableAutoPlayOnAction={true}
+                  infinite={true}
+                  mouseTrackingEnabled={true}
+                  dotsDisabled={true}
+                  buttonsDisabled={true}
+                  swipeDisabled={true}
+                  touchTrackingEnabled={true}
+                  swipeDelta={0.1}
+                  preventEventOnTouchMove={true}
+                  items={galleryItems_003}
+                  startIndex={globalState.currentIndex_003}
+                  slideToIndex={globalState.currentIndex_003}
+                />
+              </div>
 
           </div>
 
