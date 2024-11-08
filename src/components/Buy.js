@@ -1,6 +1,4 @@
 import React, { useContext } from 'react'
-import AliceCarousel from 'react-alice-carousel'
-import 'react-alice-carousel/lib/alice-carousel.css'
 import Navigation from './Navigation';
 import { GlobalContext } from '../context/GlobalState'
 
@@ -94,170 +92,42 @@ export const Buy = () => {
 
   } = useContext(GlobalContext);
 
+  const selectedImageIndex_001 = globalState.currentIndex_001;
+  const selectedImage_001 = galleryItems_001[selectedImageIndex_001]
+  const selectedImageIndex_002 = globalState.currentIndex_002;
+  const selectedImage_002 = galleryItems_002[selectedImageIndex_002]
+  const selectedImageIndex_003 = globalState.currentIndex_003;
+  const selectedImage_003 = galleryItems_003[selectedImageIndex_003]
+
+
   return (
-    
-    <div className='body_white'>
-       
+    <div className='body_white_buy'>
       <Navigation />
-     
-      <div className='carousel_white'>
+       
+      
 
-        <div style={{
-            filter: (globalState.isPastel === 'true' ? 'brightness(105%) saturate(70%)' : 'brightness(100%) saturate(100%)'),
-        }}>
-
-          <div className="carousel-container-buy">
-
-            <div className="overlap-container">
-              <div className="box-white-left"/>
-              <div className="box-transparent-middle"/>
-              <div className="box-white-right"/>
-            </div>
-
-            <div className="frame-overlay-dark-grey"></div> {/* Transparent overlay with a frame */}
-
-                <AliceCarousel
-                  autoPlay={false}
-                  autoPlayStrategy={'all'}
-                  autoPlayInterval={5000}
-                  autoPlayDirection={'rtl'}
-                  disableAutoPlayOnAction={true}
-                  infinite={true}
-                  mouseTrackingEnabled={true}
-                  dotsDisabled={true}
-                  buttonsDisabled={true}
-                  swipeDisabled={true}
-                  touchTrackingEnabled={true}
-                  swipeDelta={0.1}
-                  preventEventOnTouchMove={true}
-                  items={galleryItems_001}
-                  startIndex={globalState.currentIndex_001}
-                />
- 
-                <AliceCarousel
-                  autoPlay={false}
-                  autoPlayStrategy={'all'}
-                  autoPlayInterval={5000}
-                  autoPlayDirection={'ltr'}
-                  disableAutoPlayOnAction={true}
-                  infinite={true}
-                  mouseTrackingEnabled={true}
-                  dotsDisabled={true}
-                  buttonsDisabled={true}
-                  swipeDisabled={true}
-                  touchTrackingEnabled={true}
-                  swipeDelta={0.1}
-                  preventEventOnTouchMove={true}
-                  items={galleryItems_002}
-                  startIndex={globalState.currentIndex_002}
-                  slideToIndex={globalState.currentIndex_002}
-                />
-
-
-                <AliceCarousel
-                  autoPlay={false}
-                  autoPlayStrategy={'all'}
-                  autoPlayInterval={5000}
-                  autoPlayDirection={'rtl'}
-                  disableAutoPlayOnAction={true}
-                  infinite={true}
-                  mouseTrackingEnabled={true}
-                  dotsDisabled={true}
-                  buttonsDisabled={true}
-                  swipeDisabled={true}
-                  touchTrackingEnabled={true}
-                  swipeDelta={0.1}
-                  preventEventOnTouchMove={true}
-                  items={galleryItems_003}
-                  startIndex={globalState.currentIndex_003}
-                  slideToIndex={globalState.currentIndex_003}
-                />
-              
-          </div>
-
-          {/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
-          {/* ++++++++++++++++++   buy small image 2 +++++++++++++++++++ */}
-          {/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */}
-
-          <div className="carousel-container-buy">
-
-            <div className="overlap-container">
-              <div className="box-white-left"/>
-              <div className="box-transparent-middle"/>
-              <div className="box-white-right"/>
-            </div>
-
-            <div className="frame-overlay-dark-grey"></div> {/* Transparent overlay with a frame */}
-
-                <AliceCarousel
-                  autoPlay={false}
-                  autoPlayStrategy={'all'}
-                  autoPlayInterval={5000}
-                  autoPlayDirection={'rtl'}
-                  disableAutoPlayOnAction={true}
-                  infinite={true}
-                  mouseTrackingEnabled={true}
-                  dotsDisabled={true}
-                  buttonsDisabled={true}
-                  swipeDisabled={true}
-                  touchTrackingEnabled={true}
-                  swipeDelta={0.1}
-                  preventEventOnTouchMove={true}
-                  items={galleryItems_001}
-                  startIndex={globalState.currentIndex_001}
-                  slideToIndex={globalState.currentIndex_001}
-                />
-
-                <AliceCarousel
-                  autoPlay={false}
-                  autoPlayStrategy={'all'}
-                  autoPlayInterval={5000}
-                  autoPlayDirection={'ltr'}
-                  disableAutoPlayOnAction={true}
-                  infinite={true}
-                  mouseTrackingEnabled={true}
-                  dotsDisabled={true}
-                  buttonsDisabled={true}
-                  swipeDisabled={true}
-                  touchTrackingEnabled={true}
-                  swipeDelta={0.1}
-                  preventEventOnTouchMove={true}
-                  items={galleryItems_002}
-                  startIndex={globalState.currentIndex_002}
-                  slideToIndex={globalState.currentIndex_002}
-                />
-              
-                <AliceCarousel
-                  autoPlay={false}
-                  autoPlayStrategy={'all'}
-                  autoPlayInterval={5000}
-                  autoPlayDirection={'rtl'}
-                  disableAutoPlayOnAction={true}
-                  infinite={true}
-                  mouseTrackingEnabled={true}
-                  dotsDisabled={true}
-                  buttonsDisabled={true}
-                  swipeDisabled={true}
-                  touchTrackingEnabled={true}
-                  swipeDelta={0.1}
-                  preventEventOnTouchMove={true}
-                  items={galleryItems_003}
-                  startIndex={globalState.currentIndex_003}
-                  slideToIndex={globalState.currentIndex_003}
-                />
-              
-
-          </div>
+        <div className="carousel_white_buy">
 
           <div style={{
-            backgroundColor: 'black',
-            height: '80px',
-          }}></div>
+            filter: (globalState.isPastel === 'true' ? 'brightness(105%) saturate(70%)' : 'brightness(100%) saturate(100%)'),
+          }}>
 
-        </div>
+            <div className="frame-overlay-dark-grey"></div>
 
-      </div>
-      
-    </div>
+            <div className="single-image-display">
+              {selectedImage_001}
+            </div>
+            <div className="single-image-display">
+              {selectedImage_002}
+            </div>
+            <div className="single-image-display">
+              {selectedImage_003}
+            </div>
+              
+          </div>
+
+        </div> 
+
+    </div>  
   )
 }
