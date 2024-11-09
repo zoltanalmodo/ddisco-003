@@ -278,13 +278,17 @@ li {
       padding-right: 0px;
     }
     .carousel_white_buy {
-      margin-bottom: 100px;
+      margin-bottom: 200px;
     }
     .frame-overlay-dark-grey {
       display: none;
     }
     .frame-overlay-light-grey {
       display: none;
+    }
+    .frame-overlay-dark-grey-buy {
+      width: 235px;
+      height: 260px;
     }
 }
 
@@ -323,13 +327,17 @@ li {
       padding-right: 0px;
     }
     .carousel_white_buy {
-      margin-bottom: 100px;
+      margin-bottom: 200px;
     }
     .frame-overlay-dark-grey {
       display: none;
     }
     .frame-overlay-light-grey {
       display: none;
+    }
+    .frame-overlay-dark-grey-buy {
+      width: 251px;
+      height: 278px;
     }
 }
 
@@ -366,13 +374,17 @@ li {
       padding-right: 0px;
     }
     .carousel_white_buy {
-      margin-bottom: 100px;
+      margin-bottom: 200px;
     }
     .frame-overlay-dark-grey {
       display: none;
     }
     .frame-overlay-light-grey {
       display: none;
+    }
+    .frame-overlay-dark-grey-buy {
+      width: 251px;
+      height: 278px;
     }
 }
 
@@ -411,13 +423,17 @@ li {
       padding-right: 0px;
     }
     .carousel_white_buy {
-      margin-bottom: 100px;
+      margin-bottom: 200px;
     }
     .frame-overlay-dark-grey {
       display: none;
     }
     .frame-overlay-light-grey {
       display: none;
+    }
+    .frame-overlay-dark-grey-buy {
+      width: 260px;
+      height: 288px;
     }
 }
 
@@ -457,13 +473,17 @@ li {
       padding-right: 0px;
     }
     .carousel_white_buy {
-      margin-bottom: 100px;
+      margin-bottom: 200px;
     }
     .frame-overlay-dark-grey {
       display: none;
     }
     .frame-overlay-light-grey {
       display: none;
+    }
+    .frame-overlay-dark-grey-buy {
+      width: 324px;
+      height: 358px;
     }
 
 }
@@ -480,13 +500,17 @@ li {
       width: 386px;
     }
     .carousel_white_buy {
-      margin-bottom: 100px;
+      margin-bottom: 200px;
     }
     .frame-overlay-dark-grey {
       display: none;
     }
     .frame-overlay-light-grey {
       display: none;
+    }
+    .frame-overlay-dark-grey-buy {
+      width: 349px;
+      height: 386px;
     }
 }
 
@@ -502,13 +526,17 @@ li {
       width: 652px;
     }
     .carousel_white_buy {
-      margin-bottom: 100px;
+      margin-bottom: 200px;
     }
     .frame-overlay-dark-grey {
       display: none;
     }
     .frame-overlay-light-grey {
       display: none;
+    }
+    .frame-overlay-dark-grey-buy {
+      width: 590px;
+      height: 652px;
     }
 }
 
@@ -524,7 +552,7 @@ li {
       width: 918px;
     }
     .carousel_white_buy {
-      margin-bottom: 100px;
+      margin-bottom: 200px;
     }
     .frame-overlay-dark-grey {
       display: none;
@@ -532,11 +560,15 @@ li {
     .frame-overlay-light-grey {
       display: none;
     }
+    .frame-overlay-dark-grey-buy {
+      width: 831px;
+      height: 918px;
+    }
 }
 
-/*==================================================================*/
-/*---------------------- MEDIA QUERIES end -------------------------*/
-/*==================================================================*/
+/*==============================================================================================================================*/
+/*---------------------------------------------------- MEDIA QUERIES end -------------------------------------------------------*/
+/*==============================================================================================================================*/
 
 /* ------------------ LAPTOPS ------------------ */
 
