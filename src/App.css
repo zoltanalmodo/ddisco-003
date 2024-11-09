@@ -132,6 +132,18 @@ nav {
   transform: translate(-50%, -50%);
 }
 
+.frame-overlay-dark-grey-buy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 670px;
+  height: 740px;
+  border: 5px solid hsl(0, 0%, 20%);
+  pointer-events: none;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+
 .frame-overlay-light-grey {
   position: absolute;
   top: 50%; 
@@ -228,9 +240,9 @@ li {
 }
 
 
-/*==================================================================*/
-/*--------------------- MEDIA QUERIES start ------------------------*/
-/*==================================================================*/
+/*==========================================================================================================================*/
+/*------------------------------------------------- MEDIA QUERIES start ----------------------------------------------------*/
+/*==========================================================================================================================*/
 
 
 /* Portrait and Landscape */
@@ -255,7 +267,6 @@ li {
     }
     .navigation-wrapper {
       padding-bottom: 0px;
-      background-color: violet;
     }
     .nav_links {
       width: 100%;
@@ -265,6 +276,9 @@ li {
     .nav_links_li {
       padding-left: 0px;
       padding-right: 0px;
+    }
+    .carousel_white_buy {
+      margin-bottom: 100px;
     }
     .frame-overlay-dark-grey {
       display: none;
@@ -298,7 +312,6 @@ li {
     }
     .navigation-wrapper {
       padding-bottom: 0px;
-      background-color: violet;
     }
     .nav_links {
       width: 100%;
@@ -308,6 +321,9 @@ li {
     .nav_links_li {
       padding-left: 0px;
       padding-right: 0px;
+    }
+    .carousel_white_buy {
+      margin-bottom: 100px;
     }
     .frame-overlay-dark-grey {
       display: none;
@@ -339,7 +355,6 @@ li {
     }
     .navigation-wrapper {
       padding-bottom: 0px;
-      background-color: violet;
     }
     .nav_links {
       width: 100%;
@@ -349,6 +364,9 @@ li {
     .nav_links_li {
       padding-left: 0px;
       padding-right: 0px;
+    }
+    .carousel_white_buy {
+      margin-bottom: 100px;
     }
     .frame-overlay-dark-grey {
       display: none;
@@ -382,7 +400,6 @@ li {
     }
     .navigation-wrapper {
       padding-bottom: 0px;
-      background-color: violet;
     }
     .nav_links {
       width: 100%;
@@ -392,6 +409,9 @@ li {
     .nav_links_li {
       padding-left: 0px;
       padding-right: 0px;
+    }
+    .carousel_white_buy {
+      margin-bottom: 100px;
     }
     .frame-overlay-dark-grey {
       display: none;
@@ -426,7 +446,6 @@ li {
     }
     .navigation-wrapper {
       padding-bottom: 0px;
-      background-color: violet;
     }
     .nav_links {
       width: 100%;
@@ -436,6 +455,9 @@ li {
     .nav_links_li {
       padding-left: 0px;
       padding-right: 0px;
+    }
+    .carousel_white_buy {
+      margin-bottom: 100px;
     }
     .frame-overlay-dark-grey {
       display: none;
@@ -457,6 +479,9 @@ li {
       height: 166px;
       width: 386px;
     }
+    .carousel_white_buy {
+      margin-bottom: 100px;
+    }
     .frame-overlay-dark-grey {
       display: none;
     }
@@ -476,6 +501,9 @@ li {
       height: 280px;
       width: 652px;
     }
+    .carousel_white_buy {
+      margin-bottom: 100px;
+    }
     .frame-overlay-dark-grey {
       display: none;
     }
@@ -494,6 +522,9 @@ li {
     .CarouselSize {
       height: 394px;
       width: 918px;
+    }
+    .carousel_white_buy {
+      margin-bottom: 100px;
     }
     .frame-overlay-dark-grey {
       display: none;

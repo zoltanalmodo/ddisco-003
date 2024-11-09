@@ -101,7 +101,7 @@ export const Buy = () => {
 
 
   return (
-    <div className='body_white_buy'>
+    <div className='body_white'>
       <Navigation />
        
       
@@ -112,7 +112,7 @@ export const Buy = () => {
             filter: (globalState.isPastel === 'true' ? 'brightness(105%) saturate(70%)' : 'brightness(100%) saturate(100%)'),
           }}>
 
-            <div className="frame-overlay-dark-grey"></div>
+            <div className="frame-overlay-dark-grey-buy"></div>
 
             <div className="single-image-display">
               {selectedImage_001}
