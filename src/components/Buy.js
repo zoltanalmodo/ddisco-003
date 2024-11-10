@@ -103,8 +103,6 @@ export const Buy = () => {
   return (
     <div className='body_white'>
       <Navigation />
-       
-      
 
         <div className="carousel_white_buy">
 

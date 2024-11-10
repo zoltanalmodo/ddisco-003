@@ -43,48 +43,48 @@ import ddisco_b_012_2 from '../images/b/ddisco_b_012_2.jpg';
 import ddisco_b_012_3 from '../images/b/ddisco_b_012_3.jpg';
 
 let galleryItems_001 = [
-  <img alt='b_001_1' src={ddisco_b_001_1} className="CarouselSize" />,
-  <img alt='b_002_1' src={ddisco_b_002_1} className="CarouselSize" />,
-  <img alt='b_003_1' src={ddisco_b_003_1} className="CarouselSize" />,
-  <img alt='b_004_1' src={ddisco_b_004_1} className="CarouselSize" />,
-  <img alt='b_005_1' src={ddisco_b_005_1} className="CarouselSize" />,
-  <img alt='b_006_1' src={ddisco_b_006_1} className="CarouselSize" />,
-  <img alt='b_007_1' src={ddisco_b_007_1} className="CarouselSize" />,
-  <img alt='b_008_1' src={ddisco_b_008_1} className="CarouselSize" />,
-  <img alt='b_009_1' src={ddisco_b_009_1} className="CarouselSize" />,
-  <img alt='b_010_1' src={ddisco_b_010_1} className="CarouselSize" />,
-  <img alt='b_011_1' src={ddisco_b_011_1} className="CarouselSize" />,
-  <img alt='b_012_1' src={ddisco_b_012_1} className="CarouselSize" />
+  <img alt='b_001_1' index={0} src={ddisco_b_001_1} className="CarouselSize" />,
+  <img alt='b_002_1' index={1} src={ddisco_b_002_1} className="CarouselSize" />,
+  <img alt='b_003_1' index={2} src={ddisco_b_003_1} className="CarouselSize" />,
+  <img alt='b_004_1' index={3} src={ddisco_b_004_1} className="CarouselSize" />,
+  <img alt='b_005_1' index={4} src={ddisco_b_005_1} className="CarouselSize" />,
+  <img alt='b_006_1' index={5} src={ddisco_b_006_1} className="CarouselSize" />,
+  <img alt='b_007_1' index={6} src={ddisco_b_007_1} className="CarouselSize" />,
+  <img alt='b_008_1' index={7} src={ddisco_b_008_1} className="CarouselSize" />,
+  <img alt='b_009_1' index={8} src={ddisco_b_009_1} className="CarouselSize" />,
+  <img alt='b_010_1' index={9} src={ddisco_b_010_1} className="CarouselSize" />,
+  <img alt='b_011_1' index={10} src={ddisco_b_011_1} className="CarouselSize" />,
+  <img alt='b_012_1' index={11} src={ddisco_b_012_1} className="CarouselSize" />
 ]
 
 let galleryItems_002 = [
-  <img alt='b_001_2' src={ddisco_b_001_2} className="CarouselSize" />,
-  <img alt='b_002_2' src={ddisco_b_002_2} className="CarouselSize" />,
-  <img alt='b_003_2' src={ddisco_b_003_2} className="CarouselSize" />,
-  <img alt='b_004_2' src={ddisco_b_004_2} className="CarouselSize" />,
-  <img alt='b_005_2' src={ddisco_b_005_2} className="CarouselSize" />,
-  <img alt='b_006_2' src={ddisco_b_006_2} className="CarouselSize" />,
-  <img alt='b_007_2' src={ddisco_b_007_2} className="CarouselSize" />,
-  <img alt='b_008_2' src={ddisco_b_008_2} className="CarouselSize" />,
-  <img alt='b_009_2' src={ddisco_b_009_2} className="CarouselSize" />,
-  <img alt='b_010_2' src={ddisco_b_010_2} className="CarouselSize" />,
-  <img alt='b_011_2' src={ddisco_b_011_2} className="CarouselSize" />,
-  <img alt='b_012_2' src={ddisco_b_012_2} className="CarouselSize" />
+  <img alt='b_001_2' index={0} src={ddisco_b_001_2} className="CarouselSize" />,
+  <img alt='b_002_2' index={1} src={ddisco_b_002_2} className="CarouselSize" />,
+  <img alt='b_003_2' index={2} src={ddisco_b_003_2} className="CarouselSize" />,
+  <img alt='b_004_2' index={3} src={ddisco_b_004_2} className="CarouselSize" />,
+  <img alt='b_005_2' index={4} src={ddisco_b_005_2} className="CarouselSize" />,
+  <img alt='b_006_2' index={5} src={ddisco_b_006_2} className="CarouselSize" />,
+  <img alt='b_007_2' index={6} src={ddisco_b_007_2} className="CarouselSize" />,
+  <img alt='b_008_2' index={7} src={ddisco_b_008_2} className="CarouselSize" />,
+  <img alt='b_009_2' index={8} src={ddisco_b_009_2} className="CarouselSize" />,
+  <img alt='b_010_2' index={9} src={ddisco_b_010_2} className="CarouselSize" />,
+  <img alt='b_011_2' index={10} src={ddisco_b_011_2} className="CarouselSize" />,
+  <img alt='b_012_2' index={11} src={ddisco_b_012_2} className="CarouselSize" />
 ]
 
 let galleryItems_003 = [
-  <img alt='b_001_3' src={ddisco_b_001_3} className="CarouselSize" />,
-  <img alt='b_002_3' src={ddisco_b_002_3} className="CarouselSize" />,
-  <img alt='b_003_3' src={ddisco_b_003_3} className="CarouselSize" />,
-  <img alt='b_004_3' src={ddisco_b_004_3} className="CarouselSize" />,
-  <img alt='b_005_3' src={ddisco_b_005_3} className="CarouselSize" />,
-  <img alt='b_006_3' src={ddisco_b_006_3} className="CarouselSize" />,
-  <img alt='b_007_3' src={ddisco_b_007_3} className="CarouselSize" />,
-  <img alt='b_008_3' src={ddisco_b_008_3} className="CarouselSize" />,
-  <img alt='b_009_3' src={ddisco_b_009_3} className="CarouselSize" />,
-  <img alt='b_010_3' src={ddisco_b_010_3} className="CarouselSize" />,
-  <img alt='b_011_3' src={ddisco_b_011_3} className="CarouselSize" />,
-  <img alt='b_012_3' src={ddisco_b_012_3} className="CarouselSize" />
+  <img alt='b_001_3' index={0} src={ddisco_b_001_3} className="CarouselSize" />,
+  <img alt='b_002_3' index={1} src={ddisco_b_002_3} className="CarouselSize" />,
+  <img alt='b_003_3' index={2} src={ddisco_b_003_3} className="CarouselSize" />,
+  <img alt='b_004_3' index={3} src={ddisco_b_004_3} className="CarouselSize" />,
+  <img alt='b_005_3' index={4} src={ddisco_b_005_3} className="CarouselSize" />,
+  <img alt='b_006_3' index={5} src={ddisco_b_006_3} className="CarouselSize" />,
+  <img alt='b_007_3' index={6} src={ddisco_b_007_3} className="CarouselSize" />,
+  <img alt='b_008_3' index={7} src={ddisco_b_008_3} className="CarouselSize" />,
+  <img alt='b_009_3' index={8} src={ddisco_b_009_3} className="CarouselSize" />,
+  <img alt='b_010_3' index={9} src={ddisco_b_010_3} className="CarouselSize" />,
+  <img alt='b_011_3' index={10} src={ddisco_b_011_3} className="CarouselSize" />,
+  <img alt='b_012_3' index={11} src={ddisco_b_012_3} className="CarouselSize" />
 ]
 
 

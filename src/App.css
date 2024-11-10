@@ -31,7 +31,7 @@
 }
 
 .carousel_white_buy {
-  background-color: white;
+  background-color: hsl(0, 0%, 100%);
   max-width: 100vw;
   transform: scale(0.6);
   margin-top: 40px;
@@ -106,8 +106,6 @@ nav {
   justify-content: center;
   align-items: center;
   background-color: hsl(0,0%,0%);
-  padding-left: 2px;
-  padding-right: 2px;
   height: 38px;
 }
 
@@ -127,7 +125,7 @@ nav {
   left: 50%;
   width: 670px;
   height: 740px;
-  border: 5px solid hsl(0, 0%, 20%);
+  border: 3px solid hsl(0, 0%, 20%);
   pointer-events: none;
   z-index: 1;
   transform: translate(-50%, -50%);
@@ -139,7 +137,7 @@ nav {
   left: 50%;
   width: 670px;
   height: 740px;
-  border: 5px solid hsl(0, 0%, 20%);
+  border: 3px solid hsl(0, 0%, 20%);
   pointer-events: none;
   z-index: 1;
   transform: translate(-50%, -50%);
@@ -151,7 +149,7 @@ nav {
   left: 50%;
   width: 670px;
   height: 740px;
-  border: 5px solid hsl(0, 0%, 80%);
+  border: 3px solid hsl(0, 0%, 80%);
   pointer-events: none;
   z-index: 1;
   transform: translate(-50%, -50%);
@@ -199,24 +197,28 @@ nav {
   height: 100%;
   pointer-events: none;
 }
+
 .box-black-left {
   flex: 1;
   background-color: hsla(0,0%,0%,1);
   height: 100%;
   pointer-events: none;
 }
+
 .box-transparent-middle {
   background-color: hsla(0,0%,0%,0);
   width: 670px;
   height: 100%;
   margin: 0 auto;
 }
+
 .box-white-right {
   flex: 1;
   background-color: hsla(0,0%,100%,1);
   height: 100%;
   pointer-events: none;
 }
+
 .box-black-right {
   flex: 1;
   background-color: hsla(0,0%,0%,1);
@@ -274,10 +276,6 @@ li {
       font-size: 15px;
       font-weight: 500;
     }
-    .nav_links_li {
-      padding-left: 0px;
-      padding-right: 0px;
-    }
     .carousel_white {
       margin-top: 48px;
     }
@@ -330,10 +328,6 @@ li {
       font-size: 15px;
       font-weight: 500;
     }
-    .nav_links_li {
-      padding-left: 0px;
-      padding-right: 0px;
-    }
     .carousel_white {
       margin-top: 48px;
     }
@@ -383,10 +377,6 @@ li {
       width: 100%;
       font-size: 15px;
       font-weight: 500;
-    }
-    .nav_links_li {
-      padding-left: 0px;
-      padding-right: 0px;
     }
     .carousel_white {
       margin-top: 48px;
@@ -440,10 +430,6 @@ li {
       font-size: 15px;
       font-weight: 500;
     }
-    .nav_links_li {
-      padding-left: 0px;
-      padding-right: 0px;
-    }
     .carousel_white {
       margin-top: 48px;
     }
@@ -496,10 +482,6 @@ li {
       width: 100%;
       font-size: 15px;
       font-weight: 500;
-    }
-    .nav_links_li {
-      padding-left: 0px;
-      padding-right: 0px;
     }
     .carousel_white {
       margin-top: 48px;
