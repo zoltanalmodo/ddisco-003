@@ -104,27 +104,29 @@ export const Buy = () => {
     <div className='body_white'>
       <Navigation />
 
-        <div className="carousel_white_buy">
+      <div className="carousel_white_buy">
 
-          <div style={{
-            filter: (globalState.isPastel === 'true' ? 'brightness(105%) saturate(70%)' : 'brightness(100%) saturate(100%)'),
-          }}>
+        <div style={{
+          filter: (globalState.isPastel === 'true' ? 'brightness(105%) saturate(70%)' : 'brightness(100%) saturate(100%)'),
+        }}>
 
-            <div className="frame-overlay-dark-grey-buy"></div>
+          <div className="frame-overlay-dark-grey-buy"></div>
 
-            <div className="single-image-display">
-              {selectedImage_001}
-            </div>
-            <div className="single-image-display">
-              {selectedImage_002}
-            </div>
-            <div className="single-image-display">
-              {selectedImage_003}
-            </div>
-              
+          <div className="single-image-display">
+            {selectedImage_001}
           </div>
+          <div className="single-image-display">
+            {selectedImage_002}
+          </div>
+          <div className="single-image-display">
+            {selectedImage_003}
+          </div>
+            
+        </div>
 
-        </div> 
+       
+
+      </div>
 
     </div>  
   )
