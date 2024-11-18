@@ -37,9 +37,11 @@
 .sizes_container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
+  align-items: center;
   height: auto;
   border: 2px solid blue;
+  margin-top: 20px;
 }
 .size_button {
   background-color: lightblue;
