@@ -23,6 +23,31 @@
   background-color: white;
 }
 
+.body_white_buy {
+  text-align: center;
+  height: 100vh;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border: 2px solid red;
+}
+
+.sizes_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  border: 2px solid blue;
+}
+.size_button {
+  background-color: lightblue;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+}
+
 .carousel_white {
   background-color: white;
   margin-top: 128px;
@@ -36,8 +61,7 @@
   transform: scale(0.6);
   margin-top: 40px;
   transform-origin: top center;
-  border: 2px solid red;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 .carousel_black {

@@ -101,14 +101,13 @@ export const Buy = () => {
 
 
   return (
-    <div className='body_white'>
+    <div className='body_white_buy'>
       <Navigation />
 
       <div className="carousel_white_buy">
 
         <div style={{
           filter: (globalState.isPastel === 'true' ? 'brightness(105%) saturate(70%)' : 'brightness(100%) saturate(100%)'),
-          border: '2px solid green', 
         }}>
 
           <div className="frame-overlay-dark-grey-buy"></div>
@@ -125,7 +124,11 @@ export const Buy = () => {
             
         </div>
 
-       
+        <div class="sizes_container">
+          <div class="size_button">small</div>
+          <div class="size_button">medium</div>
+          <div class="size_button">large</div>
+        </div>
 
       </div>
 
