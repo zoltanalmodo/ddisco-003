@@ -108,6 +108,7 @@ export const Buy = () => {
 
         <div style={{
           filter: (globalState.isPastel === 'true' ? 'brightness(105%) saturate(70%)' : 'brightness(100%) saturate(100%)'),
+          border: '2px solid green', 
         }}>
 
           <div className="frame-overlay-dark-grey-buy"></div>
