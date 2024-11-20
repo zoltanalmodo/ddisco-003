@@ -106,7 +106,7 @@ export const Buy = () => {
 
       <div className="carousel_white_buy">
 
-        <div className="frame-overlay-dark-grey-buy">
+        <div style={{backgroundColor: "red"}} className="frame-overlay-dark-grey-buy">
 
           <div style={{
             filter: (globalState.isPastel === 'true' ? 'brightness(105%) saturate(70%)' : 'brightness(100%) saturate(100%)'),
