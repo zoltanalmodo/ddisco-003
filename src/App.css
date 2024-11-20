@@ -32,7 +32,6 @@
   justify-content: start;
   align-items: center;
   background-color: white;
-  margin-bottom: none;
 }
 
 .carousel_black {
@@ -54,7 +53,6 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: hsl(30, 100%, 100%);
   width: 670px;
   transform: scale(0.6);
   margin-top: 80px;

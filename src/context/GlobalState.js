@@ -12,6 +12,7 @@ const initialState = {
   degree_002: 0,
   degree_003: 0,
   activeButton: 'disco',
+  previousActiveButton: '',
   isPastel: 'false',
 };
 
@@ -99,8 +100,15 @@ export const GlobalProvider = ({ children }) => {
   function setActiveButtonBuy() {
     dispatch({
       type: 'SET_ACTIVE_BUTTON_BUY',
-      payload: 'position'
+      payload: 'buy'
     })
+  }
+
+  function setActiveButton(newActiveButton) {
+    dispatch({
+      type: 'SET_ACTIVE_BUTTON',
+      payload: newActiveButton,
+    });
   }
 
   function setIsPastel() {

@@ -100,13 +100,17 @@ export const Buy = () => {
   const selectedImage_003 = galleryItems_003[selectedImageIndex_003]
 
 
+// Determine the background color based on the active button value
+const frameBackgroundColor =
+globalState.previousActiveButton === "black" ? "black" : "white";
+
   return (
     <div className='body_white_buy'>
       <Navigation />
 
       <div className="carousel_white_buy">
 
-        <div style={{backgroundColor: "red"}} className="frame-overlay-dark-grey-buy">
+        <div style={{ backgroundColor: frameBackgroundColor }} className="frame-overlay-dark-grey-buy">
 
           <div style={{
             filter: (globalState.isPastel === 'true' ? 'brightness(105%) saturate(70%)' : 'brightness(100%) saturate(100%)'),
@@ -133,9 +137,9 @@ export const Buy = () => {
           <div class="size_button">small</div>
           <div class="size_button">medium</div>
           <div class="size_button">large</div>
-          
+          <div className="buy_button">buy</div>
         </div>
-        <div className="buy_button">buy</div>
+       
 
       </div>
 

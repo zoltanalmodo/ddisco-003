@@ -21,7 +21,6 @@ function App() {
           <Route path='/white' element={<White />} />
           <Route path='/color' element={<Color />} />
           <Route path='/disco' element={<Disco />} />
-          <Route path='/position' element={<Buy />} />
           <Route path='/buy' element={<Buy />} />
         </Routes>
       </Router>

@@ -34,26 +34,31 @@ export const AppReducer = (state, action) => {
     case 'SET_ACTIVE_BUTTON_BLACK' :
       return {
         ...state,
+        previousActiveButton: state.activeButton,
         activeButton: 'black'
       };
     case 'SET_ACTIVE_BUTTON_WHITE' :
       return {
         ...state,
+        previousActiveButton: state.activeButton,
         activeButton: 'white'
       };
     case 'SET_ACTIVE_BUTTON_COLOR' :
       return {
         ...state,
+        previousActiveButton: state.activeButton,
         activeButton: 'color'
       };
     case 'SET_ACTIVE_BUTTON_DISCO' :
       return {
         ...state,
+        previousActiveButton: state.activeButton,
         activeButton: 'disco'
       };
     case 'SET_ACTIVE_BUTTON_BUY' :
       return {
         ...state,
+        previousActiveButton: state.activeButton,
         activeButton: 'buy'
       };
     case 'SET_IS_PASTEL' :
