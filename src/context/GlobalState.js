@@ -104,13 +104,6 @@ export const GlobalProvider = ({ children }) => {
     })
   }
 
-  function setActiveButton(newActiveButton) {
-    dispatch({
-      type: 'SET_ACTIVE_BUTTON',
-      payload: newActiveButton,
-    });
-  }
-
   function setIsPastel() {
     dispatch({
       type: 'SET_IS_PASTEL',

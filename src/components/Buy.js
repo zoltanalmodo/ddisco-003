@@ -2,6 +2,11 @@ import React, { useContext } from 'react'
 import Navigation from './Navigation';
 import { GlobalContext } from '../context/GlobalState'
 
+/* ============================================ black images START ============================================ */
+
+/* ============================================ black images -END- ============================================ */
+
+/* ============================================ color images START ============================================ */
 import ddisco_c_001_1 from '../images/c/ddisco_c_001_1.jpg';
 import ddisco_c_001_2 from '../images/c/ddisco_c_001_2.jpg';
 import ddisco_c_001_3 from '../images/c/ddisco_c_001_3.jpg';
@@ -83,6 +88,7 @@ let galleryItems_003 = [
   <img alt='c_011_3' index={10} src={ddisco_c_011_3} className="CarouselSize" />,
   <img alt='c_012_3' index={11} src={ddisco_c_012_3} className="CarouselSize" />
 ]
+/* ============================================ color images -END- ============================================ */
 
 export const Buy = () => {
 
@@ -93,10 +99,11 @@ export const Buy = () => {
   } = useContext(GlobalContext);
 
   const selectedImageIndex_001 = globalState.currentIndex_001;
-  const selectedImage_001 = galleryItems_001[selectedImageIndex_001]
   const selectedImageIndex_002 = globalState.currentIndex_002;
-  const selectedImage_002 = galleryItems_002[selectedImageIndex_002]
   const selectedImageIndex_003 = globalState.currentIndex_003;
+
+  const selectedImage_001 = galleryItems_001[selectedImageIndex_001]
+  const selectedImage_002 = galleryItems_002[selectedImageIndex_002]
   const selectedImage_003 = galleryItems_003[selectedImageIndex_003]
 
 
