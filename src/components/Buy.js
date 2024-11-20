@@ -133,7 +133,9 @@ export const Buy = () => {
           <div class="size_button">small</div>
           <div class="size_button">medium</div>
           <div class="size_button">large</div>
+          
         </div>
+        <div className="buy_button">buy</div>
 
       </div>
 
