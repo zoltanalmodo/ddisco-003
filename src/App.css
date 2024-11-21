@@ -34,6 +34,11 @@
   background-color: white;
 }
 
+.CarouselSize {
+  margin: none;
+  padding: none;
+}
+
 .carousel_black {
   background-color: black;
   margin-top: 128px;
@@ -331,14 +336,14 @@ li {
       font-weight: 500;
     }
     .carousel_white {
-      margin-top: 68px;
+      margin-top: 74px;
     }
     .carousel_white_buy {
       width: 340px;
       margin-top: 50px;
     }
     .carousel_black {
-      margin-top: 68px;
+      margin-top: 74px;
     }
     .frame-overlay-dark-grey {
       display: none;
@@ -384,14 +389,14 @@ li {
       font-weight: 500;
     }
     .carousel_white {
-      margin-top: 68px;
+      margin-top: 74px;
     }
     .carousel_white_buy {
       width: 340px;
       margin-top: 50px;
     }
     .carousel_black {
-      margin-top: 68px;
+      margin-top: 74px;
     }
     .frame-overlay-dark-grey {
       display: none;
@@ -435,14 +440,14 @@ li {
       font-weight: 500;
     }
     .carousel_white {
-      margin-top: 68px;
+      margin-top: 74px;
     }
     .carousel_white_buy {
       width: 340px;
       margin-top: 50px;
     }
     .carousel_black {
-      margin-top: 68px;
+      margin-top: 74px;
     }
     .frame-overlay-dark-grey {
       display: none;
@@ -488,14 +493,14 @@ li {
       font-weight: 500;
     }
     .carousel_white {
-      margin-top: 68px;
+      margin-top: 74px;
     }
     .carousel_white_buy {
       width: 348px;
       margin-top: 50px;
     }
     .carousel_black {
-      margin-top: 68px;
+      margin-top: 74px;
     }
     .frame-overlay-dark-grey {
       display: none;
@@ -542,14 +547,14 @@ li {
       font-weight: 500;
     }
     .carousel_white {
-      margin-top: 68px;
+      margin-top: 74px;
     }
     .carousel_white_buy {
       width: 412px;
       margin-top: 50px;
     }
     .carousel_black {
-      margin-top: 68px;
+      margin-top: 74px;
     }
     .frame-overlay-dark-grey {
       display: none;
@@ -577,14 +582,14 @@ li {
       width: 386px;
     }
     .carousel_white {
-      margin-top: 68px;
+      margin-top: 74px;
     }
     .carousel_white_buy {
       width: 440px;
       margin-top: 50px;
     }
     .carousel_black {
-      margin-top: 68px;
+      margin-top: 74px;
     }
     .frame-overlay-dark-grey {
       display: none;
@@ -611,14 +616,14 @@ li {
       width: 652px;
     }
     .carousel_white {
-      margin-top: 68px;
+      margin-top: 74px;
     }
     .carousel_white_buy {
       width: 690px;
       margin-top: 50px;
     }
     .carousel_black {
-      margin-top: 68px;
+      margin-top: 74px;
     }
     .frame-overlay-dark-grey {
       display: none;
@@ -645,14 +650,14 @@ li {
       width: 918px;
     }
     .carousel_white {
-      margin-top: 68px;
+      margin-top: 74px;
     }
     .carousel_white_buy {
       width: 931px;
       margin-top: 50px;
     }
     .carousel_black {
-      margin-top: 68px;
+      margin-top: 74px;
     }
     .frame-overlay-dark-grey {
       display: none;
