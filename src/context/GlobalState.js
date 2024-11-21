@@ -12,7 +12,7 @@ const initialState = {
   degree_002: 0,
   degree_003: 0,
   activeButton: 'disco',
-  previousActiveButton: '',
+  previousActiveButton: 'disco',
   isPastel: 'false',
 };
 
