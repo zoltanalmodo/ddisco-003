@@ -305,25 +305,22 @@ globalState.previousActiveButton === "black" ? "black" : "white";
 
             <div className="single_image_display_container">
               
-                <div style={{
+                <div className="hue-rotate" style={{
                   filter: (`hue-rotate(${globalState.degree_001}deg)`),
-                  height: '236px',
                 }}>
                   {selectedImage_001}
                 </div>
               
               
-                <div style={{
+                <div className="hue-rotate" style={{
                   filter: (`hue-rotate(${globalState.degree_002}deg)`),
-                  height: '236px',
                 }}>
                   {selectedImage_002}
                 </div>
               
               
-                <div style={{
+                <div className="hue-rotate" style={{
                   filter: (`hue-rotate(${globalState.degree_003}deg)`),
-                  height: '236px',
                 }}>
                   {selectedImage_003}
                 </div>
