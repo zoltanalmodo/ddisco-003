@@ -531,6 +531,7 @@ li {
 }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* --- this works OK --- */
 
 /* Portrait and Landscape */
 @media only screen 
