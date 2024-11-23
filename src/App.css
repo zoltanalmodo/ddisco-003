@@ -191,7 +191,7 @@ nav {
   width: 670px;
   height: 740px;
   border: 3px solid hsl(0, 0%, 20%);
-  z-index: 10;
+  z-index: 5;
 }
 
 .frame-overlay-light-grey {
@@ -215,7 +215,8 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid orange;
+  border: 2px solid red;
+  z-index: 0;
 }
 
 .single_image_display {
