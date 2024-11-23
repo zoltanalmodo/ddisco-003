@@ -214,7 +214,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid violet;
+  border: 2px solid blue;
 }
 
 .single_image_display {
@@ -661,12 +661,13 @@ li {
     .frame-overlay-dark-grey-buy {
       width: 724px;
       height: 800px;
-      border: 2px solid hsl(0, 0%, 20%);
+      border: 2px solid hsl(90, 100%, 50%);
     }
-    /* .single_image_display_container {
-      width: auto;
-      height: 560px;
-    } */
+    .single_image_display_container {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
 }
 
 /* -----------  iPhone 14 Pro Max, iPhone 15 Plus and iPhone 15 Pro Max ----------- */
