@@ -214,7 +214,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid red;
+  border: 2px solid green;
 }
 
 .single_image_display {
@@ -822,6 +822,46 @@ li {
       height: 1018px;
     }
 }
+
+/* ------------------ iPad 10 ------------------ */
+@media only screen 
+  and (min-device-width: 810px) 
+  and (max-device-width: 1080px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  }
+
+/* ------------------ iPad Pro 10 ------------------ */
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  }
+
+/* ------------------ iPad Pro 11 ------------------ */
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1194px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  }
+
+/* ------------------ iPad Pro 12 ------------------ */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  }
+
+/* ------------------ iPad Air ------------------ */
+  @media only screen
+  and (min-width: 820px)
+  and (max-width: 1180px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+  }
 
 /*==============================================================================================================================*/
 /*---------------------------------------------------- MEDIA QUERIES end -------------------------------------------------------*/
