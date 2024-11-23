@@ -214,7 +214,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid purple;
+  border: 2px solid cyan;
 }
 
 .single_image_display {
@@ -659,12 +659,12 @@ li {
       display: none;
     }
     .frame-overlay-dark-grey-buy {
-      border: 3px solid hsl(0, 0%, 20%);
       width: 724px;
       height: 800px;
     }
     .single_image_display_container {
-      transform: scale(0.8);
+      width: 670px;
+      height: 740px;
     }
 }
 
