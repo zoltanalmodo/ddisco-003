@@ -215,7 +215,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid blue;
+  border: 2px solid red;
   z-index: 0;
 }
 
@@ -633,10 +633,17 @@ li {
 
 /* ----------- iPhone 12, iPhone 12 Pro, iPhone 13, iPhone 13 Pro, and iPhone 14 ----------- */
 @media only screen 
-    and (width: 390px) 
-    and (height: 844px) 
-    and (-webkit-device-pixel-ratio: 3) {
-   
+  and (width: 390px) 
+  and (height: 844px) 
+  and (-webkit-device-pixel-ratio: 3) {
+    .CarouselSize {
+      height: 166px;
+      width: 386px;
+    }
+    .hue-rotate {
+      height: 166px;
+      width: 386px;
+    }
     .carousel_white {
       margin-top: 76px;
     }
