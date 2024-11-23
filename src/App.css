@@ -215,7 +215,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid blue;
+  border: 2px solid orangered;
   z-index: 0;
 }
 
