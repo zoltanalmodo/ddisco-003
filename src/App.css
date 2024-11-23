@@ -628,6 +628,46 @@ li {
     }
 }
 
+/* ----------- iPhone 16 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 393px) 
+  and (max-device-width: 852px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .CarouselSize {
+      height: 166px;
+      width: 386px;
+    }
+    .hue-rotate {
+      height: 166px;
+      width: 386px;
+    }
+    .carousel_white {
+      margin-top: 76px;
+    }
+    .carousel_white_buy {
+      width: 440px;
+      margin-top: 50px;
+    }
+    .carousel_black {
+      margin-top: 76px;
+    }
+    .frame-overlay-dark-grey {
+      display: none;
+    }
+    .frame-overlay-light-grey {
+      display: none;
+    }
+    .frame-overlay-dark-grey-buy {
+      border: 3px solid hsl(0, 0%, 20%);
+      width: 440px;
+      height: 480px;
+    }
+}
+
+
+
 /* ----------- iPad 1, 2, Mini and Air ----------- */
 
 /* Portrait and Landscape */
