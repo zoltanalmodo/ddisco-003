@@ -215,7 +215,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid orangered;
+  border: 2px solid violet;
   z-index: 0;
 }
 
@@ -641,7 +641,7 @@ li {
       margin-top: 76px;
     }
     .carousel_white_buy {
-      width: 500px;
+      width: 440px;
       margin-top: 50px;
     }
     .carousel_black {
@@ -657,10 +657,10 @@ li {
       width: 440px;
       height: 486px;
     }
-    /* .single_image_display_container {
-      width: 670px;
-      height: 740px;
-    } */
+    .single_image_display_container {
+      width: 400px;
+      height: 440px;
+    }
 }
 
 /* -----------  iPhone 14 Pro Max, iPhone 15 Plus and iPhone 15 Pro Max ----------- */
