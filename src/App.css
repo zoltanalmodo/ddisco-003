@@ -658,16 +658,15 @@ li {
     .frame-overlay-light-grey {
       display: none;
     }
-    .frame-overlay-dark-grey-buy {
+    /* .frame-overlay-dark-grey-buy {
       border: 3px solid hsl(0, 0%, 20%);
       width: 530px;
       height: 580px;
     }
     .single_image_display_container {
-      border: 2px solid green;
       width: auto;
       height: 560px;
-    }
+    } */
 }
 
 /* -----------  iPhone 14 Pro Max, iPhone 15 Plus and iPhone 15 Pro Max ----------- */
