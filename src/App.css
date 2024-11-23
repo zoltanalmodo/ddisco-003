@@ -214,7 +214,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid cyan;
+  border: 2px solid green;
 }
 
 .single_image_display {
@@ -634,14 +634,14 @@ li {
     and (width: 390px) 
     and (height: 844px) 
     and (-webkit-device-pixel-ratio: 3) {
-    .CarouselSize {
+    /* .CarouselSize {
       height: 166px;
       width: 386px;
     }
     .hue-rotate {
       height: 166px;
       width: 386px;
-    }
+    } */
     .carousel_white {
       margin-top: 76px;
     }
@@ -702,7 +702,9 @@ li {
 @media only screen 
     and (width: 393px) 
     and (height: 852px) 
-    and (-webkit-device-pixel-ratio: 3) { }
+    and (-webkit-device-pixel-ratio: 3) {
+
+    }
 
 /* ----------- iPhone 16 ----------- */
 /* ----------- works OK -------------*/
