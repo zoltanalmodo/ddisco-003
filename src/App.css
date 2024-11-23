@@ -215,7 +215,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid violet;
+  border: 2px solid blue;
   z-index: 0;
 }
 
@@ -658,8 +658,8 @@ li {
       height: 486px;
     }
     .single_image_display_container {
-      width: 400px;
-      height: 440px;
+      width: 80%;
+      height: 80%;
     }
 }
 
