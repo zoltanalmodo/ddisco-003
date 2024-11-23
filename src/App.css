@@ -214,7 +214,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid blue;
+  border: 2px solid red;
 }
 
 .single_image_display {
@@ -227,7 +227,7 @@ nav {
 .single_image_display img {
   max-width: 100%;
   max-height: 100%;
-  object-fit: contain; /* Ensures image fits within container */
+  object-fit: contain;
 }
 
 /* SINGLE IMAGE display = END */
@@ -662,6 +662,11 @@ li {
       border: 3px solid hsl(0, 0%, 20%);
       width: 530px;
       height: 580px;
+    }
+    .single_image_display_container {
+      border: 2px solid green;
+      width: auto;
+      height: 560px;
     }
 }
 
