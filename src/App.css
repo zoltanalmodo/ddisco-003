@@ -215,7 +215,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid blue;
+  border: 2px solid green;
   z-index: 0;
 }
 
@@ -637,12 +637,12 @@ li {
   and (height: 844px) 
   and (-webkit-device-pixel-ratio: 3) {
     .CarouselSize {
-      height: 166px;
-      width: 386px;
+      height: 100px;
+      width: 32px;
     }
     .hue-rotate {
-      height: 166px;
-      width: 386px;
+      height: 100px;
+      width: 320px;
     }
     .carousel_white {
       margin-top: 76px;
