@@ -215,7 +215,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid green;
+  border: 2px solid red;
   z-index: 0;
 }
 
@@ -308,566 +308,277 @@ li {
 /*------------------------------------------------- MEDIA QUERIES start ----------------------------------------------------*/
 /*==========================================================================================================================*/
 /*==========================================================================================================================*/
-/* check in apple*/
+/* check in apple */
 
-/* Portrait and Landscape */
+/* anything under 320px width */
 @media only screen 
-  and (min-device-width: 280px) 
+  and (min-device-width: 280px)
   and (max-device-width: 319px)
   and (-webkit-min-device-pixel-ratio: 2) {
-    .CarouselSize {
-      height: 112px;
-      width: 260px;
-    }
-    .hue-rotate {
-      height: 112px;
-      width: 260px;
-    }
-    button {
-      padding-left: 5px;
-      padding-right: 5px;
-      font-size: 15px;
-      font-weight: 500;
-    }
-    button:hover {
-      color: hsl(0, 100%, 100%);
-      border-bottom: solid, 4px, hsla(0,0%,0%,0);
-      box-shadow: 0 4px 0 0 hsla(0,0%,0%,0);
-    }
-    .navigation-wrapper {
-      padding-bottom: 0px;
-    }
-    .nav_links {
-      width: 100%;
-      font-size: 15px;
-      font-weight: 500;
-    }
-    .carousel_white {
-      margin-top: 76px;
-    }
-    .carousel_white_buy {
-      width: 340px;
-      margin-top: 50px;
-    }
-    .carousel_black {
-      margin-top: 76px;
-    }
-    .frame-overlay-dark-grey {
-      display: none;
-    }
-    .frame-overlay-light-grey {
-      display: none;
-    }
-    .frame-overlay-dark-grey-buy {
-      border: 3px solid hsl(0, 0%, 20%);
-      width: 340px;
-      height: 370px;
-    }
-}
-
-/* ----------- iPhone 4 and 4S ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .CarouselSize {
-      height: 120px;
-      width: 278px;
-    }
-    .hue-rotate {
-      height: 120px;
-      width: 278px;
-    }
-    button {
-      padding-left: 5px;
-      padding-right: 5px;
-      font-size: 15px;
-      font-weight: 500;
-    }
-    button:hover {
-      color: hsl(0, 100%, 100%);
-      border-bottom: solid, 4px, hsla(0,0%,0%,0);
-      box-shadow: 0 4px 0 0 hsla(0,0%,0%,0);
-    }
-    .navigation-wrapper {
-      padding-bottom: 0px;
-    }
-    .nav_links {
-      width: 100%;
-      font-size: 15px;
-      font-weight: 500;
-    }
-    .carousel_white {
-      margin-top: 76px;
-    }
-    .carousel_white_buy {
-      width: 340px;
-      margin-top: 50px;
-    }
-    .carousel_black {
-      margin-top: 76px;
-    }
-    .frame-overlay-dark-grey {
-      display: none;
-    }
-    .frame-overlay-light-grey {
-      display: none;
-    }
-    .frame-overlay-dark-grey-buy {
-      border: 3px solid hsl(0, 0%, 20%);
-      width: 340px;
-      height: 370px;
-    }
-}
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 1) {
-    .CarouselSize {
-      height: 120px;
-      width: 278px;
-    }
-    .hue-rotate {
-      height: 120px;
-      width: 278px;
-    }
-    button {
-      padding-left: 5px;
-      padding-right: 5px;
-      font-size: 15px;
-      font-weight: 500;
-    }
-    button:hover {
-      color: hsl(0, 100%, 100%);
-      border-bottom: solid, 4px, hsla(0,0%,0%,0);
-      box-shadow: 0 4px 0 0 hsla(0,0%,0%,0);
-    }
-    .navigation-wrapper {
-      padding-bottom: 0px;
-    }
-    .nav_links {
-      width: 100%;
-      font-size: 15px;
-      font-weight: 500;
-    }
-    .carousel_white {
-      margin-top: 76px;
-    }
-    .carousel_white_buy {
-      width: 340px;
-      margin-top: 50px;
-    }
-    .carousel_black {
-      margin-top: 76px;
-    }
-    .frame-overlay-dark-grey {
-      display: none;
-    }
-    .frame-overlay-light-grey {
-      display: none;
-    }
-    .frame-overlay-dark-grey-buy {
-      border: 3px solid hsl(0, 0%, 20%);
-      width: 340px;
-      height: 370px;
-    }
-}
-
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .CarouselSize {
-      height: 124px;
-      width: 288px;
-    }
-    .hue-rotate {
-      height: 124px;
-      width: 288px;
-    }
-    button {
-      padding-left: 5px;
-      padding-right: 5px;
-      font-size: 15px;
-      font-weight: 500;
-    }
-    button:hover {
-      color: hsl(0, 100%, 100%);
-      border-bottom: solid, 4px, hsla(0,0%,0%,0);
-      box-shadow: 0 4px 0 0 hsla(0,0%,0%,0);
-    }
-    .navigation-wrapper {
-      padding-bottom: 0px;
-    }
-    .nav_links {
-      width: 100%;
-      font-size: 15px;
-      font-weight: 500;
-    }
-    .carousel_white {
-      margin-top: 76px;
-    }
-    .carousel_white_buy {
-      width: 348px;
-      margin-top: 50px;
-    }
-    .carousel_black {
-      margin-top: 76px;
-    }
-    .frame-overlay-dark-grey {
-      display: none;
-    }
-    .frame-overlay-light-grey {
-      display: none;
-    }
-    .frame-overlay-dark-grey-buy {
-      border: 3px solid hsl(0, 0%, 20%);
-      width: 348px;
-      height: 380px;
-    }
-}
-
-/* ----------- iPhone 6, 6S, 7, 8 and SE ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-    .CarouselSize {
-      height: 154px;
-      width: 358px;
-    }
-    .hue-rotate {
-      height: 154px;
-      width: 358px;
-    }
-    button {
-      padding-left: 5px;
-      padding-right: 5px;
-      font-size: 15px;
-      font-weight: 500;
-    }
-    button:hover {
-      color: hsl(0, 100%, 100%);
-      border-bottom: solid, 4px, hsla(0,0%,0%,0);
-      box-shadow: 0 4px 0 0 hsla(0,0%,0%,0);
-    }
-    .navigation-wrapper {
-      padding-bottom: 0px;
-    }
-    .nav_links {
-      width: 100%;
-      font-size: 15px;
-      font-weight: 500;
-    }
-    .carousel_white {
-      margin-top: 76px;
-    }
-    .carousel_white_buy {
-      width: 412px;
-      margin-top: 50px;
-    }
-    .carousel_black {
-      margin-top: 76px;
-    }
-    .frame-overlay-dark-grey {
-      display: none;
-    }
-    .frame-overlay-light-grey {
-      display: none;
-    }
-    .frame-overlay-dark-grey-buy {
-      border: 3px solid hsl(0, 0%, 20%);
-      width: 412px;
-      height: 450px;
-    }
-
-}
-
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-    .CarouselSize {
-      height: 166px;
-      width: 386px;
-    }
-    .hue-rotate {
-      height: 166px;
-      width: 386px;
-    }
-    .carousel_white {
-      margin-top: 76px;
-    }
-    .carousel_white_buy {
-      width: 440px;
-      margin-top: 50px;
-    }
-    .carousel_black {
-      margin-top: 76px;
-    }
-    .frame-overlay-dark-grey {
-      display: none;
-    }
-    .frame-overlay-light-grey {
-      display: none;
-    }
-    .frame-overlay-dark-grey-buy {
-      border: 3px solid hsl(0, 0%, 20%);
-      width: 440px;
-      height: 480px;
-    }
-}
-
-/* ----------- iPhone 12, iPhone 12 Pro, iPhone 13, iPhone 13 Pro, and iPhone 14 ----------- */
-@media only screen 
-  and (width: 390px) 
-  and (height: 844px) 
-  and (-webkit-device-pixel-ratio: 3) {
-    .CarouselSize {
-      height: 100px;
-      width: 32px;
-    }
-    .hue-rotate {
-      height: 100px;
-      width: 320px;
-    }
-    .carousel_white {
-      margin-top: 76px;
-    }
-    .carousel_white_buy {
-      width: 440px;
-      margin-top: 50px;
-    }
-    .carousel_black {
-      margin-top: 76px;
-    }
-    .frame-overlay-dark-grey {
-      display: none;
-    }
-    .frame-overlay-light-grey {
-      display: none;
-    }
-    .frame-overlay-dark-grey-buy {
-      width: 440px;
-      height: 486px;
-    }
-    .single_image_display_container {
-      width: 80%;
-      height: 80%;
-    }
-}
-
-/* -----------  iPhone 14 Pro Max, iPhone 15 Plus and iPhone 15 Pro Max ----------- */
-@media only screen 
-    and (width: 430px) 
-    and (height: 932px) 
-    and (-webkit-device-pixel-ratio: 3) { }
-
-/* -----------  iPhone 12 Pro Max, iPhone 13 Pro Max, and iPhone 14 Plus ----------- */
-@media only screen 
-    and (width: 428px) 
-    and (height: 926px) 
-    and (-webkit-device-pixel-ratio: 3) { }
-
-/* ----------- iPhone X, iPhone Xs, iPhone 11 Pro, iPhone 12 Mini, and iPhone 13 Mini ----------- */
-@media only screen 
-    and (width: 375px) 
-    and (height: 812px) 
-    and (-webkit-device-pixel-ratio: 3) { }
-
-/* ----------- iPhone XR, and iPhone 11 ----------- */
-@media only screen 
-    and (width: 414px) 
-    and (height: 896px) 
-    and (-webkit-device-pixel-ratio: 2) { }
-
-/* ----------- iPhone Xs Max, and iPhone 11 Pro Max ----------- */
-@media only screen 
-    and (width: 414px) 
-    and (height: 896px) 
-    and (-webkit-device-pixel-ratio: 3) { }
-
-/* ----------- iPhone 14 Pro, iPhone 15 and iPhone 15 Pro ----------- */
-@media only screen 
-    and (width: 393px) 
-    and (height: 852px) 
-    and (-webkit-device-pixel-ratio: 3) {
-
-    }
-
-/* ----------- iPhone 16 ----------- */
-/* ----------- works OK -------------*/
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 393px) 
-  and (max-device-width: 852px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-    .CarouselSize {
-      height: 166px;
-      width: 386px;
-    }
-    .hue-rotate {
-      height: 166px;
-      width: 386px;
-    }
-    .carousel_white {
-      margin-top: 76px;
-    }
-    .carousel_white_buy {
-      width: 440px;
-      margin-top: 50px;
-    }
-    .carousel_black {
-      margin-top: 76px;
-    }
-    .frame-overlay-dark-grey {
-      display: none;
-    }
-    .frame-overlay-light-grey {
-      display: none;
-    }
-    .frame-overlay-dark-grey-buy {
-      border: 3px solid hsl(0, 0%, 20%);
-      width: 476px;
-      height: 520px;
-    }
-}
-
-
-
-/* ----------- iPad 1, 2, Mini and Air ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1023px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-    .CarouselSize {
-      height: 280px;
-      width: 652px;
-    }
-    .hue-rotate {
-      height: 280px;
-      width: 652px;
-    }
-    .carousel_white {
-      margin-top: 76px;
-    }
-    .carousel_white_buy {
-      width: 690px;
-      margin-top: 50px;
-    }
-    .carousel_black {
-      margin-top: 76px;
-    }
-    .frame-overlay-dark-grey {
-      display: none;
-    }
-    .frame-overlay-light-grey {
-      display: none;
-    }
-    .frame-overlay-dark-grey-buy {
-      border: 3px solid hsl(0, 0%, 20%);
-      width: 690px;
-      height: 752px;
-    }
-}
-
-/* ----------- iPad 3, 4 and Pro 9.7" -----------*/
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1199px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-    .CarouselSize {
-      height: 394px;
-      width: 918px;
-    }
-    .hue-rotate {
-      height: 395px;
-      width: 918px;
-    }
-    .carousel_white {
-      margin-top: 76px;
-    }
-    .carousel_white_buy {
-      width: 931px;
-      margin-top: 50px;
-    }
-    .carousel_black {
-      margin-top: 76px;
-    }
-    .frame-overlay-dark-grey {
-      display: none;
-    }
-    .frame-overlay-light-grey {
-      display: none;
-    }
-    .frame-overlay-dark-grey-buy {
-      border: 3px solid hsl(0, 0%, 20%);
-      width: 931px;
-      height: 1018px;
-    }
-}
-
-/* ------------------ iPad 10 ------------------ */
-@media only screen 
-  and (min-device-width: 810px) 
-  and (max-device-width: 1080px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
+  .CarouselSize {
+    height: 112px;
+    width: 260px;
   }
-
-/* ------------------ iPad Pro 10 ------------------ */
-@media only screen 
-  and (min-device-width: 834px) 
-  and (max-device-width: 1112px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
+  .hue-rotate {
+    height: 112px;
+    width: 260px;
   }
-
-/* ------------------ iPad Pro 11 ------------------ */
-@media only screen 
-  and (min-device-width: 834px) 
-  and (max-device-width: 1194px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
+  button {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 15px;
+    font-weight: 500;
   }
-
-/* ------------------ iPad Pro 12 ------------------ */
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
+  button:hover {
+    color: hsl(0, 100%, 100%);
+    border-bottom: solid, 4px, hsla(0,0%,0%,0);
+    box-shadow: 0 4px 0 0 hsla(0,0%,0%,0);
   }
-
-/* ------------------ iPad Air ------------------ */
-  @media only screen
-  and (min-width: 820px)
-  and (max-width: 1180px) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
+  .navigation-wrapper {
+    padding-bottom: 0px;
   }
+  .nav_links {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .carousel_white {
+    margin-top: 76px;
+  }
+  .carousel_white_buy {
+    width: 340px;
+    margin-top: 50px;
+  }
+  .carousel_black {
+    margin-top: 76px;
+  }
+  .frame-overlay-dark-grey {
+    display: none;
+  }
+  .frame-overlay-light-grey {
+    display: none;
+  }
+  .frame-overlay-dark-grey-buy {
+    border: 3px solid hsl(0, 0%, 20%);
+    width: 340px;
+    height: 370px;
+  }
+}
 
-/*==============================================================================================================================*/
-/*---------------------------------------------------- MEDIA QUERIES end -------------------------------------------------------*/
-/*==============================================================================================================================*/
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px)  {
+  .CarouselSize {
+    height: 120px;
+    width: 278px;
+  }
+  .hue-rotate {
+    height: 120px;
+    width: 278px;
+  }
+  button {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  button:hover {
+    color: hsl(0, 100%, 100%);
+    border-bottom: solid, 4px, hsla(0,0%,0%,0);
+    box-shadow: 0 4px 0 0 hsla(0,0%,0%,0);
+  }
+  .navigation-wrapper {
+    padding-bottom: 0px;
+  }
+  .nav_links {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .carousel_white {
+    margin-top: 76px;
+  }
+  .carousel_white_buy {
+    width: 340px;
+    margin-top: 50px;
+  }
+  .carousel_black {
+    margin-top: 76px;
+  }
+  .frame-overlay-dark-grey {
+    display: none;
+  }
+  .frame-overlay-light-grey {
+    display: none;
+  }
+  .frame-overlay-dark-grey-buy {
+    border: 3px solid hsl(0, 0%, 20%);
+    width: 340px;
+    height: 370px;
+  }
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px)  {
+  .CarouselSize {
+    height: 154px;
+    width: 358px;
+  }
+  .hue-rotate {
+    height: 154px;
+    width: 358px;
+  }
+  button {
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  button:hover {
+    color: hsl(0, 100%, 100%);
+    border-bottom: solid, 4px, hsla(0,0%,0%,0);
+    box-shadow: 0 4px 0 0 hsla(0,0%,0%,0);
+  }
+  .navigation-wrapper {
+    padding-bottom: 0px;
+  }
+  .nav_links {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .carousel_white {
+    margin-top: 76px;
+  }
+  .carousel_white_buy {
+    width: 412px;
+    margin-top: 50px;
+  }
+  .carousel_black {
+    margin-top: 76px;
+  }
+  .frame-overlay-dark-grey {
+    display: none;
+  }
+  .frame-overlay-light-grey {
+    display: none;
+  }
+  .frame-overlay-dark-grey-buy {
+    border: 3px solid hsl(0, 0%, 20%);
+    width: 412px;
+    height: 450px;
+  }
+}
+
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+@media (min-width:641px)  {
+  .CarouselSize {
+    height: 280px;
+    width: 652px;
+  }
+  .hue-rotate {
+    height: 280px;
+    width: 652px;
+  }
+  .carousel_white {
+    margin-top: 76px;
+  }
+  .carousel_white_buy {
+    width: 690px;
+    margin-top: 50px;
+  }
+  .carousel_black {
+    margin-top: 76px;
+  }
+  .frame-overlay-dark-grey {
+    display: none;
+  }
+  .frame-overlay-light-grey {
+    display: none;
+  }
+  .frame-overlay-dark-grey-buy {
+    border: 3px solid hsl(0, 0%, 20%);
+    width: 690px;
+    height: 752px;
+  }
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (min-width:961px)  {
+  .CarouselSize {
+    height: 394px;
+    width: 918px;
+  }
+  .hue-rotate {
+    height: 395px;
+    width: 918px;
+  }
+  .carousel_white {
+    margin-top: 76px;
+  }
+  .carousel_white_buy {
+    width: 931px;
+    margin-top: 50px;
+  }
+  .carousel_black {
+    margin-top: 76px;
+  }
+  .frame-overlay-dark-grey {
+    display: none;
+  }
+  .frame-overlay-light-grey {
+    display: none;
+  }
+  .frame-overlay-dark-grey-buy {
+    border: 3px solid hsl(0, 0%, 20%);
+    width: 931px;
+    height: 1018px;
+  }
+}
+
+/* big landscape tablets, laptops, and desktops */
+@media (min-width:1025px) {
+  .CarouselSize {
+    height: 394px;
+    width: 918px;
+  }
+  .hue-rotate {
+    height: 395px;
+    width: 918px;
+  }
+  .carousel_white {
+    margin-top: 76px;
+  }
+  .carousel_white_buy {
+    width: 931px;
+    margin-top: 50px;
+  }
+  .carousel_black {
+    margin-top: 76px;
+  }
+  .frame-overlay-dark-grey {
+    display: none;
+  }
+  .frame-overlay-light-grey {
+    display: none;
+  }
+  .frame-overlay-dark-grey-buy {
+    border: 3px solid hsl(0, 0%, 20%);
+    width: 931px;
+    height: 1018px;
+  }
+}
+
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {
+  .CarouselSize {
+    height: 220px;
+    width: 513px;
+  }
+  .hue-rotate {
+    height: 220px;
+    width: 513px;
+  }
+}
 
 /* ------------------ LAPTOPS ------------------ */
 
@@ -901,3 +612,11 @@ li {
       width: 550px;
     }
 }
+
+
+/*==============================================================================================================================*/
+/*---------------------------------------------------- MEDIA QUERIES end -------------------------------------------------------*/
+/*==============================================================================================================================*/
+
+
+
