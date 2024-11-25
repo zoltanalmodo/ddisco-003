@@ -220,7 +220,7 @@ nav {
   align-items: center;
   width: 760px;
   height: 840px;
-  /* border: 2px solid violet; */
+  border: 2px solid greenyellow;
   z-index: 0;
 }
 
