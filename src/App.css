@@ -34,7 +34,7 @@
   background-color: white;
 }
 
-.hue-rotate {
+.hue_rotate {
   height: 236px;
 }
 
@@ -52,6 +52,7 @@
   max-width: 100vw;
 }
 
+/* ================================================= carousel white buy ================================================= */
 .carousel_white_buy {
   display: flex;
   flex-direction: column;
@@ -62,6 +63,7 @@
   margin-top: 80px;
   transform-origin: top center;
 }
+/* ================================================= carousel white buy ================================================= */
 
 .sizes_container {
   display: flex;
@@ -183,7 +185,7 @@ nav {
   transform: translate(-50%, -50%);
 }
 
-.frame-overlay-dark-grey-buy {
+.frame_overlay_dark_grey_buy {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -215,7 +217,7 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid red;
+  border: 2px solid violet;
   z-index: 0;
 }
 
@@ -319,7 +321,7 @@ li {
     height: 112px;
     width: 260px;
   }
-  .hue-rotate {
+  .hue_rotate {
     height: 112px;
     width: 260px;
   }
@@ -345,10 +347,12 @@ li {
   .carousel_white {
     margin-top: 76px;
   }
+  /* ================================================= carousel white buy ================================================= */
   .carousel_white_buy {
     width: 340px;
     margin-top: 50px;
   }
+  /* ================================================= carousel white buy ================================================= */
   .carousel_black {
     margin-top: 76px;
   }
@@ -358,7 +362,7 @@ li {
   .frame-overlay-light-grey {
     display: none;
   }
-  .frame-overlay-dark-grey-buy {
+  .frame_overlay_dark_grey_buy {
     border: 3px solid hsl(0, 0%, 20%);
     width: 340px;
     height: 370px;
@@ -371,7 +375,7 @@ li {
     height: 120px;
     width: 278px;
   }
-  .hue-rotate {
+  .hue_rotate {
     height: 120px;
     width: 278px;
   }
@@ -397,10 +401,12 @@ li {
   .carousel_white {
     margin-top: 76px;
   }
+  /* ================================================= carousel white buy ================================================= */
   .carousel_white_buy {
     width: 340px;
     margin-top: 50px;
   }
+  /* ================================================= carousel white buy ================================================= */
   .carousel_black {
     margin-top: 76px;
   }
@@ -410,7 +416,7 @@ li {
   .frame-overlay-light-grey {
     display: none;
   }
-  .frame-overlay-dark-grey-buy {
+  .frame_overlay_dark_grey_buy {
     border: 3px solid hsl(0, 0%, 20%);
     width: 340px;
     height: 370px;
@@ -423,7 +429,7 @@ li {
     height: 154px;
     width: 358px;
   }
-  .hue-rotate {
+  .hue_rotate {
     height: 154px;
     width: 358px;
   }
@@ -449,10 +455,12 @@ li {
   .carousel_white {
     margin-top: 76px;
   }
+  /* ================================================= carousel white buy ================================================= */
   .carousel_white_buy {
     width: 412px;
     margin-top: 50px;
   }
+  /* ================================================= carousel white buy ================================================= */
   .carousel_black {
     margin-top: 76px;
   }
@@ -462,7 +470,7 @@ li {
   .frame-overlay-light-grey {
     display: none;
   }
-  .frame-overlay-dark-grey-buy {
+  .frame_overlay_dark_grey_buy {
     border: 3px solid hsl(0, 0%, 20%);
     width: 412px;
     height: 450px;
@@ -475,17 +483,19 @@ li {
     height: 280px;
     width: 652px;
   }
-  .hue-rotate {
+  .hue_rotate {
     height: 280px;
     width: 652px;
   }
   .carousel_white {
     margin-top: 76px;
   }
+/* ================================================= carousel white buy ================================================= */
   .carousel_white_buy {
     width: 690px;
     margin-top: 50px;
   }
+/* ================================================= carousel white buy ================================================= */
   .carousel_black {
     margin-top: 76px;
   }
@@ -495,7 +505,7 @@ li {
   .frame-overlay-light-grey {
     display: none;
   }
-  .frame-overlay-dark-grey-buy {
+  .frame_overlay_dark_grey_buy {
     border: 3px solid hsl(0, 0%, 20%);
     width: 690px;
     height: 752px;
@@ -508,17 +518,19 @@ li {
     height: 394px;
     width: 918px;
   }
-  .hue-rotate {
+  .hue_rotate {
     height: 395px;
     width: 918px;
   }
   .carousel_white {
     margin-top: 76px;
   }
+/* ================================================= carousel white buy ================================================= */
   .carousel_white_buy {
-    width: 931px;
+    width: 670px;
     margin-top: 50px;
   }
+/* ================================================= carousel white buy ================================================= */
   .carousel_black {
     margin-top: 76px;
   }
@@ -528,10 +540,10 @@ li {
   .frame-overlay-light-grey {
     display: none;
   }
-  .frame-overlay-dark-grey-buy {
+  .frame_overlay_dark_grey_buy {
     border: 3px solid hsl(0, 0%, 20%);
-    width: 931px;
-    height: 1018px;
+    width: 670px;
+    height: 740px;
   }
 }
 
@@ -541,17 +553,19 @@ li {
     height: 394px;
     width: 918px;
   }
-  .hue-rotate {
+  .hue_rotate {
     height: 395px;
     width: 918px;
   }
   .carousel_white {
     margin-top: 76px;
   }
+/* ================================================= carousel white buy ================================================= */  
   .carousel_white_buy {
-    width: 931px;
+    width: 670px;
     margin-top: 50px;
   }
+/* ================================================= carousel white buy ================================================= */  
   .carousel_black {
     margin-top: 76px;
   }
@@ -561,10 +575,10 @@ li {
   .frame-overlay-light-grey {
     display: none;
   }
-  .frame-overlay-dark-grey-buy {
+  .frame_overlay_dark_grey_buy {
     border: 3px solid hsl(0, 0%, 20%);
-    width: 931px;
-    height: 1018px;
+    width: 670px;
+    height: 740px;
   }
 }
 
@@ -574,7 +588,7 @@ li {
     height: 220px;
     width: 513px;
   }
-  .hue-rotate {
+  .hue_rotate {
     height: 220px;
     width: 513px;
   }
@@ -591,7 +605,7 @@ li {
       height: 220px;
       width: 513px;
     }
-    .hue-rotate {
+    .hue_rotate {
       height: 220px;
       width: 513px;
     }
@@ -607,7 +621,7 @@ li {
       height: 236px;
       width: 550px;
     }
-    .hue-rotate {
+    .hue_rotate {
       height: 236px;
       width: 550px;
     }

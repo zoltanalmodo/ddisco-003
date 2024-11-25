@@ -296,7 +296,7 @@ globalState.previousActiveButton === "black" ? "black" : "white";
 
       <div className="carousel_white_buy">
 
-        <div style={{ backgroundColor: frameBackgroundColor }} className="frame-overlay-dark-grey-buy">
+        <div style={{ backgroundColor: frameBackgroundColor }} className="frame_overlay_dark_grey_buy">
 
           <div style={{
             filter: (globalState.isPastel === 'true' ? 'brightness(105%) saturate(70%)' : 'brightness(100%) saturate(100%)'),
@@ -305,21 +305,21 @@ globalState.previousActiveButton === "black" ? "black" : "white";
 
             <div className="single_image_display_container">
               
-                <div className="hue-rotate" style={{
+                <div className="hue_rotate" style={{
                   filter: (`hue-rotate(${globalState.degree_001}deg)`),
                 }}>
                   {selectedImage_001}
                 </div>
               
               
-                <div className="hue-rotate" style={{
+                <div className="hue_rotate" style={{
                   filter: (`hue-rotate(${globalState.degree_002}deg)`),
                 }}>
                   {selectedImage_002}
                 </div>
               
               
-                <div className="hue-rotate" style={{
+                <div className="hue_rotate" style={{
                   filter: (`hue-rotate(${globalState.degree_003}deg)`),
                 }}>
                   {selectedImage_003}
