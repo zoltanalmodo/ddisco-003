@@ -218,7 +218,9 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid green;
+  width: 670px;
+  height: 740px;
+  border: 2px solid greenyellow;
   z-index: 0;
 }
 
@@ -370,6 +372,10 @@ li {
     width: 340px;
     height: 370px;
   }
+  .single_image_display_container {
+    width: 340px;
+    height: 370px;
+  }
 }
 
 /* smartphones, iPhone, portrait 480x320 phones */
@@ -422,6 +428,10 @@ li {
   }
   .frame_overlay_dark_grey_buy {
     border: 3px solid hsl(0, 0%, 20%);
+    width: 340px;
+    height: 370px;
+  }
+  .single_image_display_container {
     width: 340px;
     height: 370px;
   }
@@ -480,6 +490,10 @@ li {
     width: 412px;
     height: 450px;
   }
+  .single_image_display_container {
+    width: 412px;
+    height: 450px;
+  }
 }
 
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
@@ -513,6 +527,10 @@ li {
   }
   .frame_overlay_dark_grey_buy {
     border: 3px solid hsl(0, 0%, 20%);
+    width: 690px;
+    height: 752px;
+  }
+  .single_image_display_container {
     width: 690px;
     height: 752px;
   }
@@ -552,6 +570,10 @@ li {
     width: 670px;
     height: 740px;
   }
+  .single_image_display_container {
+    width: 670px;
+    height: 740px;
+  }
 }
 
 /* big landscape tablets, laptops, and desktops */
@@ -588,6 +610,10 @@ li {
     width: 670px;
     height: 740px;
   }
+  .single_image_display_container {
+    width: 670px;
+    height: 740px;
+  }
 }
 
 /* hi-res laptops and desktops */
@@ -605,35 +631,35 @@ li {
 /* ------------------ LAPTOPS ------------------ */
 
 /* ----------- Non-Retina Screens ----------- */
-@media screen 
+/* @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 1) { 
-    .CarouselSize {
-      height: 220px;
-      width: 513px;
-    }
-    .hue_rotate {
-      height: 220px;
-      width: 513px;
-    }
-}
+  .CarouselSize {
+    height: 220px;
+    width: 513px;
+  }
+  .hue_rotate {
+    height: 220px;
+    width: 513px;
+  }
+} */
 
 /* ----------- Retina Screens ----------- */
-@media screen 
+/* @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (min-resolution: 192dpi) { 
-    .CarouselSize {
-      height: 236px;
-      width: 550px;
-    }
-    .hue_rotate {
-      height: 236px;
-      width: 550px;
-    }
-}
+  .CarouselSize {
+    height: 236px;
+    width: 550px;
+  }
+  .hue_rotate {
+    height: 236px;
+    width: 550px;
+  }
+} */
 
 
 /*==============================================================================================================================*/
