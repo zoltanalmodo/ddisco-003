@@ -220,7 +220,7 @@ nav {
   align-items: center;
   width: 670px;
   height: 740px;
-  border: 2px solid greenyellow;
+  border: 2px solid red;
   z-index: 0;
 }
 
@@ -313,7 +313,9 @@ li {
 /*------------------------------------------------- MEDIA QUERIES start ----------------------------------------------------*/
 /*==========================================================================================================================*/
 /*==========================================================================================================================*/
-/* apple iPhones buy page is OK other pages the drawing is smaller than screen by a lot...*
+
+/* apple iPhones buy page is OK other pages the drawing is smaller than screen by a lot...*/
+
 /* ipads are not OK */
 
 /* anything under 320px width */
@@ -322,12 +324,12 @@ li {
   and (max-device-width: 319px)
   and (-webkit-min-device-pixel-ratio: 2) {
   .CarouselSize {
-    height: 112px;
-    width: 260px;
+    width: 278px;
+    height: 120px;
   }
   .hue_rotate {
-    height: 112px;
-    width: 260px;
+    width: 278px;
+    height: 120px;
   }
   button {
     padding-left: 5px;
@@ -354,7 +356,7 @@ li {
   /* ================================================= carousel white buy ================================================= */
   .carousel_white_buy {
     width: 340px;
-    height:370px;
+    height: 370px;
     margin-top: 50px;
   }
   /* ================================================= carousel white buy ================================================= */
@@ -381,12 +383,12 @@ li {
 /* smartphones, iPhone, portrait 480x320 phones */
 @media (min-width:320px)  {
   .CarouselSize {
-    height: 120px;
     width: 278px;
+    height: 120px;
   }
   .hue_rotate {
-    height: 120px;
     width: 278px;
+    height: 120px;
   }
   button {
     padding-left: 5px;
@@ -440,12 +442,12 @@ li {
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 @media (min-width:481px)  {
   .CarouselSize {
-    height: 154px;
-    width: 358px;
+    width: 342px;
+    height: 148px;
   }
   .hue_rotate {
-    height: 154px;
-    width: 358px;
+    width: 342px;
+    height: 148px;
   }
   button {
     padding-left: 5px;
@@ -499,12 +501,12 @@ li {
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 @media (min-width:641px)  {
   .CarouselSize {
-    height: 280px;
-    width: 652px;
+    width: 574px;
+    height: 248px;
   }
   .hue_rotate {
-    height: 280px;
-    width: 652px;
+    width: 574px;
+    height: 248px;
   }
   .carousel_white {
     margin-top: 76px;
@@ -539,12 +541,12 @@ li {
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width:961px)  {
   .CarouselSize {
-    height: 394px;
-    width: 918px;
+    width: 565px;
+    height: 244px;
   }
   .hue_rotate {
-    height: 395px;
-    width: 918px;
+    width: 565px;
+    height: 244px;
   }
   .carousel_white {
     margin-top: 76px;
@@ -579,12 +581,12 @@ li {
 /* big landscape tablets, laptops, and desktops */
 @media (min-width:1025px) {
   .CarouselSize {
-    height: 394px;
-    width: 918px;
+    width: 565px;
+    height: 244px;
   }
   .hue_rotate {
-    height: 395px;
-    width: 918px;
+    width: 565px;
+    height: 244px;
   }
   .carousel_white {
     margin-top: 76px;
@@ -619,12 +621,40 @@ li {
 /* hi-res laptops and desktops */
 @media (min-width:1281px) {
   .CarouselSize {
-    height: 220px;
-    width: 513px;
+    width: 565px;
+    height: 244px;
   }
   .hue_rotate {
-    height: 220px;
-    width: 513px;
+    width: 565px;
+    height: 244px;
+  }
+  .carousel_white {
+    margin-top: 76px;
+  }
+/* ================================================= carousel white buy ================================================= */  
+  .carousel_white_buy {
+    width: 670px;
+    height: 740px;
+    margin-top: 50px;
+  }
+/* ================================================= carousel white buy ================================================= */  
+  .carousel_black {
+    margin-top: 76px;
+  }
+  .frame-overlay-dark-grey {
+    display: none;
+  }
+  .frame-overlay-light-grey {
+    display: none;
+  }
+  .frame_overlay_dark_grey_buy {
+    border: 3px solid hsl(0, 0%, 20%);
+    width: 670px;
+    height: 740px;
+  }
+  .single_image_display_container {
+    width: 670px;
+    height: 740px;
   }
 }
 
