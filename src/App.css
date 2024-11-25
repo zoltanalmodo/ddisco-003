@@ -58,8 +58,8 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  width: 670px;
-  height: 740px;
+  width: 760px;
+  height: 840px;
   transform: scale(0.6);
   margin-top: 80px;
   transform-origin: top center;
@@ -178,8 +178,8 @@ nav {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 670px;
-  height: 740px;
+  width: 760px;
+  height: 840px;
   border: 3px solid hsl(0, 0%, 20%);
   pointer-events: none;
   z-index: 1;
@@ -191,8 +191,8 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 670px;
-  height: 740px;
+  width: 760px;
+  height: 840px;
   border: 3px solid hsl(0, 0%, 20%);
   z-index: 5;
 }
@@ -218,9 +218,9 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 670px;
-  height: 740px;
-  border: 2px solid red;
+  width: 760px;
+  height: 840px;
+  /* border: 2px solid violet; */
   z-index: 0;
 }
 
