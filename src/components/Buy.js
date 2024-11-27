@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import Navigation from './Navigation';
 import { GlobalContext } from '../context/GlobalState'
+import { FormValidation } from '../components/FormValidation';
 
 /* ============================================ black images START ============================================ */
 import ddisco_b_001_1 from '../images/b/ddisco_b_001_1.jpg';
@@ -122,14 +123,46 @@ import ddisco_c_012_3 from '../images/c/ddisco_c_012_3.jpg';
 
 export const Buy = () => {
 
-  
-
-
   const {
 
     globalState,
+    setSelectedSizeSmall,
+    setSelectedSizeMedium,
+    setSelectedSizeLarge,
 
   } = useContext(GlobalContext);
+
+  const activeBackgroundSizesSmall = () => {
+    return(
+      globalState.selectedSize === 'small' ? 'black' : 'white'
+    )
+  }
+  const activeColorSizesSmall = () => {
+    return(
+      globalState.selectedSize === 'small' ? 'white' : 'black'
+    )
+  }
+  const activeBackgroundSizesMedium = () => {
+    return(
+      globalState.selectedSize === 'medium' ? 'black' : 'white'
+    )
+  }
+  const activeColorSizesMedium = () => {
+    return(
+      globalState.selectedSize === 'medium' ? 'white' : 'black'
+    )
+  }
+  const activeBackgroundSizesLarge = () => {
+    return(
+      globalState.selectedSize === 'large' ? 'black' : 'white'
+    )
+  }
+  const activeColorSizesLarge = () => {
+    return(
+      globalState.selectedSize === 'large' ? 'white' : 'black'
+    )
+  }
+
 
   window.galleryItems_black_001 = [
     <img alt='c_001_1' index={0} src={ddisco_b_001_1} className="CarouselSize" />,
@@ -259,10 +292,6 @@ export const Buy = () => {
     <img key='c_011_1' alt='c_011_3' index={10} src={ddisco_c_011_3} className="CarouselSize" />,
     <img key='c_012_1' alt='c_012_3' index={11} src={ddisco_c_012_3} className="CarouselSize" />,
   ];
-
-  
-
-  console.log(window.galleryItems_black_001); // Log to check
   
   let imageColorState;
     if (globalState.previousActiveButton === "black") {
@@ -272,7 +301,7 @@ export const Buy = () => {
     } else if (globalState.previousActiveButton === "color" || globalState.previousActiveButton === "disco") {
       imageColorState = "color";
     } else {
-      imageColorState = "color"; // default
+      imageColorState = "color";
     }
 
   const selectedImageIndex_001 = globalState.currentIndex_001;
@@ -311,13 +340,11 @@ globalState.previousActiveButton === "black" ? "black" : "white";
                   {selectedImage_001}
                 </div>
               
-              
                 <div className="hue_rotate" style={{
                   filter: (`hue-rotate(${globalState.degree_002}deg)`),
                 }}>
                   {selectedImage_002}
                 </div>
-              
               
                 <div className="hue_rotate" style={{
                   filter: (`hue-rotate(${globalState.degree_003}deg)`),
@@ -332,13 +359,50 @@ globalState.previousActiveButton === "black" ? "black" : "white";
         </div>
 
         <div class="sizes_container">
-          <div class="size_button">small</div>
-          <div class="size_button">medium</div>
-          <div class="size_button">large</div>
-          <div className="buy_button">buy</div>
-        </div>
-       
 
+          <div class="size_button_container">
+            <button
+              class="size_button"
+              onClick={setSelectedSizeSmall}
+              style={{
+                backgroundColor: activeBackgroundSizesSmall(),
+                color: activeColorSizesSmall()
+              }}>small
+            </button>
+          </div>
+
+          <div class="size_button_container">
+            <button
+              class="size_button"
+              onClick={setSelectedSizeMedium}
+              style={{
+                backgroundColor: activeBackgroundSizesMedium(),
+                color: activeColorSizesMedium()
+              }}>medium
+            </button>
+          </div>
+
+          <div class="size_button_container">
+            <button
+              class="size_button"
+              onClick={setSelectedSizeLarge}
+              style={{
+                backgroundColor: activeBackgroundSizesLarge(),
+                color: activeColorSizesLarge()
+              }}>large
+            </button>
+          </div>
+
+          {/* <input class="user_input_field" type="text" id="username" name="username" placeholder="*" required></input>
+          <input class="user_input_field" type="email" id="email" name="email" placeholder="@" required></input>
+          <input className="buy_button_container" type="submit" value="buy"></input> */}
+
+          <FormValidation />
+
+        </div>
+
+        
+       
       </div>
 
     </div>  

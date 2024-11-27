@@ -65,7 +65,22 @@ export const AppReducer = (state, action) => {
       return {
         ...state,
         isPastel: action.payload
-      };  
+      };
+    case 'SET_SELECTED_SIZE_SMALL' :
+      return {
+        ...state,
+        selectedSize: 'small'
+      };
+    case 'SET_SELECTED_SIZE_MEDIUM' :
+      return {
+        ...state,
+        selectedSize: 'medium'
+      };
+    case 'SET_SELECTED_SIZE_LARGE' :
+      return {
+        ...state,
+        selectedSize: 'large'
+      };
     default:
       return state;
   }

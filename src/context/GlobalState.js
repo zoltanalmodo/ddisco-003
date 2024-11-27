@@ -14,6 +14,8 @@ const initialState = {
   activeButton: 'disco',
   previousActiveButton: 'disco',
   isPastel: 'false',
+  selectedSize: '',
+  
 };
 
 // Create Context
@@ -111,7 +113,26 @@ export const GlobalProvider = ({ children }) => {
     });
   }
 
+  function setSelectedSizeSmall() {
+    dispatch({
+      type: 'SET_SELECTED_SIZE_SMALL',
+      payload: 'small'
+    });
+  }
 
+  function setSelectedSizeMedium() {
+    dispatch({
+      type: 'SET_SELECTED_SIZE_MEDIUM',
+      payload: 'medium'
+    });
+  }
+
+  function setSelectedSizeLarge() {
+    dispatch({
+      type: 'SET_SELECTED_SIZE_LARGE',
+      payload: 'large'
+    });
+  }
 
   return (
     <GlobalContext.Provider
@@ -132,6 +153,9 @@ export const GlobalProvider = ({ children }) => {
         setActiveButtonDisco,
         setActiveButtonBuy,
         setIsPastel,
+        setSelectedSizeSmall,
+        setSelectedSizeMedium,
+        setSelectedSizeLarge,
       }}>
       { children }
     </GlobalContext.Provider>

@@ -74,108 +74,27 @@
   margin-top: 20px;
 }
 
-.size_button_container {
+.size_button {
   background-color: white;
   border: 2px solid black;
   width: 100%;
+  padding: 10px;
   margin: 5px;
   text-align: center;
   font-weight: normal;
-}
-
-.size_button {
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  text-align: center;
-  font-weight: normal;
   font-size: 24px;
-}
-
-.buy_button_container {
-  background-color: black;
-  width: 100%;
-  margin: 20px;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-  font-size: 30px;
 }
 
 .buy_button {
   background-color: black;
   width: 100%;
-  height: 100%;
   padding: 10px;
+  margin: 10px;
   text-align: center;
   color: white;
   font-weight: bold;
   font-size: 30px;
 }
-
-
-/* ================================================= user input validation ================================================= */
-
-.sizes_container_form {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  width: 100%;
-  margin-top: 40px;
-}
-
-
-/* ================ remove default form and input tags styling ================ */
-
-form, input {
-  all: unset; /* Resets all default styles */
-}
-
-form {
-  display: block;
-  margin-top: 10px;
-}
-
-input {
-  display: inline-block;
-  background-color: white;
-  width: 100%;
-  text-align: center;
-  font-weight: normal;
-  font-size: 24px;
-}
-
-input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #888888;
-}
-
-
-/* ================ remove default form and input tags styling ================ */
-
-.user_input_field {
-  background-color: white;
-  border: 2px solid black;
-  width: 100%;
-  margin: 5px;
-  padding: 10px;
-  text-align: center;
-  font-weight: normal;
-  font-size: 24px;
-}
-
-/* ================================================= user input validation ================================================= */
-
-.error_message {
-  color: red;
-  font-size: 24px;
-}
-
-
-
-
-
-
 
 /* ==================================================================================================== */
 /* ========================================= NAVIGATION START ========================================= */
@@ -640,12 +559,12 @@ li {
   .carousel_black {
     margin-top: 76px;
   }
-  /* .frame-overlay-dark-grey {
+  .frame-overlay-dark-grey {
     display: none;
   }
   .frame-overlay-light-grey {
     display: none;
-  } */
+  }
   .frame_overlay_dark_grey_buy {
     border: 3px solid hsl(0, 0%, 20%);
     width: 670px;

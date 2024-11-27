@@ -16,7 +16,7 @@ function Navigation() {
     setActiveButtonDisco,
     setActiveButtonBuy,
     setIsPastel,
-  
+    
   } = useContext(GlobalContext);
 
   const activeBackgroundBlack = () => {
