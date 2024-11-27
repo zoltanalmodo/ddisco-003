@@ -329,7 +329,6 @@ globalState.previousActiveButton === "black" ? "black" : "white";
 
           <div style={{
             filter: (globalState.isPastel === 'true' ? 'brightness(105%) saturate(70%)' : 'brightness(100%) saturate(100%)'),
-            
           }}>
 
             <div className="single_image_display_container">
@@ -393,16 +392,10 @@ globalState.previousActiveButton === "black" ? "black" : "white";
             </button>
           </div>
 
-          {/* <input class="user_input_field" type="text" id="username" name="username" placeholder="*" required></input>
-          <input class="user_input_field" type="email" id="email" name="email" placeholder="@" required></input>
-          <input className="buy_button_container" type="submit" value="buy"></input> */}
-
           <FormValidation />
 
         </div>
 
-        
-       
       </div>
 
     </div>  

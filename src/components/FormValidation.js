@@ -33,7 +33,7 @@ export const FormValidation = () => {
     setErrors(validationErrors);
 
     if (isValid) {
-      alert('Form submitted successfully!');
+      alert('Order submitted successfully');
       // Perform further actions (e.g., send data to server)
     }
   };
