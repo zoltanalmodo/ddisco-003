@@ -19,7 +19,9 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && nodemon server.js",
+    "client": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -45,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "concurrently": "^9.1.0",
     "gh-pages": "^6.2.0"
   }
 }
