@@ -1,9 +1,10 @@
-import React, { createContext, useReducer, useEffect } from 'react';
+import React, { createContext, useReducer } from 'react';
 import { AppReducer } from './AppReducer';
-import axios from 'axios';
 
-// Initial State
+// initisalState
+
 const initialState = {
+  
   currentIndex_001: 0,
   currentIndex_002: 0,
   currentIndex_003: 0,
@@ -12,163 +13,134 @@ const initialState = {
   degree_003: 0,
   activeButton: 'disco',
   previousActiveButton: 'disco',
-  isPastel: "value",
-  selectedSize: 'defined',
-  // API-related state
-  data: 'data fetched form the API',       // Data fetched from the API
-  loading: true,    // Loading state
-  error: null,      // Error state
-};
-
-// Actions
-const ACTIONS = {
-  FETCH_SUCCESS: 'FETCH_SUCCESS',
-  FETCH_ERROR: 'FETCH_ERROR',
-  SET_LOADING: 'SET_LOADING',
-  // Add other actions as needed for managing API state
+  isPastel: 'false',
+  selectedSize: '',
+  
 };
 
 // Create Context
+
 export const GlobalContext = createContext(initialState);
 
-// Provider Component
+// Provider component
+
 export const GlobalProvider = ({ children }) => {
   const [globalState, dispatch] = useReducer(AppReducer, initialState);
 
-  // API Call: Fetch Data
-  const fetchData = async () => {
-    dispatch({ type: ACTIONS.SET_LOADING });
-    try {
-      const response = await axios.get('http://localhost:5000/api/data');
-      dispatch({ type: ACTIONS.FETCH_SUCCESS, payload: response.data });
-    } catch (err) {
-      dispatch({ type: ACTIONS.FETCH_ERROR, payload: 'Failed to fetch data from the API.' });
-    }
-  };
+  // Actions
 
-  // Fetch data on provider mount
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  // List of Actions
   function updateIndex_001(currentIndex_001) {
     dispatch({
       type: 'UPDATE_INDEX_001',
-      payload: currentIndex_001,
+      payload: currentIndex_001
     });
   }
-
+  
   function updateIndex_002(currentIndex_002) {
     dispatch({
       type: 'UPDATE_INDEX_002',
-      payload: currentIndex_002,
+      payload: currentIndex_002
     });
   }
 
   function updateIndex_003(currentIndex_003) {
     dispatch({
       type: 'UPDATE_INDEX_003',
-      payload: currentIndex_003,
+      payload: currentIndex_003
     });
   }
 
   function setDegree_001(degree) {
     dispatch({
       type: 'SET_DEGREE_001',
-      payload: degree,
-    });
+      payload: degree
+    })
   }
-
+  
   function setDegree_002(degree) {
     dispatch({
       type: 'SET_DEGREE_002',
-      payload: degree,
-    });
+      payload: degree
+    })
   }
 
   function setDegree_003(degree) {
     dispatch({
       type: 'SET_DEGREE_003',
-      payload: degree,
-    });
+      payload: degree
+    })
   }
 
   function setActiveButtonBlack() {
     dispatch({
       type: 'SET_ACTIVE_BUTTON_BLACK',
-      payload: 'black',
-    });
+      payload: 'black'
+    })
   }
 
   function setActiveButtonWhite() {
     dispatch({
       type: 'SET_ACTIVE_BUTTON_WHITE',
-      payload: 'white',
-    });
+      payload: 'white'
+    })
   }
 
   function setActiveButtonColor() {
     dispatch({
       type: 'SET_ACTIVE_BUTTON_COLOR',
-      payload: 'color',
-    });
+      payload: 'color'
+    })
   }
 
   function setActiveButtonDisco() {
     dispatch({
       type: 'SET_ACTIVE_BUTTON_DISCO',
-      payload: 'disco',
-    });
+      payload: 'disco'
+    })
   }
 
   function setActiveButtonBuy() {
     dispatch({
       type: 'SET_ACTIVE_BUTTON_BUY',
-      payload: 'buy',
-    });
+      payload: 'buy'
+    })
   }
 
   function setIsPastel() {
     dispatch({
       type: 'SET_IS_PASTEL',
-      payload: globalState.isPastel === "true" ? "false" : "true",
+      payload: globalState.isPastel === 'true' ? 'false' : 'true'
     });
   }
 
   function setSelectedSizeSmall() {
     dispatch({
       type: 'SET_SELECTED_SIZE_SMALL',
-      payload: 'small',
+      payload: 'small'
     });
   }
 
   function setSelectedSizeMedium() {
     dispatch({
       type: 'SET_SELECTED_SIZE_MEDIUM',
-      payload: 'medium',
+      payload: 'medium'
     });
   }
 
   function setSelectedSizeLarge() {
     dispatch({
       type: 'SET_SELECTED_SIZE_LARGE',
-      payload: 'large',
+      payload: 'large'
     });
   }
 
   return (
     <GlobalContext.Provider
       value={{
-        // Expose global state
         globalState,
         currentIndex_001: globalState.currentIndex_001,
         currentIndex_002: globalState.currentIndex_002,
         currentIndex_003: globalState.currentIndex_003,
-        data: globalState.data,
-        loading: globalState.loading,
-        error: globalState.error,
-        // Expose actions
         updateIndex_001,
         updateIndex_002,
         updateIndex_003,
@@ -184,10 +156,9 @@ export const GlobalProvider = ({ children }) => {
         setSelectedSizeSmall,
         setSelectedSizeMedium,
         setSelectedSizeLarge,
-        fetchData, // Expose fetchData to refetch manually if needed
-      }}
-    >
-      {children}
+      }}>
+      { children }
     </GlobalContext.Provider>
   );
 };
+
