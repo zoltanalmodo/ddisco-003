@@ -1,7 +1,6 @@
 import React, { useContext } from 'react'
 import Navigation from './Navigation';
 import { GlobalContext } from '../context/GlobalState'
-import { FormValidation } from '../components/FormValidation';
 
 /* ============================================ black images START ============================================ */
 import ddisco_b_001_1 from '../images/b/ddisco_b_001_1.jpg';
@@ -121,47 +120,13 @@ import ddisco_c_012_3 from '../images/c/ddisco_c_012_3.jpg';
 /* ============================================ color images -END- ============================================ */
 
 
-export const Buy = () => {
+export const Confirm = () => {
 
   const {
 
     globalState,
-    setSelectedSizeSmall,
-    setSelectedSizeMedium,
-    setSelectedSizeLarge,
 
   } = useContext(GlobalContext);
-
-  const activeBackgroundSizesSmall = () => {
-    return(
-      globalState.selectedSize === 'small' ? 'black' : 'white'
-    )
-  }
-  const activeColorSizesSmall = () => {
-    return(
-      globalState.selectedSize === 'small' ? 'white' : 'black'
-    )
-  }
-  const activeBackgroundSizesMedium = () => {
-    return(
-      globalState.selectedSize === 'medium' ? 'black' : 'white'
-    )
-  }
-  const activeColorSizesMedium = () => {
-    return(
-      globalState.selectedSize === 'medium' ? 'white' : 'black'
-    )
-  }
-  const activeBackgroundSizesLarge = () => {
-    return(
-      globalState.selectedSize === 'large' ? 'black' : 'white'
-    )
-  }
-  const activeColorSizesLarge = () => {
-    return(
-      globalState.selectedSize === 'large' ? 'white' : 'black'
-    )
-  }
 
 
   window.galleryItems_black_001 = [
@@ -357,43 +322,17 @@ globalState.previousActiveButton === "black" ? "black" : "white";
 
         </div>
 
-        <div class="sizes_container">
-
-          <div class="size_button_container">
-            <button
-              class="size_button"
-              onClick={setSelectedSizeSmall}
-              style={{
-                backgroundColor: activeBackgroundSizesSmall(),
-                color: activeColorSizesSmall()
-              }}>small
-            </button>
-          </div>
-
-          <div class="size_button_container">
-            <button
-              class="size_button"
-              onClick={setSelectedSizeMedium}
-              style={{
-                backgroundColor: activeBackgroundSizesMedium(),
-                color: activeColorSizesMedium()
-              }}>medium
-            </button>
-          </div>
-
-          <div class="size_button_container">
-            <button
-              class="size_button"
-              onClick={setSelectedSizeLarge}
-              style={{
-                backgroundColor: activeBackgroundSizesLarge(),
-                color: activeColorSizesLarge()
-              }}>large
-            </button>
-          </div>
-
-          <FormValidation />
-
+        <div >
+          <h1>Order Confirmed</h1>
+          <h2>details:</h2>
+          <p>index_001: {globalState.currentIndex_001}</p>
+          <p>index_002: {globalState.currentIndex_002}</p>
+          <p>index_003: {globalState.currentIndex_003}</p>
+          <p>degree_001: {globalState.degree_001}</p>
+          <p>degree_002: {globalState.degree_002}</p>
+          <p>degree_003: {globalState.degree_003}</p>
+          <p>pastel:{globalState.isPastel}</p>
+          <p>size: {globalState.selectedSize}</p>
         </div>
 
       </div>

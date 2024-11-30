@@ -9,6 +9,7 @@ import { White } from './components/White';
 import { Color } from './components/Color';
 import { Buy } from './components/Buy';
 import { FormValidation } from './components/FormValidation';
+import { Confirm } from './components/Confirm';
 
 import { GlobalProvider } from './context/GlobalState';
 
@@ -24,6 +25,7 @@ function App() {
           <Route path='/disco' element={<Disco />} />
           <Route path='/buy' element={<Buy />} />
           <Route path='/form-validation' element={<FormValidation />} />
+          <Route path='/confirm' element={<Confirm />} />
         </Routes>
       </Router>
     </GlobalProvider>

@@ -33,17 +33,17 @@ export const FormValidation = () => {
 
     // Validate username
     if (!formData.username) {
-      validationErrors.username = 'Username is required.';
+      validationErrors.username = 'Please enter your name.';
       isValid = false;
     }
 
     // Validate email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!formData.email) {
-      validationErrors.email = 'Email is required.';
+      validationErrors.email = 'Please enter your email address.';
       isValid = false;
     } else if (!emailRegex.test(formData.email)) {
-      validationErrors.email = 'Enter a valid email address.';
+      validationErrors.email = 'Please enter a valid email address.';
       isValid = false;
     }
 
@@ -127,7 +127,6 @@ export const FormValidation = () => {
       <div className="buy_button_container">
         <button className="buy_button" type="submit">buy</button>
       </div>
-      <p>{currentIndex_001}, {degree_001}, {isPastel}</p>
     </form>
   );
 };

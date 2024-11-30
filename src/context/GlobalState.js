@@ -12,12 +12,12 @@ const initialState = {
   degree_003: 0,
   activeButton: 'disco',
   previousActiveButton: 'disco',
-  isPastel: "value",
-  selectedSize: 'defined',
+  isPastel: "false",
+  selectedSize: 'custom',
   // API-related state
-  data: 'data fetched form the API',       // Data fetched from the API
-  loading: true,    // Loading state
-  error: null,      // Error state
+  data: 'data fetched form the API',
+  loading: true,
+  error: null,
 };
 
 // Actions
@@ -165,6 +165,13 @@ export const GlobalProvider = ({ children }) => {
         currentIndex_001: globalState.currentIndex_001,
         currentIndex_002: globalState.currentIndex_002,
         currentIndex_003: globalState.currentIndex_003,
+        degree_001: globalState.degree_001,
+        degree_002: globalState.degree_002,
+        degree_003: globalState.degree_003,
+        activeButton: globalState.activeButton,
+        previousActiveButton: globalState.previousActiveButton,
+        isPastel: globalState.isPastel,
+        selectedSize: globalState.selectedSize,
         data: globalState.data,
         loading: globalState.loading,
         error: globalState.error,
