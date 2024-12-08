@@ -173,13 +173,11 @@ input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 
 
 
-
-
-
-
 /* ==================================================================================================== */
 /* ========================================= NAVIGATION START ========================================= */
 /* ==================================================================================================== */
+
+
 
 button {
   text-decoration: none;
@@ -227,10 +225,6 @@ button:active {
   color: hsl(0, 0%, 100%);
   box-shadow: none; /* Remove shadow on click */
 }
-
-
-
-
 
 .navigation-wrapper {
   padding-bottom: 0px;
