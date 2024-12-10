@@ -1,11 +1,11 @@
 {
-  "name": "doodle-disco-app",
+  "name": "deedisco",
   "version": "0.2cd.0",
   "engines": {
     "node": "20.17.0"
   },
   "private": true,
-  "homepage": "https://zoltanalmodo.github.io/doodle-disco-app-002/",
+  "homepage": "https://zoltanalmodo.github.io/deedisco/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.1.2",
@@ -19,7 +19,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider concurrently \"npm run server\" \"npm run client\"",
     "server": "cd backend && nodemon server.js",
     "client": "react-scripts start",
     "build": "react-scripts build",

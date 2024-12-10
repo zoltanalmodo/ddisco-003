@@ -14,7 +14,7 @@ function Navigation() {
     setActiveButtonWhite,
     setActiveButtonColor,
     setActiveButtonDisco,
-    setActiveButtonBuy,
+    setActiveButtonShop,
     setIsPastel,
     
   } = useContext(GlobalContext);
@@ -59,14 +59,14 @@ function Navigation() {
       globalState.activeButton === 'disco' ? 'black' : ''
     )
   }
-  const activeBackgroundBuy = () => {
+  const activeBackgroundShop = () => {
     return(
-      globalState.activeButton === 'buy' ? 'white' : ''
+      globalState.activeButton === 'shop' ? 'white' : ''
     )
   }
-  const activeColorBuy = () => {
+  const activeColorShop = () => {
     return(
-      globalState.activeButton === 'buy' ? 'black' : ''
+      globalState.activeButton === 'shop' ? 'black' : ''
     )
   }
   const activeBackgroundPastel = () => {
@@ -131,7 +131,7 @@ function Navigation() {
                     </button>
                   </div>
                 </Link>
-                <Link to={`/${globalState.activeButton}`}>
+                <Link to="">
                   <div className='nav_links_li'>
                     <button
                       onClick={setIsPastel}
@@ -145,11 +145,11 @@ function Navigation() {
                 <Link to='/buy'>
                   <div className='nav_links_li'>
                     <button
-                      onClick={setActiveButtonBuy}
+                      onClick={setActiveButtonShop}
                       style={{
-                        backgroundColor: activeBackgroundBuy(),
-                        color: activeColorBuy()
-                      }}>buy
+                        backgroundColor: activeBackgroundShop(),
+                        color: activeColorShop()
+                      }}>shop
                     </button>
                   </div>
                 </Link>

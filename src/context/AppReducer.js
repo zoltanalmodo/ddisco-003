@@ -54,11 +54,11 @@ export const AppReducer = (state, action) => {
         previousActiveButton: state.activeButton,
         activeButton: 'disco',
       };
-    case 'SET_ACTIVE_BUTTON_BUY':
+    case 'SET_ACTIVE_BUTTON_SHOP':
       return {
         ...state,
         previousActiveButton: state.activeButton,
-        activeButton: 'buy',
+        activeButton: 'shop',
       };
     case 'SET_IS_PASTEL':
       return {

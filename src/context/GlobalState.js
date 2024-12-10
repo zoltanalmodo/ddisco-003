@@ -122,10 +122,10 @@ export const GlobalProvider = ({ children }) => {
     });
   }
 
-  function setActiveButtonBuy() {
+  function setActiveButtonShop() {
     dispatch({
-      type: 'SET_ACTIVE_BUTTON_BUY',
-      payload: 'buy',
+      type: 'SET_ACTIVE_BUTTON_SHOP',
+      payload: 'shop',
     });
   }
 
@@ -186,7 +186,7 @@ export const GlobalProvider = ({ children }) => {
         setActiveButtonWhite,
         setActiveButtonColor,
         setActiveButtonDisco,
-        setActiveButtonBuy,
+        setActiveButtonShop,
         setIsPastel,
         setSelectedSizeSmall,
         setSelectedSizeMedium,
