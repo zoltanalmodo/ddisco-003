@@ -22,7 +22,7 @@
     "start": "NODE_OPTIONS=--openssl-legacy-provider concurrently \"npm run server\" \"npm run client\"",
     "server": "cd backend && nodemon server.js",
     "client": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
