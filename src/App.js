@@ -7,7 +7,7 @@ import { Disco } from './components/Disco';
 import { Black } from './components/Black';
 import { White } from './components/White';
 import { Color } from './components/Color';
-import { Buy } from './components/Buy';
+import { Shop } from './components/Shop';
 import { FormValidation } from './components/FormValidation';
 import { Confirm } from './components/Confirm';
 
@@ -23,7 +23,7 @@ function App() {
           <Route path='/white' element={<White />} />
           <Route path='/color' element={<Color />} />
           <Route path='/disco' element={<Disco />} />
-          <Route path='/buy' element={<Buy />} />
+          <Route path='/shop' element={<Shop />} />
           <Route path='/form-validation' element={<FormValidation />} />
           <Route path='/confirm' element={<Confirm />} />
         </Routes>

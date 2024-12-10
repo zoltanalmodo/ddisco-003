@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import Navigation from './Navigation';
 import { GlobalContext } from '../context/GlobalState'
-import { FormValidation } from '../components/FormValidation';
+import { FormValidation } from './FormValidation';
 
 /* ============================================ black images START ============================================ */
 import ddisco_b_001_1 from '../images/b/ddisco_b_001_1.jpg';
@@ -121,7 +121,7 @@ import ddisco_c_012_3 from '../images/c/ddisco_c_012_3.jpg';
 /* ============================================ color images -END- ============================================ */
 
 
-export const Buy = () => {
+export const Shop = () => {
 
   const {
 
