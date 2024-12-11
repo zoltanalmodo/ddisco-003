@@ -190,7 +190,7 @@ button {
   border: none;
   height: 38px;
   color: hsl(0, 0%, 100%);
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
   font-family: 'Helvetica Now', 'Open Sans', 'Helvetica Neue', sans-serif;
   position: relative;
@@ -250,7 +250,7 @@ nav {
   width: 50%;
   display: flex;
   justify-content: space-evenly;
-  font-size: 15px;
+  /* font-size: 15px; */
   font-weight: 600;
 }
 
@@ -445,7 +445,7 @@ li {
   }
   .nav_links {
     width: 100%;
-    font-size: 15px;
+    /* font-size: 15px; */
     font-weight: 500;
   }
   .carousel_white {
@@ -502,7 +502,7 @@ li {
   }
   .nav_links {
     width: 100%;
-    font-size: 15px;
+    /* font-size: 15px; */
     font-weight: 500;
   }
   .carousel_white {
@@ -559,7 +559,7 @@ li {
   }
   .nav_links {
     width: 100%;
-    font-size: 15px;
+    /* font-size: 15px; */
     font-weight: 500;
   }
   .carousel_white {

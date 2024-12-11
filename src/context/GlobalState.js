@@ -171,6 +171,7 @@ export const GlobalProvider = ({ children }) => {
         activeButton: globalState.activeButton,
         previousActiveButton: globalState.previousActiveButton,
         isPastel: globalState.isPastel,
+        // ADD Brightness and Contrast styling values for pastel or bright,
         selectedSize: globalState.selectedSize,
         data: globalState.data,
         loading: globalState.loading,
