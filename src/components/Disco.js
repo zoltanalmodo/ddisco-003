@@ -106,7 +106,7 @@ export const Disco = () => {
       <div className='carousel_white'>
 
         <div style={{
-            filter: (globalState.isPastel === 'true' ? 'brightness(105%) saturate(70%)' : 'brightness(100%) saturate(100%)'),
+            filter: (globalState.isPastel === 'true' ? 'brightness(105%) saturate(65%)' : 'brightness(100%) saturate(100%)'),
         }}>
 
           <div className="carousel-container">
