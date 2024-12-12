@@ -328,7 +328,7 @@ globalState.previousActiveButton === "black" ? "black" : "white";
         <div style={{ backgroundColor: frameBackgroundColor }} className="frame_overlay_dark_grey_buy">
 
           <div style={{
-            filter: (globalState.isPastel === 'true' ? 'brightness(105%) saturate(65%)' : 'brightness(100%) saturate(100%)'),
+            filter: (globalState.isPastel === 'true' ? globalState.pastelValue : globalState.brightValue),
           }}>
 
             <div className="single_image_display_container">
@@ -357,11 +357,11 @@ globalState.previousActiveButton === "black" ? "black" : "white";
 
         </div>
 
-        <div class="sizes_container">
+        <div className="sizes_container">
 
-          <div class="size_button_container">
+          <div className="size_button_container">
             <button
-              class="size_button"
+              className="size_button"
               onClick={setSelectedSizeSmall}
               style={{
                 backgroundColor: activeBackgroundSizesSmall(),
@@ -370,9 +370,9 @@ globalState.previousActiveButton === "black" ? "black" : "white";
             </button>
           </div>
 
-          <div class="size_button_container">
+          <div className="size_button_container">
             <button
-              class="size_button"
+              className="size_button"
               onClick={setSelectedSizeMedium}
               style={{
                 backgroundColor: activeBackgroundSizesMedium(),
@@ -381,9 +381,9 @@ globalState.previousActiveButton === "black" ? "black" : "white";
             </button>
           </div>
 
-          <div class="size_button_container">
+          <div className="size_button_container">
             <button
-              class="size_button"
+              className="size_button"
               onClick={setSelectedSizeLarge}
               style={{
                 backgroundColor: activeBackgroundSizesLarge(),

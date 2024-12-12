@@ -293,7 +293,7 @@ globalState.previousActiveButton === "black" ? "black" : "white";
         <div style={{ backgroundColor: frameBackgroundColor }} className="frame_overlay_dark_grey_buy">
 
           <div style={{
-            filter: (globalState.isPastel === 'true' ? 'brightness(105%) saturate(70%)' : 'brightness(100%) saturate(100%)'),
+            filter: (globalState.isPastel === 'true' ? globalState.pastelValue : globalState.brightValue),
           }}>
 
             <div className="single_image_display_container">

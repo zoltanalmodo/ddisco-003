@@ -13,9 +13,11 @@ const initialState = {
   activeButton: 'disco',
   previousActiveButton: 'disco',
   isPastel: "false",
+  brightValue: "brightness(100%) saturate(100%)",
+  pastelValue: "brightness(105%) saturate(65%)",
   selectedSize: 'custom',
   // API-related state
-  data: 'data fetched form the API',
+  data: 'data fetched from the API',
   loading: true,
   error: null,
 };
@@ -171,6 +173,8 @@ export const GlobalProvider = ({ children }) => {
         activeButton: globalState.activeButton,
         previousActiveButton: globalState.previousActiveButton,
         isPastel: globalState.isPastel,
+        brightlValue: globalState.brightValue,
+        pastelValue: globalState.pastelValue,
         // ADD Brightness and Contrast styling values for pastel or bright,
         selectedSize: globalState.selectedSize,
         data: globalState.data,
