@@ -1,5 +1,4 @@
 import React, { useState, useContext } from 'react';
-// Assuming you have a GlobalContext that provides the global state
 import { GlobalContext } from '../context/GlobalState'; 
 
 export const FormValidation = () => {
@@ -9,7 +8,7 @@ export const FormValidation = () => {
   // Accessing the global state values from context
   const { globalState } = useContext(GlobalContext);  // Getting globalState from context
 
-  // Destructure values from globalState (assuming globalState contains the data)
+  // Destructure values from globalState
   const { 
     currentIndex_001, 
     currentIndex_002, 
