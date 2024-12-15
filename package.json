@@ -1,11 +1,11 @@
 {
-  "name": "deedisco",
+  "name": "ddisco",
   "version": "0.2cd.0",
   "engines": {
     "node": "20.17.0"
   },
   "private": true,
-  "homepage": "https://zoltanalmodo.github.io/deedisco/",
+  "homepage": "https://zoltanalmodo.github.io/ddisco/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.1.2",
