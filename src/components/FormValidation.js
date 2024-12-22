@@ -60,15 +60,16 @@ export const FormValidation = () => {
           username: formData.username,
           email: formData.email,
           createdAt: `Date: ${new Date().toLocaleDateString()} / Time: ${new Date().toLocaleTimeString()}`,
-          currentIndex_001,
-          currentIndex_002,
-          currentIndex_003,
-          degree_001,
-          degree_002,
-          degree_003,
-          isPastel,
-          selectedSize,
-          order_id: `${Math.random().toString(36).substr(2, 9)}` // Example order_id generation
+          order_id: `${Math.random().toString(36).substr(2, 9)}`, // Example order_id generation
+          currentIndex_001: globalState.currentIndex_001,
+          currentIndex_002: globalState.currentIndex_002,
+          currentIndex_003: globalState.currentIndex_003,
+          degree_001: globalState.degree_001,
+          degree_002: globalState.degree_002,
+          degree_003: globalState.degree_003,
+          isPastel: globalState.isPastel,
+          selectedSize: globalState.selectedSize,
+          
         };
 
         // Log the orderData to check if global state values are being retrieved properly
