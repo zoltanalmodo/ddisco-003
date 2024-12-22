@@ -16,6 +16,8 @@ const initialState = {
   brightValue: "brightness(100%) saturate(100%)",
   pastelValue: "brightness(105%) saturate(65%)",
   selectedSize: 'custom',
+  username: '',
+  email: '',
   // API-related state
   data: 'data fetched from the API',
   loading: true,
@@ -159,6 +161,14 @@ export const GlobalProvider = ({ children }) => {
     });
   }
 
+  // New setGlobalState function
+  function setGlobalState(newState) {
+    dispatch({
+      type: 'SET_GLOBAL_STATE',
+      payload: newState,
+    });
+  }
+
   return (
     <GlobalContext.Provider
       value={{
@@ -175,6 +185,9 @@ export const GlobalProvider = ({ children }) => {
         isPastel: globalState.isPastel,
         brightlValue: globalState.brightValue,
         pastelValue: globalState.pastelValue,
+        username: globalState.username,
+        email: globalState.email,
+        // ADD Brightness and Contrast styling values for pastel or bright,
         selectedSize: globalState.selectedSize,
         data: globalState.data,
         loading: globalState.loading,
@@ -196,6 +209,7 @@ export const GlobalProvider = ({ children }) => {
         setSelectedSizeMedium,
         setSelectedSizeLarge,
         fetchData, // Expose fetchData to refetch manually if needed
+        setGlobalState, // Expose the new function
       }}
     >
       {children}

@@ -1,14 +1,16 @@
 import React, { useState, useContext } from 'react';
-import { GlobalContext } from '../context/GlobalState'; 
+import { GlobalContext } from '../context/GlobalState';
+import { useNavigate } from 'react-router-dom'; // Import useNavigate
 
 export const FormValidation = () => {
   const [formData, setFormData] = useState({ username: '', email: '' });
   const [errors, setErrors] = useState({ username: '', email: '' });
 
   // Accessing the global state values from context
-  const { globalState } = useContext(GlobalContext);  // Getting globalState from context
+  const { globalState, setGlobalState } = useContext(GlobalContext); // Add setGlobalState for updating global state
+  const navigate = useNavigate(); // Initialize useNavigate
 
-  // Destructure values from globalState
+  // Destructure values from globalState (assuming globalState contains the data)
   const { 
     currentIndex_001, 
     currentIndex_002, 
@@ -17,7 +19,9 @@ export const FormValidation = () => {
     degree_002, 
     degree_003, 
     isPastel, 
-    selectedSize 
+    selectedSize, 
+    pastelValue, 
+    brightValue 
   } = globalState;
 
   const handleChange = (e) => {
@@ -95,6 +99,51 @@ export const FormValidation = () => {
     }
   };
 
+  const handleClick = async () => {
+    // Update global state with username and email
+    setGlobalState((prevState) => ({
+      ...prevState,
+      username: formData.username,
+      useremail: formData.email,
+    }));
+
+    // Prepare data to save to the database
+    const dataToSave = {
+      username: formData.username,
+      email: formData.email,
+      currentIndex_001,
+      currentIndex_002,
+      currentIndex_003,
+      degree_001,
+      degree_002,
+      degree_003,
+      colorValue: isPastel === 'true' ? pastelValue : brightValue,
+      selectedSize,
+    };
+
+    try {
+      // Send data to the server
+      const response = await fetch('http://localhost:5000/api/orders', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(dataToSave),
+      });
+
+      if (response.ok) {
+        console.log('Data saved successfully');
+      } else {
+        console.error('Failed to save data');
+      }
+    } catch (error) {
+      console.error('Error saving data:', error);
+    }
+
+    // Navigate to the /confirm page
+    navigate('/confirm');
+  };
+
   return (
     <form className="sizes_container_form" onSubmit={handleSubmit}>
       <div className="user_input_field">
@@ -124,7 +173,7 @@ export const FormValidation = () => {
       </div>
       
       <div className="buy_button_container">
-        <button className="buy_button" type="submit">buy</button>
+        <button onClick={handleClick} className="buy_button" type="button">buy</button>
       </div>
     </form>
   );

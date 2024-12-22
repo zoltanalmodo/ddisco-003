@@ -100,6 +100,14 @@ export const AppReducer = (state, action) => {
         ...state,
         loading: true,
       };
+
+    // Handle setGlobalState action
+    case 'SET_GLOBAL_STATE':
+      return {
+        ...state,
+        ...action.payload,
+      };
+
     default:
       return state;
   }
