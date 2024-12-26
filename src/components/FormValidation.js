@@ -87,7 +87,6 @@ export const FormValidation = () => {
 
       if (response.ok) {
         const data = await response.json();
-        alert(`Order submitted successfully! Order Number: ${data.order_number}`);
 
         // Optionally reset the form
         setFormData({ username: '', email: '' });
