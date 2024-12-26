@@ -162,13 +162,6 @@ export const GlobalProvider = ({ children }) => {
     });
   }
 
-  // New setGlobalState function
-  function setGlobalState(newState) {
-    dispatch({
-      type: 'SET_GLOBAL_STATE',
-      payload: newState,
-    });
-  }
 
   return (
     <GlobalContext.Provider
@@ -210,7 +203,6 @@ export const GlobalProvider = ({ children }) => {
         setSelectedSizeMedium,
         setSelectedSizeLarge,
         fetchData, // Expose fetchData to refetch manually if needed
-        setGlobalState, // Expose the new function
       }}
     >
       {children}

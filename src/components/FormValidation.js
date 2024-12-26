@@ -7,7 +7,7 @@ export const FormValidation = () => {
   const [errors, setErrors] = useState({ username: '', email: '' });
 
   // Accessing the global state values from context
-  const { globalState, setGlobalState } = useContext(GlobalContext); // Add setGlobalState for updating global state
+  const { globalState } = useContext(GlobalContext);
   const navigate = useNavigate(); // Initialize useNavigate
 
   // Destructure values from globalState (assuming globalState contains the data)
@@ -102,11 +102,7 @@ export const FormValidation = () => {
 
   const handleClick = async () => {
     // Update global state with username and email
-    setGlobalState((prevState) => ({
-      ...prevState,
-      username: formData.username,
-      useremail: formData.email,
-    }));
+    
 
     // Prepare data to save to the database
     const dataToSave = {
