@@ -29,18 +29,18 @@ export const FormValidation = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleAction = async (e) => {
+    e.preventDefault(); // Prevent default form submission behavior
+
+    // Perform validation
     let validationErrors = {};
     let isValid = true;
 
-    // Validate username
     if (!formData.username) {
       validationErrors.username = 'Please enter your name.';
       isValid = false;
     }
 
-    // Validate email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!formData.email) {
       validationErrors.email = 'Please enter your email address.';
@@ -52,97 +52,61 @@ export const FormValidation = () => {
 
     setErrors(validationErrors);
 
-    if (isValid) {
-      try {
-        // Create the JSON object with entries in the required order
-        const orderData = {
-          order_number: `order-${Math.floor(Math.random() * 1000) + 1}`, // Example order number generation
-          username: formData.username,
-          email: formData.email,
-          createdAt: `Date: ${new Date().toLocaleDateString()} / Time: ${new Date().toLocaleTimeString()}`,
-          order_id: `${Math.random().toString(36).substr(2, 9)}`, // Example order_id generation
-          currentIndex_001: globalState.currentIndex_001,
-          currentIndex_002: globalState.currentIndex_002,
-          currentIndex_003: globalState.currentIndex_003,
-          degree_001: globalState.degree_001,
-          degree_002: globalState.degree_002,
-          degree_003: globalState.degree_003,
-          isPastel: globalState.isPastel,
-          selectedSize: globalState.selectedSize,
-          
-        };
-
-        // Log the orderData to check if global state values are being retrieved properly
-        console.log(orderData);
-
-        // Send form data to the server
-        const response = await fetch('http://localhost:5000/api/orders', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify(orderData),
-        });
-
-        if (response.ok) {
-          const data = await response.json();
-          alert(`Order submitted successfully! Order Number: ${data.order_number}`);
-
-          // Optionally reset form
-          setFormData({ username: '', email: '' });
-        } else {
-          alert('Failed to submit the order');
-        }
-      } catch (error) {
-        console.error('Error submitting form:', error);
-        alert('Error submitting the order');
-      }
+    if (!isValid) {
+      return; // Exit early if validation fails
     }
-  };
-
-  const handleClick = async () => {
-    // Update global state with username and email
-    
-
-    // Prepare data to save to the database
-    const dataToSave = {
-      username: formData.username,
-      email: formData.email,
-      currentIndex_001,
-      currentIndex_002,
-      currentIndex_003,
-      degree_001,
-      degree_002,
-      degree_003,
-      colorValue: isPastel === 'true' ? pastelValue : brightValue,
-      selectedSize,
-    };
 
     try {
-      // Send data to the server
+      // Construct the orderData object with all necessary data points
+      const orderData = {
+        username: formData.username,
+        email: formData.email,
+        currentIndex_001,
+        currentIndex_002,
+        currentIndex_003,
+        degree_001,
+        degree_002,
+        degree_003,
+        colorValue: isPastel === 'true' ? pastelValue : brightValue,
+        selectedSize,
+        createdAt: `Date: ${new Date().toLocaleDateString()} / Time: ${new Date().toLocaleTimeString()}`,
+        order_number: `order-${Math.floor(Math.random() * 1000) + 1}`,
+        order_id: `${Math.random().toString(36).substr(2, 9)}`,
+      };
+
+      console.log('Order Data:', orderData); // Debug log to confirm all fields
+
+      // Send the data to the database
       const response = await fetch('http://localhost:5000/api/orders', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(dataToSave),
+        body: JSON.stringify(orderData), // Send all data
       });
 
       if (response.ok) {
-        console.log('Data saved successfully');
+        const data = await response.json();
+        alert(`Order submitted successfully! Order Number: ${data.order_number}`);
+
+        // Optionally reset the form
+        setFormData({ username: '', email: '' });
+
+        // Navigate to the confirmation page
+        navigate('/confirm');
       } else {
-        console.error('Failed to save data');
+        const errorData = await response.json();
+        console.error('Server Error:', errorData);
+        alert('Failed to submit the order. Please try again later.');
       }
     } catch (error) {
-      console.error('Error saving data:', error);
+      console.error('Error submitting form:', error);
+      alert('Error submitting the order. Please check your connection or try again later.');
     }
-
-    // Navigate to the /confirm page
-    navigate('/confirm');
   };
 
   return (
-    <form className="sizes_container_form" onSubmit={handleSubmit}>
+    <form className="sizes_container_form" onSubmit={(e) => e.preventDefault()}>
       <div className="user_input_field">
         <input
           type="text"
@@ -170,7 +134,7 @@ export const FormValidation = () => {
       </div>
       
       <div className="buy_button_container">
-        <button onClick={handleClick} className="buy_button" type="button">buy</button>
+        <button onClick={handleAction} className="buy_button" type="button">buy</button>
       </div>
     </form>
   );
