@@ -20,7 +20,7 @@ const initialState = {
   username: 'missing',
   email: 'missing',
   // API-related state
-  data: 'data fetched from the API',
+  orders: [], // Changed from 'data' to 'orders'
   loading: true,
   error: null,
 };
@@ -40,20 +40,20 @@ export const GlobalContext = createContext(initialState);
 export const GlobalProvider = ({ children }) => {
   const [globalState, dispatch] = useReducer(AppReducer, initialState);
 
-  // API Call: Fetch Data
-  const fetchData = async () => {
+  // API Call: Fetch Orders
+  const fetchOrders = async () => {
     dispatch({ type: ACTIONS.SET_LOADING });
     try {
-      const response = await axios.get('http://localhost:5000/api/data');
+      const response = await axios.get('http://localhost:5000/api/orders'); // Updated endpoint to fetch orders
       dispatch({ type: ACTIONS.FETCH_SUCCESS, payload: response.data });
     } catch (err) {
-      dispatch({ type: ACTIONS.FETCH_ERROR, payload: 'Failed to fetch data from the API.' });
+      dispatch({ type: ACTIONS.FETCH_ERROR, payload: 'Failed to fetch orders from the API.' });
     }
   };
 
-  // Fetch data on provider mount
+  // Fetch orders on provider mount
   useEffect(() => {
-    fetchData();
+    fetchOrders(); // Changed to fetchOrders
   }, []);
 
   // List of Actions
@@ -162,7 +162,6 @@ export const GlobalProvider = ({ children }) => {
     });
   }
 
-
   return (
     <GlobalContext.Provider
       value={{
@@ -181,9 +180,9 @@ export const GlobalProvider = ({ children }) => {
         pastelValue: globalState.pastelValue,
         username: globalState.username,
         email: globalState.email,
-        // ADD Brightness and Contrast styling values for pastel or bright,
         selectedSize: globalState.selectedSize,
-        data: globalState.data,
+        // Expose orders instead of data
+        orders: globalState.orders, // Changed from 'data' to 'orders'
         loading: globalState.loading,
         error: globalState.error,
         // Expose actions
@@ -202,7 +201,7 @@ export const GlobalProvider = ({ children }) => {
         setSelectedSizeSmall,
         setSelectedSizeMedium,
         setSelectedSizeLarge,
-        fetchData, // Expose fetchData to refetch manually if needed
+        fetchOrders, // Expose fetchOrders to refetch manually if needed
       }}
     >
       {children}
