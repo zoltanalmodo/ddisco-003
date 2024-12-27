@@ -334,6 +334,7 @@ globalState.previousActiveButton === "black" ? "black" : "white";
           <p>degree_001: {globalState.degree_001}</p>
           <p>degree_002: {globalState.degree_002}</p>
           <p>degree_003: {globalState.degree_003}</p>
+          <p>color: {globalState.color}</p>
           <p>color value: {globalState.isPastel ? globalState.pastelValue : globalState.brightValue}</p>
 
         </div>

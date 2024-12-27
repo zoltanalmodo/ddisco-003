@@ -16,7 +16,7 @@ const initialState = {
   color: 'missing',
   brightValue: "brightness(100%) saturate(100%)",
   pastelValue: "brightness(107%) saturate(69%)",
-  selectedSize: 'custom',
+  selectedSize: 'missing',
   username: 'missing',
   email: 'missing',
   // API-related state

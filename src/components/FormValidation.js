@@ -86,7 +86,6 @@ export const FormValidation = () => {
       });
 
       if (response.ok) {
-        const data = await response.json();
 
         // Optionally reset the form
         setFormData({ username: '', email: '' });
