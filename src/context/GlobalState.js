@@ -176,6 +176,7 @@ export const GlobalProvider = ({ children }) => {
         activeButton: globalState.activeButton,
         previousActiveButton: globalState.previousActiveButton,
         isPastel: globalState.isPastel,
+        color: globalState.color,
         brightlValue: globalState.brightValue,
         pastelValue: globalState.pastelValue,
         username: globalState.username,
