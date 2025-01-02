@@ -21,14 +21,6 @@ const orderSchema = new mongoose.Schema({
     orderId: { type: String, required: true, unique: true }, // Unique order ID
     username: { type: String, required: true },
     email: { type: String, required: true },
-    currentIndex_001: { type: Number, required: false },
-    currentIndex_002: { type: Number, required: false },
-    currentIndex_003: { type: Number, required: false },
-    degree_001: { type: Number, required: false },
-    degree_002: { type: Number, required: false },
-    degree_003: { type: Number, required: false },
-    colorValue: { type: String, required: false },
-    selectedSize: { type: String, required: false },
     createdAt: { type: String, required: true } // ISO string without seconds
 });
 
@@ -52,43 +44,46 @@ app.get('/', (req, res) => {
 app.post('/api/orders', async (req, res) => {
     const orderData = req.body; // Get the order data from the request body
 
+    // Ensure the order data contains the necessary fields (optional)
     if (!orderData.username || !orderData.email) {
         return res.status(400).json({ error: 'Username and email are required' });
     }
 
     try {
+        // Find and update the order counter (or create one if it doesn't exist)
         let counter = await OrderCounter.findOne();
         if (!counter) {
-            counter = new OrderCounter();
+            counter = new OrderCounter(); // Initialize the counter if it doesn't exist
             await counter.save();
         }
 
+        // Increment the order count and generate the orderId (e.g., 'order-001')
         counter.count += 1;
         const orderId = `order-${String(counter.count).padStart(3, '0')}`;
         await counter.save();
 
-        const createdAt = new Date().toISOString().slice(0, 16);
+        // Format createdAt timestamp to remove seconds and adjust format
+        const createdAt = new Date().toISOString().slice(0, 16); // Format: YYYY-MM-DDTHH:mm
         const formattedCreatedAt = `Date: ${createdAt.slice(0, 10)} / Time: ${createdAt.slice(11)}`;
 
+        // Create a new order document with the generated orderId
         const newOrder = new Order({ ...orderData, orderId, createdAt: formattedCreatedAt });
+
+        // Save the new order to the database
         await newOrder.save();
 
+        console.log('New order submitted:', newOrder); // Optionally log the order
+
+        // Reformat the response before sending it back to the client
         const responseOrder = {
-            order_number: newOrder.orderId,
+            order_number: newOrder.orderId, // `order_number` first
             username: newOrder.username,
             email: newOrder.email,
-            currentIndex_001: newOrder.currentIndex_001,
-            currentIndex_002: newOrder.currentIndex_002,
-            currentIndex_003: newOrder.currentIndex_003,
-            degree_001: newOrder.degree_001,
-            degree_002: newOrder.degree_002,
-            degree_003: newOrder.degree_003,
-            colorValue: newOrder.colorValue,
-            selectedSize: newOrder.selectedSize,
             createdAt: newOrder.createdAt,
-            order_id: newOrder._id.toString()
+            order_id: newOrder._id.toString() // `order_id` last and renamed
         };
 
+        // Respond with the formatted order data
         res.status(201).json(responseOrder);
     } catch (err) {
         console.error('Error saving order:', err);
@@ -96,30 +91,25 @@ app.post('/api/orders', async (req, res) => {
     }
 });
 
-// Add a GET /api/orders route to retrieve all orders in descending order
+// ** New Route: API route to fetch all orders **
 app.get('/api/orders', async (req, res) => {
     try {
-        const orders = await Order.find().sort({ createdAt: -1 }); // Sort by createdAt in descending order
+        // Fetch all orders from the database
+        const orders = await Order.find().sort({ createdAt: -1 }); // Sort by latest orders
+
+        // Reformat the orders before sending them back to the client
         const formattedOrders = orders.map(order => ({
             order_number: order.orderId,
             username: order.username,
             email: order.email,
-            currentIndex_001: order.currentIndex_001,
-            currentIndex_002: order.currentIndex_002,
-            currentIndex_003: order.currentIndex_003,
-            degree_001: order.degree_001,
-            degree_002: order.degree_002,
-            degree_003: order.degree_003,
-            colorValue: order.colorValue,
-            selectedSize: order.selectedSize,
             createdAt: order.createdAt,
             order_id: order._id.toString()
         }));
 
-        res.status(200).json(formattedOrders); // Respond with the formatted orders
+        res.status(200).json(formattedOrders); // Respond with all orders in JSON format
     } catch (err) {
-        console.error('Error retrieving orders:', err);
-        res.status(500).json({ error: 'Failed to retrieve orders' });
+        console.error('Error fetching orders:', err);
+        res.status(500).json({ error: 'Failed to fetch orders' });
     }
 });
 
