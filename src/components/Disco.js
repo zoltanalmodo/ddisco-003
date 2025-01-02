@@ -121,8 +121,8 @@ export const Disco = () => {
 
               <div style={{ filter: (`hue-rotate(${globalState.degree_001}deg)`) }}>
                 <AliceCarousel
-                  autoPlay={false}
-                  autoPlayStrategy={'all'}
+                  autoPlay={true}
+                  autoPlayStrategy={'action'}
                   autoPlayInterval={5000}
                   autoPlayDirection={'rtl'}
                   disableAutoPlayOnAction={true}
@@ -143,8 +143,8 @@ export const Disco = () => {
 
               <div style={{ filter: (`hue-rotate(${globalState.degree_002}deg)`) }}>
                 <AliceCarousel
-                  autoPlay={false}
-                  autoPlayStrategy={'all'}
+                  autoPlay={true}
+                  autoPlayStrategy={'action'}
                   autoPlayInterval={5000}
                   autoPlayDirection={'ltr'}
                   disableAutoPlayOnAction={true}
@@ -165,8 +165,8 @@ export const Disco = () => {
 
               <div style={{ filter: (`hue-rotate(${globalState.degree_003}deg)`) }}>
                 <AliceCarousel
-                  autoPlay={false}
-                  autoPlayStrategy={'all'}
+                  autoPlay={true}
+                  autoPlayStrategy={'action'}
                   autoPlayInterval={5000}
                   autoPlayDirection={'rtl'}
                   disableAutoPlayOnAction={true}
