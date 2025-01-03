@@ -120,7 +120,7 @@ export const Black = () => {
           <div className="frame-overlay-light-grey"></div> {/* Transparent overlay with a frame */}
 
             <AliceCarousel 
-              autoPlay={true}
+              autoPlay={false}
               autoPlayStrategy={'action'}
               autoPlayInterval={5000}
               autoPlayDirection={'rtl'}
@@ -140,7 +140,7 @@ export const Black = () => {
             />
 
             <AliceCarousel 
-              autoPlay={true}
+              autoPlay={false}
               autoPlayStrategy={'action'}
               autoPlayInterval={5000}
               autoPlayDirection={'ltr'}
@@ -160,7 +160,7 @@ export const Black = () => {
             />
 
             <AliceCarousel 
-              autoPlay={true}
+              autoPlay={false}
               autoPlayStrategy={'action'}
               autoPlayInterval={5000}
               autoPlayDirection={'rtl'}

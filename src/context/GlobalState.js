@@ -10,9 +10,10 @@ const initialState = {
   degree_001: 0,
   degree_002: 0,
   degree_003: 0,
+  autoplay: true,
   activeButton: 'disco',
   previousActiveButton: 'disco',
-  isPastel: "false",
+  isPastel: 'false',
   color: 'missing',
   brightValue: "brightness(100%) saturate(100%)",
   pastelValue: "brightness(107%) saturate(69%)",
@@ -162,6 +163,14 @@ export const GlobalProvider = ({ children }) => {
     });
   }
 
+  function toggleAutoplay() {
+    dispatch({
+      type: 'TOGGLE_AUTOPLAY',
+      payload: false,
+    });
+  }
+ 
+
   return (
     <GlobalContext.Provider
       value={{
@@ -202,6 +211,7 @@ export const GlobalProvider = ({ children }) => {
         setSelectedSizeSmall,
         setSelectedSizeMedium,
         setSelectedSizeLarge,
+        toggleAutoplay,
         fetchOrders, // Expose fetchOrders to refetch manually if needed
       }}
     >

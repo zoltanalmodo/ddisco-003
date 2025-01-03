@@ -101,6 +101,12 @@ export const AppReducer = (state, action) => {
         loading: true,
       };
 
+    case 'TOGGLE_AUTOPLAY':
+      return {
+        ...state,
+        autoplay: action.payload,
+      };
+
     default:
       return state;
   }

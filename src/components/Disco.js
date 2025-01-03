@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useEffect, useContext } from 'react'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
 import Navigation from './Navigation';
@@ -94,8 +94,21 @@ export const Disco = () => {
     updateIndex_001,
     updateIndex_002,
     updateIndex_003,
+    toggleAutoplay,
 
   } = useContext(GlobalContext);
+
+  useEffect(() => {
+    // Set autoplay when the component mounts from globalState.autoplay
+   
+    return () => {
+      // Set autoplay to false when the component unmounts
+      toggleAutoplay();
+    };
+  }, []);  // No need for `toggleAutoplay` in the dependency array
+  
+
+
 
   return (
     
@@ -121,9 +134,9 @@ export const Disco = () => {
 
               <div style={{ filter: (`hue-rotate(${globalState.degree_001}deg)`) }}>
                 <AliceCarousel
-                  autoPlay={true}
+                  autoPlay={globalState.autoplay}
                   autoPlayStrategy={'action'}
-                  autoPlayInterval={5000}
+                  autoPlayInterval={3500}
                   autoPlayDirection={'rtl'}
                   disableAutoPlayOnAction={true}
                   infinite={true}
@@ -143,9 +156,9 @@ export const Disco = () => {
 
               <div style={{ filter: (`hue-rotate(${globalState.degree_002}deg)`) }}>
                 <AliceCarousel
-                  autoPlay={true}
+                  autoPlay={globalState.autoplay}
                   autoPlayStrategy={'action'}
-                  autoPlayInterval={5000}
+                  autoPlayInterval={3500}
                   autoPlayDirection={'ltr'}
                   disableAutoPlayOnAction={true}
                   infinite={true}
@@ -165,9 +178,9 @@ export const Disco = () => {
 
               <div style={{ filter: (`hue-rotate(${globalState.degree_003}deg)`) }}>
                 <AliceCarousel
-                  autoPlay={true}
+                  autoPlay={globalState.autoplay}
                   autoPlayStrategy={'action'}
-                  autoPlayInterval={5000}
+                  autoPlayInterval={3500}
                   autoPlayDirection={'rtl'}
                   disableAutoPlayOnAction={true}
                   infinite={true}
