@@ -136,7 +136,7 @@ export const Disco = () => {
                 <AliceCarousel
                   autoPlay={globalState.autoplay}
                   autoPlayStrategy={'action'}
-                  autoPlayInterval={3500}
+                  autoPlayInterval={Math.floor(Math.random() * (3500 - 2500 + 1)) + 2500}
                   autoPlayDirection={'rtl'}
                   disableAutoPlayOnAction={true}
                   infinite={true}
@@ -158,7 +158,7 @@ export const Disco = () => {
                 <AliceCarousel
                   autoPlay={globalState.autoplay}
                   autoPlayStrategy={'action'}
-                  autoPlayInterval={3500}
+                  autoPlayInterval={Math.floor(Math.random() * (3500 - 2500 + 1)) + 2500}
                   autoPlayDirection={'ltr'}
                   disableAutoPlayOnAction={true}
                   infinite={true}
@@ -180,7 +180,7 @@ export const Disco = () => {
                 <AliceCarousel
                   autoPlay={globalState.autoplay}
                   autoPlayStrategy={'action'}
-                  autoPlayInterval={3500}
+                  autoPlayInterval={Math.floor(Math.random() * (3500 - 2500 + 1)) + 2500}
                   autoPlayDirection={'rtl'}
                   disableAutoPlayOnAction={true}
                   infinite={true}
