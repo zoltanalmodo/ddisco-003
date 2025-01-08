@@ -76,7 +76,7 @@ export const FormValidation = () => {
         order_id: `${Math.random().toString(36).substr(2, 9)}`,
       };
 
-      console.log('Order Data:', orderData); // Debug log to confirm all fields
+      
 
       // Send the data to the database
       const response = await fetch('http://localhost:5000/api/orders', {
