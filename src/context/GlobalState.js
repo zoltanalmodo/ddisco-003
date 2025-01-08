@@ -21,7 +21,7 @@ const initialState = {
   username: 'missing',
   email: 'missing',
   // API-related state
-  orders: [], // Changed from 'data' to 'orders'
+  orders: [],
   loading: true,
   error: null,
 };
@@ -31,7 +31,7 @@ const ACTIONS = {
   FETCH_SUCCESS: 'FETCH_SUCCESS',
   FETCH_ERROR: 'FETCH_ERROR',
   SET_LOADING: 'SET_LOADING',
-  // Add other actions as needed for managing API state
+  UPDATE_COLOR: 'UPDATE_COLOR',
 };
 
 // Create Context
@@ -45,7 +45,7 @@ export const GlobalProvider = ({ children }) => {
   const fetchOrders = async () => {
     dispatch({ type: ACTIONS.SET_LOADING });
     try {
-      const response = await axios.get('http://localhost:5000/api/orders'); // Updated endpoint to fetch orders
+      const response = await axios.get('http://localhost:5000/api/orders');
       dispatch({ type: ACTIONS.FETCH_SUCCESS, payload: response.data });
     } catch (err) {
       dispatch({ type: ACTIONS.FETCH_ERROR, payload: 'Failed to fetch orders from the API.' });
@@ -54,8 +54,25 @@ export const GlobalProvider = ({ children }) => {
 
   // Fetch orders on provider mount
   useEffect(() => {
-    fetchOrders(); // Changed to fetchOrders
+    fetchOrders();
   }, []);
+
+  // Automatically update color when previousActiveButton changes
+  useEffect(() => {
+    const newColor =
+      globalState.previousActiveButton === 'disco' || globalState.previousActiveButton === 'color'
+        ? 'color'
+        : globalState.previousActiveButton === 'black'
+        ? 'black'
+        : globalState.previousActiveButton === 'white'
+        ? 'white'
+        : 'missing';
+
+    dispatch({
+      type: ACTIONS.UPDATE_COLOR,
+      payload: newColor,
+    });
+  }, [globalState.previousActiveButton]);
 
   // List of Actions
   function updateIndex_001(currentIndex_001) {
@@ -169,12 +186,10 @@ export const GlobalProvider = ({ children }) => {
       payload: false,
     });
   }
- 
 
   return (
     <GlobalContext.Provider
       value={{
-        // Expose global state
         globalState,
         currentIndex_001: globalState.currentIndex_001,
         currentIndex_002: globalState.currentIndex_002,
@@ -191,11 +206,9 @@ export const GlobalProvider = ({ children }) => {
         username: globalState.username,
         email: globalState.email,
         selectedSize: globalState.selectedSize,
-        // Expose orders instead of data
-        orders: globalState.orders, // Changed from 'data' to 'orders'
+        orders: globalState.orders,
         loading: globalState.loading,
         error: globalState.error,
-        // Expose actions
         updateIndex_001,
         updateIndex_002,
         updateIndex_003,
@@ -212,7 +225,7 @@ export const GlobalProvider = ({ children }) => {
         setSelectedSizeMedium,
         setSelectedSizeLarge,
         toggleAutoplay,
-        fetchOrders, // Expose fetchOrders to refetch manually if needed
+        fetchOrders,
       }}
     >
       {children}

@@ -80,8 +80,6 @@ export const AppReducer = (state, action) => {
         ...state,
         selectedSize: 'large',
       };
-      
-    // API-related actions
     case 'FETCH_SUCCESS':
       return {
         ...state,
@@ -100,13 +98,16 @@ export const AppReducer = (state, action) => {
         ...state,
         loading: true,
       };
-
     case 'TOGGLE_AUTOPLAY':
       return {
         ...state,
         autoplay: action.payload,
       };
-
+    case 'UPDATE_COLOR':
+      return {
+        ...state,
+        color: action.payload,
+      };
     default:
       return state;
   }
