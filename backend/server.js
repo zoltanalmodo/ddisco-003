@@ -27,6 +27,7 @@ const orderSchema = new mongoose.Schema({
     degree_001: { type: Number, required: false },
     degree_002: { type: Number, required: false },
     degree_003: { type: Number, required: false },
+    color: { type: String, required: false },
     colorValue: { type: String, required: false },
     selectedSize: { type: String, required: false },
     createdAt: { type: String, required: true } // ISO string without seconds
@@ -83,6 +84,7 @@ app.post('/api/orders', async (req, res) => {
             degree_001: newOrder.degree_001,
             degree_002: newOrder.degree_002,
             degree_003: newOrder.degree_003,
+            color: newOrder.color,
             colorValue: newOrder.colorValue,
             selectedSize: newOrder.selectedSize,
             createdAt: newOrder.createdAt,
@@ -110,6 +112,7 @@ app.get('/api/orders', async (req, res) => {
             degree_001: order.degree_001,
             degree_002: order.degree_002,
             degree_003: order.degree_003,
+            color: order.color,
             colorValue: order.colorValue,
             selectedSize: order.selectedSize,
             createdAt: order.createdAt,
