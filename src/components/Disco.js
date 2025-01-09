@@ -106,9 +106,8 @@ export const Disco = () => {
       toggleAutoplay();
     };
   }, []);  // No need for `toggleAutoplay` in the dependency array
-  
 
-console.log(globalState);
+  
 
   return (
     

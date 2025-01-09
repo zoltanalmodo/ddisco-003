@@ -282,7 +282,7 @@ export const Confirm = () => {
 const frameBackgroundColor =
 globalState.previousActiveButton === "black" ? "black" : "white";
 
-console.log(globalState.isPastel)
+
 
   return (
     <div className='body_white_buy'>
