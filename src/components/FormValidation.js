@@ -12,17 +12,17 @@ export const FormValidation = () => {
 
   // Destructure values from globalState (assuming globalState contains the data)
   const { 
-    currentIndex_001, 
-    currentIndex_002, 
-    currentIndex_003, 
-    degree_001, 
-    degree_002, 
-    degree_003, 
+    currentIndex_001,
+    currentIndex_002,
+    currentIndex_003,
+    degree_001,
+    degree_002,
+    degree_003,
     isPastel,
     color, 
-    selectedSize, 
-    pastelValue, 
-    brightValue 
+    selectedSize,
+    pastelValue,
+    brightValue,
   } = globalState;
 
   const handleChange = (e) => {
