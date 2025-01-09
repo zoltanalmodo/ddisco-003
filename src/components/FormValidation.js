@@ -69,7 +69,7 @@ export const FormValidation = () => {
         degree_002,
         degree_003,
         color,
-        colorValue: isPastel === 'true' ? pastelValue : brightValue,
+        colorValue: isPastel === true ? pastelValue : brightValue,
         selectedSize,
         createdAt: `Date: ${new Date().toLocaleDateString()} / Time: ${new Date().toLocaleTimeString()}`,
         order_number: `order-${Math.floor(Math.random() * 1000) + 1}`,

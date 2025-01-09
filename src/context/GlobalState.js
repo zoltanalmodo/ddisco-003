@@ -13,7 +13,7 @@ const initialState = {
   autoplay: true,
   activeButton: 'disco',
   previousActiveButton: 'disco',
-  isPastel: 'false',
+  isPastel: false,
   color: 'missing',
   brightValue: "brightness(100%) saturate(100%)",
   pastelValue: "brightness(107%) saturate(69%)",
@@ -155,7 +155,7 @@ export const GlobalProvider = ({ children }) => {
   function setIsPastel() {
     dispatch({
       type: 'SET_IS_PASTEL',
-      payload: globalState.isPastel === "true" ? "false" : "true",
+      payload: globalState.isPastel === true ? false : true,
     });
   }
 

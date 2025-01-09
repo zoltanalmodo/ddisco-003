@@ -282,7 +282,7 @@ export const Confirm = () => {
 const frameBackgroundColor =
 globalState.previousActiveButton === "black" ? "black" : "white";
 
-
+console.log(globalState.isPastel)
 
   return (
     <div className='body_white_buy'>
@@ -293,7 +293,7 @@ globalState.previousActiveButton === "black" ? "black" : "white";
         <div style={{ backgroundColor: frameBackgroundColor }} className="frame_overlay_dark_grey_buy">
 
           <div style={{
-            filter: (globalState.isPastel === 'true' ? globalState.pastelValue : globalState.brightValue),
+            filter: (globalState.isPastel === true ? globalState.pastelValue : globalState.brightValue),
           }}>
 
             <div className="single_image_display_container">

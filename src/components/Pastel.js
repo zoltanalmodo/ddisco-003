@@ -299,7 +299,7 @@ export const Pastel = () => {
       <div className='carousel_white'>
 
         <div style={{
-            filter: (globalState.isPastel === 'true' ? globalState.pastelValue : globalState.brightValue),
+            filter: (globalState.isPastel === true ? globalState.pastelValue : globalState.brightValue),
         }}>
 
               <div style={{

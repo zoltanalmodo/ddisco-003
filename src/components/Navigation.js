@@ -70,11 +70,11 @@ function Navigation() {
     )
   }
   const activeBackgroundPastel = () => {
-    return globalState.isPastel === 'true' ? 'grey' : 'black';
+    return globalState.isPastel === true ? 'grey' : 'black';
   }
   const activeColorPastel = () => {
     return(
-      globalState.isPastel === 'true' ? 'white' : 'white'
+      globalState.isPastel === true ? 'white' : 'white'
     )
   }
 

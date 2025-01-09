@@ -108,7 +108,7 @@ export const Disco = () => {
   }, []);  // No need for `toggleAutoplay` in the dependency array
   
 
-
+console.log(globalState);
 
   return (
     
@@ -119,7 +119,7 @@ export const Disco = () => {
       <div className='carousel_white'>
 
         <div style={{
-            filter: (globalState.isPastel === 'true' ? globalState.pastelValue : globalState.brightValue),
+            filter: (globalState.isPastel === true ? globalState.pastelValue : globalState.brightValue),
         }}>
 
           <div className="carousel-container">
