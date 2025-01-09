@@ -7,7 +7,7 @@ export const FormValidation = () => {
   const [errors, setErrors] = useState({ username: '', email: '' });
 
   // Accessing the global state values from context
-  const { globalState } = useContext(GlobalContext);
+  const { globalState, updateUserInfo } = useContext(GlobalContext); // Access updateUserInfo
   const navigate = useNavigate(); // Initialize useNavigate
 
   // Destructure values from globalState (assuming globalState contains the data)
@@ -76,7 +76,11 @@ export const FormValidation = () => {
         order_id: `${Math.random().toString(36).substr(2, 9)}`,
       };
 
-      
+      // Update user info in the global state
+      updateUserInfo({
+        username: formData.username,
+        email: formData.email,
+      });
 
       // Send the data to the database
       const response = await fetch('http://localhost:5000/api/orders', {
@@ -88,7 +92,6 @@ export const FormValidation = () => {
       });
 
       if (response.ok) {
-
         // Optionally reset the form
         setFormData({ username: '', email: '' });
 
@@ -106,36 +109,36 @@ export const FormValidation = () => {
   };
 
   return (
-    <form className="sizes_container_form" onSubmit={(e) => e.preventDefault()}>
-      <div className="user_input_field">
-        <input
-          type="text"
-          id="username"
-          name="username"
-          placeholder="your name"
-          value={formData.username}
-          onChange={handleChange}
-          required
-        />
-        {errors.username && <p className="error_message">{errors.username}</p>}
-      </div>
+    <form className="sizes_container_form" onSubmit={handleAction}>
+  <div className="user_input_field">
+    <input
+      type="text"
+      id="username"
+      name="username"
+      placeholder="your name"
+      value={formData.username}
+      onChange={handleChange}
+      required
+    />
+    {errors.username && <p className="error_message">{errors.username}</p>}
+  </div>
 
-      <div className="user_input_field">
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="your email address"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-        {errors.email && <p className="error_message">{errors.email}</p>}
-      </div>
-      
-      <div className="buy_button_container">
-        <button onClick={handleAction} className="buy_button" type="button">buy</button>
-      </div>
-    </form>
+  <div className="user_input_field">
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="your email address"
+      value={formData.email}
+      onChange={handleChange}
+      required
+    />
+    {errors.email && <p className="error_message">{errors.email}</p>}
+  </div>
+  
+  <div className="buy_button_container">
+    <button className="buy_button" type="submit">buy</button>
+  </div>
+</form>
   );
 };

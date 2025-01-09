@@ -187,6 +187,13 @@ export const GlobalProvider = ({ children }) => {
     });
   }
 
+  function updateUserInfo({ username, email }) {
+    dispatch({
+      type: 'UPDATE_USER_INFO',
+      payload: { username, email },
+    });
+  }
+
   return (
     <GlobalContext.Provider
       value={{
@@ -226,6 +233,7 @@ export const GlobalProvider = ({ children }) => {
         setSelectedSizeLarge,
         toggleAutoplay,
         fetchOrders,
+        updateUserInfo,
       }}
     >
       {children}

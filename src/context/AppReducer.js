@@ -108,6 +108,12 @@ export const AppReducer = (state, action) => {
         ...state,
         color: action.payload,
       };
+    case 'UPDATE_USER_INFO':
+      return {
+        ...state,
+        username: action.payload.username,
+        email: action.payload.email,
+      };
     default:
       return state;
   }
