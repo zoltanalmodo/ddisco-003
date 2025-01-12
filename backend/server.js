@@ -18,7 +18,7 @@ mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTop
 
 // Define the Order Schema
 const orderSchema = new mongoose.Schema({
-    orderId: { type: String, required: true, unique: true }, // Unique order ID
+    orderNumber: { type: String, required: true, unique: true }, // Unique order Number
     username: { type: String, required: true },
     email: { type: String, required: true },
     currentIndex_001: { type: Number, required: false },
@@ -65,17 +65,17 @@ app.post('/api/orders', async (req, res) => {
         }
 
         counter.count += 1;
-        const orderId = `order-${String(counter.count).padStart(3, '0')}`;
+        const orderNumber = `order-${String(counter.count).padStart(3, '0')}`;
         await counter.save();
 
         const createdAt = new Date().toISOString().slice(0, 16);
         const formattedCreatedAt = `Date: ${createdAt.slice(0, 10)} / Time: ${createdAt.slice(11)}`;
 
-        const newOrder = new Order({ ...orderData, orderId, createdAt: formattedCreatedAt });
+        const newOrder = new Order({ ...orderData, orderNumber, createdAt: formattedCreatedAt });
         await newOrder.save();
 
         const responseOrder = {
-            order_number: newOrder.orderId,
+            order_number: newOrder.orderNumber,
             username: newOrder.username,
             email: newOrder.email,
             currentIndex_001: newOrder.currentIndex_001,
@@ -103,7 +103,7 @@ app.get('/api/orders', async (req, res) => {
     try {
         const orders = await Order.find().sort({ createdAt: -1 }); // Sort by createdAt in descending order
         const formattedOrders = orders.map(order => ({
-            order_number: order.orderId,
+            order_number: order.orderNumber,
             username: order.username,
             email: order.email,
             currentIndex_001: order.currentIndex_001,

@@ -63,7 +63,20 @@
   margin-top: 80px;
   transform-origin: top center;
 }
+
 /* ================================================= carousel white buy ================================================= */
+
+.orders_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 760px;
+  margin-top: 80px;
+  transform-origin: top center;
+  font-size: 12px;
+  text-align: left;
+}
 
 .sizes_container {
   display: flex;

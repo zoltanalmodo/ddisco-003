@@ -19,7 +19,7 @@ return (
 
         <Navigation />
 
-        <div className="carousel_white_buy">
+        <div className="orders_list">
 
             <div>
                 <h1>Orders:</h1>
@@ -33,6 +33,7 @@ return (
                     <ul>
                     {orders.map((order, index) => (
                         <li key={index}>
+                        <strong>order number:</strong> {order.order_number} <br />    
                         <strong>name:</strong> {order.username} <br />
                         <strong>email:</strong> {order.email} <br />
                         <strong>character index_001:</strong> {order.currentIndex_001} <br />
@@ -46,6 +47,7 @@ return (
                         <strong>selected size:</strong> {order.selectedSize} <br />
                         <strong>created at:</strong> {order.createdAt} <br />
                         <strong>order id:</strong> {order.order_id} <br />
+                        <br />
                         </li>
                     ))}
                     </ul>
