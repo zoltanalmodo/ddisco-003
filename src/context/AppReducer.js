@@ -83,7 +83,7 @@ export const AppReducer = (state, action) => {
     case 'FETCH_SUCCESS':
       return {
         ...state,
-        data: action.payload,
+        orders: action.payload,
         loading: false,
         error: null,
       };
