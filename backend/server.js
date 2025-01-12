@@ -126,6 +126,17 @@ app.get('/api/orders', async (req, res) => {
     }
 });
 
+// API route to delete all orders
+app.delete('/api/orders', async (req, res) => {
+    try {
+        await Order.deleteMany({}); // Deletes all documents in the collection
+        res.status(200).json({ message: 'All orders have been deleted' });
+    } catch (err) {
+        console.error('Error deleting orders:', err);
+        res.status(500).json({ error: 'Failed to delete orders' });
+    }
+});
+
 // Start the server
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
