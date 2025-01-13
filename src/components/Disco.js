@@ -128,7 +128,7 @@ export const Disco = () => {
               <div className="box-transparent-middle"/>
               <div className="box-white-right"/>
             </div>
-
+{/* before alice carousel update */}
             <div className="frame-overlay-dark-grey"></div> {/* Transparent overlay with a frame */}
 
               <div style={{ filter: (`hue-rotate(${globalState.degree_001}deg)`) }}>
