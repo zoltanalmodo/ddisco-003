@@ -5,15 +5,8 @@ import { GlobalContext } from '../context/GlobalState'
 
 export const Orders = () => {
 
-  const {
-    globalState,
-    orders,
-    loading,
-    error,
-  } = useContext(GlobalContext);
-
-
-
+  
+    
 return (
     <div className='body_white_buy'>
 

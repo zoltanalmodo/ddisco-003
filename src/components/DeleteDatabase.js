@@ -3,7 +3,6 @@ import Navigation from './Navigation';
 import { GlobalContext } from '../context/GlobalState';
 
 export const DeleteDatabase = () => {
-    const { globalState } = useContext(GlobalContext);
 
     const deleteAllOrders = async () => {
         const confirmed = window.confirm('Are you sure you want to delete all orders? This action cannot be undone.');
