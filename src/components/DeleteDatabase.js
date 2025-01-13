@@ -1,6 +1,4 @@
-import React, { useContext } from 'react';
 import Navigation from './Navigation';
-import { GlobalContext } from '../context/GlobalState';
 
 export const DeleteDatabase = () => {
 
