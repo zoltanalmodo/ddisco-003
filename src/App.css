@@ -431,6 +431,9 @@ li {
 
 /* ipads are not OK */
 
+/* BEFORE ADJUSTING .CarouselSize */
+
+
 /* anything under 320px width */
 @media only screen 
   and (min-device-width: 280px)
