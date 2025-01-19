@@ -286,8 +286,6 @@ nav {
 .carousel-container {
   position: relative;
   margin-bottom: 80px;
-  border: 2px solid pink;
-  transform: scale(0.5);
 }
 
 .frame-overlay-dark-grey {
