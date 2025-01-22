@@ -8,13 +8,19 @@ const app = express();
 const PORT = process.env.PORT || 5000; // Use PORT from environment variables or default to 5000
 
 // Middleware
-app.use(cors());
+const corsOptions = {
+    origin: 'http://localhost:3000', // Allow requests from localhost:3000
+    methods: ['GET', 'POST', 'DELETE'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+};
+
+app.use(cors(corsOptions));
 app.use(express.json()); // Parses incoming JSON requests
 
 // MongoDB Connection
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(() => console.log('Connected to MongoDB'))
-    .catch((err) => console.log('Error connecting to MongoDB:', err));
+    .then(() => console.log('Connected to MongoDB Atlas'))
+    .catch((err) => console.log('Error connecting to MongoDB Atlas:', err));
 
 // Define the Order Schema
 const orderSchema = new mongoose.Schema({
