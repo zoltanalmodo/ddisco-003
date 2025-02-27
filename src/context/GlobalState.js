@@ -16,7 +16,7 @@ const initialState = {
   isPastel: false,
   color: 'missing',
   brightValue: "brightness(100%) saturate(100%)",
-  pastelValue: "brightness(109%) saturate(71%)",
+  pastelValue: "brightness(114%) saturate(31%)",
   selectedSize: 'missing',
   username: 'missing',
   email: 'missing',
