@@ -318,7 +318,7 @@ export const Color = () => {
               
                 <div style={{ filter: (`hue-rotate(${globalState.degree_001}deg)`) }}>
                   <AliceCarousel
-                    autoPlay={false}
+                    autoPlay={true}
                     autoPlayStrategy={'all'}
                     autoPlayInterval={5000}
                     autoPlayDirection={'rtl'}
@@ -340,7 +340,7 @@ export const Color = () => {
               
                 <div style={{ filter: (`hue-rotate(${globalState.degree_002}deg)`) }}>
                   <AliceCarousel
-                    autoPlay={false}
+                    autoPlay={true}
                     autoPlayStrategy={'all'}
                     autoPlayInterval={5000}
                     autoPlayDirection={'ltr'}
@@ -362,7 +362,7 @@ export const Color = () => {
               
                 <div style={{ filter: (`hue-rotate(${globalState.degree_003}deg)`) }}>
                   <AliceCarousel
-                    autoPlay={false}
+                    autoPlay={true}
                     autoPlayStrategy={'all'}
                     autoPlayInterval={5000}
                     autoPlayDirection={'rtl'}
