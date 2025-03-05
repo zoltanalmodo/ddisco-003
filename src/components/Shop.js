@@ -126,42 +126,42 @@ export const Shop = () => {
   const {
 
     globalState,
-    setSelectedSizeSmall,
-    setSelectedSizeMedium,
-    setSelectedSizeLarge,
+    // setSelectedSizeSmall,
+    // setSelectedSizeMedium,
+    // setSelectedSizeLarge,
 
   } = useContext(GlobalContext);
 
-  const activeBackgroundSizesSmall = () => {
-    return(
-      globalState.selectedSize === 'small' ? 'black' : 'white'
-    )
-  }
-  const activeColorSizesSmall = () => {
-    return(
-      globalState.selectedSize === 'small' ? 'white' : 'black'
-    )
-  }
-  const activeBackgroundSizesMedium = () => {
-    return(
-      globalState.selectedSize === 'medium' ? 'black' : 'white'
-    )
-  }
-  const activeColorSizesMedium = () => {
-    return(
-      globalState.selectedSize === 'medium' ? 'white' : 'black'
-    )
-  }
-  const activeBackgroundSizesLarge = () => {
-    return(
-      globalState.selectedSize === 'large' ? 'black' : 'white'
-    )
-  }
-  const activeColorSizesLarge = () => {
-    return(
-      globalState.selectedSize === 'large' ? 'white' : 'black'
-    )
-  }
+  // const activeBackgroundSizesSmall = () => {
+  //   return(
+  //     globalState.selectedSize === 'small' ? 'black' : 'white'
+  //   )
+  // }
+  // const activeColorSizesSmall = () => {
+  //   return(
+  //     globalState.selectedSize === 'small' ? 'white' : 'black'
+  //   )
+  // }
+  // const activeBackgroundSizesMedium = () => {
+  //   return(
+  //     globalState.selectedSize === 'medium' ? 'black' : 'white'
+  //   )
+  // }
+  // const activeColorSizesMedium = () => {
+  //   return(
+  //     globalState.selectedSize === 'medium' ? 'white' : 'black'
+  //   )
+  // }
+  // const activeBackgroundSizesLarge = () => {
+  //   return(
+  //     globalState.selectedSize === 'large' ? 'black' : 'white'
+  //   )
+  // }
+  // const activeColorSizesLarge = () => {
+  //   return(
+  //     globalState.selectedSize === 'large' ? 'white' : 'black'
+  //   )
+  // }
 
 
   window.galleryItems_black_001 = [
@@ -359,7 +359,7 @@ globalState.previousActiveButton === "black" ? "black" : "white";
 
         <div className="sizes_container">
 
-          <div className="size_button_container">
+          {/* <div className="size_button_container">
             <button
               className="size_button"
               onClick={setSelectedSizeSmall}
@@ -390,7 +390,7 @@ globalState.previousActiveButton === "black" ? "black" : "white";
                 color: activeColorSizesLarge()
               }}>large
             </button>
-          </div>
+          </div> */}
 
           <FormValidation />
 
