@@ -137,7 +137,7 @@ export const FormValidation = () => {
   </div>
   
   <div className="buy_button_container">
-    <button className="buy_button" type="submit">send</button>
+    <button className="buy_button" type="submit">subscribe</button>
   </div>
 </form>
   );
