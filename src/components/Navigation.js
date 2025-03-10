@@ -149,7 +149,7 @@ function Navigation() {
                       style={{
                         backgroundColor: activeBackgroundShop(),
                         color: activeColorShop()
-                      }}>send
+                      }}>like
                     </button>
                   </div>
                 </Link>
