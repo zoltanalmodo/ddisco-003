@@ -8,8 +8,8 @@ export const DeleteDatabase = () => {
         if (!confirmed) return;
 
         try {
-            const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:5000';
-            const response = await fetch(`${BACKEND_URL}/api/orders`, {
+            // Use a relative URL instead of BACKEND_URL with localhost fallback
+            const response = await fetch('/api/orders', {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json',

@@ -45,7 +45,7 @@ export const GlobalProvider = ({ children }) => {
   const fetchOrders = async () => {
     dispatch({ type: ACTIONS.SET_LOADING });
     try {
-      const response = await axios.get('http://localhost:5000/api/orders');
+      const response = await axios.get('/api/orders');
       dispatch({ type: ACTIONS.FETCH_SUCCESS, payload: response.data });
     } catch (err) {
       dispatch({ type: ACTIONS.FETCH_ERROR, payload: 'Failed to fetch orders from the API.' });
