@@ -25,7 +25,7 @@ function App() {
           <Route path='/white' element={<White />} />
           <Route path='/color' element={<Color />} />
           <Route path='/disco' element={<Disco />} />
-          <Route path='/shop' element={<Shop />} />
+          <Route path='/like' element={<Shop />} />
           <Route path='/form-validation' element={<FormValidation />} />
           <Route path='/confirm' element={<Confirm />} />
           <Route path='/orders' element={<Orders />} />
