@@ -142,7 +142,7 @@ function Navigation() {
                     </button>
                   </div>
                 </Link>
-                <Link to='/shop'>
+                <Link to='/like'>
                   <div className='nav_links_li'>
                     <button
                       onClick={setActiveButtonShop}
