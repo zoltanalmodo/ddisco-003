@@ -8,13 +8,19 @@ async function connectToDatabase() {
     return cachedConnection;
   }
 
-  const connection = await mongoose.connect(process.env.MONGODB_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  });
-
-  cachedConnection = connection;
-  return connection;
+  try {
+    const connection = await mongoose.connect(process.env.MONGODB_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    
+    console.log('MongoDB Connected Successfully');
+    cachedConnection = connection;
+    return connection;
+  } catch (error) {
+    console.error('MongoDB Connection Error:', error);
+    throw error;
+  }
 }
 
 module.exports = connectToDatabase;

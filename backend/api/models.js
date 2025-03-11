@@ -23,9 +23,18 @@ const orderCounterSchema = new mongoose.Schema({
   count: { type: Number, default: 0 }
 });
 
-// Only create the model if it doesn't exist already (prevents model overwrite errors)
-const Order = mongoose.models.Order || mongoose.model('Order', orderSchema);
-const OrderCounter = mongoose.models.OrderCounter || mongoose.model('OrderCounter', orderCounterSchema);
+// Using a different approach to prevent model compilation error in serverless environment
+let Order, OrderCounter;
+
+try {
+  // Try to get existing models
+  Order = mongoose.model('Order');
+  OrderCounter = mongoose.model('OrderCounter');
+} catch (e) {
+  // Models don't exist yet, create them
+  Order = mongoose.model('Order', orderSchema);
+  OrderCounter = mongoose.model('OrderCounter', orderCounterSchema);
+}
 
 module.exports = {
   Order,

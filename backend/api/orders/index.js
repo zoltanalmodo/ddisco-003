@@ -1,11 +1,10 @@
 // api/orders/index.js
 const connectToDatabase = require('../db');
-const { Order } = require('../models');
 
 module.exports = async (req, res) => {
   // Set CORS headers
   res.setHeader('Access-Control-Allow-Credentials', true);
-  res.setHeader('Access-Control-Allow-Origin', '*'); // Update this with your frontend URL in production
+  res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET,POST,DELETE,OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type,Authorization');
 
@@ -15,7 +14,9 @@ module.exports = async (req, res) => {
   }
 
   try {
+    // Connect to the database
     await connectToDatabase();
+    const { Order, OrderCounter } = require('../models');
 
     if (req.method === 'GET') {
       // Get all orders
@@ -41,13 +42,12 @@ module.exports = async (req, res) => {
     } 
     else if (req.method === 'POST') {
       // Create new order
-      const orderData = req.body;
+      const orderData = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
 
       if (!orderData.username || !orderData.email) {
         return res.status(400).json({ error: 'Username and email are required' });
       }
 
-      const { OrderCounter } = require('../models');
       let counter = await OrderCounter.findOne();
       if (!counter) {
         counter = new OrderCounter();
@@ -92,7 +92,7 @@ module.exports = async (req, res) => {
       return res.status(405).json({ error: 'Method not allowed' });
     }
   } catch (error) {
-    console.error('Error in API route:', error);
-    return res.status(500).json({ error: 'Internal Server Error' });
+    console.error('Error in API route:', error.message);
+    return res.status(500).json({ error: 'Internal Server Error', details: error.message });
   }
 };
