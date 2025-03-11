@@ -105,7 +105,7 @@ export const Disco = () => {
       // Set autoplay to false when the component unmounts
       toggleAutoplay();
     };
-  }, []);  // No need for `toggleAutoplay` in the dependency array
+  }, [toggleAutoplay]);  // No need for `toggleAutoplay` in the dependency array
 
   
 

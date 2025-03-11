@@ -1,4 +1,4 @@
-import React, { createContext, useReducer, useEffect } from 'react';
+import React, { createContext, useReducer, useEffect, useCallback } from 'react';
 import { AppReducer } from './AppReducer';
 import axios from 'axios';
 
@@ -180,12 +180,12 @@ export const GlobalProvider = ({ children }) => {
     });
   }
 
-  function toggleAutoplay() {
+  const toggleAutoplay = useCallback(() => {
     dispatch({
       type: 'TOGGLE_AUTOPLAY',
       payload: false,
     });
-  }
+  }, [dispatch]);
 
   function updateUserInfo({ username, email }) {
     dispatch({
