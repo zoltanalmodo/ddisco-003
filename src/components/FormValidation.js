@@ -1,16 +1,14 @@
 import React, { useState, useContext } from 'react';
 import { GlobalContext } from '../context/GlobalState';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate
+import { useNavigate } from 'react-router-dom';
 
 export const FormValidation = () => {
-  const [formData, setFormData] = useState({ username: '', email: '' });
-  const [errors, setErrors] = useState({ username: '', email: '' });
+  const [formData, setFormData] = useState({ username: '', email: '', termsAccepted: false });
+  const [errors, setErrors] = useState({ username: '', email: '', termsAccepted: '' });
 
-  // Accessing the global state values from context
-  const { globalState, updateUserInfo } = useContext(GlobalContext); // Access updateUserInfo
-  const navigate = useNavigate(); // Initialize useNavigate
+  const { globalState, updateUserInfo } = useContext(GlobalContext);
+  const navigate = useNavigate();
 
-  // Destructure values from globalState (assuming globalState contains the data)
   const { 
     currentIndex_001,
     currentIndex_002,
@@ -26,14 +24,13 @@ export const FormValidation = () => {
   } = globalState;
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    const { name, value, type, checked } = e.target;
+    setFormData({ ...formData, [name]: type === 'checkbox' ? checked : value });
   };
 
   const handleAction = async (e) => {
-    e.preventDefault(); // Prevent default form submission behavior
+    e.preventDefault();
 
-    // Perform validation
     let validationErrors = {};
     let isValid = true;
 
@@ -51,14 +48,16 @@ export const FormValidation = () => {
       isValid = false;
     }
 
-    setErrors(validationErrors);
-
-    if (!isValid) {
-      return; // Exit early if validation fails
+    if (!formData.termsAccepted) {
+      validationErrors.termsAccepted = 'Please accept the terms and conditions.';
+      isValid = false;
     }
 
+    setErrors(validationErrors);
+
+    if (!isValid) return;
+
     try {
-      // Construct the orderData object with all necessary data points
       const orderData = {
         username: formData.username,
         email: formData.email,
@@ -69,33 +68,26 @@ export const FormValidation = () => {
         degree_002,
         degree_003,
         color,
-        colorValue: isPastel === true ? pastelValue : brightValue,
+        colorValue: isPastel ? pastelValue : brightValue,
         selectedSize,
         createdAt: `Date: ${new Date().toLocaleDateString()} / Time: ${new Date().toLocaleTimeString()}`,
         order_number: `order-${Math.floor(Math.random() * 1000) + 1}`,
         order_id: `${Math.random().toString(36).substr(2, 9)}`,
       };
 
-      // Update user info in the global state
       updateUserInfo({
         username: formData.username,
         email: formData.email,
       });
 
-      // Send the data to the database
       const response = await fetch('http://localhost:5000/api/orders', {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(orderData), // Send all data
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(orderData),
       });
 
       if (response.ok) {
-        // Optionally reset the form
-        setFormData({ username: '', email: '' });
-
-        // Navigate to the confirmation page
+        setFormData({ username: '', email: '', termsAccepted: false });
         navigate('/confirm');
       } else {
         const errorData = await response.json();
@@ -110,35 +102,50 @@ export const FormValidation = () => {
 
   return (
     <form className="sizes_container_form" onSubmit={handleAction}>
-  <div className="user_input_field">
-    <input
-      type="text"
-      id="username"
-      name="username"
-      placeholder="your name"
-      value={formData.username}
-      onChange={handleChange}
-      required
-    />
-    {errors.username && <p className="error_message">{errors.username}</p>}
-  </div>
+      <div className="user_input_field">
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="your name"
+          value={formData.username}
+          onChange={handleChange}
+          required
+        />
+        {errors.username && <p className="error_message">{errors.username}</p>}
+      </div>
 
-  <div className="user_input_field">
-    <input
-      type="email"
-      id="email"
-      name="email"
-      placeholder="your email address"
-      value={formData.email}
-      onChange={handleChange}
-      required
-    />
-    {errors.email && <p className="error_message">{errors.email}</p>}
-  </div>
-  
-  <div className="buy_button_container">
-    <button className="buy_button" type="submit">subscribe</button>
-  </div>
-</form>
+      <div className="user_input_field">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="your email address"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
+        {errors.email && <p className="error_message">{errors.email}</p>}
+      </div>
+
+      {/* Terms and Conditions Checkbox */}
+      <div className="terms_container">
+        <input
+          type="checkbox"
+          id="termsAccepted"
+          name="termsAccepted"
+          checked={formData.termsAccepted}
+          onChange={handleChange}
+        />
+        <label htmlFor="termsAccepted">I have read and agree to the Terms and Conditions</label>
+        {errors.termsAccepted && !formData.termsAccepted && (
+          <p className="error_message">{errors.termsAccepted}</p>
+        )}
+      </div>
+
+      <div className="buy_button_container">
+        <button className="buy_button" type="submit">subscribe</button>
+      </div>
+    </form>
   );
 };

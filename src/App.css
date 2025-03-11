@@ -138,7 +138,6 @@
   margin-top: 15px;
 }
 
-
 /* ================ remove default form and input tags styling ================ */
 
 form, input {
@@ -163,7 +162,6 @@ input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: #888888;
 }
 
-
 /* ================ remove default form and input tags styling ================ */
 
 .user_input_field {
@@ -177,11 +175,76 @@ input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   font-size: 24px;
 }
 
-/* ================================================= user input validation ================================================= */
+/* ================================================= Checkbox Styling ================================================= */
+
+.terms_container {
+  display: flex;
+  align-items: center; /* Keeps checkbox and label on the same line */
+  justify-content: center; /* Aligns checkbox and label to the left */
+  gap: 20px;
+  /* width: 100%;
+  border: 2px solid black; */
+  margin: 5px;
+  padding: 10px;
+  flex-direction: row; /* Keeps checkbox and label in the same row */
+  flex-wrap: wrap; /* Allows error message to be below */
+}
+
+.terms_container input[type="checkbox"] {
+  all: unset;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.terms_container input[type="checkbox"]::before {
+  content: "";
+  position: absolute; /* Ensures it appears inside the checkbox */
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.terms_container input[type="checkbox"]:checked::before {
+  opacity: 1;
+}
+
+.terms_container label {
+  font-size: 24px;
+  opacity: 0.65;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 0; /* Remove extra margin */
+}
+
+.hidden {
+  display: none; /* Hides the label when error message is shown */
+}
+
+/* ================================================= Error Styling ================================================= */
+
+/* Ensure the error message appears below the label when checkbox is not selected */
+.terms_container input[type="checkbox"]:not(:checked) + label + .error_message {
+  display: block; /* Show error message below label when checkbox is unchecked */
+}
+
+.terms_container input[type="checkbox"]:checked + label + .error_message {
+  display: none; /* Hide error message when checkbox is checked */
+}
 
 .error_message {
   color: red;
   font-size: 24px;
+  margin-top: 5px; /* This margin ensures the error is below the label */
+  width: 100%;
+  display: none; /* Initially hidden, only appears when the checkbox is unchecked */
 }
 
 
