@@ -9,10 +9,8 @@ async function connectToDatabase() {
   }
 
   try {
-    const connection = await mongoose.connect(process.env.MONGODB_URI, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-    });
+    // Add connection options compatible with Mongoose 8.x
+    const connection = await mongoose.connect(process.env.MONGODB_URI);
     
     console.log('MongoDB Connected Successfully');
     cachedConnection = connection;
