@@ -12,6 +12,7 @@ import { FormValidation } from './components/FormValidation';
 import { Confirm } from './components/Confirm';
 import { Orders } from './components/Orders';
 import { DeleteDatabase } from './components/DeleteDatabase';
+import { Terms } from './components/Terms';
 
 import { GlobalProvider } from './context/GlobalState';
 
@@ -30,6 +31,7 @@ function App() {
           <Route path='/confirm' element={<Confirm />} />
           <Route path='/orders' element={<Orders />} />
           <Route path='/deletedb' element={<DeleteDatabase />} />
+          <Route path='/terms-and-conditions' element={<Terms />} />
         </Routes>
       </Router>
     </GlobalProvider>
