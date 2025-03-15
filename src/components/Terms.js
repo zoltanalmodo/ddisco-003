@@ -65,6 +65,7 @@ export const Terms = () => {
             deedisco.com<br />
             deedisco.com@gmail.com</p>
             <p>
+                p
             <br />
             <br />
             <br />
