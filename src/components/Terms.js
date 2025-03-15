@@ -65,7 +65,6 @@ export const Terms = () => {
             deedisco.com<br />
             deedisco.com@gmail.com</p>
             <p>
-                p
             <br />
             <br />
             <br />
@@ -81,6 +80,11 @@ export const Terms = () => {
                     </button>
                 </div>  
             </Link>
+            <p>
+            <br />
+            <br />
+            <br />
+            </p>
         </div>
       </div>
     </div>  
