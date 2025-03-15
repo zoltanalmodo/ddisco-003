@@ -70,15 +70,16 @@ export const Terms = () => {
             <br />
             <br />
             </p>
-            <Link to='/terms-and-conditions'>
+            <Link to='/like'>
                 <div className='nav_links_li'>
-                <button
-                    style={{
-                    backgroundColor: activeBackgroundBlack(),
-                    color: activeColorBlack()
-                    }}>back
-                </button>
-                </div>
+                    <button
+                        style={{
+                        backgroundColor: '#000',
+                        color: '#fff',
+                        }}>
+                        back
+                    </button>
+                </div>  
             </Link>
         </div>
       </div>
