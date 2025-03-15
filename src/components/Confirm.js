@@ -323,11 +323,11 @@ globalState.previousActiveButton === "black" ? "black" : "white";
         </div>
 
         <div >
-          <h1>Order Confirmed</h1>
-          <h2>details:</h2>
+          <h1>Thank You!</h1>
+          {/* <h2>details:</h2> */}
           <p>name: {globalState.username}</p>
           <p>email: {globalState.email}</p>
-          <p>size: {globalState.selectedSize}</p>
+          {/* <p>size: {globalState.selectedSize}</p>
           <p>index_001: {globalState.currentIndex_001}</p>
           <p>index_002: {globalState.currentIndex_002}</p>
           <p>index_003: {globalState.currentIndex_003}</p>
@@ -335,7 +335,7 @@ globalState.previousActiveButton === "black" ? "black" : "white";
           <p>degree_002: {globalState.degree_002}</p>
           <p>degree_003: {globalState.degree_003}</p>
           <p>color: {globalState.color}</p>
-          <p>color value: {globalState.isPastel ? globalState.pastelValue : globalState.brightValue}</p>
+          <p>color value: {globalState.isPastel ? globalState.pastelValue : globalState.brightValue}</p> */}
 
         </div>
 
