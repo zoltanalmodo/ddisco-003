@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { GlobalContext } from '../context/GlobalState';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 export const FormValidation = () => {
   const [formData, setFormData] = useState({ username: '', email: '', termsAccepted: false });
@@ -137,7 +137,7 @@ export const FormValidation = () => {
           checked={formData.termsAccepted}
           onChange={handleChange}
         />
-        <label htmlFor="termsAccepted">I have read and agree to the Terms and Conditions</label>
+        <label htmlFor="termsAccepted">I have read and agree to the <Link to="/terms-and-conditions">Terms and Conditions</Link></label>
         {errors.termsAccepted && !formData.termsAccepted && (
           <p className="error_message">{errors.termsAccepted}</p>
         )}
