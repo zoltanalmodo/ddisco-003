@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const Terms = () => {
   return (
     <div className='body_white_buy'>
       <div className="terms_and_conditions">
         <div>
-        <h2>Terms and Conditions for Newsletter Subscription</h2>
+        <h1>Terms and Conditions for Newsletter Subscription</h1>
           <h1>1. Introduction</h1>
             <p>These Terms and Conditions govern your subscription to our newsletter service. 
             By subscribing to our newsletter, you accept these Terms and Conditions in full. 
@@ -63,6 +64,21 @@ export const Terms = () => {
             <p>If you have any questions about these Terms and Conditions, please contact us at:<br />
             deedisco.com<br />
             deedisco.com@gmail.com</p>
+            <p>
+            <br />
+            <br />
+            <br />
+            </p>
+            <Link to='/terms-and-conditions'>
+                <div className='nav_links_li'>
+                <button
+                    style={{
+                    backgroundColor: activeBackgroundBlack(),
+                    color: activeColorBlack()
+                    }}>back
+                </button>
+                </div>
+            </Link>
         </div>
       </div>
     </div>  
