@@ -275,6 +275,7 @@ input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 .social_media_container {
   margin-bottom: 60px;
   text-align: center;
+  border: 1px solid green;
 }
 
 .social_media_text {
@@ -286,6 +287,7 @@ input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 .social_buttons {
   display: flex;
   justify-content: space-between;
+  border: 1px solid magenta;
 }
 
 .social_button {
