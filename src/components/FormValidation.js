@@ -101,51 +101,83 @@ export const FormValidation = () => {
   };
 
   return (
-    <form className="sizes_container_form" onSubmit={handleAction}>
-      <div className="user_input_field">
-        <input
-          type="text"
-          id="username"
-          name="username"
-          placeholder="your name"
-          value={formData.username}
-          onChange={handleChange}
-          required
-        />
-        {errors.username && <p className="error_message">{errors.username}</p>}
-      </div>
+    <>
+      <form className="sizes_container_form" onSubmit={handleAction}>
+        <div className="user_input_field">
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="your name"
+            value={formData.username}
+            onChange={handleChange}
+            required
+          />
+          {errors.username && <p className="error_message">{errors.username}</p>}
+        </div>
 
-      <div className="user_input_field">
-        <input
-          type="email"
-          id="email"
-          name="email"
-          placeholder="your email address"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-        {errors.email && <p className="error_message">{errors.email}</p>}
-      </div>
+        <div className="user_input_field">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="your email address"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+          {errors.email && <p className="error_message">{errors.email}</p>}
+        </div>
 
-      {/* Terms and Conditions Checkbox */}
-      <div className="checkbox_container">
-        <input
-          type="checkbox"
-          id="termsAccepted"
-          name="termsAccepted"
-          checked={formData.termsAccepted}
-          onChange={handleChange}
-        />
-        <label htmlFor="termsAccepted">I have read and agree to the <Link to="/terms-and-conditions" style={{ textDecoration: 'underline' }}>Terms and Conditions</Link></label>
-        {errors.termsAccepted && !formData.termsAccepted && (
-          <p className="error_message">{errors.termsAccepted}</p>
-        )}
-      </div>
+        {/* Terms and Conditions Checkbox */}
+        <div className="checkbox_container">
+          <input
+            type="checkbox"
+            id="termsAccepted"
+            name="termsAccepted"
+            checked={formData.termsAccepted}
+            onChange={handleChange}
+          />
+          <label htmlFor="termsAccepted">I have read and agree to the <Link to="/terms-and-conditions" style={{ textDecoration: 'underline' }}>Terms and Conditions</Link></label>
+          {errors.termsAccepted && !formData.termsAccepted && (
+            <p className="error_message">{errors.termsAccepted}</p>
+          )}
+        </div>
 
-      <div className="buy_button_container">
-        <button className="buy_button" type="submit">subscribe</button>
+        <div className="buy_button_container">
+          <button className="buy_button" type="submit">subscribe</button>
+        </div>
+      </form>
+
+      <div className="social_media_container">
+        <p className="social_media_text">Follow us on:</p>
+          <div className="social_buttons">
+            <a
+              href="https://instagram.com/your_account"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social_button instagram_button"
+            >
+              Instagram
+            </a>
+            <a
+              href="https://x.com/your_account"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social_button twitter_button"
+            >
+              X
+            </a>
+            <a
+              href="https://discord.gg/your_invite"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social_button discord_button"
+            >
+              Discord
+            </a>
+          </div>
       </div>
-    </form>
+    </>
   );
 };
