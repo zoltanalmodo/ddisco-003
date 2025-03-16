@@ -567,7 +567,7 @@ li {
     width: 340px;
     height: 370px;
   }
-  terms_and_conditions {
+  .terms_and_conditions {
     width: 100vw;
     padding: 0 10px;
     box-sizing: border-box;
@@ -629,7 +629,7 @@ li {
     width: 340px;
     height: 370px;
   }
-  terms_and_conditions {
+  .terms_and_conditions {
     width: 100vw;
     padding: 0 10px;
     box-sizing: border-box;
@@ -691,7 +691,7 @@ li {
     width: 412px;
     height: 450px;
   }
-  terms_and_conditions {
+  .terms_and_conditions {
     width: 100vw;
     padding: 0 10px;
     box-sizing: border-box;
@@ -736,7 +736,7 @@ li {
     width: 690px;
     height: 752px;
   }
-  terms_and_conditions {
+  .terms_and_conditions {
     width: 100vw;
     padding: 0 10px;
     box-sizing: border-box;
@@ -781,7 +781,7 @@ li {
     width: 670px;
     height: 740px;
   }
-  terms_and_conditions {
+  .terms_and_conditions {
     width: 100vw;
     padding: 0 10px;
     box-sizing: border-box;
