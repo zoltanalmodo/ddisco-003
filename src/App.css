@@ -189,7 +189,7 @@ input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 
 /* ================================================= Checkbox Styling ================================================= */
 
-.terms_container {
+.checkbox_container {
   display: flex;
   align-items: center; /* Keeps checkbox and label on the same line */
   justify-content: center; /* Aligns checkbox and label to the left */
@@ -202,7 +202,7 @@ input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   flex-wrap: wrap; /* Allows error message to be below */
 }
 
-.terms_container input[type="checkbox"] {
+.checkbox_container input[type="checkbox"] {
   all: unset;
   width: 20px;
   height: 20px;
@@ -214,7 +214,7 @@ input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   justify-content: center;
 }
 
-.terms_container input[type="checkbox"]::before {
+.checkbox_container input[type="checkbox"]::before {
   content: "";
   position: absolute; /* Ensures it appears inside the checkbox */
   width: 12px;
@@ -224,11 +224,11 @@ input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   transition: opacity 0.2s ease-in-out;
 }
 
-.terms_container input[type="checkbox"]:checked::before {
+.checkbox_container input[type="checkbox"]:checked::before {
   opacity: 1;
 }
 
-.terms_container label {
+.checkbox_container label {
   font-size: 24px;
   opacity: 0.65;
   cursor: pointer;
@@ -243,11 +243,11 @@ input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 /* ================================================= Error Styling ================================================= */
 
 /* Ensure the error message appears below the label when checkbox is not selected */
-.terms_container input[type="checkbox"]:not(:checked) + label + .error_message {
+.checkbox_container input[type="checkbox"]:not(:checked) + label + .error_message {
   display: block; /* Show error message below label when checkbox is unchecked */
 }
 
-.terms_container input[type="checkbox"]:checked + label + .error_message {
+.checkbox_container input[type="checkbox"]:checked + label + .error_message {
   display: none; /* Hide error message when checkbox is checked */
 }
 

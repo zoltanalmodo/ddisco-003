@@ -129,7 +129,7 @@ export const FormValidation = () => {
       </div>
 
       {/* Terms and Conditions Checkbox */}
-      <div className="terms_container">
+      <div className="checkbox_container">
         <input
           type="checkbox"
           id="termsAccepted"
