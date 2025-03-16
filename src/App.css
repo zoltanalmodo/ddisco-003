@@ -273,19 +273,18 @@ input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 /* ============================================================================================================================= */
 
 .social_media_container {
-  margin-top: 10px;
-  margin-top: 40px;
+  margin-top: 60px;
   text-align: center;
 }
 
 .social_media_text {
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .social_buttons {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: 10px;
 }
 
@@ -294,8 +293,8 @@ input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   align-items: center;
   justify-content: center;
   padding: 8px 16px;
-  border-radius: 8px;
-  font-size: 18px;
+  border-radius: 6px;
+  font-size: 24px;
   font-weight: 500;
   text-decoration: none;
   color: white;
