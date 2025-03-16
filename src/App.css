@@ -274,21 +274,19 @@ input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 
 .social_media_container {
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
   text-align: center;
-  border: 1px solid green;
 }
 
 .social_media_text {
   margin-bottom: 10px;
   font-size: 24px;
-  color:#888888;
+  color:#383838;
 }
 
 .social_buttons {
   display: flex;
   justify-content: space-between;
-  border: 1px solid magenta;
 }
 
 .social_button {
