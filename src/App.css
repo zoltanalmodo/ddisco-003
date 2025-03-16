@@ -273,6 +273,7 @@ input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 /* ============================================================================================================================= */
 
 .social_media_container {
+  width: 100%;
   margin-bottom: 60px;
   text-align: center;
   border: 1px solid green;
