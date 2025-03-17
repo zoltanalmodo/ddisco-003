@@ -569,11 +569,11 @@ li {
 /*==========================================================================================================================*/
 /*==========================================================================================================================*/
 
-/* apple iPhones buy page is OK other pages the drawing is smaller than screen by a lot...*/
+/* apple iPhones buy page is OK other pages the drawing is smaller than screen */
 
-/* TEST .CarouselSize */
+/* TEST .CarouselSize AGAIN !!! */
 
-/* ipads are not OK ??? */
+/* ipads are not OK !!! */
 
 /* anything under 320px width */
 @media only screen 
@@ -583,7 +583,6 @@ li {
   .CarouselSize {
     width: 278px;
     height: 120px;
-    border: 2px solid red;
   }
   .hue_rotate {
     width: 278px;
@@ -708,7 +707,6 @@ li {
   .CarouselSize {
     width: 342px;
     height: 148px;
-    border: 2px solid blue;
   }
   .hue_rotate {
     width: 342px;
@@ -771,7 +769,6 @@ li {
   .CarouselSize {
     width: 601px;
     height: 260px;
-    border: 2px solid cyan;
   }
   .hue_rotate {
     width: 574px;
@@ -817,7 +814,6 @@ li {
   .CarouselSize {
     width: 532px;
     height: 230px;
-    border: 2px solid magenta;
   }
   .hue_rotate {
     width: 565px;
