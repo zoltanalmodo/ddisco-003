@@ -644,9 +644,9 @@ li {
 /* smartphones, iPhone, portrait 480x320 phones */
 @media (min-width:320px)  {
   .CarouselSize {
-    width: 278px;
-    height: 120px;
-    border: 2px solid green;
+    width: min(85vw, 350px); /* Use the smaller of these two values */
+    aspect-ratio: 278/120;   /* Maintain aspect ratio instead of fixed height */
+    border: 2px solid purple;
   }
   .hue_rotate {
     width: 278px;
@@ -818,7 +818,7 @@ li {
   .CarouselSize {
     width: 532px;
     height: 230px;
-    border: 2px solid yellow;
+    border: 2px solid magenta;
   }
   .hue_rotate {
     width: 565px;
