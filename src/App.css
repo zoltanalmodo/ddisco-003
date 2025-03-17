@@ -90,6 +90,7 @@
   transform-origin: top center;
   font-size: 12px;
   text-align: left;
+  border: 2px solid magenta;
 }
 
 .sizes_container {
@@ -637,6 +638,7 @@ li {
     width: 100vw;
     padding: 0 10px;
     box-sizing: border-box;
+    border: 2px solid red;
   }
 }
 
@@ -699,6 +701,7 @@ li {
     width: 100vw;
     padding: 0 10px;
     box-sizing: border-box;
+    border: 2px solid green;
   }
 }
 
@@ -761,6 +764,7 @@ li {
     width: 100vw;
     padding: 0 10px;
     box-sizing: border-box;
+    border: 2px solid blue;
   }
 }
 
@@ -806,6 +810,7 @@ li {
     width: 100vw;
     padding: 0 10px;
     box-sizing: border-box;
+    border: 2px solid yellow;
   }
 }
 
@@ -851,6 +856,7 @@ li {
     width: 100vw;
     padding: 0 10px;
     box-sizing: border-box;
+    border: 2px solid cyan;
   }
 }
 
