@@ -286,7 +286,11 @@ input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
 
 .social_buttons {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 200px;
+  margin: 0 auto;
 }
 
 .social_button {
