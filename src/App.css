@@ -646,7 +646,6 @@ li {
   .CarouselSize {
     width: min(85vw, 350px); /* Use the smaller of these two values */
     aspect-ratio: 278/120;   /* Maintain aspect ratio instead of fixed height */
-    border: 2px solid purple;
   }
   .hue_rotate {
     width: 278px;
