@@ -153,7 +153,7 @@ export const FormValidation = () => {
         <p className="social_media_text">Follow us on:</p>
           <div className="social_buttons">
             <a
-              href="https://instagram.com/your_account"
+              href="https://www.instagram.com/deedisco_com"
               target="_blank"
               rel="noopener noreferrer"
               className="social_button instagram_button"
@@ -161,23 +161,23 @@ export const FormValidation = () => {
               Instagram
             </a>
             <a
-              href="https://x.com/your_account"
+              href="https://x.com/deedisco_COM"
               target="_blank"
               rel="noopener noreferrer"
               className="social_button twitter_button"
             >
               X
             </a>
-            <a
+            {/* <a
               href="https://discord.gg/your_invite"
               target="_blank"
               rel="noopener noreferrer"
               className="social_button discord_button"
             >
               Discord
-            </a>
+            </a> */}
             <a
-            href="https://t.me/your_channel"
+            href="https://t.me/deedisco_com"
             target="_blank"
             rel="noopener noreferrer"
             className="social_button telegram_button"
