@@ -770,8 +770,8 @@ li {
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 @media (min-width:641px)  {
   .CarouselSize {
-    width: 574px;
-    height: 248px;
+    width: 601px;
+    height: 260px;
     border: 2px solid cyan;
   }
   .hue_rotate {
@@ -816,8 +816,8 @@ li {
 /* tablet, landscape iPad, lo-res laptops ands desktops */
 @media (min-width:961px)  {
   .CarouselSize {
-    width: 565px;
-    height: 244px;
+    width: 532px;
+    height: 230px;
     border: 2px solid yellow;
   }
   .hue_rotate {
