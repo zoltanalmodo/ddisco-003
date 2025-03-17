@@ -176,6 +176,14 @@ export const FormValidation = () => {
             >
               Discord
             </a>
+            <a
+            href="https://t.me/your_channel"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social_button telegram_button"
+          >
+            Telegram
+          </a>
           </div>
       </div>
     </>
