@@ -177,7 +177,7 @@ export const FormValidation = () => {
               Discord
             </a> */}
             <a
-            href="https://t.me/deedisco_com"
+            href="https://t.me/+ewxbywk9N60wZjk0"
             target="_blank"
             rel="noopener noreferrer"
             className="social_button telegram_button"
