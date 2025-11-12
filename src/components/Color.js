@@ -1,8 +1,9 @@
 import React, { useContext } from 'react'
+import AliceCarousel from 'react-alice-carousel'
+import 'react-alice-carousel/lib/alice-carousel.css'
 import Navigation from './Navigation'
 import { GlobalContext } from '../context/GlobalState'
 import { enhanceCarouselItems } from '../utils/carouselHelpers';
-import CarouselWithControls from './CarouselWithControls';
 
 import ddisco_c_001_1 from '../images/c/ddisco_c_001_1.jpg';
 import ddisco_c_001_2 from '../images/c/ddisco_c_001_2.jpg';
@@ -317,7 +318,7 @@ export const Color = () => {
               
               
                 <div style={{ filter: (`hue-rotate(${globalState.degree_001}deg)`) }}>
-                  <CarouselWithControls
+                <AliceCarousel
                     autoPlay={false}
                     autoPlayStrategy={'all'}
                     autoPlayInterval={5000}
@@ -339,7 +340,7 @@ export const Color = () => {
                 </div>
               
                 <div style={{ filter: (`hue-rotate(${globalState.degree_002}deg)`) }}>
-                  <CarouselWithControls
+                <AliceCarousel
                     autoPlay={false}
                     autoPlayStrategy={'all'}
                     autoPlayInterval={5000}
@@ -361,7 +362,7 @@ export const Color = () => {
                 </div>
               
                 <div style={{ filter: (`hue-rotate(${globalState.degree_003}deg)`) }}>
-                  <CarouselWithControls
+                <AliceCarousel
                     autoPlay={false}
                     autoPlayStrategy={'all'}
                     autoPlayInterval={5000}

@@ -1,9 +1,10 @@
 import React, { useContext } from 'react'
+import AliceCarousel from 'react-alice-carousel'
+import 'react-alice-carousel/lib/alice-carousel.css'
 import Navigation from './Navigation';
 
 import { GlobalContext } from '../context/GlobalState'
 import { enhanceCarouselItems } from '../utils/carouselHelpers';
-import CarouselWithControls from './CarouselWithControls';
 
 import ddisco_w_001_1 from '../images/w/ddisco_w_001_1.jpg';
 import ddisco_w_001_2 from '../images/w/ddisco_w_001_2.jpg';
@@ -114,7 +115,7 @@ export const White = () => {
 
           <div className="frame-overlay-dark-grey"></div> {/* Transparent overlay with a frame */}
 
-            <CarouselWithControls
+            <AliceCarousel
               autoPlay={false}
               autoPlayStrategy={'action'}
               autoPlayInterval={5000}
@@ -134,7 +135,7 @@ export const White = () => {
               slideToIndex={globalState.currentIndex_001}
             />
 
-            <CarouselWithControls
+            <AliceCarousel
               autoPlay={false}
               autoPlayStrategy={'action'}
               autoPlayInterval={5000}
@@ -154,7 +155,7 @@ export const White = () => {
               slideToIndex={globalState.currentIndex_002}
             />
             
-            <CarouselWithControls
+            <AliceCarousel
               autoPlay={false}
               autoPlayStrategy={'action'}
               autoPlayInterval={5000}
