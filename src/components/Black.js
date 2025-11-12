@@ -4,6 +4,7 @@ import 'react-alice-carousel/lib/alice-carousel.css'
 import Navigation from './Navigation';
 
 import { GlobalContext } from '../context/GlobalState'
+import { enhanceCarouselItems } from '../utils/carouselHelpers';
 
 import ddisco_b_001_1 from '../images/b/ddisco_b_001_1.jpg';
 import ddisco_b_001_2 from '../images/b/ddisco_b_001_2.jpg';
@@ -133,7 +134,7 @@ export const Black = () => {
               touchTrackingEnabled={true}
               swipeDelta={0.1}
               preventEventOnTouchMove={true}
-              items={galleryItems_001}
+              items={enhanceCarouselItems(galleryItems_001)}
               startIndex={globalState.currentIndex_001}
               onSlideChanged={ (e) => updateIndex_001( e.item ) }
               slideToIndex={globalState.currentIndex_001}
@@ -153,7 +154,7 @@ export const Black = () => {
               touchTrackingEnabled={true}
               swipeDelta={0.1}
               preventEventOnTouchMove={true}
-              items={galleryItems_002}
+              items={enhanceCarouselItems(galleryItems_002)}
               startIndex={globalState.currentIndex_002}
               onSlideChanged={ (e) => updateIndex_002( e.item ) }
               slideToIndex={globalState.currentIndex_002}
@@ -173,7 +174,7 @@ export const Black = () => {
               touchTrackingEnabled={true}
               swipeDelta={0.1}
               preventEventOnTouchMove={true}
-              items={galleryItems_003}
+              items={enhanceCarouselItems(galleryItems_003)}
               startIndex={globalState.currentIndex_003}
               onSlideChanged={ (e) => updateIndex_003( e.item ) }
               slideToIndex={globalState.currentIndex_003}

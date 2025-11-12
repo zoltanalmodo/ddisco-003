@@ -3,6 +3,7 @@ import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
 import Navigation from './Navigation'
 import { GlobalContext } from '../context/GlobalState'
+import { enhanceCarouselItems } from '../utils/carouselHelpers';
 
 import ddisco_c_001_1 from '../images/c/ddisco_c_001_1.jpg';
 import ddisco_c_001_2 from '../images/c/ddisco_c_001_2.jpg';
@@ -331,7 +332,7 @@ export const Color = () => {
                     touchTrackingEnabled={true}
                     swipeDelta={0.1}
                     preventEventOnTouchMove={true}
-                    items={actualItems_001(globalState.currentIndex_001)}
+                    items={enhanceCarouselItems(actualItems_001(globalState.currentIndex_001))}
                     startIndex={globalState.currentIndex_001}
                     slideToIndex={globalState.currentIndex_001}
                     onSlideChanged={ (e) => setDegree_001( e.item * 30) }
@@ -353,7 +354,7 @@ export const Color = () => {
                     touchTrackingEnabled={true}
                     swipeDelta={0.1}
                     preventEventOnTouchMove={true}
-                    items={actualItems_002(globalState.currentIndex_002)}
+                    items={enhanceCarouselItems(actualItems_002(globalState.currentIndex_002))}
                     startIndex={globalState.currentIndex_002}
                     slideToIndex={globalState.currentIndex_002}
                     onSlideChanged={ (e) => setDegree_002( e.item * 30) }
@@ -375,7 +376,7 @@ export const Color = () => {
                     touchTrackingEnabled={true}
                     swipeDelta={0.1}
                     preventEventOnTouchMove={true}
-                    items={actualItems_003(globalState.currentIndex_003)}
+                    items={enhanceCarouselItems(actualItems_003(globalState.currentIndex_003))}
                     startIndex={globalState.currentIndex_003}
                     slideToIndex={globalState.currentIndex_003}
                     onSlideChanged={ (e) => setDegree_003( e.item * 30) }
