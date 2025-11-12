@@ -319,68 +319,41 @@ export const Color = () => {
               
                 <div style={{ filter: (`hue-rotate(${globalState.degree_001}deg)`) }}>
                 <AliceCarousel
-                    autoPlay={false}
-                    autoPlayStrategy={'all'}
-                    autoPlayInterval={5000}
-                    autoPlayDirection={'rtl'}
-                    disableAutoPlayOnAction={true}
-                    infinite={true}
-                    mouseTrackingEnabled={true}
-                    dotsDisabled={true}
-                    buttonsDisabled={true}
-                    swipeDisabled={false}
-                    touchTrackingEnabled={true}
-                    swipeDelta={0.1}
-                    preventEventOnTouchMove={true}
-                    items={enhanceCarouselItems(actualItems_001(globalState.currentIndex_001))}
-                    startIndex={globalState.currentIndex_001}
-                    slideToIndex={globalState.currentIndex_001}
-                    onSlideChanged={ (e) => setDegree_001( e.item * 30) }
-                  />
+                  autoPlay={false}
+                  infinite={true}
+                  mouseTracking={true}
+                  disableDotsControls={true}
+                  disableButtonsControls={true}
+                  items={enhanceCarouselItems(actualItems_001(globalState.currentIndex_001))}
+                  startIndex={globalState.currentIndex_001}
+                  onSlideChanged={ (e) => setDegree_001( e.item * 30) }
+                />
                 </div>
               
                 <div style={{ filter: (`hue-rotate(${globalState.degree_002}deg)`) }}>
                 <AliceCarousel
-                    autoPlay={false}
-                    autoPlayStrategy={'all'}
-                    autoPlayInterval={5000}
-                    autoPlayDirection={'ltr'}
-                    disableAutoPlayOnAction={true}
-                    infinite={true}
-                    mouseTrackingEnabled={true}
-                    dotsDisabled={true}
-                    buttonsDisabled={true}
-                    swipeDisabled={false}
-                    touchTrackingEnabled={true}
-                    swipeDelta={0.1}
-                    preventEventOnTouchMove={true}
-                    items={enhanceCarouselItems(actualItems_002(globalState.currentIndex_002))}
-                    startIndex={globalState.currentIndex_002}
-                    slideToIndex={globalState.currentIndex_002}
-                    onSlideChanged={ (e) => setDegree_002( e.item * 30) }
-                  />
+                  autoPlay={false}
+                  infinite={true}
+                  mouseTracking={true}
+                  disableDotsControls={true}
+                  disableButtonsControls={true}
+                  items={enhanceCarouselItems(actualItems_002(globalState.currentIndex_002))}
+                  startIndex={globalState.currentIndex_002}
+                  onSlideChanged={ (e) => setDegree_002( e.item * 30) }
+                />
                 </div>
               
                 <div style={{ filter: (`hue-rotate(${globalState.degree_003}deg)`) }}>
                 <AliceCarousel
-                    autoPlay={false}
-                    autoPlayStrategy={'all'}
-                    autoPlayInterval={5000}
-                    autoPlayDirection={'rtl'}
-                    disableAutoPlayOnAction={true}
-                    infinite={true}
-                    mouseTrackingEnabled={true}
-                    dotsDisabled={true}
-                    buttonsDisabled={true}
-                    swipeDisabled={false}
-                    touchTrackingEnabled={true}
-                    swipeDelta={0.1}
-                    preventEventOnTouchMove={true}
-                    items={enhanceCarouselItems(actualItems_003(globalState.currentIndex_003))}
-                    startIndex={globalState.currentIndex_003}
-                    slideToIndex={globalState.currentIndex_003}
-                    onSlideChanged={ (e) => setDegree_003( e.item * 30) }
-                  />
+                  autoPlay={false}
+                  infinite={true}
+                  mouseTracking={true}
+                  disableDotsControls={true}
+                  disableButtonsControls={true}
+                  items={enhanceCarouselItems(actualItems_003(globalState.currentIndex_003))}
+                  startIndex={globalState.currentIndex_003}
+                  onSlideChanged={ (e) => setDegree_003( e.item * 30) }
+                />
                 </div>
 
             </div>

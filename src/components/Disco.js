@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from 'react'
+import React, { useEffect, useContext, useCallback } from 'react'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
 import Navigation from './Navigation';
@@ -99,6 +99,15 @@ export const Disco = () => {
 
   } = useContext(GlobalContext);
 
+  const createSlideHandler = useCallback((updateFn) => (event) => {
+    if (typeof event?.item === 'number') {
+      updateFn(event.item);
+    }
+    if (event?.type === 'action' && globalState.autoplay) {
+      toggleAutoplay();
+    }
+  }, [globalState.autoplay, toggleAutoplay]);
+
   useEffect(() => {
     // Set autoplay when the component mounts from globalState.autoplay
    
@@ -137,66 +146,48 @@ export const Disco = () => {
               <div style={{ filter: (`hue-rotate(${globalState.degree_001}deg)`) }}>
                 <AliceCarousel
                   autoPlay={globalState.autoplay}
-                  autoPlayStrategy={'action'}
+                  disableAutoPlayOnAction={true}
                   autoPlayInterval={Math.floor(Math.random() * (3500 - 2500 + 1)) + 2500}
                   autoPlayDirection={'rtl'}
-                  disableAutoPlayOnAction={true}
                   infinite={true}
-                  mouseTrackingEnabled={true}
-                  dotsDisabled={true}
-                  buttonsDisabled={true}
-                  swipeDisabled={false}
-                  touchTrackingEnabled={true}
-                  swipeDelta={0.1}
-                  preventEventOnTouchMove={true}
+                  mouseTracking={true}
+                  disableDotsControls={true}
+                  disableButtonsControls={true}
                   items={enhanceCarouselItems(galleryItems_001)}
                   startIndex={globalState.currentIndex_001}
-                  onSlideChanged={ (e) => updateIndex_001( e.item ) }
-                  slideToIndex={globalState.currentIndex_001}
+                  onSlideChanged={ createSlideHandler(updateIndex_001) }
                 />
               </div>
 
               <div style={{ filter: (`hue-rotate(${globalState.degree_002}deg)`) }}>
                 <AliceCarousel
                   autoPlay={globalState.autoplay}
-                  autoPlayStrategy={'action'}
+                  disableAutoPlayOnAction={true}
                   autoPlayInterval={Math.floor(Math.random() * (3500 - 2500 + 1)) + 2500}
                   autoPlayDirection={'ltr'}
-                  disableAutoPlayOnAction={true}
                   infinite={true}
-                  mouseTrackingEnabled={true}
-                  dotsDisabled={true}
-                  buttonsDisabled={true}
-                  swipeDisabled={false}
-                  touchTrackingEnabled={true}
-                  swipeDelta={0.1}
-                  preventEventOnTouchMove={true}
+                  mouseTracking={true}
+                  disableDotsControls={true}
+                  disableButtonsControls={true}
                   items={enhanceCarouselItems(galleryItems_002)}
                   startIndex={globalState.currentIndex_002}
-                  onSlideChanged={ (e) => updateIndex_002( e.item ) }
-                  slideToIndex={globalState.currentIndex_002}
+                  onSlideChanged={ createSlideHandler(updateIndex_002) }
                 />
               </div>
 
               <div style={{ filter: (`hue-rotate(${globalState.degree_003}deg)`) }}>
                 <AliceCarousel
                   autoPlay={globalState.autoplay}
-                  autoPlayStrategy={'action'}
+                  disableAutoPlayOnAction={true}
                   autoPlayInterval={Math.floor(Math.random() * (3500 - 2500 + 1)) + 2500}
                   autoPlayDirection={'rtl'}
-                  disableAutoPlayOnAction={true}
                   infinite={true}
-                  mouseTrackingEnabled={true}
-                  dotsDisabled={true}
-                  buttonsDisabled={true}
-                  swipeDisabled={false}
-                  touchTrackingEnabled={true}
-                  swipeDelta={0.1}
-                  preventEventOnTouchMove={true}
+                  mouseTracking={true}
+                  disableDotsControls={true}
+                  disableButtonsControls={true}
                   items={enhanceCarouselItems(galleryItems_003)}
                   startIndex={globalState.currentIndex_003}
-                  onSlideChanged={ (e) => updateIndex_003( e.item ) }
-                  slideToIndex={globalState.currentIndex_003}
+                  onSlideChanged={ createSlideHandler(updateIndex_003) }
                 />
               </div>
 
