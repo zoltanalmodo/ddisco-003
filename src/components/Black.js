@@ -1,10 +1,9 @@
 import React, { useContext } from 'react'
-import AliceCarousel from 'react-alice-carousel'
-import 'react-alice-carousel/lib/alice-carousel.css'
 import Navigation from './Navigation';
 
 import { GlobalContext } from '../context/GlobalState'
 import { enhanceCarouselItems } from '../utils/carouselHelpers';
+import CarouselWithControls from './CarouselWithControls';
 
 import ddisco_b_001_1 from '../images/b/ddisco_b_001_1.jpg';
 import ddisco_b_001_2 from '../images/b/ddisco_b_001_2.jpg';
@@ -93,13 +92,12 @@ let galleryItems_003 = [
 export const Black = () => {
 
   const {
+    globalState,
     updateIndex_001,
     updateIndex_002,
-    updateIndex_003 } = useContext(GlobalContext);
-
-  const {
-    globalState
-  } = useContext(GlobalContext); 
+    updateIndex_003,
+    toggleAutoplay,
+  } = useContext(GlobalContext);
 
 
   return (
@@ -120,7 +118,7 @@ export const Black = () => {
 
           <div className="frame-overlay-light-grey"></div> {/* Transparent overlay with a frame */}
 
-            <AliceCarousel 
+            <CarouselWithControls 
               autoPlay={false}
               autoPlayStrategy={'action'}
               autoPlayInterval={5000}
@@ -138,9 +136,10 @@ export const Black = () => {
               startIndex={globalState.currentIndex_001}
               onSlideChanged={ (e) => updateIndex_001( e.item ) }
               slideToIndex={globalState.currentIndex_001}
+              onUserInteraction={toggleAutoplay}
             />
 
-            <AliceCarousel 
+            <CarouselWithControls 
               autoPlay={false}
               autoPlayStrategy={'action'}
               autoPlayInterval={5000}
@@ -158,9 +157,10 @@ export const Black = () => {
               startIndex={globalState.currentIndex_002}
               onSlideChanged={ (e) => updateIndex_002( e.item ) }
               slideToIndex={globalState.currentIndex_002}
+              onUserInteraction={toggleAutoplay}
             />
 
-            <AliceCarousel 
+            <CarouselWithControls 
               autoPlay={false}
               autoPlayStrategy={'action'}
               autoPlayInterval={5000}
@@ -178,6 +178,7 @@ export const Black = () => {
               startIndex={globalState.currentIndex_003}
               onSlideChanged={ (e) => updateIndex_003( e.item ) }
               slideToIndex={globalState.currentIndex_003}
+              onUserInteraction={toggleAutoplay}
             />
             
         </div>

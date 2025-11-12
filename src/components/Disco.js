@@ -1,9 +1,8 @@
 import React, { useEffect, useContext } from 'react'
-import AliceCarousel from 'react-alice-carousel'
-import 'react-alice-carousel/lib/alice-carousel.css'
 import Navigation from './Navigation';
 import { GlobalContext } from '../context/GlobalState'
 import { enhanceCarouselItems } from '../utils/carouselHelpers';
+import CarouselWithControls from './CarouselWithControls';
 
 import ddisco_c_001_1 from '../images/c/ddisco_c_001_1.jpg';
 import ddisco_c_001_2 from '../images/c/ddisco_c_001_2.jpg';
@@ -135,7 +134,7 @@ export const Disco = () => {
             <div className="frame-overlay-dark-grey"></div> {/* Transparent overlay with a frame */}
 
               <div style={{ filter: (`hue-rotate(${globalState.degree_001}deg)`) }}>
-                <AliceCarousel
+                <CarouselWithControls
                   autoPlay={globalState.autoplay}
                   autoPlayStrategy={'action'}
                   autoPlayInterval={Math.floor(Math.random() * (3500 - 2500 + 1)) + 2500}
@@ -153,11 +152,12 @@ export const Disco = () => {
                   startIndex={globalState.currentIndex_001}
                   onSlideChanged={ (e) => updateIndex_001( e.item ) }
                   slideToIndex={globalState.currentIndex_001}
+                  onUserInteraction={toggleAutoplay}
                 />
               </div>
 
               <div style={{ filter: (`hue-rotate(${globalState.degree_002}deg)`) }}>
-                <AliceCarousel
+                <CarouselWithControls
                   autoPlay={globalState.autoplay}
                   autoPlayStrategy={'action'}
                   autoPlayInterval={Math.floor(Math.random() * (3500 - 2500 + 1)) + 2500}
@@ -175,11 +175,12 @@ export const Disco = () => {
                   startIndex={globalState.currentIndex_002}
                   onSlideChanged={ (e) => updateIndex_002( e.item ) }
                   slideToIndex={globalState.currentIndex_002}
+                  onUserInteraction={toggleAutoplay}
                 />
               </div>
 
               <div style={{ filter: (`hue-rotate(${globalState.degree_003}deg)`) }}>
-                <AliceCarousel
+                <CarouselWithControls
                   autoPlay={globalState.autoplay}
                   autoPlayStrategy={'action'}
                   autoPlayInterval={Math.floor(Math.random() * (3500 - 2500 + 1)) + 2500}
@@ -197,6 +198,7 @@ export const Disco = () => {
                   startIndex={globalState.currentIndex_003}
                   onSlideChanged={ (e) => updateIndex_003( e.item ) }
                   slideToIndex={globalState.currentIndex_003}
+                  onUserInteraction={toggleAutoplay}
                 />
               </div>
 
