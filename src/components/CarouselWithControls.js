@@ -1,4 +1,4 @@
-import React, { useCallback, useRef } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
@@ -12,13 +12,19 @@ const getClientX = (event) => {
   return event.clientX;
 };
 
-const DRAG_THRESHOLD = 40;
+const SWIPE_THRESHOLD = 35;
 
-const CarouselWithControls = ({ onUserInteraction, className = '', ...props }) => {
+const CarouselWithControls = ({ className = '', autoPlay = false, onUserInteraction, ...props }) => {
   const carouselRef = useRef(null);
   const pointerStart = useRef(null);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(autoPlay);
 
-  const notify = useCallback(() => {
+  useEffect(() => {
+    setIsAutoPlaying(autoPlay);
+  }, [autoPlay]);
+
+  const stopAutoPlay = useCallback(() => {
+    setIsAutoPlaying(false);
     if (onUserInteraction) {
       onUserInteraction();
     }
@@ -40,19 +46,31 @@ const CarouselWithControls = ({ onUserInteraction, className = '', ...props }) =
     pointerStart.current = getClientX(event);
   };
 
+  const resetPointer = () => {
+    pointerStart.current = null;
+  };
+
   const handlePointerUp = (event) => {
-    if (pointerStart.current === null) return;
+    if (pointerStart.current === null) {
+      return;
+    }
     const endX = getClientX(event);
     const delta = endX - pointerStart.current;
-    notify();
-    if (Math.abs(delta) >= DRAG_THRESHOLD) {
+    stopAutoPlay();
+
+    if (Math.abs(delta) >= SWIPE_THRESHOLD) {
       delta > 0 ? slidePrev() : slideNext();
     } else {
       const rect = event.currentTarget.getBoundingClientRect();
       const relativeX = endX - rect.left;
-      relativeX <= rect.width / 2 ? slidePrev() : slideNext();
+      if (relativeX <= rect.width / 2) {
+        slidePrev();
+      } else {
+        slideNext();
+      }
     }
-    pointerStart.current = null;
+
+    resetPointer();
   };
 
   return (
@@ -60,20 +78,17 @@ const CarouselWithControls = ({ onUserInteraction, className = '', ...props }) =
       className={`carousel-shell ${className}`.trim()}
       onMouseDown={handlePointerDown}
       onMouseUp={handlePointerUp}
-      onMouseLeave={() => {
-        pointerStart.current = null;
-      }}
+      onMouseLeave={resetPointer}
       onTouchStart={handlePointerDown}
       onTouchEnd={handlePointerUp}
-      onTouchCancel={() => {
-        pointerStart.current = null;
-      }}
+      onTouchCancel={resetPointer}
     >
       <AliceCarousel
         ref={carouselRef}
         mouseTrackingEnabled={false}
         touchTrackingEnabled={false}
         swipeDisabled={true}
+        autoPlay={isAutoPlaying}
         {...props}
       />
     </div>

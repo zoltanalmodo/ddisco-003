@@ -92,12 +92,13 @@ let galleryItems_003 = [
 export const Black = () => {
 
   const {
-    globalState,
     updateIndex_001,
     updateIndex_002,
-    updateIndex_003,
-    toggleAutoplay,
-  } = useContext(GlobalContext);
+    updateIndex_003 } = useContext(GlobalContext);
+
+  const {
+    globalState
+  } = useContext(GlobalContext); 
 
 
   return (
@@ -136,7 +137,6 @@ export const Black = () => {
               startIndex={globalState.currentIndex_001}
               onSlideChanged={ (e) => updateIndex_001( e.item ) }
               slideToIndex={globalState.currentIndex_001}
-              onUserInteraction={toggleAutoplay}
             />
 
             <CarouselWithControls 
@@ -157,7 +157,6 @@ export const Black = () => {
               startIndex={globalState.currentIndex_002}
               onSlideChanged={ (e) => updateIndex_002( e.item ) }
               slideToIndex={globalState.currentIndex_002}
-              onUserInteraction={toggleAutoplay}
             />
 
             <CarouselWithControls 
@@ -178,7 +177,6 @@ export const Black = () => {
               startIndex={globalState.currentIndex_003}
               onSlideChanged={ (e) => updateIndex_003( e.item ) }
               slideToIndex={globalState.currentIndex_003}
-              onUserInteraction={toggleAutoplay}
             />
             
         </div>

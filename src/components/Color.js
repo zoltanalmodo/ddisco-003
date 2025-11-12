@@ -1,5 +1,4 @@
 import React, { useContext } from 'react'
-import 'react-alice-carousel/lib/alice-carousel.css'
 import Navigation from './Navigation'
 import { GlobalContext } from '../context/GlobalState'
 import { enhanceCarouselItems } from '../utils/carouselHelpers';
@@ -290,7 +289,6 @@ export const Color = () => {
     setDegree_001,
     setDegree_002,
     setDegree_003,
-    toggleAutoplay,
   } = useContext(GlobalContext);
 
 
@@ -337,7 +335,6 @@ export const Color = () => {
                     startIndex={globalState.currentIndex_001}
                     slideToIndex={globalState.currentIndex_001}
                     onSlideChanged={ (e) => setDegree_001( e.item * 30) }
-                    onUserInteraction={toggleAutoplay}
                   />
                 </div>
               
@@ -360,7 +357,6 @@ export const Color = () => {
                     startIndex={globalState.currentIndex_002}
                     slideToIndex={globalState.currentIndex_002}
                     onSlideChanged={ (e) => setDegree_002( e.item * 30) }
-                    onUserInteraction={toggleAutoplay}
                   />
                 </div>
               
@@ -383,7 +379,6 @@ export const Color = () => {
                     startIndex={globalState.currentIndex_003}
                     slideToIndex={globalState.currentIndex_003}
                     onSlideChanged={ (e) => setDegree_003( e.item * 30) }
-                    onUserInteraction={toggleAutoplay}
                   />
                 </div>
 

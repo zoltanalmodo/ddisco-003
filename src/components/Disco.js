@@ -152,7 +152,6 @@ export const Disco = () => {
                   startIndex={globalState.currentIndex_001}
                   onSlideChanged={ (e) => updateIndex_001( e.item ) }
                   slideToIndex={globalState.currentIndex_001}
-                  onUserInteraction={toggleAutoplay}
                 />
               </div>
 
@@ -175,7 +174,6 @@ export const Disco = () => {
                   startIndex={globalState.currentIndex_002}
                   onSlideChanged={ (e) => updateIndex_002( e.item ) }
                   slideToIndex={globalState.currentIndex_002}
-                  onUserInteraction={toggleAutoplay}
                 />
               </div>
 
@@ -198,7 +196,6 @@ export const Disco = () => {
                   startIndex={globalState.currentIndex_003}
                   onSlideChanged={ (e) => updateIndex_003( e.item ) }
                   slideToIndex={globalState.currentIndex_003}
-                  onUserInteraction={toggleAutoplay}
                 />
               </div>
 

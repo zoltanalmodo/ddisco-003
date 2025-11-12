@@ -94,7 +94,6 @@ export const White = () => {
     updateIndex_001,
     updateIndex_002,
     updateIndex_003,
-    toggleAutoplay,
   } = useContext(GlobalContext);
 
   return (
@@ -133,7 +132,6 @@ export const White = () => {
               startIndex={globalState.currentIndex_001}
               onSlideChanged={ (e) => updateIndex_001( e.item ) }
               slideToIndex={globalState.currentIndex_001}
-              onUserInteraction={toggleAutoplay}
             />
 
             <CarouselWithControls
@@ -154,7 +152,6 @@ export const White = () => {
               startIndex={globalState.currentIndex_002}
               onSlideChanged={ (e) => updateIndex_002( e.item ) }
               slideToIndex={globalState.currentIndex_002}
-              onUserInteraction={toggleAutoplay}
             />
             
             <CarouselWithControls
@@ -175,7 +172,6 @@ export const White = () => {
               startIndex={globalState.currentIndex_003}
               onSlideChanged={ (e) => updateIndex_003( e.item ) }
               slideToIndex={globalState.currentIndex_003}
-              onUserInteraction={toggleAutoplay}
             />
 
         </div>
