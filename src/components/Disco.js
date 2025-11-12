@@ -146,15 +146,20 @@ export const Disco = () => {
               <div style={{ filter: (`hue-rotate(${globalState.degree_001}deg)`) }}>
                 <AliceCarousel
                   autoPlay={globalState.autoplay}
-                  disableAutoPlayOnAction={true}
+                  autoPlayStrategy={'action'}
                   autoPlayInterval={Math.floor(Math.random() * (3500 - 2500 + 1)) + 2500}
                   autoPlayDirection={'rtl'}
+                  disableAutoPlayOnAction={true}
                   infinite={true}
-                  mouseTracking={true}
-                  disableDotsControls={true}
-                  disableButtonsControls={true}
+                  mouseTrackingEnabled={true}
+                  touchTrackingEnabled={true}
+                  dotsDisabled={true}
+                  buttonsDisabled={true}
+                  swipeDisabled={false}
+                  preventEventOnTouchMove={true}
                   items={enhanceCarouselItems(galleryItems_001)}
                   startIndex={globalState.currentIndex_001}
+                  slideToIndex={globalState.currentIndex_001}
                   onSlideChanged={ createSlideHandler(updateIndex_001) }
                 />
               </div>
@@ -162,15 +167,20 @@ export const Disco = () => {
               <div style={{ filter: (`hue-rotate(${globalState.degree_002}deg)`) }}>
                 <AliceCarousel
                   autoPlay={globalState.autoplay}
-                  disableAutoPlayOnAction={true}
+                  autoPlayStrategy={'action'}
                   autoPlayInterval={Math.floor(Math.random() * (3500 - 2500 + 1)) + 2500}
                   autoPlayDirection={'ltr'}
+                  disableAutoPlayOnAction={true}
                   infinite={true}
-                  mouseTracking={true}
-                  disableDotsControls={true}
-                  disableButtonsControls={true}
+                  mouseTrackingEnabled={true}
+                  touchTrackingEnabled={true}
+                  dotsDisabled={true}
+                  buttonsDisabled={true}
+                  swipeDisabled={false}
+                  preventEventOnTouchMove={true}
                   items={enhanceCarouselItems(galleryItems_002)}
                   startIndex={globalState.currentIndex_002}
+                  slideToIndex={globalState.currentIndex_002}
                   onSlideChanged={ createSlideHandler(updateIndex_002) }
                 />
               </div>
@@ -178,15 +188,20 @@ export const Disco = () => {
               <div style={{ filter: (`hue-rotate(${globalState.degree_003}deg)`) }}>
                 <AliceCarousel
                   autoPlay={globalState.autoplay}
-                  disableAutoPlayOnAction={true}
+                  autoPlayStrategy={'action'}
                   autoPlayInterval={Math.floor(Math.random() * (3500 - 2500 + 1)) + 2500}
                   autoPlayDirection={'rtl'}
+                  disableAutoPlayOnAction={true}
                   infinite={true}
-                  mouseTracking={true}
-                  disableDotsControls={true}
-                  disableButtonsControls={true}
+                  mouseTrackingEnabled={true}
+                  touchTrackingEnabled={true}
+                  dotsDisabled={true}
+                  buttonsDisabled={true}
+                  swipeDisabled={false}
+                  preventEventOnTouchMove={true}
                   items={enhanceCarouselItems(galleryItems_003)}
                   startIndex={globalState.currentIndex_003}
+                  slideToIndex={globalState.currentIndex_003}
                   onSlideChanged={ createSlideHandler(updateIndex_003) }
                 />
               </div>
