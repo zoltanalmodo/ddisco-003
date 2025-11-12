@@ -73,6 +73,13 @@ const CarouselWithControls = ({ className = '', autoPlay = false, onUserInteract
     resetPointer();
   };
 
+  const sanitizedProps = {
+    ...props,
+    mouseTrackingEnabled: true,
+    touchTrackingEnabled: true,
+    swipeDisabled: false,
+  };
+
   return (
     <div
       className={`carousel-shell ${className}`.trim()}
@@ -85,11 +92,8 @@ const CarouselWithControls = ({ className = '', autoPlay = false, onUserInteract
     >
       <AliceCarousel
         ref={carouselRef}
-        mouseTrackingEnabled={false}
-        touchTrackingEnabled={false}
-        swipeDisabled={true}
         autoPlay={isAutoPlaying}
-        {...props}
+        {...sanitizedProps}
       />
     </div>
   );
