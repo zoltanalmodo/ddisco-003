@@ -333,7 +333,6 @@ export const Color = () => {
                   preventEventOnTouchMove={true}
                   items={enhanceCarouselItems(actualItems_001(globalState.currentIndex_001))}
                   startIndex={globalState.currentIndex_001}
-                  slideToIndex={globalState.currentIndex_001}
                   onSlideChanged={ (e) => setDegree_001( e.item * 30) }
                 />
                 </div>
@@ -354,7 +353,6 @@ export const Color = () => {
                   preventEventOnTouchMove={true}
                   items={enhanceCarouselItems(actualItems_002(globalState.currentIndex_002))}
                   startIndex={globalState.currentIndex_002}
-                  slideToIndex={globalState.currentIndex_002}
                   onSlideChanged={ (e) => setDegree_002( e.item * 30) }
                 />
                 </div>
@@ -375,7 +373,6 @@ export const Color = () => {
                   preventEventOnTouchMove={true}
                   items={enhanceCarouselItems(actualItems_003(globalState.currentIndex_003))}
                   startIndex={globalState.currentIndex_003}
-                  slideToIndex={globalState.currentIndex_003}
                   onSlideChanged={ (e) => setDegree_003( e.item * 30) }
                 />
                 </div>
