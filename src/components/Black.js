@@ -1,10 +1,9 @@
 import React, { useContext } from 'react'
-import AliceCarousel from 'react-alice-carousel'
-import 'react-alice-carousel/lib/alice-carousel.css'
 import Navigation from './Navigation';
 
 import { GlobalContext } from '../context/GlobalState'
 import { enhanceCarouselItems } from '../utils/carouselHelpers';
+import CarouselWithControls from './CarouselWithControls';
 
 import ddisco_b_001_1 from '../images/b/ddisco_b_001_1.jpg';
 import ddisco_b_001_2 from '../images/b/ddisco_b_001_2.jpg';
@@ -120,55 +119,37 @@ export const Black = () => {
 
           <div className="frame-overlay-light-grey"></div> {/* Transparent overlay with a frame */}
 
-            <AliceCarousel 
+            <CarouselWithControls 
               autoPlay={false}
               autoPlayStrategy={'action'}
               autoPlayInterval={5000}
               autoPlayDirection={'rtl'}
               disableAutoPlayOnAction={true}
               infinite={true}
-              mouseTrackingEnabled={true}
-              touchTrackingEnabled={true}
-              dotsDisabled={true}
-              buttonsDisabled={true}
-              swipeDisabled={false}
-              preventEventOnTouchMove={true}
               items={enhanceCarouselItems(galleryItems_001)}
               startIndex={globalState.currentIndex_001}
               onSlideChanged={ (e) => updateIndex_001( e.item ) }
             />
 
-            <AliceCarousel 
+            <CarouselWithControls 
               autoPlay={false}
               autoPlayStrategy={'action'}
               autoPlayInterval={5000}
               autoPlayDirection={'ltr'}
               disableAutoPlayOnAction={true}
               infinite={true}
-              mouseTrackingEnabled={true}
-              touchTrackingEnabled={true}
-              dotsDisabled={true}
-              buttonsDisabled={true}
-              swipeDisabled={false}
-              preventEventOnTouchMove={true}
               items={enhanceCarouselItems(galleryItems_002)}
               startIndex={globalState.currentIndex_002}
               onSlideChanged={ (e) => updateIndex_002( e.item ) }
             />
 
-            <AliceCarousel 
+            <CarouselWithControls 
               autoPlay={false}
               autoPlayStrategy={'action'}
               autoPlayInterval={5000}
               autoPlayDirection={'rtl'}
               disableAutoPlayOnAction={true}
               infinite={true}
-              mouseTrackingEnabled={true}
-              touchTrackingEnabled={true}
-              dotsDisabled={true}
-              buttonsDisabled={true}
-              swipeDisabled={false}
-              preventEventOnTouchMove={true}
               items={enhanceCarouselItems(galleryItems_003)}
               startIndex={globalState.currentIndex_003}
               onSlideChanged={ (e) => updateIndex_003( e.item ) }
