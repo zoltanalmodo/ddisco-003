@@ -35,6 +35,13 @@ const CarouselWithControls = ({
     }
   }, [onUserInteraction]);
 
+  const emitSlideChanged = useCallback(() => {
+    if (onSlideChanged && carouselRef.current) {
+      const currentIndex = carouselRef.current.state?.currentIndex ?? 0;
+      onSlideChanged({ item: currentIndex });
+    }
+  }, [onSlideChanged]);
+
   const slidePrev = useCallback(() => {
     if (carouselRef.current) {
       carouselRef.current.slidePrev();
@@ -77,13 +84,6 @@ const CarouselWithControls = ({
     }
     dragState.current.isDragging = false;
   };
-
-  const emitSlideChanged = useCallback(() => {
-    if (onSlideChanged && carouselRef.current) {
-      const currentIndex = carouselRef.current.state?.currentIndex ?? 0;
-      onSlideChanged({ item: currentIndex });
-    }
-  }, [onSlideChanged]);
 
   const sanitizedProps = {
     ...props,
