@@ -127,6 +127,12 @@ export const Black = () => {
               autoPlayDirection={'rtl'}
               disableAutoPlayOnAction={true}
               infinite={true}
+              mouseTrackingEnabled={true}
+              touchTrackingEnabled={true}
+              dotsDisabled={true}
+              buttonsDisabled={true}
+              swipeDisabled={false}
+              preventEventOnTouchMove={true}
               items={enhanceCarouselItems(galleryItems_001)}
               startIndex={globalState.currentIndex_001}
               onSlideChanged={ (e) => updateIndex_001( e.item ) }
@@ -139,6 +145,12 @@ export const Black = () => {
               autoPlayDirection={'ltr'}
               disableAutoPlayOnAction={true}
               infinite={true}
+              mouseTrackingEnabled={true}
+              touchTrackingEnabled={true}
+              dotsDisabled={true}
+              buttonsDisabled={true}
+              swipeDisabled={false}
+              preventEventOnTouchMove={true}
               items={enhanceCarouselItems(galleryItems_002)}
               startIndex={globalState.currentIndex_002}
               onSlideChanged={ (e) => updateIndex_002( e.item ) }
@@ -151,6 +163,12 @@ export const Black = () => {
               autoPlayDirection={'rtl'}
               disableAutoPlayOnAction={true}
               infinite={true}
+              mouseTrackingEnabled={true}
+              touchTrackingEnabled={true}
+              dotsDisabled={true}
+              buttonsDisabled={true}
+              swipeDisabled={false}
+              preventEventOnTouchMove={true}
               items={enhanceCarouselItems(galleryItems_003)}
               startIndex={globalState.currentIndex_003}
               onSlideChanged={ (e) => updateIndex_003( e.item ) }

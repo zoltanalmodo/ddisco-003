@@ -180,10 +180,10 @@ export const GlobalProvider = ({ children }) => {
     });
   }
 
-  const toggleAutoplay = useCallback(() => {
+  const toggleAutoplay = useCallback((value) => {
     dispatch({
       type: 'TOGGLE_AUTOPLAY',
-      payload: false,
+      payload: value,
     });
   }, [dispatch]);
 

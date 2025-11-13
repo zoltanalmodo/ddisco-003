@@ -106,13 +106,11 @@ export const Disco = () => {
   }, []);
 
   useEffect(() => {
-    // Set autoplay when the component mounts from globalState.autoplay
-   
+    toggleAutoplay(true);
     return () => {
-      // Set autoplay to false when the component unmounts
-      toggleAutoplay();
+      toggleAutoplay(false);
     };
-  }, [toggleAutoplay]);  // No need for `toggleAutoplay` in the dependency array
+  }, [toggleAutoplay]);
 
   
 
