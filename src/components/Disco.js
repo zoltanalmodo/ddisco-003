@@ -1,8 +1,9 @@
 import React, { useEffect, useContext, useCallback } from 'react'
+import AliceCarousel from 'react-alice-carousel'
+import 'react-alice-carousel/lib/alice-carousel.css'
 import Navigation from './Navigation';
 import { GlobalContext } from '../context/GlobalState'
 import { enhanceCarouselItems } from '../utils/carouselHelpers';
-import CarouselWithControls from './CarouselWithControls';
 
 import ddisco_c_001_1 from '../images/c/ddisco_c_001_1.jpg';
 import ddisco_c_001_2 from '../images/c/ddisco_c_001_2.jpg';
@@ -137,16 +138,22 @@ export const Disco = () => {
             
 {/* before alice carousel update */}
 
-            <div className="frame-overlay-dark-grey"></div> {/* Transparent overlay with a frame */}
+              <div className="frame-overlay-dark-grey"></div> {/* Transparent overlay with a frame */}
 
               <div style={{ filter: (`hue-rotate(${globalState.degree_001}deg)`) }}>
-                <CarouselWithControls
+                <AliceCarousel
                   autoPlay={globalState.autoplay}
                   autoPlayStrategy={'action'}
                   autoPlayInterval={Math.floor(Math.random() * (3500 - 2500 + 1)) + 2500}
                   autoPlayDirection={'rtl'}
                   disableAutoPlayOnAction={true}
                   infinite={true}
+                  mouseTrackingEnabled={true}
+                  touchTrackingEnabled={true}
+                  dotsDisabled={true}
+                  buttonsDisabled={true}
+                  swipeDisabled={false}
+                  preventEventOnTouchMove={true}
                   items={enhanceCarouselItems(galleryItems_001)}
                   startIndex={globalState.currentIndex_001}
                   onSlideChanged={ createSlideHandler(updateIndex_001) }
@@ -154,13 +161,19 @@ export const Disco = () => {
               </div>
 
               <div style={{ filter: (`hue-rotate(${globalState.degree_002}deg)`) }}>
-                <CarouselWithControls
+                <AliceCarousel
                   autoPlay={globalState.autoplay}
                   autoPlayStrategy={'action'}
                   autoPlayInterval={Math.floor(Math.random() * (3500 - 2500 + 1)) + 2500}
                   autoPlayDirection={'ltr'}
                   disableAutoPlayOnAction={true}
                   infinite={true}
+                  mouseTrackingEnabled={true}
+                  touchTrackingEnabled={true}
+                  dotsDisabled={true}
+                  buttonsDisabled={true}
+                  swipeDisabled={false}
+                  preventEventOnTouchMove={true}
                   items={enhanceCarouselItems(galleryItems_002)}
                   startIndex={globalState.currentIndex_002}
                   onSlideChanged={ createSlideHandler(updateIndex_002) }
@@ -168,13 +181,19 @@ export const Disco = () => {
               </div>
 
               <div style={{ filter: (`hue-rotate(${globalState.degree_003}deg)`) }}>
-                <CarouselWithControls
+                <AliceCarousel
                   autoPlay={globalState.autoplay}
                   autoPlayStrategy={'action'}
                   autoPlayInterval={Math.floor(Math.random() * (3500 - 2500 + 1)) + 2500}
                   autoPlayDirection={'rtl'}
                   disableAutoPlayOnAction={true}
                   infinite={true}
+                  mouseTrackingEnabled={true}
+                  touchTrackingEnabled={true}
+                  dotsDisabled={true}
+                  buttonsDisabled={true}
+                  swipeDisabled={false}
+                  preventEventOnTouchMove={true}
                   items={enhanceCarouselItems(galleryItems_003)}
                   startIndex={globalState.currentIndex_003}
                   onSlideChanged={ createSlideHandler(updateIndex_003) }

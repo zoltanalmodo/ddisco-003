@@ -1,8 +1,9 @@
 import React, { useContext } from 'react'
+import AliceCarousel from 'react-alice-carousel'
+import 'react-alice-carousel/lib/alice-carousel.css'
 import Navigation from './Navigation'
 import { GlobalContext } from '../context/GlobalState'
 import { enhanceCarouselItems } from '../utils/carouselHelpers';
-import CarouselWithControls from './CarouselWithControls';
 
 import ddisco_c_001_1 from '../images/c/ddisco_c_001_1.jpg';
 import ddisco_c_001_2 from '../images/c/ddisco_c_001_2.jpg';
@@ -317,13 +318,19 @@ export const Color = () => {
               
               
                 <div style={{ filter: (`hue-rotate(${globalState.degree_001}deg)`) }}>
-                <CarouselWithControls
+                <AliceCarousel
                   autoPlay={false}
                   autoPlayStrategy={'all'}
                   autoPlayInterval={5000}
                   autoPlayDirection={'rtl'}
                   disableAutoPlayOnAction={true}
                   infinite={true}
+                  mouseTrackingEnabled={true}
+                  touchTrackingEnabled={true}
+                  dotsDisabled={true}
+                  buttonsDisabled={true}
+                  swipeDisabled={false}
+                  preventEventOnTouchMove={true}
                   items={enhanceCarouselItems(actualItems_001(globalState.currentIndex_001))}
                   startIndex={globalState.currentIndex_001}
                   onSlideChanged={ (e) => setDegree_001( e.item * 30) }
@@ -331,13 +338,19 @@ export const Color = () => {
                 </div>
               
                 <div style={{ filter: (`hue-rotate(${globalState.degree_002}deg)`) }}>
-                <CarouselWithControls
+                <AliceCarousel
                   autoPlay={false}
                   autoPlayStrategy={'all'}
                   autoPlayInterval={5000}
                   autoPlayDirection={'ltr'}
                   disableAutoPlayOnAction={true}
                   infinite={true}
+                  mouseTrackingEnabled={true}
+                  touchTrackingEnabled={true}
+                  dotsDisabled={true}
+                  buttonsDisabled={true}
+                  swipeDisabled={false}
+                  preventEventOnTouchMove={true}
                   items={enhanceCarouselItems(actualItems_002(globalState.currentIndex_002))}
                   startIndex={globalState.currentIndex_002}
                   onSlideChanged={ (e) => setDegree_002( e.item * 30) }
@@ -345,13 +358,19 @@ export const Color = () => {
                 </div>
               
                 <div style={{ filter: (`hue-rotate(${globalState.degree_003}deg)`) }}>
-                <CarouselWithControls
+                <AliceCarousel
                   autoPlay={false}
                   autoPlayStrategy={'all'}
                   autoPlayInterval={5000}
                   autoPlayDirection={'rtl'}
                   disableAutoPlayOnAction={true}
                   infinite={true}
+                  mouseTrackingEnabled={true}
+                  touchTrackingEnabled={true}
+                  dotsDisabled={true}
+                  buttonsDisabled={true}
+                  swipeDisabled={false}
+                  preventEventOnTouchMove={true}
                   items={enhanceCarouselItems(actualItems_003(globalState.currentIndex_003))}
                   startIndex={globalState.currentIndex_003}
                   onSlideChanged={ (e) => setDegree_003( e.item * 30) }
