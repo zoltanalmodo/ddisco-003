@@ -11,7 +11,13 @@ const getPosition = (event) => {
 
 const SWIPE_THRESHOLD = 30;
 
-const CarouselWithControls = ({ className = '', onUserInteraction, autoPlay = false, ...props }) => {
+const CarouselWithControls = ({
+  className = '',
+  onUserInteraction,
+  onSlideChanged,
+  autoPlay = false,
+  ...props
+}) => {
   const carouselRef = useRef(null);
   const dragState = useRef({ startX: 0, isDragging: false });
   const hasStoppedRef = useRef(false);
@@ -32,14 +38,16 @@ const CarouselWithControls = ({ className = '', onUserInteraction, autoPlay = fa
   const slidePrev = useCallback(() => {
     if (carouselRef.current) {
       carouselRef.current.slidePrev();
+      emitSlideChanged();
     }
-  }, []);
+  }, [emitSlideChanged]);
 
   const slideNext = useCallback(() => {
     if (carouselRef.current) {
       carouselRef.current.slideNext();
+      emitSlideChanged();
     }
-  }, []);
+  }, [emitSlideChanged]);
 
   const handlePointerDown = (event) => {
     dragState.current = { startX: getPosition(event), isDragging: true };
@@ -70,6 +78,13 @@ const CarouselWithControls = ({ className = '', onUserInteraction, autoPlay = fa
     dragState.current.isDragging = false;
   };
 
+  const emitSlideChanged = useCallback(() => {
+    if (onSlideChanged && carouselRef.current) {
+      const currentIndex = carouselRef.current.state?.currentIndex ?? 0;
+      onSlideChanged({ item: currentIndex });
+    }
+  }, [onSlideChanged]);
+
   const sanitizedProps = {
     ...props,
     mouseTrackingEnabled: false,
@@ -77,6 +92,7 @@ const CarouselWithControls = ({ className = '', onUserInteraction, autoPlay = fa
     swipeDisabled: true,
     disableDotsControls: true,
     disableButtonsControls: true,
+    onSlideChanged: emitSlideChanged,
   };
 
   return (
