@@ -1,4 +1,4 @@
-import React, { useRef, useCallback } from 'react';
+import React, { useRef, useCallback, useEffect, useState } from 'react';
 import AliceCarousel from 'react-alice-carousel';
 import 'react-alice-carousel/lib/alice-carousel.css';
 
@@ -11,9 +11,17 @@ const getPosition = (event) => {
 
 const SWIPE_THRESHOLD = 30;
 
-const CarouselWithControls = ({ className = '', onUserInteraction, ...props }) => {
+const CarouselWithControls = ({ className = '', onUserInteraction, autoPlay = false, ...props }) => {
   const carouselRef = useRef(null);
   const dragState = useRef({ startX: 0, isDragging: false });
+  const hasStoppedRef = useRef(false);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(autoPlay);
+
+  useEffect(() => {
+    if (!hasStoppedRef.current) {
+      setIsAutoPlaying(autoPlay);
+    }
+  }, [autoPlay]);
 
   const notifyInteraction = useCallback(() => {
     if (onUserInteraction) {
@@ -48,6 +56,8 @@ const CarouselWithControls = ({ className = '', onUserInteraction, ...props }) =
   const handlePointerUp = (event) => {
     if (!dragState.current.isDragging) return;
     const delta = getPosition(event) - dragState.current.startX;
+    hasStoppedRef.current = true;
+    setIsAutoPlaying(false);
     notifyInteraction();
     if (Math.abs(delta) >= SWIPE_THRESHOLD) {
       delta > 0 ? slidePrev() : slideNext();
@@ -85,7 +95,11 @@ const CarouselWithControls = ({ className = '', onUserInteraction, ...props }) =
         dragState.current.isDragging = false;
       }}
     >
-      <AliceCarousel ref={carouselRef} {...sanitizedProps} />
+      <AliceCarousel
+        ref={carouselRef}
+        autoPlay={isAutoPlaying}
+        {...sanitizedProps}
+      />
     </div>
   );
 };

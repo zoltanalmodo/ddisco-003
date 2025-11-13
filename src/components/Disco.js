@@ -104,12 +104,6 @@ export const Disco = () => {
     }
   }, []);
 
-  const handleUserInteraction = useCallback(() => {
-    if (globalState.autoplay) {
-      toggleAutoplay();
-    }
-  }, [globalState.autoplay, toggleAutoplay]);
-
   useEffect(() => {
     // Set autoplay when the component mounts from globalState.autoplay
    
@@ -156,7 +150,6 @@ export const Disco = () => {
                   items={enhanceCarouselItems(galleryItems_001)}
                   startIndex={globalState.currentIndex_001}
                   onSlideChanged={ createSlideHandler(updateIndex_001) }
-                  onUserInteraction={handleUserInteraction}
                 />
               </div>
 
@@ -171,7 +164,6 @@ export const Disco = () => {
                   items={enhanceCarouselItems(galleryItems_002)}
                   startIndex={globalState.currentIndex_002}
                   onSlideChanged={ createSlideHandler(updateIndex_002) }
-                  onUserInteraction={handleUserInteraction}
                 />
               </div>
 
@@ -186,7 +178,6 @@ export const Disco = () => {
                   items={enhanceCarouselItems(galleryItems_003)}
                   startIndex={globalState.currentIndex_003}
                   onSlideChanged={ createSlideHandler(updateIndex_003) }
-                  onUserInteraction={handleUserInteraction}
                 />
               </div>
 
