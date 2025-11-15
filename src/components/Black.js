@@ -135,7 +135,7 @@ export const Black = () => {
               preventEventOnTouchMove={true}
               items={enhanceCarouselItems(galleryItems_001)}
               startIndex={globalState.currentIndex_001}
-              onSlideChanged={ (e) => updateIndex_001( e.item ) }
+              onSlideChanged={ (e) => updateIndex_001( e.slide ) }
             />
 
             <AliceCarousel 
@@ -153,7 +153,7 @@ export const Black = () => {
               preventEventOnTouchMove={true}
               items={enhanceCarouselItems(galleryItems_002)}
               startIndex={globalState.currentIndex_002}
-              onSlideChanged={ (e) => updateIndex_002( e.item ) }
+              onSlideChanged={ (e) => updateIndex_002( e.slide ) }
             />
 
             <AliceCarousel 
@@ -171,7 +171,7 @@ export const Black = () => {
               preventEventOnTouchMove={true}
               items={enhanceCarouselItems(galleryItems_003)}
               startIndex={globalState.currentIndex_003}
-              onSlideChanged={ (e) => updateIndex_003( e.item ) }
+              onSlideChanged={ (e) => updateIndex_003( e.slide ) }
             />
             
         </div>
