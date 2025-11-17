@@ -151,7 +151,6 @@ export const Disco = () => {
                   items={galleryItems_001}
                   startIndex={globalState.currentIndex_001}
                   onSlideChanged={ (e) => updateIndex_001( e.item ) }
-                  slideToIndex={globalState.currentIndex_001}
                 />
               </div>
 
@@ -173,7 +172,6 @@ export const Disco = () => {
                   items={galleryItems_002}
                   startIndex={globalState.currentIndex_002}
                   onSlideChanged={ (e) => updateIndex_002( e.item ) }
-                  slideToIndex={globalState.currentIndex_002}
                 />
               </div>
 
@@ -195,7 +193,6 @@ export const Disco = () => {
                   items={galleryItems_003}
                   startIndex={globalState.currentIndex_003}
                   onSlideChanged={ (e) => updateIndex_003( e.item ) }
-                  slideToIndex={globalState.currentIndex_003}
                 />
               </div>
 
