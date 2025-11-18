@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from 'react'
+import React, { useEffect, useContext, useRef } from 'react'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
 import Navigation from './Navigation';
@@ -98,6 +98,10 @@ export const Disco = () => {
 
   } = useContext(GlobalContext);
 
+  const carouselRef_001 = useRef(null);
+  const carouselRef_002 = useRef(null);
+  const carouselRef_003 = useRef(null);
+
   useEffect(() => {
     // Set autoplay when the component mounts from globalState.autoplay
    
@@ -105,7 +109,26 @@ export const Disco = () => {
       // Set autoplay to false when the component unmounts
       toggleAutoplay();
     };
-  }, [toggleAutoplay]);  // No need for `toggleAutoplay` in the dependency array
+  }, [toggleAutoplay]);
+
+  // Sync carousel position only on mount or when navigating from other pages
+  useEffect(() => {
+    if (carouselRef_001.current && globalState.currentIndex_001 !== undefined) {
+      carouselRef_001.current.slideTo(globalState.currentIndex_001);
+    }
+  }, []); // Only on mount
+
+  useEffect(() => {
+    if (carouselRef_002.current && globalState.currentIndex_002 !== undefined) {
+      carouselRef_002.current.slideTo(globalState.currentIndex_002);
+    }
+  }, []); // Only on mount
+
+  useEffect(() => {
+    if (carouselRef_003.current && globalState.currentIndex_003 !== undefined) {
+      carouselRef_003.current.slideTo(globalState.currentIndex_003);
+    }
+  }, []); // Only on mount
 
   
 
@@ -135,6 +158,7 @@ export const Disco = () => {
 
               <div style={{ filter: (`hue-rotate(${globalState.degree_001}deg)`) }}>
                 <AliceCarousel
+                  ref={carouselRef_001}
                   autoPlay={globalState.autoplay}
                   autoPlayStrategy={'action'}
                   autoPlayInterval={Math.floor(Math.random() * (3500 - 2500 + 1)) + 2500}
@@ -149,15 +173,19 @@ export const Disco = () => {
                   swipeDelta={50}
                   preventEventOnTouchMove={false}
                   items={galleryItems_001}
-                  startIndex={globalState.currentIndex_001}
-                  onSlideChanged={ (e) => updateIndex_001( e.item ) }
+                  onSlideChanged={(e) => {
+                    updateIndex_001(e.item);
+                  }}
                   disableDotsControls={true}
                   disableButtonsControls={true}
+                  animationDuration={400}
+                  animationType="slide"
                 />
               </div>
 
               <div style={{ filter: (`hue-rotate(${globalState.degree_002}deg)`) }}>
                 <AliceCarousel
+                  ref={carouselRef_002}
                   autoPlay={globalState.autoplay}
                   autoPlayStrategy={'action'}
                   autoPlayInterval={Math.floor(Math.random() * (3500 - 2500 + 1)) + 2500}
@@ -172,15 +200,19 @@ export const Disco = () => {
                   swipeDelta={50}
                   preventEventOnTouchMove={false}
                   items={galleryItems_002}
-                  startIndex={globalState.currentIndex_002}
-                  onSlideChanged={ (e) => updateIndex_002( e.item ) }
+                  onSlideChanged={(e) => {
+                    updateIndex_002(e.item);
+                  }}
                   disableDotsControls={true}
                   disableButtonsControls={true}
+                  animationDuration={400}
+                  animationType="slide"
                 />
               </div>
 
               <div style={{ filter: (`hue-rotate(${globalState.degree_003}deg)`) }}>
                 <AliceCarousel
+                  ref={carouselRef_003}
                   autoPlay={globalState.autoplay}
                   autoPlayStrategy={'action'}
                   autoPlayInterval={Math.floor(Math.random() * (3500 - 2500 + 1)) + 2500}
@@ -195,10 +227,13 @@ export const Disco = () => {
                   swipeDelta={50}
                   preventEventOnTouchMove={false}
                   items={galleryItems_003}
-                  startIndex={globalState.currentIndex_003}
-                  onSlideChanged={ (e) => updateIndex_003( e.item ) }
+                  onSlideChanged={(e) => {
+                    updateIndex_003(e.item);
+                  }}
                   disableDotsControls={true}
                   disableButtonsControls={true}
+                  animationDuration={400}
+                  animationType="slide"
                 />
               </div>
 
