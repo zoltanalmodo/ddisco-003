@@ -155,7 +155,7 @@ export const Disco = () => {
                     // Force browser reflow to ensure transform completes
                     requestAnimationFrame(() => {
                       if (document.body) {
-                        document.body.offsetHeight; // Force reflow
+                        void document.body.offsetHeight; // Force reflow
                       }
                     });
                   }}
@@ -186,7 +186,7 @@ export const Disco = () => {
                     // Force browser reflow to ensure transform completes
                     requestAnimationFrame(() => {
                       if (document.body) {
-                        document.body.offsetHeight; // Force reflow
+                        void document.body.offsetHeight; // Force reflow
                       }
                     });
                   }}
@@ -217,7 +217,7 @@ export const Disco = () => {
                     // Force browser reflow to ensure transform completes
                     requestAnimationFrame(() => {
                       if (document.body) {
-                        document.body.offsetHeight; // Force reflow
+                        void document.body.offsetHeight; // Force reflow
                       }
                     });
                   }}
