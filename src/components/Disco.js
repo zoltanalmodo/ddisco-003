@@ -42,48 +42,48 @@ import ddisco_c_012_2 from '../images/c/ddisco_c_012_2.jpg';
 import ddisco_c_012_3 from '../images/c/ddisco_c_012_3.jpg';
 
 let galleryItems_001 = [
-  <img alt='c_001_1' index={0} src={ddisco_c_001_1} className="CarouselSize" />,
-  <img alt='c_002_1' index={1} src={ddisco_c_002_1} className="CarouselSize" />,
-  <img alt='c_003_1' index={2} src={ddisco_c_003_1} className="CarouselSize" />,
-  <img alt='c_004_1' index={3} src={ddisco_c_004_1} className="CarouselSize" />,
-  <img alt='c_005_1' index={4} src={ddisco_c_005_1} className="CarouselSize" />,
-  <img alt='c_006_1' index={5} src={ddisco_c_006_1} className="CarouselSize" />,
-  <img alt='c_007_1' index={6} src={ddisco_c_007_1} className="CarouselSize" />,
-  <img alt='c_008_1' index={7} src={ddisco_c_008_1} className="CarouselSize" />,
-  <img alt='c_009_1' index={8} src={ddisco_c_009_1} className="CarouselSize" />,
-  <img alt='c_010_1' index={9} src={ddisco_c_010_1} className="CarouselSize" />,
-  <img alt='c_011_1' index={10} src={ddisco_c_011_1} className="CarouselSize" />,
-  <img alt='c_012_1' index={11} src={ddisco_c_012_1} className="CarouselSize" />
+  <img key='c_001_1' alt='c_001_1' index={0} src={ddisco_c_001_1} className="CarouselSize" draggable={false} />,
+  <img key='c_002_1' alt='c_002_1' index={1} src={ddisco_c_002_1} className="CarouselSize" draggable={false} />,
+  <img key='c_003_1' alt='c_003_1' index={2} src={ddisco_c_003_1} className="CarouselSize" draggable={false} />,
+  <img key='c_004_1' alt='c_004_1' index={3} src={ddisco_c_004_1} className="CarouselSize" draggable={false} />,
+  <img key='c_005_1' alt='c_005_1' index={4} src={ddisco_c_005_1} className="CarouselSize" draggable={false} />,
+  <img key='c_006_1' alt='c_006_1' index={5} src={ddisco_c_006_1} className="CarouselSize" draggable={false} />,
+  <img key='c_007_1' alt='c_007_1' index={6} src={ddisco_c_007_1} className="CarouselSize" draggable={false} />,
+  <img key='c_008_1' alt='c_008_1' index={7} src={ddisco_c_008_1} className="CarouselSize" draggable={false} />,
+  <img key='c_009_1' alt='c_009_1' index={8} src={ddisco_c_009_1} className="CarouselSize" draggable={false} />,
+  <img key='c_010_1' alt='c_010_1' index={9} src={ddisco_c_010_1} className="CarouselSize" draggable={false} />,
+  <img key='c_011_1' alt='c_011_1' index={10} src={ddisco_c_011_1} className="CarouselSize" draggable={false} />,
+  <img key='c_012_1' alt='c_012_1' index={11} src={ddisco_c_012_1} className="CarouselSize" draggable={false} />
 ]
 
 let galleryItems_002 = [
-  <img alt='c_001_2' index={0} src={ddisco_c_001_2} className="CarouselSize" />,
-  <img alt='c_002_2' index={1} src={ddisco_c_002_2} className="CarouselSize" />,
-  <img alt='c_003_2' index={2} src={ddisco_c_003_2} className="CarouselSize" />,
-  <img alt='c_004_2' index={3} src={ddisco_c_004_2} className="CarouselSize" />,
-  <img alt='c_005_2' index={4} src={ddisco_c_005_2} className="CarouselSize" />,
-  <img alt='c_006_2' index={5} src={ddisco_c_006_2} className="CarouselSize" />,
-  <img alt='c_007_2' index={6} src={ddisco_c_007_2} className="CarouselSize" />,
-  <img alt='c_008_2' index={7} src={ddisco_c_008_2} className="CarouselSize" />,
-  <img alt='c_009_2' index={8} src={ddisco_c_009_2} className="CarouselSize" />,
-  <img alt='c_010_2' index={9} src={ddisco_c_010_2} className="CarouselSize" />,
-  <img alt='c_011_2' index={10} src={ddisco_c_011_2} className="CarouselSize" />,
-  <img alt='c_012_2' index={11} src={ddisco_c_012_2} className="CarouselSize" />
+  <img key='c_001_2' alt='c_001_2' index={0} src={ddisco_c_001_2} className="CarouselSize" draggable={false} />,
+  <img key='c_002_2' alt='c_002_2' index={1} src={ddisco_c_002_2} className="CarouselSize" draggable={false} />,
+  <img key='c_003_2' alt='c_003_2' index={2} src={ddisco_c_003_2} className="CarouselSize" draggable={false} />,
+  <img key='c_004_2' alt='c_004_2' index={3} src={ddisco_c_004_2} className="CarouselSize" draggable={false} />,
+  <img key='c_005_2' alt='c_005_2' index={4} src={ddisco_c_005_2} className="CarouselSize" draggable={false} />,
+  <img key='c_006_2' alt='c_006_2' index={5} src={ddisco_c_006_2} className="CarouselSize" draggable={false} />,
+  <img key='c_007_2' alt='c_007_2' index={6} src={ddisco_c_007_2} className="CarouselSize" draggable={false} />,
+  <img key='c_008_2' alt='c_008_2' index={7} src={ddisco_c_008_2} className="CarouselSize" draggable={false} />,
+  <img key='c_009_2' alt='c_009_2' index={8} src={ddisco_c_009_2} className="CarouselSize" draggable={false} />,
+  <img key='c_010_2' alt='c_010_2' index={9} src={ddisco_c_010_2} className="CarouselSize" draggable={false} />,
+  <img key='c_011_2' alt='c_011_2' index={10} src={ddisco_c_011_2} className="CarouselSize" draggable={false} />,
+  <img key='c_012_2' alt='c_012_2' index={11} src={ddisco_c_012_2} className="CarouselSize" draggable={false} />
 ];
 
 let galleryItems_003 = [
-  <img alt='c_001_3' index={0} src={ddisco_c_001_3} className="CarouselSize" />,
-  <img alt='c_002_3' index={1} src={ddisco_c_002_3} className="CarouselSize" />,
-  <img alt='c_003_3' index={2} src={ddisco_c_003_3} className="CarouselSize" />,
-  <img alt='c_004_3' index={3} src={ddisco_c_004_3} className="CarouselSize" />,
-  <img alt='c_005_3' index={4} src={ddisco_c_005_3} className="CarouselSize" />,
-  <img alt='c_006_3' index={5} src={ddisco_c_006_3} className="CarouselSize" />,
-  <img alt='c_007_3' index={6} src={ddisco_c_007_3} className="CarouselSize" />,
-  <img alt='c_008_3' index={7} src={ddisco_c_008_3} className="CarouselSize" />,
-  <img alt='c_009_3' index={8} src={ddisco_c_009_3} className="CarouselSize" />,
-  <img alt='c_010_3' index={9} src={ddisco_c_010_3} className="CarouselSize" />,
-  <img alt='c_011_3' index={10} src={ddisco_c_011_3} className="CarouselSize" />,
-  <img alt='c_012_3' index={11} src={ddisco_c_012_3} className="CarouselSize" />
+  <img key='c_001_3' alt='c_001_3' index={0} src={ddisco_c_001_3} className="CarouselSize" draggable={false} />,
+  <img key='c_002_3' alt='c_002_3' index={1} src={ddisco_c_002_3} className="CarouselSize" draggable={false} />,
+  <img key='c_003_3' alt='c_003_3' index={2} src={ddisco_c_003_3} className="CarouselSize" draggable={false} />,
+  <img key='c_004_3' alt='c_004_3' index={3} src={ddisco_c_004_3} className="CarouselSize" draggable={false} />,
+  <img key='c_005_3' alt='c_005_3' index={4} src={ddisco_c_005_3} className="CarouselSize" draggable={false} />,
+  <img key='c_006_3' alt='c_006_3' index={5} src={ddisco_c_006_3} className="CarouselSize" draggable={false} />,
+  <img key='c_007_3' alt='c_007_3' index={6} src={ddisco_c_007_3} className="CarouselSize" draggable={false} />,
+  <img key='c_008_3' alt='c_008_3' index={7} src={ddisco_c_008_3} className="CarouselSize" draggable={false} />,
+  <img key='c_009_3' alt='c_009_3' index={8} src={ddisco_c_009_3} className="CarouselSize" draggable={false} />,
+  <img key='c_010_3' alt='c_010_3' index={9} src={ddisco_c_010_3} className="CarouselSize" draggable={false} />,
+  <img key='c_011_3' alt='c_011_3' index={10} src={ddisco_c_011_3} className="CarouselSize" draggable={false} />,
+  <img key='c_012_3' alt='c_012_3' index={11} src={ddisco_c_012_3} className="CarouselSize" draggable={false} />
 ]
 
 export const Disco = () => {
@@ -146,11 +146,13 @@ export const Disco = () => {
                   buttonsDisabled={true}
                   swipeDisabled={false}
                   touchTrackingEnabled={true}
-                  swipeDelta={0.1}
-                  preventEventOnTouchMove={true}
+                  swipeDelta={50}
+                  preventEventOnTouchMove={false}
                   items={galleryItems_001}
                   startIndex={globalState.currentIndex_001}
                   onSlideChanged={ (e) => updateIndex_001( e.item ) }
+                  disableDotsControls={true}
+                  disableButtonsControls={true}
                 />
               </div>
 
@@ -167,11 +169,13 @@ export const Disco = () => {
                   buttonsDisabled={true}
                   swipeDisabled={false}
                   touchTrackingEnabled={true}
-                  swipeDelta={0.1}
-                  preventEventOnTouchMove={true}
+                  swipeDelta={50}
+                  preventEventOnTouchMove={false}
                   items={galleryItems_002}
                   startIndex={globalState.currentIndex_002}
                   onSlideChanged={ (e) => updateIndex_002( e.item ) }
+                  disableDotsControls={true}
+                  disableButtonsControls={true}
                 />
               </div>
 
@@ -188,11 +192,13 @@ export const Disco = () => {
                   buttonsDisabled={true}
                   swipeDisabled={false}
                   touchTrackingEnabled={true}
-                  swipeDelta={0.1}
-                  preventEventOnTouchMove={true}
+                  swipeDelta={50}
+                  preventEventOnTouchMove={false}
                   items={galleryItems_003}
                   startIndex={globalState.currentIndex_003}
                   onSlideChanged={ (e) => updateIndex_003( e.item ) }
+                  disableDotsControls={true}
+                  disableButtonsControls={true}
                 />
               </div>
 

@@ -2,6 +2,22 @@
   box-sizing: border-box;
 }
 
+/* Prevent image selection and dragging in carousels */
+.CarouselSize {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  pointer-events: auto;
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
 .body_black {
   text-align: center;
   height: 100vh;
@@ -430,6 +446,10 @@ nav {
 .carousel-container {
   position: relative;
   margin-bottom: 80px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
 .frame-overlay-dark-grey {
