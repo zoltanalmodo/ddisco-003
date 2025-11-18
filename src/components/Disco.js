@@ -147,7 +147,7 @@ export const Disco = () => {
                   swipeDisabled={false}
                   touchTrackingEnabled={true}
                   swipeDelta={10}
-                  preventEventOnTouchMove={true}
+                  preventEventOnTouchMove={false}
                   items={galleryItems_001}
                   startIndex={globalState.currentIndex_001}
                   onSlideChanged={ (e) => updateIndex_001( e.item ) }
@@ -170,7 +170,7 @@ export const Disco = () => {
                   swipeDisabled={false}
                   touchTrackingEnabled={true}
                   swipeDelta={10}
-                  preventEventOnTouchMove={true}
+                  preventEventOnTouchMove={false}
                   items={galleryItems_002}
                   startIndex={globalState.currentIndex_002}
                   onSlideChanged={ (e) => updateIndex_002( e.item ) }
@@ -193,7 +193,7 @@ export const Disco = () => {
                   swipeDisabled={false}
                   touchTrackingEnabled={true}
                   swipeDelta={10}
-                  preventEventOnTouchMove={true}
+                  preventEventOnTouchMove={false}
                   items={galleryItems_003}
                   startIndex={globalState.currentIndex_003}
                   onSlideChanged={ (e) => updateIndex_003( e.item ) }
