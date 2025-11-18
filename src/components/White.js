@@ -126,7 +126,7 @@ export const White = () => {
               buttonsDisabled={true}
               swipeDisabled={false}
               touchTrackingEnabled={true}
-              swipeDelta={0.1}
+                  swipeDelta={10}
               preventEventOnTouchMove={true}
               items={galleryItems_001}
               startIndex={globalState.currentIndex_001}
@@ -146,7 +146,7 @@ export const White = () => {
               buttonsDisabled={true}
               swipeDisabled={false}
               touchTrackingEnabled={true}
-              swipeDelta={0.1}
+                  swipeDelta={10}
               preventEventOnTouchMove={true}
               items={galleryItems_002}
               startIndex={globalState.currentIndex_002}
@@ -166,7 +166,7 @@ export const White = () => {
               buttonsDisabled={true}
               swipeDisabled={false}
               touchTrackingEnabled={true}
-              swipeDelta={0.1}
+                  swipeDelta={10}
               preventEventOnTouchMove={true}
               items={galleryItems_003}
               startIndex={globalState.currentIndex_003}
