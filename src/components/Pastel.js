@@ -319,7 +319,7 @@ export const Pastel = () => {
                   buttonsDisabled={true}
                   swipeDisabled={false}
                   touchTrackingEnabled={true}
-                  swipeDelta={10}
+                  swipeDelta={1}
                   preventEventOnTouchMove={true}
 
                   items={actualItems_001(globalState.currentIndex_001)}
@@ -347,7 +347,7 @@ export const Pastel = () => {
                   buttonsDisabled={true}
                   swipeDisabled={false}
                   touchTrackingEnabled={true}
-                  swipeDelta={10}
+                  swipeDelta={1}
                   preventEventOnTouchMove={true}
 
                   items={actualItems_002(globalState.currentIndex_002)}
@@ -375,7 +375,7 @@ export const Pastel = () => {
                   buttonsDisabled={true}
                   swipeDisabled={false}
                   touchTrackingEnabled={true}
-                  swipeDelta={10}
+                  swipeDelta={1}
                   preventEventOnTouchMove={true}
 
                   items={actualItems_003(globalState.currentIndex_003)}

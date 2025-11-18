@@ -146,7 +146,7 @@ export const Disco = () => {
                   buttonsDisabled={true}
                   swipeDisabled={false}
                   touchTrackingEnabled={true}
-                  swipeDelta={10}
+                  swipeDelta={1}
                   preventEventOnTouchMove={true}
                   items={galleryItems_001}
                   startIndex={globalState.currentIndex_001}
@@ -169,7 +169,7 @@ export const Disco = () => {
                   buttonsDisabled={true}
                   swipeDisabled={false}
                   touchTrackingEnabled={true}
-                  swipeDelta={10}
+                  swipeDelta={1}
                   preventEventOnTouchMove={true}
                   items={galleryItems_002}
                   startIndex={globalState.currentIndex_002}
@@ -192,7 +192,7 @@ export const Disco = () => {
                   buttonsDisabled={true}
                   swipeDisabled={false}
                   touchTrackingEnabled={true}
-                  swipeDelta={10}
+                  swipeDelta={1}
                   preventEventOnTouchMove={true}
                   items={galleryItems_003}
                   startIndex={globalState.currentIndex_003}
