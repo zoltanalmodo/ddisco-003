@@ -131,7 +131,7 @@ export const Black = () => {
               buttonsDisabled={true}
               swipeDisabled={false}
               touchTrackingEnabled={true}
-              swipeDelta={1}
+              swipeDelta={10}
               preventEventOnTouchMove={true}
               items={galleryItems_001}
               startIndex={globalState.currentIndex_001}
@@ -151,7 +151,7 @@ export const Black = () => {
               buttonsDisabled={true}
               swipeDisabled={false}
               touchTrackingEnabled={true}
-              swipeDelta={1}
+              swipeDelta={10}
               preventEventOnTouchMove={true}
               items={galleryItems_002}
               startIndex={globalState.currentIndex_002}
@@ -171,7 +171,7 @@ export const Black = () => {
               buttonsDisabled={true}
               swipeDisabled={false}
               touchTrackingEnabled={true}
-              swipeDelta={1}
+              swipeDelta={10}
               preventEventOnTouchMove={true}
               items={galleryItems_003}
               startIndex={globalState.currentIndex_003}

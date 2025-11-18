@@ -329,7 +329,7 @@ export const Color = () => {
                     buttonsDisabled={true}
                     swipeDisabled={false}
                     touchTrackingEnabled={true}
-                    swipeDelta={1}
+                    swipeDelta={10}
                     preventEventOnTouchMove={true}
                     items={actualItems_001(globalState.currentIndex_001)}
                     startIndex={globalState.currentIndex_001}
@@ -351,7 +351,7 @@ export const Color = () => {
                     buttonsDisabled={true}
                     swipeDisabled={false}
                     touchTrackingEnabled={true}
-                    swipeDelta={1}
+                    swipeDelta={10}
                     preventEventOnTouchMove={true}
                     items={actualItems_002(globalState.currentIndex_002)}
                     startIndex={globalState.currentIndex_002}
@@ -373,7 +373,7 @@ export const Color = () => {
                     buttonsDisabled={true}
                     swipeDisabled={false}
                     touchTrackingEnabled={true}
-                    swipeDelta={1}
+                    swipeDelta={10}
                     preventEventOnTouchMove={true}
                     items={actualItems_003(globalState.currentIndex_003)}
                     startIndex={globalState.currentIndex_003}
