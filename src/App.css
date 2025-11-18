@@ -450,17 +450,6 @@ nav {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  touch-action: pan-y;
-  -webkit-touch-callout: none;
-}
-
-/* Ensure carousel wrapper handles mouse events properly */
-.carousel-container > div {
-  will-change: transform;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  transform: translateZ(0);
-  -webkit-transform: translateZ(0);
 }
 
 .frame-overlay-dark-grey {
