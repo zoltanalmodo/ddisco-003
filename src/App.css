@@ -455,9 +455,12 @@ nav {
 /* Carousel navigation buttons */
 .carousel-with-nav {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+}
+
+.carousel-with-nav > div {
+  display: block;
+  width: 100%;
 }
 
 .carousel-nav-button {
@@ -474,11 +477,30 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.2s ease;
+  text-decoration: none;
+  border-bottom: none !important;
+  outline: none;
 }
 
+.carousel-nav-button::after {
+  display: none !important;
+  content: none !important;
+}
+
+.carousel-nav-button:focus,
+.carousel-nav-button:active,
 .carousel-nav-button:hover {
-  background-color: rgba(0, 0, 0, 0.02);
+  background-color: transparent;
+  border-bottom: none !important;
+  text-decoration: none;
+  outline: none;
+}
+
+.carousel-nav-button:focus::after,
+.carousel-nav-button:active::after,
+.carousel-nav-button:hover::after {
+  display: none !important;
+  content: none !important;
 }
 
 .carousel-nav-left {
@@ -503,10 +525,8 @@ nav {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-}
-
-.carousel-nav-button:hover .carousel-nav-arrow {
-  color: hsla(0, 0%, 50%, 0.8);
+  text-decoration: none;
+  border-bottom: none !important;
 }
 
 .frame-overlay-dark-grey {
