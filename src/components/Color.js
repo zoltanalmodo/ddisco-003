@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useRef } from 'react'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
 import Navigation from './Navigation'
@@ -291,40 +291,62 @@ export const Color = () => {
     setDegree_003,
   } = useContext(GlobalContext);
 
+  const carouselRef_001 = useRef(null);
+  const carouselRef_002 = useRef(null);
+  const carouselRef_003 = useRef(null);
+
   const handlePrev_001 = () => {
-    const currentDegree = globalState.degree_001;
-    const newDegree = currentDegree - 30;
-    setDegree_001(newDegree);
+    if (carouselRef_001.current) {
+      const currentDegree = globalState.degree_001;
+      const currentIndex = Math.round(currentDegree / 30);
+      const newIndex = currentIndex > 0 ? currentIndex - 1 : 11;
+      carouselRef_001.current.slideTo(newIndex);
+    }
   };
 
   const handleNext_001 = () => {
-    const currentDegree = globalState.degree_001;
-    const newDegree = currentDegree + 30;
-    setDegree_001(newDegree);
+    if (carouselRef_001.current) {
+      const currentDegree = globalState.degree_001;
+      const currentIndex = Math.round(currentDegree / 30);
+      const newIndex = currentIndex < 11 ? currentIndex + 1 : 0;
+      carouselRef_001.current.slideTo(newIndex);
+    }
   };
 
   const handlePrev_002 = () => {
-    const currentDegree = globalState.degree_002;
-    const newDegree = currentDegree - 30;
-    setDegree_002(newDegree);
+    if (carouselRef_002.current) {
+      const currentDegree = globalState.degree_002;
+      const currentIndex = Math.round(currentDegree / 30);
+      const newIndex = currentIndex > 0 ? currentIndex - 1 : 11;
+      carouselRef_002.current.slideTo(newIndex);
+    }
   };
 
   const handleNext_002 = () => {
-    const currentDegree = globalState.degree_002;
-    const newDegree = currentDegree + 30;
-    setDegree_002(newDegree);
+    if (carouselRef_002.current) {
+      const currentDegree = globalState.degree_002;
+      const currentIndex = Math.round(currentDegree / 30);
+      const newIndex = currentIndex < 11 ? currentIndex + 1 : 0;
+      carouselRef_002.current.slideTo(newIndex);
+    }
   };
 
   const handlePrev_003 = () => {
-    const currentDegree = globalState.degree_003;
-    const newDegree = currentDegree - 30;
-    setDegree_003(newDegree);
+    if (carouselRef_003.current) {
+      const currentDegree = globalState.degree_003;
+      const currentIndex = Math.round(currentDegree / 30);
+      const newIndex = currentIndex > 0 ? currentIndex - 1 : 11;
+      carouselRef_003.current.slideTo(newIndex);
+    }
   };
 
   const handleNext_003 = () => {
-    const currentDegree = globalState.degree_003;
-    const newDegree = currentDegree + 30;
-    setDegree_003(newDegree);
+    if (carouselRef_003.current) {
+      const currentDegree = globalState.degree_003;
+      const currentIndex = Math.round(currentDegree / 30);
+      const newIndex = currentIndex < 11 ? currentIndex + 1 : 0;
+      carouselRef_003.current.slideTo(newIndex);
+    }
   };
 
   return (
@@ -361,6 +383,7 @@ export const Color = () => {
                 </button>
                 <div style={{ filter: (`hue-rotate(${globalState.degree_001}deg)`) }}>
                   <AliceCarousel
+                    ref={carouselRef_001}
                     autoPlay={false}
                     autoPlayStrategy={'all'}
                     autoPlayInterval={5000}
@@ -401,6 +424,7 @@ export const Color = () => {
                 </button>
                 <div style={{ filter: (`hue-rotate(${globalState.degree_002}deg)`) }}>
                   <AliceCarousel
+                    ref={carouselRef_002}
                     autoPlay={false}
                     autoPlayStrategy={'all'}
                     autoPlayInterval={5000}
@@ -441,6 +465,7 @@ export const Color = () => {
                 </button>
                 <div style={{ filter: (`hue-rotate(${globalState.degree_003}deg)`) }}>
                   <AliceCarousel
+                    ref={carouselRef_003}
                     autoPlay={false}
                     autoPlayStrategy={'all'}
                     autoPlayInterval={5000}
