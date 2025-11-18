@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useRef } from 'react'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
 import Navigation from './Navigation';
@@ -96,6 +96,64 @@ export const White = () => {
     updateIndex_003,
   } = useContext(GlobalContext);
 
+  const carouselRef_001 = useRef(null);
+  const carouselRef_002 = useRef(null);
+  const carouselRef_003 = useRef(null);
+
+  const handlePrev_001 = () => {
+    if (carouselRef_001.current) {
+      const currentIndex = globalState.currentIndex_001;
+      const newIndex = currentIndex > 0 ? currentIndex - 1 : 11;
+      carouselRef_001.current.slideTo(newIndex);
+      updateIndex_001(newIndex);
+    }
+  };
+
+  const handleNext_001 = () => {
+    if (carouselRef_001.current) {
+      const currentIndex = globalState.currentIndex_001;
+      const newIndex = currentIndex < 11 ? currentIndex + 1 : 0;
+      carouselRef_001.current.slideTo(newIndex);
+      updateIndex_001(newIndex);
+    }
+  };
+
+  const handlePrev_002 = () => {
+    if (carouselRef_002.current) {
+      const currentIndex = globalState.currentIndex_002;
+      const newIndex = currentIndex > 0 ? currentIndex - 1 : 11;
+      carouselRef_002.current.slideTo(newIndex);
+      updateIndex_002(newIndex);
+    }
+  };
+
+  const handleNext_002 = () => {
+    if (carouselRef_002.current) {
+      const currentIndex = globalState.currentIndex_002;
+      const newIndex = currentIndex < 11 ? currentIndex + 1 : 0;
+      carouselRef_002.current.slideTo(newIndex);
+      updateIndex_002(newIndex);
+    }
+  };
+
+  const handlePrev_003 = () => {
+    if (carouselRef_003.current) {
+      const currentIndex = globalState.currentIndex_003;
+      const newIndex = currentIndex > 0 ? currentIndex - 1 : 11;
+      carouselRef_003.current.slideTo(newIndex);
+      updateIndex_003(newIndex);
+    }
+  };
+
+  const handleNext_003 = () => {
+    if (carouselRef_003.current) {
+      const currentIndex = globalState.currentIndex_003;
+      const newIndex = currentIndex < 11 ? currentIndex + 1 : 0;
+      carouselRef_003.current.slideTo(newIndex);
+      updateIndex_003(newIndex);
+    }
+  };
+
   return (
     
     <div className='body_white'>
@@ -114,65 +172,122 @@ export const White = () => {
 
           <div className="frame-overlay-dark-grey"></div> {/* Transparent overlay with a frame */}
 
-            <AliceCarousel
-              autoPlay={false}
-              autoPlayStrategy={'action'}
-              autoPlayInterval={5000}
-              autoPlayDirection={'rtl'}
-              disableAutoPlayOnAction={true}
-              infinite={true}
-              mouseTrackingEnabled={true}
-              dotsDisabled={true}
-              buttonsDisabled={true}
-              swipeDisabled={false}
-              touchTrackingEnabled={true}
+              <div className="carousel-with-nav">
+                <button 
+                  className="carousel-nav-button carousel-nav-left"
+                  onClick={handlePrev_001}
+                  aria-label="Previous image"
+                >
+                  <span className="carousel-nav-arrow">‹</span>
+                </button>
+                <AliceCarousel
+                  ref={carouselRef_001}
+                  autoPlay={false}
+                  autoPlayStrategy={'action'}
+                  autoPlayInterval={5000}
+                  autoPlayDirection={'rtl'}
+                  disableAutoPlayOnAction={true}
+                  infinite={true}
+                  mouseTrackingEnabled={true}
+                  dotsDisabled={true}
+                  buttonsDisabled={true}
+                  swipeDisabled={false}
+                  touchTrackingEnabled={true}
                   swipeDelta={10}
-              preventEventOnTouchMove={true}
-              items={galleryItems_001}
-              startIndex={globalState.currentIndex_001}
-              onSlideChanged={ (e) => updateIndex_001( e.item ) }
-              slideToIndex={globalState.currentIndex_001}
-            />
+                  preventEventOnTouchMove={true}
+                  items={galleryItems_001}
+                  startIndex={globalState.currentIndex_001}
+                  onSlideChanged={ (e) => updateIndex_001( e.item ) }
+                  slideToIndex={globalState.currentIndex_001}
+                  disableDotsControls={true}
+                  disableButtonsControls={true}
+                />
+                <button 
+                  className="carousel-nav-button carousel-nav-right"
+                  onClick={handleNext_001}
+                  aria-label="Next image"
+                >
+                  <span className="carousel-nav-arrow">›</span>
+                </button>
+              </div>
 
-            <AliceCarousel
-              autoPlay={false}
-              autoPlayStrategy={'action'}
-              autoPlayInterval={5000}
-              autoPlayDirection={'ltr'}
-              disableAutoPlayOnAction={true}
-              infinite={true}
-              mouseTrackingEnabled={true}
-              dotsDisabled={true}
-              buttonsDisabled={true}
-              swipeDisabled={false}
-              touchTrackingEnabled={true}
+              <div className="carousel-with-nav">
+                <button 
+                  className="carousel-nav-button carousel-nav-left"
+                  onClick={handlePrev_002}
+                  aria-label="Previous image"
+                >
+                  <span className="carousel-nav-arrow">‹</span>
+                </button>
+                <AliceCarousel
+                  ref={carouselRef_002}
+                  autoPlay={false}
+                  autoPlayStrategy={'action'}
+                  autoPlayInterval={5000}
+                  autoPlayDirection={'ltr'}
+                  disableAutoPlayOnAction={true}
+                  infinite={true}
+                  mouseTrackingEnabled={true}
+                  dotsDisabled={true}
+                  buttonsDisabled={true}
+                  swipeDisabled={false}
+                  touchTrackingEnabled={true}
                   swipeDelta={10}
-              preventEventOnTouchMove={true}
-              items={galleryItems_002}
-              startIndex={globalState.currentIndex_002}
-              onSlideChanged={ (e) => updateIndex_002( e.item ) }
-              slideToIndex={globalState.currentIndex_002}
-            />
-            
-            <AliceCarousel
-              autoPlay={false}
-              autoPlayStrategy={'action'}
-              autoPlayInterval={5000}
-              autoPlayDirection={'rtl'}
-              disableAutoPlayOnAction={true}
-              infinite={true}
-              mouseTrackingEnabled={true}
-              dotsDisabled={true}
-              buttonsDisabled={true}
-              swipeDisabled={false}
-              touchTrackingEnabled={true}
+                  preventEventOnTouchMove={true}
+                  items={galleryItems_002}
+                  startIndex={globalState.currentIndex_002}
+                  onSlideChanged={ (e) => updateIndex_002( e.item ) }
+                  slideToIndex={globalState.currentIndex_002}
+                  disableDotsControls={true}
+                  disableButtonsControls={true}
+                />
+                <button 
+                  className="carousel-nav-button carousel-nav-right"
+                  onClick={handleNext_002}
+                  aria-label="Next image"
+                >
+                  <span className="carousel-nav-arrow">›</span>
+                </button>
+              </div>
+
+              <div className="carousel-with-nav">
+                <button 
+                  className="carousel-nav-button carousel-nav-left"
+                  onClick={handlePrev_003}
+                  aria-label="Previous image"
+                >
+                  <span className="carousel-nav-arrow">‹</span>
+                </button>
+                <AliceCarousel
+                  ref={carouselRef_003}
+                  autoPlay={false}
+                  autoPlayStrategy={'action'}
+                  autoPlayInterval={5000}
+                  autoPlayDirection={'rtl'}
+                  disableAutoPlayOnAction={true}
+                  infinite={true}
+                  mouseTrackingEnabled={true}
+                  dotsDisabled={true}
+                  buttonsDisabled={true}
+                  swipeDisabled={false}
+                  touchTrackingEnabled={true}
                   swipeDelta={10}
-              preventEventOnTouchMove={true}
-              items={galleryItems_003}
-              startIndex={globalState.currentIndex_003}
-              onSlideChanged={ (e) => updateIndex_003( e.item ) }
-              slideToIndex={globalState.currentIndex_003}
-            />
+                  preventEventOnTouchMove={true}
+                  items={galleryItems_003}
+                  startIndex={globalState.currentIndex_003}
+                  onSlideChanged={ (e) => updateIndex_003( e.item ) }
+                  slideToIndex={globalState.currentIndex_003}
+                  disableDotsControls={true}
+                  disableButtonsControls={true}
+                />
+                <button 
+                  className="carousel-nav-button carousel-nav-right"
+                  onClick={handleNext_003}
+                  aria-label="Next image"
+                >
+                  <span className="carousel-nav-arrow">›</span>
+                </button>
+              </div>
 
         </div>
 

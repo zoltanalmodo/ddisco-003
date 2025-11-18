@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useRef } from 'react'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
 import Navigation from './Navigation'
@@ -288,7 +288,74 @@ export const Pastel = () => {
     setDegree_001,
     setDegree_002,
     setDegree_003,
+    updateIndex_001,
+    updateIndex_002,
+    updateIndex_003,
   } = useContext(GlobalContext);
+
+  const carouselRef_001 = useRef(null);
+  const carouselRef_002 = useRef(null);
+  const carouselRef_003 = useRef(null);
+
+  const handlePrev_001 = () => {
+    if (carouselRef_001.current) {
+      const currentIndex = globalState.currentIndex_001;
+      const newIndex = currentIndex > 0 ? currentIndex - 1 : 11;
+      carouselRef_001.current.slideTo(newIndex);
+      updateIndex_001(newIndex);
+      setDegree_001(newIndex * 30);
+    }
+  };
+
+  const handleNext_001 = () => {
+    if (carouselRef_001.current) {
+      const currentIndex = globalState.currentIndex_001;
+      const newIndex = currentIndex < 11 ? currentIndex + 1 : 0;
+      carouselRef_001.current.slideTo(newIndex);
+      updateIndex_001(newIndex);
+      setDegree_001(newIndex * 30);
+    }
+  };
+
+  const handlePrev_002 = () => {
+    if (carouselRef_002.current) {
+      const currentIndex = globalState.currentIndex_002;
+      const newIndex = currentIndex > 0 ? currentIndex - 1 : 11;
+      carouselRef_002.current.slideTo(newIndex);
+      updateIndex_002(newIndex);
+      setDegree_002(newIndex * 30);
+    }
+  };
+
+  const handleNext_002 = () => {
+    if (carouselRef_002.current) {
+      const currentIndex = globalState.currentIndex_002;
+      const newIndex = currentIndex < 11 ? currentIndex + 1 : 0;
+      carouselRef_002.current.slideTo(newIndex);
+      updateIndex_002(newIndex);
+      setDegree_002(newIndex * 30);
+    }
+  };
+
+  const handlePrev_003 = () => {
+    if (carouselRef_003.current) {
+      const currentIndex = globalState.currentIndex_003;
+      const newIndex = currentIndex > 0 ? currentIndex - 1 : 11;
+      carouselRef_003.current.slideTo(newIndex);
+      updateIndex_003(newIndex);
+      setDegree_003(newIndex * 30);
+    }
+  };
+
+  const handleNext_003 = () => {
+    if (carouselRef_003.current) {
+      const currentIndex = globalState.currentIndex_003;
+      const newIndex = currentIndex < 11 ? currentIndex + 1 : 0;
+      carouselRef_003.current.slideTo(newIndex);
+      updateIndex_003(newIndex);
+      setDegree_003(newIndex * 30);
+    }
+  };
 
   return (
     
@@ -302,87 +369,133 @@ export const Pastel = () => {
             filter: (globalState.isPastel === true ? globalState.pastelValue : globalState.brightValue),
         }}>
 
-              <div style={{
-                  filter: (`hue-rotate(${globalState.degree_001}deg)`),
-                  }}>
-              <AliceCarousel
-                  autoPlay={false}
-                  autoPlayStrategy={'all'}
-                  autoPlayInterval={5000}
-                  autoPlayDirection={'rtl'}
-                  disableAutoPlayOnAction={true}
-
-                  infinite={true}
-
-                  mouseTrackingEnabled={true}
-                  dotsDisabled={true}
-                  buttonsDisabled={true}
-                  swipeDisabled={false}
-                  touchTrackingEnabled={true}
-                  swipeDelta={10}
-                  preventEventOnTouchMove={true}
-
-                  items={actualItems_001(globalState.currentIndex_001)}
-                  startIndex={globalState.currentIndex_001}
-                  slideToIndex={globalState.currentIndex_001}
-                  onSlideChanged={ (e) => setDegree_001( e.item * 30) }
-              />
+              <div className="carousel-with-nav">
+                <button 
+                  className="carousel-nav-button carousel-nav-left"
+                  onClick={handlePrev_001}
+                  aria-label="Previous image"
+                >
+                  <span className="carousel-nav-arrow">‹</span>
+                </button>
+                <div style={{
+                    filter: (`hue-rotate(${globalState.degree_001}deg)`),
+                    }}>
+                <AliceCarousel
+                    ref={carouselRef_001}
+                    autoPlay={false}
+                    autoPlayStrategy={'all'}
+                    autoPlayInterval={5000}
+                    autoPlayDirection={'rtl'}
+                    disableAutoPlayOnAction={true}
+                    infinite={true}
+                    mouseTrackingEnabled={true}
+                    dotsDisabled={true}
+                    buttonsDisabled={true}
+                    swipeDisabled={false}
+                    touchTrackingEnabled={true}
+                    swipeDelta={10}
+                    preventEventOnTouchMove={true}
+                    items={actualItems_001(globalState.currentIndex_001)}
+                    startIndex={globalState.currentIndex_001}
+                    slideToIndex={globalState.currentIndex_001}
+                    onSlideChanged={ (e) => setDegree_001( e.item * 30) }
+                    disableDotsControls={true}
+                    disableButtonsControls={true}
+                />
+                </div>
+                <button 
+                  className="carousel-nav-button carousel-nav-right"
+                  onClick={handleNext_001}
+                  aria-label="Next image"
+                >
+                  <span className="carousel-nav-arrow">›</span>
+                </button>
               </div>
 
-              <div style={{
-                  filter: (`hue-rotate(${globalState.degree_002}deg)`),
-                  }}>
-
-              <AliceCarousel
-                  autoPlay={false}
-                  autoPlayStrategy={'all'}
-                  autoPlayInterval={5000}
-                  autoPlayDirection={'ltr'}
-                  disableAutoPlayOnAction={true}
-
-                  infinite={true}
-
-                  mouseTrackingEnabled={true}
-                  dotsDisabled={true}
-                  buttonsDisabled={true}
-                  swipeDisabled={false}
-                  touchTrackingEnabled={true}
-                  swipeDelta={10}
-                  preventEventOnTouchMove={true}
-
-                  items={actualItems_002(globalState.currentIndex_002)}
-                  startIndex={globalState.currentIndex_002}
-                  slideToIndex={globalState.currentIndex_002}
-                  onSlideChanged={ (e) => setDegree_002( e.item * 30) }
-              />
+              <div className="carousel-with-nav">
+                <button 
+                  className="carousel-nav-button carousel-nav-left"
+                  onClick={handlePrev_002}
+                  aria-label="Previous image"
+                >
+                  <span className="carousel-nav-arrow">‹</span>
+                </button>
+                <div style={{
+                    filter: (`hue-rotate(${globalState.degree_002}deg)`),
+                    }}>
+                <AliceCarousel
+                    ref={carouselRef_002}
+                    autoPlay={false}
+                    autoPlayStrategy={'all'}
+                    autoPlayInterval={5000}
+                    autoPlayDirection={'ltr'}
+                    disableAutoPlayOnAction={true}
+                    infinite={true}
+                    mouseTrackingEnabled={true}
+                    dotsDisabled={true}
+                    buttonsDisabled={true}
+                    swipeDisabled={false}
+                    touchTrackingEnabled={true}
+                    swipeDelta={10}
+                    preventEventOnTouchMove={true}
+                    items={actualItems_002(globalState.currentIndex_002)}
+                    startIndex={globalState.currentIndex_002}
+                    slideToIndex={globalState.currentIndex_002}
+                    onSlideChanged={ (e) => setDegree_002( e.item * 30) }
+                    disableDotsControls={true}
+                    disableButtonsControls={true}
+                />
+                </div>
+                <button 
+                  className="carousel-nav-button carousel-nav-right"
+                  onClick={handleNext_002}
+                  aria-label="Next image"
+                >
+                  <span className="carousel-nav-arrow">›</span>
+                </button>
               </div>
 
-              <div style={{
-                  filter: (`hue-rotate(${globalState.degree_003}deg)`),
-                  }}>
-
-              <AliceCarousel
-                  autoPlay={false}
-                  autoPlayStrategy={'all'}
-                  autoPlayInterval={5000}
-                  autoPlayDirection={'rtl'}
-                  disableAutoPlayOnAction={true}
-
-                  infinite={true}
-
-                  mouseTrackingEnabled={true}
-                  dotsDisabled={true}
-                  buttonsDisabled={true}
-                  swipeDisabled={false}
-                  touchTrackingEnabled={true}
-                  swipeDelta={10}
-                  preventEventOnTouchMove={true}
-
-                  items={actualItems_003(globalState.currentIndex_003)}
-                  startIndex={globalState.currentIndex_003}
-                  slideToIndex={globalState.currentIndex_003}
-                  onSlideChanged={ (e) => setDegree_003( e.item * 30) }
-              />
+              <div className="carousel-with-nav">
+                <button 
+                  className="carousel-nav-button carousel-nav-left"
+                  onClick={handlePrev_003}
+                  aria-label="Previous image"
+                >
+                  <span className="carousel-nav-arrow">‹</span>
+                </button>
+                <div style={{
+                    filter: (`hue-rotate(${globalState.degree_003}deg)`),
+                    }}>
+                <AliceCarousel
+                    ref={carouselRef_003}
+                    autoPlay={false}
+                    autoPlayStrategy={'all'}
+                    autoPlayInterval={5000}
+                    autoPlayDirection={'rtl'}
+                    disableAutoPlayOnAction={true}
+                    infinite={true}
+                    mouseTrackingEnabled={true}
+                    dotsDisabled={true}
+                    buttonsDisabled={true}
+                    swipeDisabled={false}
+                    touchTrackingEnabled={true}
+                    swipeDelta={10}
+                    preventEventOnTouchMove={true}
+                    items={actualItems_003(globalState.currentIndex_003)}
+                    startIndex={globalState.currentIndex_003}
+                    slideToIndex={globalState.currentIndex_003}
+                    onSlideChanged={ (e) => setDegree_003( e.item * 30) }
+                    disableDotsControls={true}
+                    disableButtonsControls={true}
+                />
+                </div>
+                <button 
+                  className="carousel-nav-button carousel-nav-right"
+                  onClick={handleNext_003}
+                  aria-label="Next image"
+                >
+                  <span className="carousel-nav-arrow">›</span>
+                </button>
               </div>
 
         </div>
