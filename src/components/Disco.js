@@ -150,15 +150,7 @@ export const Disco = () => {
                   preventEventOnTouchMove={true}
                   items={galleryItems_001}
                   startIndex={globalState.currentIndex_001}
-                  onSlideChanged={ (e) => {
-                    updateIndex_001( e.item );
-                    // Force browser reflow to ensure transform completes
-                    requestAnimationFrame(() => {
-                      if (document.body) {
-                        void document.body.offsetHeight; // Force reflow
-                      }
-                    });
-                  }}
+                  onSlideChanged={ (e) => updateIndex_001( e.item ) }
                   disableDotsControls={true}
                   disableButtonsControls={true}
                 />
@@ -181,15 +173,7 @@ export const Disco = () => {
                   preventEventOnTouchMove={true}
                   items={galleryItems_002}
                   startIndex={globalState.currentIndex_002}
-                  onSlideChanged={ (e) => {
-                    updateIndex_002( e.item );
-                    // Force browser reflow to ensure transform completes
-                    requestAnimationFrame(() => {
-                      if (document.body) {
-                        void document.body.offsetHeight; // Force reflow
-                      }
-                    });
-                  }}
+                  onSlideChanged={ (e) => updateIndex_002( e.item ) }
                   disableDotsControls={true}
                   disableButtonsControls={true}
                 />
@@ -212,15 +196,7 @@ export const Disco = () => {
                   preventEventOnTouchMove={true}
                   items={galleryItems_003}
                   startIndex={globalState.currentIndex_003}
-                  onSlideChanged={ (e) => {
-                    updateIndex_003( e.item );
-                    // Force browser reflow to ensure transform completes
-                    requestAnimationFrame(() => {
-                      if (document.body) {
-                        void document.body.offsetHeight; // Force reflow
-                      }
-                    });
-                  }}
+                  onSlideChanged={ (e) => updateIndex_003( e.item ) }
                   disableDotsControls={true}
                   disableButtonsControls={true}
                 />
