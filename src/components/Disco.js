@@ -116,18 +116,21 @@ export const Disco = () => {
     if (carouselRef_001.current && globalState.currentIndex_001 !== undefined) {
       carouselRef_001.current.slideTo(globalState.currentIndex_001);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // Only on mount
 
   useEffect(() => {
     if (carouselRef_002.current && globalState.currentIndex_002 !== undefined) {
       carouselRef_002.current.slideTo(globalState.currentIndex_002);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // Only on mount
 
   useEffect(() => {
     if (carouselRef_003.current && globalState.currentIndex_003 !== undefined) {
       carouselRef_003.current.slideTo(globalState.currentIndex_003);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []); // Only on mount
 
   
