@@ -452,6 +452,63 @@ nav {
   -ms-user-select: none;
 }
 
+/* Carousel navigation buttons */
+.carousel-with-nav {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 20;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+
+.carousel-nav-button:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.carousel-nav-left {
+  left: 0;
+  justify-content: flex-start;
+  padding-left: 20px;
+}
+
+.carousel-nav-right {
+  right: 0;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+
+.carousel-nav-arrow {
+  font-size: 48px;
+  color: hsla(0, 0%, 50%, 0.5);
+  font-weight: 300;
+  line-height: 1;
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.carousel-nav-button:hover .carousel-nav-arrow {
+  color: hsla(0, 0%, 50%, 0.8);
+}
+
 .frame-overlay-dark-grey {
   position: absolute;
   top: 50%;
