@@ -51,6 +51,17 @@
 
 .hue_rotate {
   height: 236px;
+  width: 100%; /* Ensure full width of container */
+  display: flex;
+  align-items: flex-start; /* Align to top to prevent gaps */
+  justify-content: center;
+}
+
+.hue_rotate img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block; /* Remove any inline spacing */
 }
 
 .carousel_black {
@@ -571,11 +582,18 @@ nav {
 .single_image_display_container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start; /* Changed from center to flex-start for edge-to-edge alignment */
   align-items: center;
   width: 760px;
   height: 840px;
   z-index: 0;
+  gap: 0; /* Ensure no gaps between images */
+}
+
+.single_image_display_container .hue_rotate {
+  flex-shrink: 0; /* Prevent shrinking */
+  margin: 0; /* Remove any margins */
+  padding: 0; /* Remove any padding */
 }
 
 .single_image_display {
@@ -707,10 +725,9 @@ li {
   }
   /* ================================================= carousel white buy ================================================= */
   .carousel_white_buy {
-    width: min(340px, 95vw); /* Responsive width for mobile */
+    width: 340px;
     height: 370px;
     margin-top: 50px;
-    transform: scale(1); /* Remove desktop scaling on mobile */
   }
   /* ================================================= carousel white buy ================================================= */
   .carousel_black {
@@ -724,11 +741,11 @@ li {
   }
   .frame_overlay_dark_grey_buy {
     border: 3px solid hsl(0, 0%, 20%);
-    width: min(340px, 95vw); /* Match container width */
+    width: 340px;
     height: 370px;
   }
   .single_image_display_container {
-    width: min(340px, 95vw); /* Match container width */
+    width: 340px;
     height: 370px;
   }
   .terms_and_conditions {
@@ -770,10 +787,9 @@ li {
   }
   /* ================================================= carousel white buy ================================================= */
   .carousel_white_buy {
-    width: min(340px, 95vw); /* Responsive width for mobile */
+    width: 340px;
     height: 370px;
     margin-top: 50px;
-    transform: scale(1); /* Remove desktop scaling on mobile */
   }
   /* ================================================= carousel white buy ================================================= */
   .carousel_black {
@@ -787,11 +803,11 @@ li {
   }
   .frame_overlay_dark_grey_buy {
     border: 3px solid hsl(0, 0%, 20%);
-    width: min(340px, 95vw); /* Match container width */
+    width: 340px;
     height: 370px;
   }
   .single_image_display_container {
-    width: min(340px, 95vw); /* Match container width */
+    width: 340px;
     height: 370px;
   }
   .terms_and_conditions {
@@ -836,7 +852,6 @@ li {
     width: 412px;
     height: 450px;
     margin-top: 50px;
-    transform: scale(1); /* Remove desktop scaling on mobile */
   }
   /* ================================================= carousel white buy ================================================= */
   .carousel_black {
@@ -882,7 +897,6 @@ li {
     width: 690px;
     height: 752px;
     margin-top: 50px;
-    transform: scale(1); /* Remove desktop scaling on mobile */
   }
 /* ================================================= carousel white buy ================================================= */
   .carousel_black {
@@ -928,7 +942,6 @@ li {
     width: 670px;
     height: 740px;
     margin-top: 50px;
-    transform: scale(1); /* Remove desktop scaling on mobile */
   }
 /* ================================================= carousel white buy ================================================= */
   .carousel_black {
@@ -974,7 +987,6 @@ li {
     width: 670px;
     height: 740px;
     margin-top: 50px;
-    transform: scale(1); /* Remove desktop scaling on tablet */
   }
 /* ================================================= carousel white buy ================================================= */  
   .carousel_black {
