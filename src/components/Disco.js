@@ -111,6 +111,8 @@ export const Disco = () => {
     };
   }, [toggleAutoplay]);
 
+  // Using slidePrev() and slideNext() instead of slideTo() for smooth loop transitions
+  // This provides seamless wrap-around (012 → 001) without flickering
   const handlePrev_001 = () => {
     if (carouselRef_001.current) {
       carouselRef_001.current.slidePrev();
