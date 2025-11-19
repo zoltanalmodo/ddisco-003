@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useRef } from 'react'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
 import Navigation from './Navigation'
@@ -291,6 +291,48 @@ export const Color = () => {
     setDegree_003,
   } = useContext(GlobalContext);
 
+  const carouselRef_001 = useRef(null);
+  const carouselRef_002 = useRef(null);
+  const carouselRef_003 = useRef(null);
+
+  // Using slidePrev() and slideNext() for smooth transitions
+  // The carousel slides but hue filter changes via onSlideChanged callback
+  const handlePrev_001 = () => {
+    if (carouselRef_001.current) {
+      carouselRef_001.current.slidePrev();
+    }
+  };
+
+  const handleNext_001 = () => {
+    if (carouselRef_001.current) {
+      carouselRef_001.current.slideNext();
+    }
+  };
+
+  const handlePrev_002 = () => {
+    if (carouselRef_002.current) {
+      carouselRef_002.current.slidePrev();
+    }
+  };
+
+  const handleNext_002 = () => {
+    if (carouselRef_002.current) {
+      carouselRef_002.current.slideNext();
+    }
+  };
+
+  const handlePrev_003 = () => {
+    if (carouselRef_003.current) {
+      carouselRef_003.current.slidePrev();
+    }
+  };
+
+  const handleNext_003 = () => {
+    if (carouselRef_003.current) {
+      carouselRef_003.current.slideNext();
+    }
+  };
+
   return (
     
     <div className='body_white'>
@@ -315,8 +357,17 @@ export const Color = () => {
               <div className="frame-overlay-dark-grey"></div> {/* Transparent overlay with a frame */}
               
               
+              <div className="carousel-with-nav">
+                <button 
+                  className="carousel-nav-button carousel-nav-left"
+                  onClick={handlePrev_001}
+                  aria-label="Previous hue"
+                >
+                  <span className="carousel-nav-arrow">‹</span>
+                </button>
                 <div style={{ filter: (`hue-rotate(${globalState.degree_001}deg)`) }}>
                   <AliceCarousel
+                    ref={carouselRef_001}
                     autoPlay={false}
                     autoPlayStrategy={'all'}
                     autoPlayInterval={5000}
@@ -334,11 +385,30 @@ export const Color = () => {
                     startIndex={globalState.currentIndex_001}
                     slideToIndex={globalState.currentIndex_001}
                     onSlideChanged={ (e) => setDegree_001( e.item * 30) }
+                    disableDotsControls={true}
+                    disableButtonsControls={true}
                   />
                 </div>
+                <button 
+                  className="carousel-nav-button carousel-nav-right"
+                  onClick={handleNext_001}
+                  aria-label="Next hue"
+                >
+                  <span className="carousel-nav-arrow">›</span>
+                </button>
+              </div>
               
+              <div className="carousel-with-nav">
+                <button 
+                  className="carousel-nav-button carousel-nav-left"
+                  onClick={handlePrev_002}
+                  aria-label="Previous hue"
+                >
+                  <span className="carousel-nav-arrow">‹</span>
+                </button>
                 <div style={{ filter: (`hue-rotate(${globalState.degree_002}deg)`) }}>
                   <AliceCarousel
+                    ref={carouselRef_002}
                     autoPlay={false}
                     autoPlayStrategy={'all'}
                     autoPlayInterval={5000}
@@ -356,11 +426,30 @@ export const Color = () => {
                     startIndex={globalState.currentIndex_002}
                     slideToIndex={globalState.currentIndex_002}
                     onSlideChanged={ (e) => setDegree_002( e.item * 30) }
+                    disableDotsControls={true}
+                    disableButtonsControls={true}
                   />
                 </div>
+                <button 
+                  className="carousel-nav-button carousel-nav-right"
+                  onClick={handleNext_002}
+                  aria-label="Next hue"
+                >
+                  <span className="carousel-nav-arrow">›</span>
+                </button>
+              </div>
               
+              <div className="carousel-with-nav">
+                <button 
+                  className="carousel-nav-button carousel-nav-left"
+                  onClick={handlePrev_003}
+                  aria-label="Previous hue"
+                >
+                  <span className="carousel-nav-arrow">‹</span>
+                </button>
                 <div style={{ filter: (`hue-rotate(${globalState.degree_003}deg)`) }}>
                   <AliceCarousel
+                    ref={carouselRef_003}
                     autoPlay={false}
                     autoPlayStrategy={'all'}
                     autoPlayInterval={5000}
@@ -378,8 +467,18 @@ export const Color = () => {
                     startIndex={globalState.currentIndex_003}
                     slideToIndex={globalState.currentIndex_003}
                     onSlideChanged={ (e) => setDegree_003( e.item * 30) }
+                    disableDotsControls={true}
+                    disableButtonsControls={true}
                   />
                 </div>
+                <button 
+                  className="carousel-nav-button carousel-nav-right"
+                  onClick={handleNext_003}
+                  aria-label="Next hue"
+                >
+                  <span className="carousel-nav-arrow">›</span>
+                </button>
+              </div>
 
             </div>
 
