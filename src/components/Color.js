@@ -295,6 +295,7 @@ export const Color = () => {
   const carouselRef_002 = useRef(null);
   const carouselRef_003 = useRef(null);
 
+  // Color page is working OK - smooth transitions with hue filter changes
   // Using slidePrev() and slideNext() for smooth transitions
   // The carousel slides but hue filter changes via onSlideChanged callback
   const handlePrev_001 = () => {
