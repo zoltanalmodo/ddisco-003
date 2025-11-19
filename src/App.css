@@ -707,9 +707,10 @@ li {
   }
   /* ================================================= carousel white buy ================================================= */
   .carousel_white_buy {
-    width: 340px;
+    width: min(340px, 95vw); /* Responsive width for mobile */
     height: 370px;
     margin-top: 50px;
+    transform: scale(1); /* Remove desktop scaling on mobile */
   }
   /* ================================================= carousel white buy ================================================= */
   .carousel_black {
@@ -723,11 +724,11 @@ li {
   }
   .frame_overlay_dark_grey_buy {
     border: 3px solid hsl(0, 0%, 20%);
-    width: 340px;
+    width: min(340px, 95vw); /* Match container width */
     height: 370px;
   }
   .single_image_display_container {
-    width: 340px;
+    width: min(340px, 95vw); /* Match container width */
     height: 370px;
   }
   .terms_and_conditions {
@@ -769,9 +770,10 @@ li {
   }
   /* ================================================= carousel white buy ================================================= */
   .carousel_white_buy {
-    width: 340px;
+    width: min(340px, 95vw); /* Responsive width for mobile */
     height: 370px;
     margin-top: 50px;
+    transform: scale(1); /* Remove desktop scaling on mobile */
   }
   /* ================================================= carousel white buy ================================================= */
   .carousel_black {
@@ -785,11 +787,11 @@ li {
   }
   .frame_overlay_dark_grey_buy {
     border: 3px solid hsl(0, 0%, 20%);
-    width: 340px;
+    width: min(340px, 95vw); /* Match container width */
     height: 370px;
   }
   .single_image_display_container {
-    width: 340px;
+    width: min(340px, 95vw); /* Match container width */
     height: 370px;
   }
   .terms_and_conditions {
@@ -834,6 +836,7 @@ li {
     width: 412px;
     height: 450px;
     margin-top: 50px;
+    transform: scale(1); /* Remove desktop scaling on mobile */
   }
   /* ================================================= carousel white buy ================================================= */
   .carousel_black {
@@ -879,6 +882,7 @@ li {
     width: 690px;
     height: 752px;
     margin-top: 50px;
+    transform: scale(1); /* Remove desktop scaling on mobile */
   }
 /* ================================================= carousel white buy ================================================= */
   .carousel_black {
@@ -924,6 +928,7 @@ li {
     width: 670px;
     height: 740px;
     margin-top: 50px;
+    transform: scale(1); /* Remove desktop scaling on mobile */
   }
 /* ================================================= carousel white buy ================================================= */
   .carousel_black {
@@ -969,6 +974,7 @@ li {
     width: 670px;
     height: 740px;
     margin-top: 50px;
+    transform: scale(1); /* Remove desktop scaling on tablet */
   }
 /* ================================================= carousel white buy ================================================= */  
   .carousel_black {
