@@ -103,6 +103,21 @@ export const AppReducer = (state, action) => {
         ...state,
         autoplay: action.payload,
       };
+    case 'DISABLE_AUTOPLAY_001':
+      return {
+        ...state,
+        autoplay_001: false,
+      };
+    case 'DISABLE_AUTOPLAY_002':
+      return {
+        ...state,
+        autoplay_002: false,
+      };
+    case 'DISABLE_AUTOPLAY_003':
+      return {
+        ...state,
+        autoplay_003: false,
+      };
     case 'UPDATE_COLOR':
       return {
         ...state,

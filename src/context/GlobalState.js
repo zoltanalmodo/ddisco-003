@@ -10,7 +10,10 @@ const initialState = {
   degree_001: 0,
   degree_002: 0,
   degree_003: 0,
-  autoplay: true,
+  autoplay: true, // Keep for backward compatibility
+  autoplay_001: true, // Individual autoplay state for carousel 001
+  autoplay_002: true, // Individual autoplay state for carousel 002
+  autoplay_003: true, // Individual autoplay state for carousel 003
   activeButton: 'disco',
   previousActiveButton: 'disco',
   isPastel: false,
@@ -187,6 +190,24 @@ export const GlobalProvider = ({ children }) => {
     });
   }, [dispatch]);
 
+  function disableAutoplay_001() {
+    dispatch({
+      type: 'DISABLE_AUTOPLAY_001',
+    });
+  }
+
+  function disableAutoplay_002() {
+    dispatch({
+      type: 'DISABLE_AUTOPLAY_002',
+    });
+  }
+
+  function disableAutoplay_003() {
+    dispatch({
+      type: 'DISABLE_AUTOPLAY_003',
+    });
+  }
+
   function updateUserInfo({ username, email }) {
     dispatch({
       type: 'UPDATE_USER_INFO',
@@ -232,6 +253,9 @@ export const GlobalProvider = ({ children }) => {
         setSelectedSizeMedium,
         setSelectedSizeLarge,
         toggleAutoplay,
+        disableAutoplay_001,
+        disableAutoplay_002,
+        disableAutoplay_003,
         fetchOrders,
         updateUserInfo,
       }}

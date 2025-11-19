@@ -95,6 +95,9 @@ export const Disco = () => {
     updateIndex_002,
     updateIndex_003,
     toggleAutoplay,
+    disableAutoplay_001,
+    disableAutoplay_002,
+    disableAutoplay_003,
 
   } = useContext(GlobalContext);
 
@@ -102,50 +105,50 @@ export const Disco = () => {
   const carouselRef_002 = useRef(null);
   const carouselRef_003 = useRef(null);
 
-  useEffect(() => {
-    // Set autoplay when the component mounts from globalState.autoplay
-   
-    return () => {
-      // Set autoplay to false when the component unmounts
-      toggleAutoplay();
-    };
-  }, [toggleAutoplay]);
+  // Autoplay is enabled on page load via initial state (autoplay_001, autoplay_002, autoplay_003 = true)
+  // Each carousel stops its own autoplay when user interacts with it
 
   // Using slidePrev() and slideNext() instead of slideTo() for smooth loop transitions
   // This provides seamless wrap-around (012 → 001) without flickering
   const handlePrev_001 = () => {
     if (carouselRef_001.current) {
       carouselRef_001.current.slidePrev();
+      disableAutoplay_001(); // Stop autoplay for this carousel when user interacts
     }
   };
 
   const handleNext_001 = () => {
     if (carouselRef_001.current) {
       carouselRef_001.current.slideNext();
+      disableAutoplay_001(); // Stop autoplay for this carousel when user interacts
     }
   };
 
   const handlePrev_002 = () => {
     if (carouselRef_002.current) {
       carouselRef_002.current.slidePrev();
+      disableAutoplay_002(); // Stop autoplay for this carousel when user interacts
     }
   };
 
   const handleNext_002 = () => {
     if (carouselRef_002.current) {
       carouselRef_002.current.slideNext();
+      disableAutoplay_002(); // Stop autoplay for this carousel when user interacts
     }
   };
 
   const handlePrev_003 = () => {
     if (carouselRef_003.current) {
       carouselRef_003.current.slidePrev();
+      disableAutoplay_003(); // Stop autoplay for this carousel when user interacts
     }
   };
 
   const handleNext_003 = () => {
     if (carouselRef_003.current) {
       carouselRef_003.current.slideNext();
+      disableAutoplay_003(); // Stop autoplay for this carousel when user interacts
     }
   };
 
@@ -186,7 +189,7 @@ export const Disco = () => {
                 <div style={{ filter: (`hue-rotate(${globalState.degree_001}deg)`) }}>
                   <AliceCarousel
                     ref={carouselRef_001}
-                    autoPlay={globalState.autoplay}
+                    autoPlay={globalState.autoplay_001}
                     autoPlayStrategy={'action'}
                     autoPlayInterval={Math.floor(Math.random() * (3500 - 2500 + 1)) + 2500}
                     autoPlayDirection={'rtl'}
@@ -201,7 +204,10 @@ export const Disco = () => {
                     preventEventOnTouchMove={true}
                     items={galleryItems_001}
                     startIndex={globalState.currentIndex_001}
-                    onSlideChanged={ (e) => updateIndex_001( e.item ) }
+                    onSlideChanged={ (e) => {
+                      updateIndex_001( e.item );
+                      disableAutoplay_001(); // Stop autoplay when user drags/swipes
+                    } }
                     disableDotsControls={true}
                     disableButtonsControls={true}
                   />
@@ -226,7 +232,7 @@ export const Disco = () => {
                 <div style={{ filter: (`hue-rotate(${globalState.degree_002}deg)`) }}>
                   <AliceCarousel
                     ref={carouselRef_002}
-                    autoPlay={globalState.autoplay}
+                    autoPlay={globalState.autoplay_002}
                     autoPlayStrategy={'action'}
                     autoPlayInterval={Math.floor(Math.random() * (3500 - 2500 + 1)) + 2500}
                     autoPlayDirection={'ltr'}
@@ -241,7 +247,10 @@ export const Disco = () => {
                     preventEventOnTouchMove={true}
                     items={galleryItems_002}
                     startIndex={globalState.currentIndex_002}
-                    onSlideChanged={ (e) => updateIndex_002( e.item ) }
+                    onSlideChanged={ (e) => {
+                      updateIndex_002( e.item );
+                      disableAutoplay_002(); // Stop autoplay when user drags/swipes
+                    } }
                     disableDotsControls={true}
                     disableButtonsControls={true}
                   />
@@ -266,7 +275,7 @@ export const Disco = () => {
                 <div style={{ filter: (`hue-rotate(${globalState.degree_003}deg)`) }}>
                   <AliceCarousel
                     ref={carouselRef_003}
-                    autoPlay={globalState.autoplay}
+                    autoPlay={globalState.autoplay_003}
                     autoPlayStrategy={'action'}
                     autoPlayInterval={Math.floor(Math.random() * (3500 - 2500 + 1)) + 2500}
                     autoPlayDirection={'rtl'}
@@ -281,7 +290,10 @@ export const Disco = () => {
                     preventEventOnTouchMove={true}
                     items={galleryItems_003}
                     startIndex={globalState.currentIndex_003}
-                    onSlideChanged={ (e) => updateIndex_003( e.item ) }
+                    onSlideChanged={ (e) => {
+                      updateIndex_003( e.item );
+                      disableAutoplay_003(); // Stop autoplay when user drags/swipes
+                    } }
                     disableDotsControls={true}
                     disableButtonsControls={true}
                   />
