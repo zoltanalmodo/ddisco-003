@@ -103,6 +103,7 @@ export const White = () => {
   const carouselRef_002 = useRef(null);
   const carouselRef_003 = useRef(null);
 
+  // White page autoplay is working OK - runs continuously until user interacts
   // Autoplay is enabled on page load via initial state (autoplay_001, autoplay_002, autoplay_003 = true)
   // Each carousel stops its own autoplay when user interacts with it
   // Using slidePrev() and slideNext() instead of slideTo() for smooth loop transitions

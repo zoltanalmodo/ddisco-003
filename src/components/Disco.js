@@ -104,6 +104,7 @@ export const Disco = () => {
   const carouselRef_002 = useRef(null);
   const carouselRef_003 = useRef(null);
 
+  // Disco page autoplay is working OK - runs continuously until user interacts
   // Autoplay is enabled on page load via initial state (autoplay_001, autoplay_002, autoplay_003 = true)
   // Each carousel stops its own autoplay when user interacts with it
 
