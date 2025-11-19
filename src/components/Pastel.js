@@ -299,61 +299,37 @@ export const Pastel = () => {
 
   const handlePrev_001 = () => {
     if (carouselRef_001.current) {
-      const currentIndex = globalState.currentIndex_001;
-      const newIndex = currentIndex > 0 ? currentIndex - 1 : 11;
-      carouselRef_001.current.slideTo(newIndex);
-      updateIndex_001(newIndex);
-      setDegree_001(newIndex * 30);
+      carouselRef_001.current.slidePrev();
     }
   };
 
   const handleNext_001 = () => {
     if (carouselRef_001.current) {
-      const currentIndex = globalState.currentIndex_001;
-      const newIndex = currentIndex < 11 ? currentIndex + 1 : 0;
-      carouselRef_001.current.slideTo(newIndex);
-      updateIndex_001(newIndex);
-      setDegree_001(newIndex * 30);
+      carouselRef_001.current.slideNext();
     }
   };
 
   const handlePrev_002 = () => {
     if (carouselRef_002.current) {
-      const currentIndex = globalState.currentIndex_002;
-      const newIndex = currentIndex > 0 ? currentIndex - 1 : 11;
-      carouselRef_002.current.slideTo(newIndex);
-      updateIndex_002(newIndex);
-      setDegree_002(newIndex * 30);
+      carouselRef_002.current.slidePrev();
     }
   };
 
   const handleNext_002 = () => {
     if (carouselRef_002.current) {
-      const currentIndex = globalState.currentIndex_002;
-      const newIndex = currentIndex < 11 ? currentIndex + 1 : 0;
-      carouselRef_002.current.slideTo(newIndex);
-      updateIndex_002(newIndex);
-      setDegree_002(newIndex * 30);
+      carouselRef_002.current.slideNext();
     }
   };
 
   const handlePrev_003 = () => {
     if (carouselRef_003.current) {
-      const currentIndex = globalState.currentIndex_003;
-      const newIndex = currentIndex > 0 ? currentIndex - 1 : 11;
-      carouselRef_003.current.slideTo(newIndex);
-      updateIndex_003(newIndex);
-      setDegree_003(newIndex * 30);
+      carouselRef_003.current.slidePrev();
     }
   };
 
   const handleNext_003 = () => {
     if (carouselRef_003.current) {
-      const currentIndex = globalState.currentIndex_003;
-      const newIndex = currentIndex < 11 ? currentIndex + 1 : 0;
-      carouselRef_003.current.slideTo(newIndex);
-      updateIndex_003(newIndex);
-      setDegree_003(newIndex * 30);
+      carouselRef_003.current.slideNext();
     }
   };
 

@@ -113,55 +113,37 @@ export const Disco = () => {
 
   const handlePrev_001 = () => {
     if (carouselRef_001.current) {
-      const currentIndex = globalState.currentIndex_001;
-      const newIndex = currentIndex > 0 ? currentIndex - 1 : 11; // Wrap around for infinite
-      carouselRef_001.current.slideTo(newIndex);
-      updateIndex_001(newIndex);
+      carouselRef_001.current.slidePrev();
     }
   };
 
   const handleNext_001 = () => {
     if (carouselRef_001.current) {
-      const currentIndex = globalState.currentIndex_001;
-      const newIndex = currentIndex < 11 ? currentIndex + 1 : 0; // Wrap around for infinite
-      carouselRef_001.current.slideTo(newIndex);
-      updateIndex_001(newIndex);
+      carouselRef_001.current.slideNext();
     }
   };
 
   const handlePrev_002 = () => {
     if (carouselRef_002.current) {
-      const currentIndex = globalState.currentIndex_002;
-      const newIndex = currentIndex > 0 ? currentIndex - 1 : 11;
-      carouselRef_002.current.slideTo(newIndex);
-      updateIndex_002(newIndex);
+      carouselRef_002.current.slidePrev();
     }
   };
 
   const handleNext_002 = () => {
     if (carouselRef_002.current) {
-      const currentIndex = globalState.currentIndex_002;
-      const newIndex = currentIndex < 11 ? currentIndex + 1 : 0;
-      carouselRef_002.current.slideTo(newIndex);
-      updateIndex_002(newIndex);
+      carouselRef_002.current.slideNext();
     }
   };
 
   const handlePrev_003 = () => {
     if (carouselRef_003.current) {
-      const currentIndex = globalState.currentIndex_003;
-      const newIndex = currentIndex > 0 ? currentIndex - 1 : 11;
-      carouselRef_003.current.slideTo(newIndex);
-      updateIndex_003(newIndex);
+      carouselRef_003.current.slidePrev();
     }
   };
 
   const handleNext_003 = () => {
     if (carouselRef_003.current) {
-      const currentIndex = globalState.currentIndex_003;
-      const newIndex = currentIndex < 11 ? currentIndex + 1 : 0;
-      carouselRef_003.current.slideTo(newIndex);
-      updateIndex_003(newIndex);
+      carouselRef_003.current.slideNext();
     }
   };
 
