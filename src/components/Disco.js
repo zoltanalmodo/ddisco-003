@@ -1,4 +1,4 @@
-import React, { useEffect, useContext, useRef } from 'react'
+import React, { useContext, useRef } from 'react'
 import AliceCarousel from 'react-alice-carousel'
 import 'react-alice-carousel/lib/alice-carousel.css'
 import Navigation from './Navigation';
@@ -94,7 +94,6 @@ export const Disco = () => {
     updateIndex_001,
     updateIndex_002,
     updateIndex_003,
-    toggleAutoplay,
     disableAutoplay_001,
     disableAutoplay_002,
     disableAutoplay_003,
