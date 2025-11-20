@@ -995,10 +995,6 @@ li {
   .single_image_display_container .hue_rotate {
     overflow: visible; /* Allow images to fit properly with object-fit: contain */
   }
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-  }
   .sizes_container {
     width: 85vw;
     max-width: 800px;
