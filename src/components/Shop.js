@@ -319,6 +319,7 @@ globalState.previousActiveButton === "black" ? "black" : "white";
 
 
 
+  // Like page is working OK - images aligned properly, no overhang, correct width
   return (
     <div className='body_white_buy'>
       <Navigation />
