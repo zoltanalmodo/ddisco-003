@@ -138,7 +138,7 @@ export const FormValidation = () => {
             checked={formData.termsAccepted}
             onChange={handleChange}
           />
-          <label htmlFor="termsAccepted">I have read and agree to the <Link to="/terms-and-conditions" style={{ textDecoration: 'underline' }}>Terms and Conditions</Link></label>
+          <label htmlFor="termsAccepted">I agree to the <Link to="/terms-and-conditions" style={{ textDecoration: 'underline' }}>terms and conditions</Link></label>
           {errors.termsAccepted && !formData.termsAccepted && (
             <p className="error_message">{errors.termsAccepted}</p>
           )}
