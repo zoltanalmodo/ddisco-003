@@ -740,7 +740,7 @@ li {
   .carousel_white_buy {
     width: 92vw; /* Wider container - 92% of viewport width */
     max-width: 400px; /* But not wider than 400px */
-    height: auto;
+    height: auto; /* Height determined by content */
     margin-top: 50px;
   }
   /* ================================================= carousel white buy ================================================= */
@@ -756,20 +756,20 @@ li {
   .frame_overlay_dark_grey_buy {
     border: 3px solid hsl(0, 0%, 20%);
     width: 100%; /* Match parent width */
-    aspect-ratio: 340/370; /* Maintain aspect ratio */
+    height: 370px; /* Restore original fixed height */
     justify-content: flex-start; /* Prevent top overhang */
     padding: 0;
     overflow: hidden;
   }
   .single_image_display_container {
     width: 100%; /* Match parent width */
-    height: 100%; /* Fill parent */
+    height: 370px; /* Restore original fixed height */
     padding: 0;
     margin: 0;
     overflow: hidden;
   }
   .hue_rotate {
-    height: calc(100% / 3); /* Each image takes 1/3 of container height */
+    height: 120px; /* Restore original fixed height per image */
   }
   .sizes_container {
     width: 92vw; /* Match carousel width */
@@ -824,7 +824,7 @@ li {
   .carousel_white_buy {
     width: 92vw; /* Wider container - 92% of viewport width */
     max-width: 400px; /* But not wider than 400px */
-    height: auto;
+    height: auto; /* Height determined by content */
     margin-top: 50px;
   }
   /* ================================================= carousel white buy ================================================= */
@@ -840,20 +840,20 @@ li {
   .frame_overlay_dark_grey_buy {
     border: 3px solid hsl(0, 0%, 20%);
     width: 100%; /* Match parent width */
-    aspect-ratio: 340/370; /* Maintain aspect ratio */
+    height: 370px; /* Restore original fixed height */
     justify-content: flex-start; /* Prevent top overhang */
     padding: 0;
     overflow: hidden;
   }
   .single_image_display_container {
     width: 100%; /* Match parent width */
-    height: 100%; /* Fill parent */
+    height: 370px; /* Restore original fixed height */
     padding: 0;
     margin: 0;
     overflow: hidden;
   }
   .hue_rotate {
-    height: calc(100% / 3); /* Each image takes 1/3 of container height */
+    height: 120px; /* Restore original fixed height per image */
   }
   .sizes_container {
     width: 92vw; /* Match carousel width */
@@ -924,20 +924,20 @@ li {
   .frame_overlay_dark_grey_buy {
     border: 3px solid hsl(0, 0%, 20%);
     width: 100%;
-    aspect-ratio: 412/450; /* Maintain aspect ratio */
+    height: 450px; /* Restore original fixed height */
     justify-content: flex-start;
     padding: 0;
     overflow: hidden;
   }
   .single_image_display_container {
     width: 100%;
-    height: 100%; /* Fill parent */
+    height: 450px; /* Restore original fixed height */
     padding: 0;
     margin: 0;
     overflow: hidden;
   }
   .hue_rotate {
-    height: calc(100% / 3); /* Each image takes 1/3 of container height */
+    height: 148px; /* Restore original fixed height per image */
   }
   .sizes_container {
     width: 92vw;
