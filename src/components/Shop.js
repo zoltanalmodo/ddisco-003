@@ -319,7 +319,7 @@ globalState.previousActiveButton === "black" ? "black" : "white";
 
 
 
-  // Like page is working OK - images aligned properly, no overhang, correct width
+  // Like page is working OK - images fully visible on all devices, proper alignment, no overhang
   return (
     <div className='body_white_buy'>
       <Navigation />
